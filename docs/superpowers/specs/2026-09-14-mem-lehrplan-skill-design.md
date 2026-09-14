@@ -116,6 +116,34 @@ Kopfzeile und npm-Version übereinstimmen.
 README bekommt einen Abschnitt „Kommandozeile“. Die Explorer-Spec bekommt einen Abschnitt
 5.6 mit dem Inhalt von 3.1–3.3.
 
+### 3.4 Voraussetzung: zwei weitere Reasoner-Artefakte einordnen
+
+Gemessen am 2026-09-14: Eine nach Pattern 1 und 2 korrekt geschriebene SH-Wurzel mit
+einem Titel-Knoten bekommt vom Explorer zwei SHACL-Treffer, darunter einen „Fehler“ —
+der Exit-Code der CLI wäre damit für jede richtige Datei 1.
+
+1. **`sh:class` auf ein Ontologie-Individuum.** Die Shape für `von Bundesland` verlangt
+   die Klasse „Bundesland Bezeichnung“ (LP_0000040) am Ziel. `lp:LP_3000054` ist in
+   `lp-base.ttl` nur als `owl:NamedIndividual` deklariert, ohne Klasse; die Zugehörigkeit
+   folgt erst durch einen Reasoner aus der `rdfs:range` von `von Bundesland`. Keine
+   Datei kann das erfüllen, und keine soll den Typ eines Ontologie-Individuums selbst
+   behaupten. Einordnung: `ClassConstraintComponent`, Ziel ist laut `terms.json` ein
+   Individuum → Hinweis, „SHACL · Reasoner-Artefakt“, Regel `shacl:Class · Individuum`.
+   Nachgeprüft, nicht vermutet: die Prüfung sieht in der Term-Tabelle nach.
+2. **`sh:minCount` auf `is about` (IAO_0000136) am Textknoten.** Die Shape für textuelle
+   Entitäten fordert, dass jeder Titel-/Beschreibungsknoten „über etwas“ ist. Kein
+   Muster schreibt das; `lp.owl` deklariert IAO_0000136 als Inverse von „wird
+   beschrieben von“ (LP_0000024), und `hat Titel`, `hat Beschreibung`, `hat Nummer`
+   sind dessen Unterproperties. Ein Reasoner leitet `is about` aus der eingehenden
+   `hat Titel`-Kante ab. Einordnung wie bei `ist Teil von`: Hinweis, Reasoner-Artefakt,
+   wenn auf den Knoten über LP_0000024 oder eine Unterproperty gezeigt wird. Die
+   Unterproperty-Kette wird über `terms.json` (`parents`) aufgelöst.
+
+Erwartete Messung danach an `sekundarstufe.ttl`: weiterhin 55 SHACL-Treffer, davon
+`typ-falsch` 2 statt 3 und 29 statt 28 Reasoner-Artefakte; zusammengeführt weiterhin 73.
+Diese Zahlen werden beim Umsetzen gemessen und in Tests, CLAUDE.md und Explorer-Spec
+nachgezogen.
+
 ## 4. Teil B — die Skill `mem-lehrplan`
 
 ### 4.1 Form
@@ -347,15 +375,16 @@ schön ist.
 
 Teil A zuerst, weil Szenario 1 und 2 die CLI brauchen.
 
-1. **A1** `runCheck` mit Tests; `main.ts`; Bin; Vite-CLI-Build; README; Explorer-Spec §5.6.
-2. **A2** Rauchtest des Binaries auf Fixtures und SH-Fassung 6.0; Version 0.3.0; Tag; Push;
+1. **A0** Die zwei Reasoner-Artefakte aus §3.4 einordnen, Zahlen neu messen und pinnen.
+2. **A1** `runCheck` mit Tests; `main.ts`; Bin; Vite-CLI-Build; README; Explorer-Spec §5.6.
+3. **A2** Rauchtest des Binaries auf Fixtures und SH-Fassung 6.0; Version 0.3.0; Tag; Push;
    `npm publish` durch laoc.
-3. **B1** Repo `mem-lehrplan` anlegen; `update-references.sh` und Erzeugung von
+4. **B1** Repo `mem-lehrplan` anlegen; `update-references.sh` und Erzeugung von
    `references/` aus `~/coding/fwu/lehrplan-ontologie`; LICENSE; Remotes.
-4. **B2** `beispiel.ttl` schreiben und mit der CLI auf Exit 0 bringen; Bericht ablegen.
-5. **B3** RED: drei Szenarien ohne Skill, `baseline.md`.
-6. **B4** GREEN: `SKILL.md` und Referenzen schreiben; Szenarien mit Skill; REFACTOR.
-7. **B5** README; Tag v0.1.0; Push zu beiden Remotes; openskills-Kontakt; Notiz an FWU.
+5. **B2** `beispiel.ttl` schreiben und mit der CLI auf Exit 0 bringen; Bericht ablegen.
+6. **B3** RED: drei Szenarien ohne Skill, `baseline.md`.
+7. **B4** GREEN: `SKILL.md` und Referenzen schreiben; Szenarien mit Skill; REFACTOR.
+8. **B5** README; Tag v0.1.0; Push zu beiden Remotes; openskills-Kontakt; Notiz an FWU.
 
 ## 8. Offene Punkte
 
