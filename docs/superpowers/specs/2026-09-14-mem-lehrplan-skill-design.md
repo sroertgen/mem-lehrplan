@@ -358,8 +358,7 @@ schön ist.
 
 ## 6. Verteilung
 
-- Origin: `ssh://git@git.edufeed.org/laoc/mem-lehrplan-skill.git` (angelegt 2026-09-15; zur
-  Benennung siehe §8). Spiegel: `github.com/sroertgen/mem-lehrplan`, öffentlich — openskills.cc
+- Origin: `ssh://git@git.edufeed.org/laoc/mem-lehrplan.git` (angelegt 2026-09-15). Spiegel: `github.com/sroertgen/mem-lehrplan`, öffentlich — openskills.cc
   listet nur GitHub-Repos mit `SKILL.md` an der Wurzel. Der Spiegel ist ein zweiter
   Remote, kein CI.
 - Installation (README): Claude Code `git clone … ~/.claude/skills/mem-lehrplan`;
@@ -396,10 +395,9 @@ Teil A zuerst, weil Szenario 1 und 2 die CLI brauchen.
 - **Konvention Namensraum.** `https://lp-sh.org/resource/` ist die Wahl der
   relidesk-Transformation, keine FWU-Vorgabe. Ob FWU eine Empfehlung aussprechen will,
   wäre eine Frage an die Redaktion.
-- **Repo-Name.** Die agentskills-Spezifikation verlangt `name` = Name des Skill-Ordners.
-  Der Zip-Download von openskills.cc trägt den Repo-Namen. Heißt das Repo
-  `mem-lehrplan-skill`, muss die Skill so heißen — oder das Repo wird in `mem-lehrplan`
-  umbenannt (Forgejo leitet den alten Namen weiter). Entscheidung von laoc ausstehend.
+- **Repo-Name.** Erledigt 2026-09-15: Die agentskills-Spezifikation verlangt `name` = Name des
+  Skill-Ordners, und der Zip-Download von openskills.cc trägt den Repo-Namen; das Repo heißt
+  deshalb `mem-lehrplan`, nicht `mem-lehrplan-skill`.
 - **Lizenz.** CC BY-SA 4.0 für das ganze Repo, weil FWU-Material gebündelt wird. Der
   eigene Text ist damit ebenfalls share-alike.
 
