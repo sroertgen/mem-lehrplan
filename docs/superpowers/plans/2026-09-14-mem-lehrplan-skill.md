@@ -2,11 +2,11 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Eine agentskills-kompatible Skill, mit der ein LLM-Agent MEM-Lehrplan-Turtle nach den Mustern der FWU-Ontologie schreibt und Explorer-Befunde behebt — mit gebündelten Term-Tabellen, Länderprofilen, Mustern, einem vollständigen Beispiel und `npx mem-explorer check` als Prüfschritt.
+**Goal:** Eine agentskills-kompatible Skill, mit der ein LLM-Agent MEM-Lehrplan-Turtle nach den Mustern der FWU-Ontologie schreibt und Explorer-Befunde behebt — mit gebündelten Term-Tabellen, Länderprofilen, Mustern, einem vollständigen Beispiel und `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check` als Prüfschritt.
 
 **Architecture:** Repository-Wurzel = Skill-Ordner (`SKILL.md`, `references/`, `scripts/`). Alles unter `references/terms`, `laender`, `patterns`, `lp-base.ttl`, `VERSION` wird von `scripts/update-references.sh` aus den FWU-Repos erzeugt und eingecheckt. Die Skill wird nach der TDD-Methode für Prozessdokumentation geschrieben: erst Ausgangsläufe ohne Skill (RED), dann SKILL.md gegen die beobachteten Fehler (GREEN), dann Lücken schließen.
 
-**Tech Stack:** Markdown, Bash, Python 3 (Standardbibliothek), Git; zur Prüfung `npx mem-explorer check` (Node ≥ 22, Teil A dieses Vorhabens).
+**Tech Stack:** Markdown, Bash, Python 3 (Standardbibliothek), Git; zur Prüfung `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check` (Node ≥ 22, Teil A dieses Vorhabens).
 
 **Spec:** `docs/superpowers/specs/2026-09-14-mem-lehrplan-skill-design.md`, Abschnitte 4–8. Voraussetzung: Teil A (Plan `~/coding/comenius/mem-explorer/docs/superpowers/plans/2026-09-14-cli-check.md`) ist bis Task 5 umgesetzt; solange 0.3.0 nicht auf npm ist, lautet der Prüfbefehl `node ~/coding/comenius/mem-explorer/bin/mem-explorer.mjs check <datei>`.
 
@@ -458,7 +458,7 @@ EOF
 - Create: `references/beispiel.ttl`, `references/beispiel-bericht.md`
 
 **Interfaces:**
-- Consumes: `node ~/coding/comenius/mem-explorer/bin/mem-explorer.mjs check` (Teil A, Task 5) — bzw. `npx mem-explorer check` nach Veröffentlichung.
+- Consumes: `node ~/coding/comenius/mem-explorer/bin/mem-explorer.mjs check` (Teil A, Task 5) — bzw. `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check` nach Veröffentlichung.
 
 - [ ] **Step 1: Klassenpfad der SH-Fassung 6.0 ablesen**
 
@@ -761,7 +761,7 @@ description: >
   Nodes, Jahrgangsstufe, hat Teil, SHACL, Reasoner-Artefakt.
 license: CC-BY-SA-4.0
 compatibility: >
-  Node 22+ for `npx mem-explorer check`; bash, grep, awk for scripts/; pdftotext optional.
+  Node 22+ for `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check`; bash, grep, awk for scripts/; pdftotext optional.
   Works offline — all ontology references are bundled.
 metadata:
   author: sroertgen
@@ -788,7 +788,7 @@ aus der Vorlage bleibt wörtlich.
    Wertknoten mit `hat Wert` (LP_0000344); Jahrgangsstufen als Individuen (LP_2000001–13);
    Hierarchie über `hat Teil` (obo:BFO_0000051); `hat Position` (LP_0000460) für die
    Reihenfolge; keine Blank Nodes.
-4. `npx mem-explorer check datei.ttl` — Exit 0 heißt: kein Fehler.
+4. `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check datei.ttl` — Exit 0 heißt: kein Fehler.
 5. Bericht gruppenweise mit den **Soll**-Blöcken abarbeiten (`references/befunde.md`).
    Gruppen mit „Reasoner-Artefakt“ bleiben, wie sie sind. IRIs nie umbenennen.
 6. Wiederholen bis Exit 0. Dann Bericht und Datei dem Menschen für den PDF-Abgleich geben —
@@ -919,7 +919,7 @@ und andere Werkzeuge, die das [Agent-Skills-Format](https://agentskills.io) lese
 Was drin ist: die Muster der Ontologie-Doku als Soll, Term-Tabellen für alle 2005 IDs,
 Klassenprofile je Bundesland, ein vollständiges gültiges Beispiel, Skripte zum Nachschlagen
 und die Fallstricke, die in echten Transformationen aufgetreten sind. Geprüft wird mit
-`npx mem-explorer check` ([MEM Explorer](https://git.rpi-virtuell.de/Comenius-Institut/mem-explorer)).
+`npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check` ([MEM Explorer](https://git.rpi-virtuell.de/Comenius-Institut/mem-explorer)).
 
 ## Installation
 
@@ -930,7 +930,7 @@ git clone https://github.com/sroertgen/mem-lehrplan ~/.claude/skills/mem-lehrpla
 git clone https://github.com/sroertgen/mem-lehrplan ~/.agents/skills/mem-lehrplan
 ```
 
-Voraussetzungen: Node 22+ (für `npx mem-explorer check`), bash, grep, awk. Optional
+Voraussetzungen: Node 22+ (für `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check`), bash, grep, awk. Optional
 `pdftotext` für den Weg vom PDF.
 
 ## Benutzung
@@ -941,7 +941,7 @@ Der Agent liest `SKILL.md` und folgt dem Ablauf. Von Hand nützlich:
 scripts/lookup.sh "hat Jahrgangsstufe"     # Wort -> ID
 scripts/lookup.sh LP_0030280               # ID -> Bedeutung
 scripts/klasse.sh LP_0030280               # Definition mit Restriktionen, Labels aufgeloest
-npx mem-explorer check datei.ttl           # Pruefbericht, Exit 0 = kein Fehler
+npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check datei.ttl           # Pruefbericht, Exit 0 = kein Fehler
 ```
 
 ## Referenzen aktualisieren

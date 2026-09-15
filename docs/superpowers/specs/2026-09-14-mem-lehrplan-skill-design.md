@@ -3,7 +3,7 @@
 Eine Agent-Skill für das Schreiben und Nachbessern von MEM-Lehrplandaten (Turtle), plus
 das Kommandozeilenwerkzeug, auf das sie sich stützt. Zwei Teile in zwei Repositories:
 
-- **Teil A** — `mem-explorer` bekommt eine Kommandozeile: `npx mem-explorer check datei.ttl`.
+- **Teil A** — `mem-explorer` bekommt eine Kommandozeile: `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check datei.ttl`.
 - **Teil B** — das Repository `mem-lehrplan` ist die Skill selbst.
 
 Stand: 2026-09-14. Entscheidungen aus dem Gespräch mit laoc, Herkunft der Fakten am Ende.
@@ -55,7 +55,7 @@ werden nachgeschlagen.
 ### 3.1 Aufruf und Verhalten
 
 ```
-npx mem-explorer check <datei.ttl> [--json]
+npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check <datei.ttl> [--json]
 ```
 
 - Läuft `parseTurtle`, `buildModel`, Regeln R1–R13 und SHACL exakt wie der Browser und
@@ -108,10 +108,12 @@ die ein Agent eine Handvoll Male durchläuft, ist das in Ordnung.
 ### 3.3 Paket
 
 `package.json`: `bin`, `files` (`dist/cli`, `bin`, `README.md`, `LICENSE`), `exports`
-nur für die CLI. Der Paketname `mem-explorer` ist auf npm frei (geprüft 2026-09-14).
+nur für die CLI. Der Paketname `mem-explorer` ist in der edufeed-Registry frei (geprüft 2026-09-15).
 Version 0.3.0. Veröffentlichung durch Forgejo Actions auf `git.edufeed.org/laoc/mem-explorer`
-(`.forgejo/workflows/publish-npm.yml`, Auslöser Tag `vX.Y.Z`, Secret `NPM_TOKEN`; Stand
-2026-09-15). Der Comenius-Spiegel bleibt Quelle des Homelab-Deploys; der Pin kann auf v0.3.0
+(`.forgejo/workflows/publish-npm.yml`, Auslöser Tag `vX.Y.Z`) in die Forgejo-Paketregistry
+`https://git.edufeed.org/api/packages/edufeed/npm/`, nicht auf npmjs.org — wie alle edufeed-Pakete
+(Secret `REGISTRY_TOKEN`; Stand 2026-09-15). Der Aufruf braucht deshalb den Schalter
+`--registry=https://git.edufeed.org/api/packages/edufeed/npm/`; die Skill schreibt ihn in jeden Befehl. Der Comenius-Spiegel bleibt Quelle des Homelab-Deploys; der Pin kann auf v0.3.0
 nachziehen, damit Kopfzeile und npm-Version übereinstimmen.
 
 README bekommt einen Abschnitt „Kommandozeile“. Die Explorer-Spec bekommt einen Abschnitt
@@ -164,7 +166,7 @@ description: >
   Explorer findings mention hat Titel, hat Beschreibung, hat Wert, Blank Nodes,
   Jahrgangsstufe, hat Teil.
 license: CC-BY-SA-4.0
-compatibility: Node 22+ for `npx mem-explorer check`; grep and awk for the lookup
+compatibility: Node 22+ for `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check`; grep and awk for the lookup
   scripts; pdftotext optional.
 metadata:
   author: sroertgen
@@ -226,7 +228,7 @@ Der Ablauf, sechs Zeilen, mit Verweis auf `arbeitsablauf.md`:
 3. Benannte Knoten mit IRI im eigenen Namensraum; Titel und Beschreibung als Wertknoten
    mit `hat Wert`; Jahrgangsstufen als Individuen; Hierarchie über `hat Teil`;
    keine Blank Nodes.
-4. `npx mem-explorer check datei.ttl`.
+4. `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check datei.ttl`.
 5. Bericht gruppenweise mit den Soll-Blöcken abarbeiten. Reasoner-Artefakte bleiben.
 6. Wiederholen bis Exit 0; dann den Bericht dem Menschen für den PDF-Abgleich geben.
 
