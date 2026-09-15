@@ -109,9 +109,10 @@ die ein Agent eine Handvoll Male durchläuft, ist das in Ordnung.
 
 `package.json`: `bin`, `files` (`dist/cli`, `bin`, `README.md`, `LICENSE`), `exports`
 nur für die CLI. Der Paketname `mem-explorer` ist auf npm frei (geprüft 2026-09-14).
-Version 0.3.0. Veröffentlichung durch laoc (`npm login`, dann `npm publish`); die
-Web-Auslieferung ändert sich nicht, der Homelab-Pin kann auf v0.3.0 nachziehen, damit
-Kopfzeile und npm-Version übereinstimmen.
+Version 0.3.0. Veröffentlichung durch Forgejo Actions auf `git.edufeed.org/laoc/mem-explorer`
+(`.forgejo/workflows/publish-npm.yml`, Auslöser Tag `vX.Y.Z`, Secret `NPM_TOKEN`; Stand
+2026-09-15). Der Comenius-Spiegel bleibt Quelle des Homelab-Deploys; der Pin kann auf v0.3.0
+nachziehen, damit Kopfzeile und npm-Version übereinstimmen.
 
 README bekommt einen Abschnitt „Kommandozeile“. Die Explorer-Spec bekommt einen Abschnitt
 5.6 mit dem Inhalt von 3.1–3.3.
@@ -357,8 +358,8 @@ schön ist.
 
 ## 6. Verteilung
 
-- Origin: `ssh://git@git.rpi-virtuell.de/Comenius-Institut/mem-lehrplan.git`, wie der
-  Explorer. Spiegel: `github.com/sroertgen/mem-lehrplan`, öffentlich — openskills.cc
+- Origin: `ssh://git@git.edufeed.org/laoc/mem-lehrplan-skill.git` (angelegt 2026-09-15; zur
+  Benennung siehe §8). Spiegel: `github.com/sroertgen/mem-lehrplan`, öffentlich — openskills.cc
   listet nur GitHub-Repos mit `SKILL.md` an der Wurzel. Der Spiegel ist ein zweiter
   Remote, kein CI.
 - Installation (README): Claude Code `git clone … ~/.claude/skills/mem-lehrplan`;
@@ -395,6 +396,10 @@ Teil A zuerst, weil Szenario 1 und 2 die CLI brauchen.
 - **Konvention Namensraum.** `https://lp-sh.org/resource/` ist die Wahl der
   relidesk-Transformation, keine FWU-Vorgabe. Ob FWU eine Empfehlung aussprechen will,
   wäre eine Frage an die Redaktion.
+- **Repo-Name.** Die agentskills-Spezifikation verlangt `name` = Name des Skill-Ordners.
+  Der Zip-Download von openskills.cc trägt den Repo-Namen. Heißt das Repo
+  `mem-lehrplan-skill`, muss die Skill so heißen — oder das Repo wird in `mem-lehrplan`
+  umbenannt (Forgejo leitet den alten Namen weiter). Entscheidung von laoc ausstehend.
 - **Lizenz.** CC BY-SA 4.0 für das ganze Repo, weil FWU-Material gebündelt wird. Der
   eigene Text ist damit ebenfalls share-alike.
 
