@@ -167,7 +167,7 @@ compatibility: Node 22+ for `npx mem-explorer check`; grep and awk for the looku
   scripts; pdftotext optional.
 metadata:
   author: sroertgen
-  ontology: 1.0.0rc3
+  ontology: 1.0.0rc4
 ```
 
 Die description nennt nur Auslöser, keinen Arbeitsablauf (sonst folgt der Agent der

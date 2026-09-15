@@ -15,7 +15,7 @@
 - Arbeitsverzeichnis: `~/coding/comenius/mem-lehrplan`, Branch `main`.
 - Skill-Format nach agentskills.io: `name` = Ordnername = `mem-lehrplan`; `description` ≤ 1024 Zeichen, nennt nur Auslöser, keinen Arbeitsablauf; `SKILL.md` unter 500 Wörter; Langes in `references/`.
 - Deutsch im Skill-Text; englische Schlüsselwörter in der `description`. Deutsche Anführungszeichen `„…“`.
-- Die Doku der Ontologie ist die Autorität. Kein Muster wird aus dem MEM-Store abgeleitet. Keine ID wird ohne Nachschlagen in `references/terms/` in einen Text geschrieben — das gilt auch für diesen Plan: alle IDs unten stammen aus `lp-terms.tsv` (Stand 1.0.0rc3).
+- Die Doku der Ontologie ist die Autorität. Kein Muster wird aus dem MEM-Store abgeleitet. Keine ID wird ohne Nachschlagen in `references/terms/` in einen Text geschrieben — das gilt auch für diesen Plan: alle IDs unten stammen aus `lp-terms.tsv` (Stand 1.0.0rc4; gegenüber rc3 kam eine Property hinzu, keine der hier genannten IDs änderte sich).
 - Erzeugte Dateien werden nie von Hand editiert; Änderungen gehen durch die Skripte.
 - Lizenz CC BY-SA 4.0 für das ganze Repo; gebündeltes FWU-Material behält seine Herkunftsangabe.
 - Skill-TDD: Kein Satz in `SKILL.md` ohne einen Ausgangslauf, der zeigt, warum er nötig ist, oder eine Referenz-Retrieval-Aufgabe, die er beantwortet. Baseline vor dem Schreiben.
@@ -324,11 +324,11 @@ echo "Fertig. Aenderungen pruefen: git status --short references/"
 
 ```bash
 scripts/update-references.sh ~/coding/fwu/lehrplan-ontologie
-wc -l references/terms/*.tsv          # erwartet ~988 / ~911 / ~106 (+1 Kopfzeile)
+wc -l references/terms/*.tsv          # erwartet 989 / 911 / 106 Zeilen (988 / 910 / 105 Terme + Kopfzeile, rc4)
 ls references/laender | wc -l         # 16
 ls references/patterns | wc -l        # 14 (pattern1..14.ttl; die Doku listet 14 Muster)
 ls -la references/lp-base.ttl         # ~763 KB
-cat references/VERSION                # ontology=1.0.0rc3, commit=4d5583f 2026-09-08
+cat references/VERSION                # ontology=1.0.0rc4, commit=a9af6d3 2026-09-14
 grep -c 'Oberklasse ist ein anonymer' references/laender/SH.md   # 1
 head -30 references/laender/SH.md
 ```
@@ -343,7 +343,7 @@ git commit -F - <<'EOF'
 feat: Referenzen aus den FWU-Ontologien erzeugen
 
 update-references.sh klont oder uebernimmt die drei FWU-Repos, gen-terms.py
-schreibt die ID-Tabellen (LP 988, SF 911, SA 106 Terme), gen-laender.py
+schreibt die ID-Tabellen (LP 988, SF 910, SA 105 Terme), gen-laender.py
 je Land ein Klassenprofil - mit dem ehrlichen Abschnitt fuer Klassen,
 deren Oberklasse ein anonymer OWL-Ausdruck ist. Pattern-Dateien und
 lp-base.ttl werden woertlich kopiert; VERSION nennt Ontologie-Stand,
@@ -765,7 +765,7 @@ compatibility: >
   Works offline — all ontology references are bundled.
 metadata:
   author: sroertgen
-  ontology: "1.0.0rc3"
+  ontology: "1.0.0rc4"
   version: "0.1.0"
 ---
 
@@ -978,7 +978,7 @@ git tag -a v0.1.0 -F - <<'EOF'
 mem-lehrplan 0.1.0
 
 Erste Fassung: SKILL.md, Muster und Konventionen, Term-Tabellen und
-Laenderprofile (Ontologie 1.0.0rc3), beispiel.ttl mit Exit 0, lookup.sh
+Laenderprofile (Ontologie 1.0.0rc4), beispiel.ttl mit Exit 0, lookup.sh
 und klasse.sh, gegen Ausgangslaeufe getestet.
 EOF
 git push origin main && git push origin v0.1.0
@@ -998,4 +998,4 @@ git push github main && git push github v0.1.0
 
 **Platzhalter:** Die Referenztexte in Task 6 Steps 2–6 sind als Inhaltsvorgaben formuliert, nicht als fertiger Text — bewusst, weil ihr Wortlaut aus `baseline.md` folgen muss (Skill-TDD). Jede Vorgabe nennt Quelle, Abschnitte und Reihenfolge; keine „TBD“.
 
-**Konsistenz:** `scripts/lookup.sh`, `scripts/klasse.sh`, `scripts/update-references.sh` heißen in allen Tasks gleich; TSV-Spalten aus Task 2 werden in Task 3 (`$3`, `$4`, `$5`) und Task 2 `gen-laender.py` (`label_de`, `parent`, `type`) gleich benutzt; Klassen-IDs im Beispiel (LP_0000824, LP_0030033, LP_0030070, LP_0030278, LP_0030280, LP_0000346, LP_0030003, LP_0000347) stammen aus `lp-terms.tsv` 1.0.0rc3 und tauchen in `SKILL.md`, `szenarien.md` und der Fixture gleich auf.
+**Konsistenz:** `scripts/lookup.sh`, `scripts/klasse.sh`, `scripts/update-references.sh` heißen in allen Tasks gleich; TSV-Spalten aus Task 2 werden in Task 3 (`$3`, `$4`, `$5`) und Task 2 `gen-laender.py` (`label_de`, `parent`, `type`) gleich benutzt; Klassen-IDs im Beispiel (LP_0000824, LP_0030033, LP_0030070, LP_0030278, LP_0030280, LP_0000346, LP_0030003, LP_0000347) stammen aus `lp-terms.tsv` 1.0.0rc4 und tauchen in `SKILL.md`, `szenarien.md` und der Fixture gleich auf.
