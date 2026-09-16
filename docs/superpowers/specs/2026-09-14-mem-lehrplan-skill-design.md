@@ -142,10 +142,29 @@ der Exit-Code der CLI wäre damit für jede richtige Datei 1.
    wenn auf den Knoten über LP_0000024 oder eine Unterproperty gezeigt wird. Die
    Unterproperty-Kette wird über `terms.json` (`parents`) aufgelöst.
 
-Erwartete Messung danach an `sekundarstufe.ttl`: weiterhin 55 SHACL-Treffer, davon
-`typ-falsch` 2 statt 3 und 29 statt 28 Reasoner-Artefakte; zusammengeführt weiterhin 73.
-Diese Zahlen werden beim Umsetzen gemessen und in Tests, CLAUDE.md und Explorer-Spec
-nachgezogen.
+Gemessen (0.3.1) an `sekundarstufe.ttl`: weiterhin 55 SHACL-Treffer, davon `typ-falsch` 2
+statt 3 und 29 statt 28 Reasoner-Artefakte; zusammengeführt weiterhin 73.
+
+### 3.5 Nachtrag 2026-09-16: was das Beispiel der Skill im Explorer aufdeckte
+
+Der erste Versuch, `beispiel.ttl` (§4.4) nach Pattern 2 vollständig zu schreiben, brauchte
+zwei Umwege, die beide Explorer-Lücken waren — und deshalb im Explorer behoben wurden
+(Version 0.4.0), nicht im Beispiel:
+
+- `hat Nummer` (LP_0030057) fehlte unter den Wertprädikaten; jeder
+  Identifikationsnummer-Knoten galt als Waise (R4).
+- Die Klassenhierarchie für SHACL kannte nur benannte `rdfs:subClassOf`-Kanten. 22 der 37
+  SH-Klassen (Lehrplanfragment, Kompetenzbereich, Prozessbezogene Kompetenz …) haben ihre
+  Oberklasse nur in einer anonymen `owl:intersectionOf`; der Explorer leitet `A ⊑ (B ⊓ R) ⇒
+  A ⊑ B` jetzt selbst ab (810 statt 342 Kanten).
+
+Folgen, gemessen: an `sekundarstufe.ttl` SHACL 55 → 257 (223 Reasoner-Artefakte, 0
+Typfehler, Range-Verletzungen deckungsgleich mit R1), zusammengeführt 73 → 265; an der
+SH-Fassung 6.0 echte Typfehler 31 → 105 (alle: Beschreibungen als CE-Hinweis). Der
+Explorer ist damit strenger; eine Datei, die unter 0.3.1 Exit 0 hatte, kann unter 0.4.0
+Exit 1 liefern. Die Kopfzeile des Berichts schlüsselt seitdem die Schwere auf. Für die Skill
+heißt das: `beispiel.ttl` besteht ohne Umwege, und `fallstricke.md` muss nicht lehren, was
+das Werkzeug nicht sehen konnte.
 
 ## 4. Teil B — die Skill `mem-lehrplan`
 
