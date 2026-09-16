@@ -1,26 +1,28 @@
 # Beispiel: ein minimaler MEM-Lehrplan nach den Mustern der Lehrplan-Ontologie
-# (Pattern 1, 2, 5, 6). Land Schleswig-Holstein, erfundener Inhalt. Geprueft mit
+# (Pattern 1, 2, 5, 6). Land Schleswig-Holstein, erfundener Inhalt. Geprüft mit
 # `mem-explorer check`: Exit 0 - siehe beispiel-bericht.md.
 #
 # Konventionen (references/konventionen.md): eigener Namensraum, lesbare stabile
 # Slugs, ein Knoten je Punkt der Vorlage, Kommentar mit PDF-Seite am Knoten,
-# Text woertlich, Literale ohne Sprachtag.
+# Text wörtlich, Literale ohne Sprachtag.
 #
-# Klassenpfad aus der realen SH-Fassung 6.0 (sekundarstufe.ttl) abgelesen:
-# LP_0000824 „Fachanforderung (SH)“ -> LP_0030033 „Lehrplanfragment (SH)“ ->
-# LP_0030070 „Kompetenzbereich (SH)“ -> LP_0030278 „Prozessbezogene Kompetenz (SH)“
-# und LP_0030280 „Mögliches Thema und Inhalt (SH)“ (haeufigste Klasse in der Datei,
-# 177 Vorkommen). obo:BFO_0000051 „hat Teil“ ist in lp-base.ttl als
-# owl:ObjectProperty definiert (Zeile 110) - kein lp:/sf:/sa:-Term, daher kein
-# Treffer bei lookup.sh, aber kein erfundenes ID.
+# Klassenpfad LP_0000824 -> LP_0030033 -> LP_0030070 -> LP_0030278 + LP_0030280
+# aus references/laender/SH.md und scripts/klasse.sh gewählt; der Prüflauf
+# bestätigt die Kombination, wörtlich steht sie so nicht in der SH-Fassung 6.0
+# - dort hängen Inhaltsbezogene Kompetenzen (LP_0030271) und Mögliche Themen
+# unter einem Bereich, Prozessbezogene unter einem eigenen; Jahrgangsstufen nur an den Themen.
+#
+# obo:BFO_0000051 „hat Teil“ ist in lp-base.ttl als owl:ObjectProperty definiert
+# (Zeile 110) - kein lp:/sf:/sa:-Term, daher kein Treffer bei lookup.sh, aber
+# kein erfundenes ID.
 #
 # hat Position (LP_0000460) hat rdfs:range xsd:int -> "1"^^xsd:int, nicht
 # xsd:integer. uri (LP_0000463) hat keinen deklarierten Range -> Literal bleibt
 # ein einfacher String ohne Datentyp-Annotation.
 #
-# Nummer-Knoten (LP_0000347) haengen nur an „hat Nummer“, nicht zusaetzlich an
+# Nummer-Knoten (LP_0000347) hängen nur an „hat Nummer“, nicht zusätzlich an
 # „hat Teil“ - eine Nummer ist kein Teil des Elements. Die Landesklassen wie
-# LP_0030033 „Lehrplanfragment (SH)“ gelten als LP_0002103 „Element (SH)“ ueber
+# LP_0030033 „Lehrplanfragment (SH)“ gelten als LP_0002103 „Element (SH)“ über
 # die anonymen owl:intersectionOf-Oberklassen der Ontologie.
 
 @prefix lp:   <https://w3id.org/lehrplan/ontology/> .
@@ -37,11 +39,14 @@ data:fachanforderung
     lp:LP_0030056 data:fachanforderung-titel ;      # hat Titel
     lp:LP_0000029 lp:LP_3000054 ;                   # von Bundesland -> Schleswig-Holstein
     lp:LP_0000537 <https://w3id.org/schulfach/SH_0000008> ;  # hat Schulfach -> Evangelische Religion
-    lp:LP_0000812 <https://w3id.org/schulart/SH_0000003> ;   # fuer Schulart -> Gymnasium
+    lp:LP_0000812 <https://w3id.org/schulart/SH_0000003> ;   # für Schulart -> Gymnasium
     lp:LP_0000047 lp:LP_0000045 ;                   # hat Schulstufe -> Sekundarbereich I
     lp:LP_0000463 "https://example.org/fachanforderungen-beispiel.pdf" ;  # uri (Originaldokument)
     obo:BFO_0000051 data:teil-sek1 .                # hat Teil
 
+# rdfs:label an Titel-/Beschreibungs-/Nummer-Knoten ist eine Konvention dieses
+# Projekts (erfüllt Regel R10 und benennt den Knoten im Baum), nicht Teil von
+# Pattern 2 - die Ontologie-Doku schreibt dort nur hat Wert.
 data:fachanforderung-titel
     a lp:LP_0000346 ;                               # Titel
     rdfs:label "Titel der Fachanforderung" ;
@@ -87,9 +92,9 @@ data:kb-gott-pk-1-titel a lp:LP_0000346 ;
     rdfs:label "Titel Prozessbezogene Kompetenz 1" ;
     lp:LP_0000344 "Die Schülerinnen und Schüler nehmen unterschiedliche Gottesvorstellungen wahr und beschreiben sie." .
 
-# ---- Moegliche Themen und Inhalte --------------------------------- S. 13
+# ---- Mögliche Themen und Inhalte --------------------------------- S. 13
 data:kb-gott-inhalt-1
-    a lp:LP_0030280 ;                               # Moegliches Thema und Inhalt (SH)
+    a lp:LP_0030280 ;                               # Mögliches Thema und Inhalt (SH)
     rdfs:label "Gottesvorstellungen" ;
     lp:LP_0030056 data:kb-gott-inhalt-1-titel ;
     lp:LP_0000026 lp:LP_2000005 , lp:LP_2000006 ;
