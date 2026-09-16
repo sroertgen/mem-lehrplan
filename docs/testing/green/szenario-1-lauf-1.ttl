@@ -1,0 +1,103 @@
+# Fachanforderungen Evangelische Religion, Sekundarstufe I, Gymnasium (SH).
+# Auszug: Kompetenzbereich 1 "Die Frage nach Gott" (S. 12).
+# Geprüft nach dem Ablauf aus SKILL.md (mem-lehrplan): Klassen und Individuen mit
+# scripts/lookup.sh, Klasseninhalte mit scripts/klasse.sh, Muster aus references/muster.md,
+# Konventionen aus references/konventionen.md.
+#
+# Klassenpfad LP_0000824 (Fachanforderung SH) -> LP_0030070 (Kompetenzbereich SH) ->
+# LP_0030278 (Prozessbezogene Kompetenz SH) / LP_0030280 (Mögliches Thema und Inhalt SH),
+# aus references/laender/SH.md gewählt. Kompetenzbereich hängt direkt unter der
+# Fachanforderungs-Wurzel (kein Lehrplanfragment dazwischen): der Auszug nennt keinen
+# übergeordneten Abschnitt/Titel, und die Restriktion an LP_0000824
+# (owl:allValuesFrom LP_0002103 „Element (SH)“, siehe scripts/klasse.sh LP_0000824) erlaubt
+# das - LP_0030070 gilt über die anonyme Intersection ebenfalls als LP_0002103.
+#
+# hat Position (LP_0000460) hat rdfs:range xsd:int -> "1"^^xsd:int, nicht xsd:integer
+# (references/muster.md, "Reihenfolge mit hat Position").
+
+@prefix lp:   <https://w3id.org/lehrplan/ontology/> .
+@prefix obo:  <http://purl.obolibrary.org/obo/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix data: <https://example.org/lehrplan/sh/religion-gymnasium/> .
+
+# ---- Wurzel (Pattern 1) --------------------------------------------------
+data:fachanforderung
+    a lp:LP_0000824 ;                               # Fachanforderung (SH)
+    rdfs:label "Fachanforderungen Evangelische Religion Sek I (Gymnasium, SH)" ;
+    lp:LP_0030056 data:fachanforderung-titel ;       # hat Titel
+    lp:LP_0000029 lp:LP_3000054 ;                    # von Bundesland -> Schleswig-Holstein
+    lp:LP_0000537 <https://w3id.org/schulfach/SH_0000008> ;  # hat Schulfach -> Evangelische Religion
+    lp:LP_0000812 <https://w3id.org/schulart/SH_0000003> ;   # für Schulart -> Gymnasium
+    lp:LP_0000047 lp:LP_0000045 ;                    # hat Schulstufe -> Sekundarbereich I
+    obo:BFO_0000051 data:kb-gott .                   # hat Teil
+
+data:fachanforderung-titel
+    a lp:LP_0000346 ;                                # Titel
+    rdfs:label "Titel der Fachanforderung" ;
+    lp:LP_0000344 "Fachanforderungen Evangelische Religion" .   # hat Wert
+
+# ---- Kompetenzbereich (CE-Bereich, Pattern 2 + 6) ------------------ S. 12
+data:kb-gott
+    a lp:LP_0030070 ;                                # Kompetenzbereich (SH)
+    rdfs:label "Die Frage nach Gott" ;
+    lp:LP_0030056 data:kb-gott-titel ;
+    lp:LP_0030051 data:kb-gott-beschreibung ;        # hat Beschreibung
+    lp:LP_0030057 data:kb-gott-nummer ;              # hat Nummer
+    lp:LP_0000460 "1"^^xsd:int ;                     # hat Position
+    obo:BFO_0000051 data:kb-gott-pk-1 ,
+                     data:kb-gott-inhalt-1 ,
+                     data:kb-gott-inhalt-2 ,
+                     data:kb-gott-inhalt-3 .
+
+data:kb-gott-titel        a lp:LP_0000346 ; rdfs:label "Titel Kompetenzbereich Gott" ;
+    lp:LP_0000344 "1 Die Frage nach Gott" .
+data:kb-gott-nummer       a lp:LP_0000347 ; rdfs:label "Nummer Kompetenzbereich Gott" ;
+    lp:LP_0000344 "1" .
+data:kb-gott-beschreibung a lp:LP_0030003 ;          # Beschreibung
+    rdfs:label "Beschreibung Kompetenzbereich Gott" ;
+    lp:LP_0000344 "Die Frage nach Gott wird als existentielle Frage aufgeworfen. Sie konkretisiert sich für die Schülerinnen und Schüler im Kontext religiöser und kultureller Vielfalt." .
+
+# ---- Prozessbezogene Kompetenz (Jahrgangsstufen 5-6) ---------------- S. 12
+data:kb-gott-pk-1
+    a lp:LP_0030278 ;                                # Prozessbezogene Kompetenz (SH)
+    rdfs:label "Gottesvorstellungen wahrnehmen" ;
+    lp:LP_0030056 data:kb-gott-pk-1-titel ;
+    lp:LP_0000026 lp:LP_2000005 , lp:LP_2000006 ;    # hat Jahrgangsstufe -> 5, 6
+    lp:LP_0000460 "1"^^xsd:int .
+
+data:kb-gott-pk-1-titel a lp:LP_0000346 ;
+    rdfs:label "Titel Prozessbezogene Kompetenz 1" ;
+    lp:LP_0000344 "Die Schülerinnen und Schüler nehmen unterschiedliche Gottesvorstellungen wahr und beschreiben sie." .
+
+# ---- Mögliche Themen und Inhalte (Jahrgangsstufen 5-6) -------------- S. 12
+data:kb-gott-inhalt-1
+    a lp:LP_0030280 ;                                # Mögliches Thema und Inhalt (SH)
+    rdfs:label "Gottesvorstellungen" ;
+    lp:LP_0030056 data:kb-gott-inhalt-1-titel ;
+    lp:LP_0000026 lp:LP_2000005 , lp:LP_2000006 ;
+    lp:LP_0000460 "2"^^xsd:int .
+data:kb-gott-inhalt-1-titel a lp:LP_0000346 ;
+    rdfs:label "Titel Inhalt 1" ;
+    lp:LP_0000344 "Gottesvorstellungen (anthropomorph, symbolisch, allmächtig, gütig)" .
+
+data:kb-gott-inhalt-2
+    a lp:LP_0030280 ;
+    rdfs:label "Gottesvorstellungen in anderen Religionen" ;
+    lp:LP_0030056 data:kb-gott-inhalt-2-titel ;
+    lp:LP_0000026 lp:LP_2000005 , lp:LP_2000006 ;
+    lp:LP_0000460 "3"^^xsd:int .
+data:kb-gott-inhalt-2-titel a lp:LP_0000346 ;
+    rdfs:label "Titel Inhalt 2" ;
+    lp:LP_0000344 "Gottesvorstellungen in anderen Religionen" .
+
+data:kb-gott-inhalt-3
+    a lp:LP_0030280 ;
+    rdfs:label "Metaphorisches Sprechen von Gott" ;
+    lp:LP_0030056 data:kb-gott-inhalt-3-titel ;
+    lp:LP_0000026 lp:LP_2000005 , lp:LP_2000006 ;
+    lp:LP_0000460 "4"^^xsd:int .
+data:kb-gott-inhalt-3-titel a lp:LP_0000346 ;
+    rdfs:label "Titel Inhalt 3" ;
+    lp:LP_0000344 "Metaphorisches Sprechen von Gott (personal; apersonal)" .

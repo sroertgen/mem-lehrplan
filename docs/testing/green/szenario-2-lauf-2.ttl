@@ -1,0 +1,143 @@
+# Korrigierte Fassung von docs/testing/fixtures/nachbessern.ttl nach dem
+# Prüfbericht docs/testing/fixtures/nachbessern-bericht.md, gemäß dem Ablauf
+# aus SKILL.md und den Vorgaben in references/befunde.md.
+#
+# Fünf gemeldete Fehlerklassen behoben, je einmal, wie im Bericht:
+#   1. Titel als Literal direkt am Element (data:fachanforderung, hat Titel)
+#      -> benannter Titel-Knoten data:fachanforderung-titel mit hat Wert.
+#   2. Beschreibung als Blank Node mit rdfs:label (data:kb-gott, hat
+#      Beschreibung) -> benannter Knoten data:kb-gott-beschreibung mit hat Wert.
+#   3. Benannter Titel-Knoten mit rdfs:label, aber ohne hat Wert
+#      (data:kb-gott-titel) -> hat Wert ergänzt.
+#   4. Jahrgangsstufe als Literal "5-6" (data:kb-gott-pk-1, hat
+#      Jahrgangsstufe) -> Individuen LP_2000005, LP_2000006 (Pattern 5).
+#   5. Beschreibungsknoten der Klasse „CE-Hinweis“ (LP_0000852) statt
+#      „Beschreibung“ (LP_0030003) an der hat-Beschreibung-Kante von
+#      data:kb-gott-inhalt-1 -> data:kb-gott-inhalt-1-hinweis auf LP_0030003
+#      umgetypt; IRI und Kante unverändert. Diese Umtypung behebt zugleich die
+#      gemeldete SHACL-Pflichtangabe „ist Teil von“: die minCount-Shape für
+#      „ist Teil von“ hängt an der Klasse CE-Hinweis (LP_0000852, siehe
+#      scripts/klasse.sh LP_0000852 – Restriktion auf obo:BFO_0000050 auf
+#      CE-Kompetenzspezifikation/CE-Lerninhalt/CE-Bereich); Beschreibung
+#      (LP_0030003, scripts/klasse.sh LP_0030003) trägt keine solche
+#      Restriktion, was der Vergleich mit references/beispiel.ttl bestätigt
+#      (dort hat der analoge Knoten data:kb-gott-beschreibung keinen
+#      entsprechenden Befund).
+#
+# Alle IRIs aus der Ausgangsdatei bleiben unverändert; nur Werte wurden
+# ersetzt, ein Blank Node durch einen benannten Knoten ersetzt und für Fehler 1
+# und 2 je ein neuer, benannter Knoten ergänzt. Die neuen Werte (Titel- und
+# Beschreibungstexte) stammen aus references/beispiel.ttl, der unbeschädigten
+# Vorlage desselben Lehrplanausschnitts, statt geraten zu werden.
+#
+# Klassenpfad LP_0000824 -> LP_0030033 -> LP_0030070 -> LP_0030278 + LP_0030280
+# aus references/laender/SH.md und scripts/klasse.sh gewählt; der Prüflauf
+# bestätigt die Kombination, wörtlich steht sie so nicht in der SH-Fassung 6.0
+# - dort hängen Inhaltsbezogene Kompetenzen (LP_0030271) und Mögliche Themen
+# unter einem Bereich, Prozessbezogene unter einem eigenen; Jahrgangsstufen nur an den Themen.
+#
+# obo:BFO_0000051 „hat Teil“ ist in lp-base.ttl als owl:ObjectProperty definiert
+# (Zeile 110) - kein lp:/sf:/sa:-Term, daher kein Treffer bei lookup.sh, aber
+# kein erfundenes ID.
+#
+# hat Position (LP_0000460) hat rdfs:range xsd:int -> "1"^^xsd:int, nicht
+# xsd:integer. uri (LP_0000463) hat keinen deklarierten Range -> Literal bleibt
+# ein einfacher String ohne Datentyp-Annotation.
+#
+# Nummer-Knoten (LP_0000347) hängen nur an „hat Nummer“, nicht zusätzlich an
+# „hat Teil“ - eine Nummer ist kein Teil des Elements. Die Landesklassen wie
+# LP_0030033 „Lehrplanfragment (SH)“ gelten als LP_0002103 „Element (SH)“ über
+# die anonymen owl:intersectionOf-Oberklassen der Ontologie.
+
+@prefix lp:   <https://w3id.org/lehrplan/ontology/> .
+@prefix obo:  <http://purl.obolibrary.org/obo/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix data: <https://example.org/lehrplan/sh/beispiel/> .
+
+# ---- Wurzel (Pattern 1) ------------------------------------------- S. 1
+data:fachanforderung
+    a lp:LP_0000824 ;                               # Fachanforderung (SH)
+    rdfs:label "Beispiel-Fachanforderung Ev. Religion Sek I (SH)" ;
+    lp:LP_0030056 data:fachanforderung-titel ;       # hat Titel (Fehler 1 behoben: Knoten statt Literal)
+    lp:LP_0000029 lp:LP_3000054 ;                   # von Bundesland -> Schleswig-Holstein
+    lp:LP_0000537 <https://w3id.org/schulfach/SH_0000008> ;  # hat Schulfach -> Evangelische Religion
+    lp:LP_0000812 <https://w3id.org/schulart/SH_0000003> ;   # für Schulart -> Gymnasium
+    lp:LP_0000047 lp:LP_0000045 ;                   # hat Schulstufe -> Sekundarbereich I
+    lp:LP_0000463 "https://example.org/fachanforderungen-beispiel.pdf" ;  # uri (Originaldokument)
+    obo:BFO_0000051 data:teil-sek1 .                # hat Teil
+
+# rdfs:label an Titel-/Beschreibungs-/Nummer-Knoten ist eine Konvention dieses
+# Projekts (erfüllt Regel R10 und benennt den Knoten im Baum), nicht Teil von
+# Pattern 2 - die Ontologie-Doku schreibt dort nur hat Wert.
+data:fachanforderung-titel
+    a lp:LP_0000346 ;                               # Titel
+    rdfs:label "Titel der Fachanforderung" ;
+    lp:LP_0000344 "Fachanforderungen Evangelische Religion" .   # hat Wert
+
+# ---- Fragment (Pattern 6) ----------------------------------------- S. 5
+data:teil-sek1
+    a lp:LP_0030033 ;                               # Lehrplanfragment (SH)
+    rdfs:label "Teil Sekundarstufe I" ;
+    lp:LP_0030056 data:teil-sek1-titel ;
+    lp:LP_0030057 data:teil-sek1-nummer ;           # hat Nummer
+    lp:LP_0000460 "2"^^xsd:int ;                    # hat Position (Reihenfolge in der Vorlage)
+    obo:BFO_0000051 data:kb-gott .                  # hat Teil
+
+data:teil-sek1-titel  a lp:LP_0000346 ; rdfs:label "Titel Teil Sek. I" ; lp:LP_0000344 "II Fachanforderungen Sekundarstufe I" .
+data:teil-sek1-nummer a lp:LP_0000347 ; rdfs:label "Nummer Teil Sek. I" ; lp:LP_0000344 "II" .   # Identifikationsnummer
+
+# ---- Kompetenzbereich (CE-Bereich) -------------------------------- S. 12
+data:kb-gott
+    a lp:LP_0030070 ;                               # Kompetenzbereich (SH)
+    rdfs:label "Die Frage nach Gott" ;
+    lp:LP_0030056 data:kb-gott-titel ;
+    lp:LP_0030051 data:kb-gott-beschreibung ;       # hat Beschreibung (Fehler 2 behoben: benannter Knoten statt Blank Node)
+    lp:LP_0030057 data:kb-gott-nummer ;
+    lp:LP_0000460 "1"^^xsd:int ;
+    obo:BFO_0000051 data:kb-gott-pk-1 , data:kb-gott-inhalt-1 , data:kb-gott-inhalt-2 .
+
+data:kb-gott-titel        a lp:LP_0000346 ; rdfs:label "Titel Kompetenzbereich Gott" ; lp:LP_0000344 "1 Die Frage nach Gott" .  # Fehler 3 behoben: hat Wert ergänzt
+data:kb-gott-nummer       a lp:LP_0000347 ; rdfs:label "Nummer Kompetenzbereich Gott" ; lp:LP_0000344 "1" .
+data:kb-gott-beschreibung a lp:LP_0030003 ;         # Beschreibung
+    rdfs:label "Beschreibung Kompetenzbereich Gott" ;
+    lp:LP_0000344 "Die Frage nach Gott wird als existentielle Frage aufgeworfen und im Kontext religiöser Vielfalt konkretisiert." .
+
+# ---- Prozessbezogene Kompetenz ------------------------------------ S. 12
+data:kb-gott-pk-1
+    a lp:LP_0030278 ;                               # Prozessbezogene Kompetenz (SH)
+    rdfs:label "Gottesvorstellungen wahrnehmen" ;
+    lp:LP_0030056 data:kb-gott-pk-1-titel ;
+    lp:LP_0000026 lp:LP_2000005 , lp:LP_2000006 ;   # hat Jahrgangsstufe -> 5, 6 (Fehler 4 behoben: Individuen statt Literal "5-6")
+    lp:LP_0000460 "1"^^xsd:int .
+
+data:kb-gott-pk-1-titel a lp:LP_0000346 ;
+    rdfs:label "Titel Prozessbezogene Kompetenz 1" ;
+    lp:LP_0000344 "Die Schülerinnen und Schüler nehmen unterschiedliche Gottesvorstellungen wahr und beschreiben sie." .
+
+# ---- Mögliche Themen und Inhalte --------------------------------- S. 13
+data:kb-gott-inhalt-1
+    a lp:LP_0030280 ;                               # Mögliches Thema und Inhalt (SH)
+    rdfs:label "Gottesvorstellungen" ;
+    lp:LP_0030056 data:kb-gott-inhalt-1-titel ;
+    lp:LP_0030051 data:kb-gott-inhalt-1-hinweis ;   # hat Beschreibung (Kante unverändert)
+    lp:LP_0000026 lp:LP_2000005 , lp:LP_2000006 ;
+    lp:LP_0000460 "2"^^xsd:int .
+
+data:kb-gott-inhalt-1-hinweis a lp:LP_0030003 ;     # Fehler 5 behoben: Beschreibung statt CE-Hinweis (LP_0000852)
+    rdfs:label "Fehlerhafter Beschreibungsknoten Inhalt 1" ;
+    lp:LP_0000344 "Testwert am falsch typisierten Knoten" .
+data:kb-gott-inhalt-1-titel a lp:LP_0000346 ;
+    rdfs:label "Titel Inhalt 1" ;
+    lp:LP_0000344 "Gottesvorstellungen (anthropomorph, symbolisch, allmächtig, gütig)" .
+
+data:kb-gott-inhalt-2
+    a lp:LP_0030280 ;
+    rdfs:label "Metaphorisches Sprechen von Gott" ;
+    lp:LP_0030056 data:kb-gott-inhalt-2-titel ;
+    lp:LP_0000026 lp:LP_2000005 , lp:LP_2000006 ;
+    lp:LP_0000460 "3"^^xsd:int .
+data:kb-gott-inhalt-2-titel a lp:LP_0000346 ;
+    rdfs:label "Titel Inhalt 2" ;
+    lp:LP_0000344 "Metaphorisches Sprechen von Gott (personal; apersonal)" .
