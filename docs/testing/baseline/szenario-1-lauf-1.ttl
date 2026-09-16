@@ -1,0 +1,47 @@
+@prefix lp:    <https://w3id.org/lehrplan/ontology/> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix data:  <https://lp-sh.org/resource/> .
+
+# ============================================================================
+# Fachanforderungen Evangelische Religion - Schleswig-Holstein
+# Auszug: 1 Die Frage nach Gott (S. 12), Sekundarstufe I / Gymnasium,
+# Jahrgangsstufen 5-6
+# ============================================================================
+
+data:fachanforderung-ev-religion-sh
+    rdf:type        lp:LP_0000824 ;
+    rdfs:label      "Fachanforderungen Evangelische Religion (Schleswig-Holstein)" ;
+    lp:LP_0030056   [ a lp:LP_0000346 ; rdfs:label "Fachanforderungen Evangelische Religion" ] ;
+    lp:LP_0000029   lp:LP_3000054 ;
+    lp:LP_0000537   <https://w3id.org/schulfach/SH_0000008> ;
+    lp:LP_0000812   <https://w3id.org/schulart/SH_0000003> ;
+    lp:LP_0000047   lp:LP_0000045 ;
+    obo:BFO_0000051 data:si-kb1 .
+
+# --- Kompetenzbereich 1: Die Frage nach Gott (S. 12) ---
+data:si-kb1
+    rdf:type        lp:LP_0030070 ;
+    rdfs:label      "Die Frage nach Gott" ;
+    lp:LP_0030056   [ a lp:LP_0000346 ; rdfs:label "1 Die Frage nach Gott" ] ;
+    lp:LP_0030051   [ a lp:LP_0000852 ; rdfs:label "Die Frage nach Gott wird als existentielle Frage aufgeworfen. Sie konkretisiert sich für die Schülerinnen und Schüler im Kontext religiöser und kultureller Vielfalt." ] ;
+    obo:BFO_0000051 data:si-kb1-pk-1 , data:si-kb1-inhalt56 .
+
+# --- Prozessbezogene Kompetenz (Jahrgangsstufen 5-6) ---
+data:si-kb1-pk-1
+    rdf:type      lp:LP_0030278 ;
+    rdfs:label    "Die Schülerinnen und Schüler nehmen unterschiedliche Gottesvorstellungen wahr und beschreiben sie." ;
+    lp:LP_0000026 lp:LP_2000005 , lp:LP_2000006 .
+
+# --- Mögliche Themen und Inhalte (Jahrgangsstufen 5-6) ---
+data:si-kb1-inhalt56
+    rdf:type        lp:LP_0030280 ;
+    rdfs:label      "Mögliche Themen und Inhalte (Jahrgangsstufen 5-6)" ;
+    lp:LP_0030056   [ a lp:LP_0000346 ; rdfs:label "Mögliche Themen und Inhalte (Jahrgangsstufen 5-6)" ] ;
+    lp:LP_0000026   lp:LP_2000005 , lp:LP_2000006 ;
+    obo:BFO_0000051 data:si-kb1-56-001 , data:si-kb1-56-002 , data:si-kb1-56-003 .
+
+data:si-kb1-56-001 rdf:type lp:LP_0030280 ; rdfs:label "Gottesvorstellungen (anthropomorph, symbolisch, allmächtig, gütig)" .
+data:si-kb1-56-002 rdf:type lp:LP_0030280 ; rdfs:label "Gottesvorstellungen in anderen Religionen" .
+data:si-kb1-56-003 rdf:type lp:LP_0030280 ; rdfs:label "Metaphorisches Sprechen von Gott (personal; apersonal)" .
