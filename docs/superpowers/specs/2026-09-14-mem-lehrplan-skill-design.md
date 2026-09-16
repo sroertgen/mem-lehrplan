@@ -196,7 +196,7 @@ mem-lehrplan/
     terms/lp-terms.tsv             988 LP_-Terme: id, type, label_de, label_en, parent, comment_de
     terms/sf-terms.tsv             911 Schulfach-Terme
     terms/sa-terms.tsv             106 Schulart-Terme
-    patterns/pattern1..14.ttl      wörtlich aus FWU-DE/lehrplan-ontologie (CC BY-SA 4.0)
+    patterns/pattern1..12.ttl      wörtlich aus FWU-DE/lehrplan-ontologie (CC BY-SA 4.0)
     lp-base.ttl                    die Ontologie (763 KB), nie ganz gelesen, nur per Skript
     VERSION                        Ontologie-Version, Commit, Datum der Erzeugung
   scripts/
