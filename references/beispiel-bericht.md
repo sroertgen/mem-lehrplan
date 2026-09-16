@@ -1,12 +1,12 @@
 # Prüfbericht — beispiel.ttl
 
-> Erzeugt mit `mem-explorer check references/beispiel.ttl`, Exit-Code 0. Die verbleibenden Gruppen sind Reasoner-Artefakte und Warnungen, keine Datenfehler — so sieht eine saubere Datei aus.
+> Erzeugt mit `mem-explorer check references/beispiel.ttl` (Explorer 0.4.0), Exit-Code 0. Die verbleibenden Gruppen sind Reasoner-Artefakte und Warnungen, keine Datenfehler — so sieht eine saubere Datei aus.
 
-Geprüft am 2026-09-16 · Ontologie 1.0.0rc4 · sha256:314ac0106e3e97120bc0671b28c7e39bf22490b4311d28d67dd4320ae7ff3891
+Geprüft am 2026-09-16 · Ontologie 1.0.0rc4 · sha256:0a10d35157cbf5b4777bc1812fa12d6183879016f81772f7d4838ffc4bd38638
 
 15 Knoten · 0 geprüft · 0 beanstandet · 15 offen
 
-12 Befunde · 0 davon mehrfach bestätigt
+16 Befunde · 0 davon mehrfach bestätigt · 0 Fehler, 0 Warnungen, 16 Hinweise (16 Reasoner-Artefakte)
 
 ## Für die Weiterverarbeitung
 
@@ -38,6 +38,18 @@ Quelle: https://fwu-de.github.io/lehrplan-ontologie/docs/structure/
     kb-gott-inhalt-2-titel
     kb-gott-beschreibung
 
+### Geforderter Wert fehlt (Reasoner-Artefakt) — von Bundesland  (5)  · SHACL · Reasoner-Artefakt
+
+**Soll** — Kein Handlungsbedarf. Die Shape fordert etwas, das ein Reasoner aus der Ontologie ableiten würde; die Daten sind an dieser Stelle in Ordnung.
+
+Quelle: https://fwu-de.github.io/lehrplan-ontologie/docs/structure/
+
+    teil-sek1
+    kb-gott
+    kb-gott-pk-1
+    kb-gott-inhalt-1
+    kb-gott-inhalt-2
+
 ### Geforderter Wert fehlt (Reasoner-Artefakt) — hat Funktion  (2)  · SHACL · Reasoner-Artefakt
 
 **Soll** — Kein Handlungsbedarf. Die Shape fordert etwas, das ein Reasoner aus der Ontologie ableiten würde; die Daten sind an dieser Stelle in Ordnung.
@@ -45,14 +57,6 @@ Quelle: https://fwu-de.github.io/lehrplan-ontologie/docs/structure/
 Quelle: https://fwu-de.github.io/lehrplan-ontologie/docs/structure/
 
     kb-gott
-    teil-sek1
-
-### Geforderter Wert fehlt (Reasoner-Artefakt) — von Bundesland  (1)  · SHACL · Reasoner-Artefakt
-
-**Soll** — Kein Handlungsbedarf. Die Shape fordert etwas, das ein Reasoner aus der Ontologie ableiten würde; die Daten sind an dieser Stelle in Ordnung.
-
-Quelle: https://fwu-de.github.io/lehrplan-ontologie/docs/structure/
-
     teil-sek1
 
 ### Klasse eines Ontologie-Individuums (Reasoner-Artefakt) — von Bundesland  (1)  · SHACL · Reasoner-Artefakt

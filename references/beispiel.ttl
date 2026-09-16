@@ -18,26 +18,10 @@
 # xsd:integer. uri (LP_0000463) hat keinen deklarierten Range -> Literal bleibt
 # ein einfacher String ohne Datentyp-Annotation.
 #
-# „Ziel ohne geforderte Klasse — hat Teil“ auf der Wurzel: LP_0000824 verlangt
-# fuer obo:BFO_0000051 (owl:allValuesFrom) die Klasse LP_0002103 „Element (SH)“.
-# LP_0030033 „Lehrplanfragment (SH)“ erreicht sie nur ueber eine anonyme
-# OWL-Intersection (owl:equivalentClass), keinen benannten rdfs:subClassOf-Pfad
-# - fuer SHACL ohne Reasoner unsichtbar (references/laender/SH.md, Abschnitt
-# „Oberklasse ist ein anonymer OWL-Ausdruck“). Einzige Klasse mit benanntem
-# Pfad zu LP_0002103 ist LP_0030274 „Verweis auf Basiskonzept (SH)“ (NaWi) -
-# fachlich falsch fuer ein Lehrplanfragment. Deshalb: data:teil-sek1 traegt
-# zusaetzlich zu lp:LP_0030033 explizit den Typ lp:LP_0002103 - das macht die
-# vom Ontologie-Autor gemeinte Klassenzugehoerigkeit sichtbar, ohne einen
-# Reasoner zu brauchen. Die dadurch neu faellige Anforderung „von Bundesland =
-# Schleswig-Holstein“ (aus der equivalentClass-Definition von LP_0002103)
-# erscheint im Bericht als sh:hasValue-Befund, automatisch als
-# Reasoner-Artefakt eingeordnet (siehe mem-explorer CLAUDE.md, classify()).
-#
-# „Nicht verbunden“ (Regel R4): Identifikationsnummer-Knoten (LP_0000347) sind
-# nicht in VALUE_PREDICATES (src/lib/iris.ts) - anders als Titel, Beschreibung
-# und Jahrgangsstufe muessen sie zusaetzlich zu „hat Nummer“ auch ueber
-# obo:BFO_0000051 erreichbar sein. Beide Nummer-Knoten stehen deshalb sowohl
-# im „hat Nummer“- als auch im „hat Teil“-Ziel ihres Elternknotens.
+# Nummer-Knoten (LP_0000347) haengen nur an „hat Nummer“, nicht zusaetzlich an
+# „hat Teil“ - eine Nummer ist kein Teil des Elements. Die Landesklassen wie
+# LP_0030033 „Lehrplanfragment (SH)“ gelten als LP_0002103 „Element (SH)“ ueber
+# die anonymen owl:intersectionOf-Oberklassen der Ontologie.
 
 @prefix lp:   <https://w3id.org/lehrplan/ontology/> .
 @prefix obo:  <http://purl.obolibrary.org/obo/> .
@@ -65,12 +49,12 @@ data:fachanforderung-titel
 
 # ---- Fragment (Pattern 6) ----------------------------------------- S. 5
 data:teil-sek1
-    a lp:LP_0030033 , lp:LP_0002103 ;               # Lehrplanfragment (SH); Element (SH), s. Kommentar oben
+    a lp:LP_0030033 ;                               # Lehrplanfragment (SH)
     rdfs:label "Teil Sekundarstufe I" ;
     lp:LP_0030056 data:teil-sek1-titel ;
     lp:LP_0030057 data:teil-sek1-nummer ;           # hat Nummer
     lp:LP_0000460 "2"^^xsd:int ;                    # hat Position (Reihenfolge in der Vorlage)
-    obo:BFO_0000051 data:teil-sek1-nummer , data:kb-gott .  # hat Teil: Nummer zusaetzlich hier, s. Kommentar oben
+    obo:BFO_0000051 data:kb-gott .                  # hat Teil
 
 data:teil-sek1-titel  a lp:LP_0000346 ; rdfs:label "Titel Teil Sek. I" ; lp:LP_0000344 "II Fachanforderungen Sekundarstufe I" .
 data:teil-sek1-nummer a lp:LP_0000347 ; rdfs:label "Nummer Teil Sek. I" ; lp:LP_0000344 "II" .   # Identifikationsnummer
@@ -83,7 +67,7 @@ data:kb-gott
     lp:LP_0030051 data:kb-gott-beschreibung ;       # hat Beschreibung
     lp:LP_0030057 data:kb-gott-nummer ;
     lp:LP_0000460 "1"^^xsd:int ;
-    obo:BFO_0000051 data:kb-gott-nummer , data:kb-gott-pk-1 , data:kb-gott-inhalt-1 , data:kb-gott-inhalt-2 .  # Nummer zusaetzlich hier, s. Kommentar oben
+    obo:BFO_0000051 data:kb-gott-pk-1 , data:kb-gott-inhalt-1 , data:kb-gott-inhalt-2 .
 
 data:kb-gott-titel        a lp:LP_0000346 ; rdfs:label "Titel Kompetenzbereich Gott" ; lp:LP_0000344 "1 Die Frage nach Gott" .
 data:kb-gott-nummer       a lp:LP_0000347 ; rdfs:label "Nummer Kompetenzbereich Gott" ; lp:LP_0000344 "1" .
