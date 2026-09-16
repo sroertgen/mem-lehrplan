@@ -111,8 +111,14 @@ Dokumentation: https://fwu-de.github.io/lehrplan-ontologie/docs/patterns/#patter
 ## Jahrgangsstufe und Schulstufe
 
 Jahrgangsstufen sind bundeslandunabhängige Individuen (LP_2000001 bis LP_2000013),
-mehrwertig für Spannen wie „5–6“; ganze Abschnitte hängen über `hat Schulstufe`
-(LP_0000047) an den Individuen der Schulstufen und Phasen.
+mehrwertig für Spannen wie „5–6“. `hat Schulstufe` (LP_0000047) sitzt am
+Lehrplan-Wurzelknoten — Pattern 1 oben zeigt `ex:Lehrplan hat_Schulstufe: Sekundarbereich_II:`.
+Was darunter liegt, zeigt der folgende Block: die Schulstufe führt über `hat Teil`
+(obo:BFO_0000051) zu ihren Phasen, jede Phase über `hat Jahrgangsstufe` (LP_0000026) zu den
+Jahrgangsstufen-Individuen. `hat Jahrgangsstufe` hat kein `rdfs:domain` in
+`references/lp-base.ttl` (Block `###  https://w3id.org/lehrplan/ontology/LP_0000026`) — die
+Kante ist nicht auf Phasen beschränkt, `references/beispiel.ttl` hängt sie auch direkt an
+eine Kompetenz und an Inhalte, und `check` läuft dort mit Exit 0 durch.
 
 ```turtle
 @prefix ex: <https://www.example.org/> .
@@ -169,6 +175,11 @@ Sekundarbereich_II: a Schulstufe: ;
 Sekundarbereich_I: a Schulstufe: .
 Primarbereich: a Schulstufe: .
 ```
+
+`@prefix hat_Teil: <> .` ist leer und im Block unbenutzt (er verwendet nur
+`hat_Jahrgangsstufe:`) — das steht schon so im FWU-Original
+(`docs/patterns/pattern5.ttl`, geprüft per `grep`) und wird beim Kopieren weggelassen;
+`hat Teil` ist `obo:BFO_0000051`, wie in den anderen Patterns.
 
 Dokumentation: https://fwu-de.github.io/lehrplan-ontologie/docs/patterns/#pattern-5-jahrgangstufeschulstufe-und-phasen-der-sekundarstufe-ii
 

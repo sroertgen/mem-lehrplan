@@ -58,6 +58,17 @@ Danach die Übersetzung von Layout in Struktur:
   angelegt wurde); passt keine Note zum Fach, alle Kandidaten mit Note nennen, eine
   wählen, die Wahl im Kommentar begründen und im ganzen Lehrplan einheitlich bleiben —
   siehe `references/muster.md` und `references/fallstricke.md`.
+- **Eine Kompetenz mit „ihren“ möglichen Inhalten aus derselben Tabellenzeile verknüpfen**
+  heißt nicht, ein Paar zu modellieren — dafür gibt es keine Property. MEM hängt Kompetenz
+  und Mögliche Inhalte als Geschwister desselben Bereichs an `hat Teil` (obo:BFO_0000051):
+  `references/beispiel.ttl` zeigt die Prozessbezogene Kompetenz und die Inhalte beide unter
+  demselben Kompetenzbereich. Die Zeilenzugehörigkeit bleibt über `hat Position`
+  (LP_0000460) und, wenn die Vorlage Zeilen nummeriert, über gleiche `hat Nummer`
+  (LP_0030057) lesbar. Macht die Vorlage einen ausdrücklichen Querverweis, zeigt Pattern 7
+  (CE-Verweis) den Mechanismus dafür: eine Kompetenzspezifikation trägt `hat Verweis`
+  (LP_0030071) zu einem eigenen Verweis-Knoten, der mit `verweist auf` (LP_0030072) auf das
+  Ziel zeigt — welche Zielklasse dabei erlaubt ist, bestimmt die länderspezifische
+  Verweis-Klasse (`scripts/klasse.sh <ID>`).
 - **Ein Knoten je Aufzählungspunkt** der Vorlage, kein Knoten je Satz und keiner, der
   mehrere Punkte zusammenfasst — sonst geht die Position (Schritt 3, `hat Position`)
   durcheinander und der Text ist nicht mehr wörtlich einem Punkt zuzuordnen.

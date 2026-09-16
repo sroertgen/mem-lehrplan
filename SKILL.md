@@ -53,7 +53,7 @@ Ausführlich, mit dem Weg vom PDF zur Struktur: `references/arbeitsablauf.md`.
 | hat Position | LP_0000460 | `"3"^^xsd:int` |
 | hat Jahrgangsstufe → Individuum | LP_0000026 → LP_2000005 … | mehrwertig, kein Literal |
 | von Bundesland → Individuum | LP_0000029 → LP_30000xx | SH = LP_3000054 |
-| hat Schulfach / für Schulart | LP_0000537 / LP_0000812 | volle IRI, nicht `lp:` |
+| hat Schulfach / für Schulart | LP_0000537 / LP_0000812 | schulfach:/schulart:-IRIs, nicht `lp:` |
 | hat Schulstufe → Individuum | LP_0000047 → LP_0000045 (Sek I) | Pattern 5 |
 
 ## Rote Flaggen — anhalten und nachschlagen

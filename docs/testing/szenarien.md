@@ -1,6 +1,6 @@
 # Testszenarien für die Skill
 
-Drei Aufgaben, jeweils ohne Skill (Baseline) und mit Skill. Die Prompts werden wörtlich an
+Vier Aufgaben, jeweils ohne Skill (Baseline) und mit Skill. Die Prompts werden wörtlich an
 einen frischen Subagenten (general-purpose) gegeben; der Baseline-Prompt erwähnt die Skill
 nicht und untersagt sie nicht — er ist der Normalfall eines Agenten, der die Aufgabe bekommt.
 
@@ -56,3 +56,18 @@ Erfolgsmaß: Antwort nennt LP_0030280 („Mögliches Thema und Inhalt (SH)“) u
 („Möglicher Inhalt (SH)“) als strukturgleiche Kandidaten mit ihrer editorialNote, stellt
 mit `scripts/klasse.sh` fest, dass die Ontologie für sie keine Teile-Restriktion definiert,
 und zeigt, woher jede Angabe stammt; kein Raten, keine lokale Datendatei als Quelle.
+
+## Szenario 4 — Nachschlagen (Retrieval)
+
+> Eine Lehrplantabelle hat zwei Spalten, „Kompetenzen“ und „Mögliche Inhalte“, mit mehreren
+> Zeilen. Wie modelliere ich nach MEM, welche Inhalte zu welcher Kompetenz gehören? Nenne
+> die Properties mit ID und woher die Angabe stammt.
+
+Erfolgsmaß: Antwort sagt, dass Kompetenz und Mögliche Inhalte als Geschwister desselben
+Bereichs über `hat Teil` (obo:BFO_0000051) hängen, die Zeilenordnung über `hat Position`
+(LP_0000460) und — bei nummerierten Zeilen — über gleiche `hat Nummer` (LP_0030057) lesbar
+bleibt, und Pattern 7 (CE-Verweis, `hat Verweis` LP_0030071 / `verweist auf` LP_0030072) nur
+bei einem ausdrücklichen Querverweis der Vorlage greift; keine erfundene Property, jede
+Quelle genannt (`references/arbeitsablauf.md`, `references/muster.md`,
+`references/beispiel.ttl`). Dieses Szenario kam nach dem Gegenlesen von Task 7 dazu und hat
+noch keinen Baseline-Lauf.
