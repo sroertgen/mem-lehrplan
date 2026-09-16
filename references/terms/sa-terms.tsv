@@ -1,0 +1,106 @@
+id	type	label_de	label_en	parent	comment_de
+BB_0000000	Individual	Schularten (Brandenburg)			
+BB_0000001	Individual	Grundschule			
+BB_0000002	Individual	Oberschule			
+BB_0000003	Individual	Gesamtschule			
+BB_0000004	Individual	Gymnasium			
+BE_0000000	Individual	Schularten (Berlin)			
+BE_0000001	Individual	Grundschule			
+BE_0000002	Individual	Gemeinschaftsschule			
+BE_0000003	Individual	Integrierte Sekundarschule			
+BE_0000004	Individual	Gymnasium			
+BW_0000000	Individual	Schularten (Baden-Württemberg)			
+BW_0000001	Individual	Grundschule			
+BW_0000002	Individual	Gemeinschaftsschule			
+BW_0000003	Individual	Realschule			
+BW_0000004	Individual	Hauptschule			
+BW_0000005	Individual	Werkrealschule			
+BW_0000006	Individual	Gymnasium			
+BY_0000000	Individual	Schularten (Bayern)			
+BY_0000001	Individual	Grundschule			
+BY_0000002	Individual	Mittelschule			
+BY_0000003	Individual	Wirtschaftsschule			
+BY_0000004	Individual	Realschule			
+BY_0000005	Individual	Gymnasium			
+BY_0000006	Individual	Fachoberschule			
+BY_0000007	Individual	Berufsoberschule			
+BY_0000008	Individual	Berufsfachschule			
+BY_0000009	Individual	Berufsschule			
+BY_0000010	Individual	Fachakademie			
+BY_0000011	Individual	Fachschule			
+BY_0000012	Individual	Förderschule			
+HB_0000000	Individual	Schularten (Bremen)			
+HB_0000001	Individual	Grundschule			
+HB_0000002	Individual	Werkschule			
+HB_0000003	Individual	Oberschule			
+HB_0000004	Individual	Gymnasium			
+HE_0000000	Individual	Schularten (Hessen)			
+HE_0000001	Individual	Grundschule			
+HE_0000002	Individual	Hauptschule			
+HE_0000003	Individual	Mittelstufenschule			
+HE_0000004	Individual	Verbundene Haupt- und Realschule			
+HE_0000005	Individual	Realschule			
+HE_0000006	Individual	Integrierte Gesamtschule			
+HE_0000007	Individual	Kooperative Gesamtschule			
+HE_0000008	Individual	Gymnasium			
+HH_0000000	Individual	Schularten (Hamburg)			
+HH_0000001	Individual	Grundschule			
+HH_0000002	Individual	Stadtteilschule			
+HH_0000003	Individual	Gymnasium			
+MV_0000000	Individual	Schularten (Mecklenburg-Vorpommern)			
+MV_0000001	Individual	Grundschule			
+MV_0000002	Individual	Regionale Schule			
+MV_0000003	Individual	Kooperative Gesamtschule			
+MV_0000004	Individual	Integrierte Gesamtschule			
+MV_0000005	Individual	Gymnasium			
+NI_0000000	Individual	Schularten (Niedersachsen)			
+NI_0000001	Individual	Grundschule			
+NI_0000002	Individual	Hauptschule			
+NI_0000003	Individual	Realschule			
+NI_0000004	Individual	Oberschule			
+NI_0000005	Individual	Kooperative Gesamtschule			
+NI_0000006	Individual	Integrierte Gesamtschule			
+NI_0000007	Individual	Gymnasium			
+NW_0000000	Individual	Schularten (Nordrhein-Westfalen)			
+NW_0000001	Individual	Grundschule			
+NW_0000002	Individual	Hauptschule			
+NW_0000003	Individual	Realschule			
+NW_0000004	Individual	Sekundarschule			
+NW_0000005	Individual	Gesamtschule			
+NW_0000006	Individual	Gymnasium			
+RP_0000000	Individual	Schularten (Rheinland-Pfalz)			
+RP_0000001	Individual	Grundschule			
+RP_0000002	Individual	Integrierte Gesamtschule			
+RP_0000003	Individual	Realschule plus			
+RP_0000004	Individual	Gymnasium			
+SH_0000000	Individual	Schularten (Schleswig-Holstein)			
+SH_0000001	Individual	Grundschule			
+SH_0000002	Individual	Gemeinschaftsschule			
+SH_0000003	Individual	Gymnasium			
+SL_0000000	Individual	Schularten (Saarland)			
+SL_0000001	Individual	Grundschule			
+SL_0000002	Individual	Gemeinschaftsschule			
+SL_0000003	Individual	Gymnasium			
+SL_0000004	Individual	Deutsch-Luxemburgisches Schengen-Lyzeum			
+SL_0000005	Individual	Europäische Schule Saarland			
+SN_0000000	Individual	Schularten (Sachsen)			
+SN_0000001	Individual	Grundschule			
+SN_0000002	Individual	Gemeinschaftsschule			
+SN_0000003	Individual	Oberschule			
+SN_0000004	Individual	Oberschule+			
+SN_0000005	Individual	Gymnasium			
+SN_0000006	Individual	Klinik- und Krankenhausschule			
+ST_0000000	Individual	Schularten (Sachsen-Anhalt)			
+ST_0000001	Individual	Grundschule			
+ST_0000002	Individual	Sekundarschule			
+ST_0000003	Individual	Gemeinschaftsschule			
+ST_0000004	Individual	Kooperative Gesamtschule			
+ST_0000005	Individual	Integrierte Gesamtschule			
+ST_0000006	Individual	Gymnasium			
+TH_0000000	Individual	Schularten (Thüringen)			
+TH_0000001	Individual	Grundschule			
+TH_0000002	Individual	Gemeinschaftsschule			
+TH_0000003	Individual	Regelschule			
+TH_0000004	Individual	Kooperative Gesamtschule			
+TH_0000005	Individual	Integrierte Gesamtschule			
+TH_0000006	Individual	Gymnasium			

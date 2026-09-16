@@ -1,0 +1,911 @@
+id	type	label_de	label_en	parent	comment_de
+BB_0000000	Individual	Schulfächer (Brandenburg)			
+BB_0000001	Individual	Altgriechisch			
+BB_0000002	Individual	Astronomie			
+BB_0000003	Individual	Biologie			
+BB_0000004	Individual	Chemie			
+BB_0000005	Individual	Chinesisch			
+BB_0000006	Individual	Deutsch			
+BB_0000007	Individual	Darstellendes Spiel			
+BB_0000008	Individual	Deutsche Gebärdensprache			
+BB_0000009	Individual	Englisch			
+BB_0000010	Individual	Französisch			
+BB_0000011	Individual	Geografie			
+BB_0000012	Individual	Geschichte			
+BB_0000013	Individual	Gesellschaftswissenschaften			
+BB_0000014	Individual	Hebräisch			
+BB_0000015	Individual	Informatik			
+BB_0000016	Individual	Italienisch			
+BB_0000017	Individual	Japanisch			
+BB_0000018	Individual	Kunst			
+BB_0000019	Individual	Latein			
+BB_0000020	Individual	Lebensgestaltung-Ethik-Religion			
+BB_0000021	Individual	Mathematik			
+BB_0000022	Individual	Musik			
+BB_0000023	Individual	Naturwissenschaften (5-6)			
+BB_0000024	Individual	Naturwissenschaften (7-10 Wahlpflichtfach)			
+BB_0000025	Individual	Neugriechisch			
+BB_0000026	Individual	Philosophie			
+BB_0000027	Individual	Physik			
+BB_0000028	Individual	Politische Bildung			
+BB_0000029	Individual	Polnisch			
+BB_0000030	Individual	Portugisisch			
+BB_0000031	Individual	Psychologie			
+BB_0000032	Individual	Russisch			
+BB_0000033	Individual	Recht			
+BB_0000034	Individual	Sachunterricht			
+BB_0000035	Individual	Sorbisch/Wendisch			
+BB_0000036	Individual	Moderne Fremdsprachen			
+BB_0000037	Individual	Sozialwissenschaften			
+BB_0000038	Individual	Spanisch			
+BB_0000039	Individual	Sport			
+BB_0000040	Individual	Theater			
+BB_0000041	Individual	Türkisch			
+BB_0000042	Individual	Wirtschaft-Arbeit-Technik			
+BB_0000043	Individual	Wirtschaftswissenschaften			
+BB_0000044	Individual	Bautechnik			
+BB_0000045	Individual	Chemietechnik			
+BB_0000046	Individual	Elektrotechnik			
+BB_0000047	Individual	Gestaltungs- und Medientechnik			
+BB_0000048	Individual	Maschinentechnik			
+BB_0000049	Individual	Pädagogik/Pädagogik (b.)			
+BB_0000050	Individual	Psychologie/Psychologie (b.)			
+BB_0000051	Individual	Rechnungswesen			
+BB_0000052	Individual	Technik			
+BB_0000053	Individual	Wirtschaftsinformatik			
+BB_0000054	Individual	Wirtschaftswissenschaft/Wirtschaftswissenschaft (b.)			
+BE_0000000	Individual	Schulfächer (Berlin)			
+BE_0000001	Individual	Altgriechisch			
+BE_0000002	Individual	Astronomie			
+BE_0000003	Individual	Biologie			
+BE_0000004	Individual	Chemie			
+BE_0000005	Individual	Chinesisch			
+BE_0000006	Individual	Deutsch			
+BE_0000007	Individual	Darstellendes Spiel			
+BE_0000008	Individual	Deutsche Gebärdensprache			
+BE_0000009	Individual	Englisch			
+BE_0000010	Individual	Französisch			
+BE_0000011	Individual	Geografie			
+BE_0000012	Individual	Geschichte			
+BE_0000013	Individual	Gesellschaftswissenschaften			
+BE_0000014	Individual	Hebräisch			
+BE_0000015	Individual	Informatik			
+BE_0000016	Individual	Italienisch			
+BE_0000017	Individual	Japanisch			
+BE_0000018	Individual	Kunst			
+BE_0000019	Individual	Latein			
+BE_0000020	Individual	Mathematik			
+BE_0000021	Individual	Musik			
+BE_0000022	Individual	Naturwissenschaften (5-6)			
+BE_0000023	Individual	Naturwissenschaften (7-10 Wahlpflichtfach)			
+BE_0000024	Individual	Neugriechisch			
+BE_0000025	Individual	Philosophie			
+BE_0000026	Individual	Physik			
+BE_0000027	Individual	Politische Bildung			
+BE_0000028	Individual	Polnisch			
+BE_0000029	Individual	Portugisisch			
+BE_0000030	Individual	Psychologie			
+BE_0000031	Individual	Russisch			
+BE_0000032	Individual	Recht			
+BE_0000033	Individual	Sachunterricht			
+BE_0000034	Individual	Sorbisch/Wendisch			
+BE_0000035	Individual	Moderne Fremdsprachen			
+BE_0000036	Individual	Sozialwissenschaften-Wirtschaftswissenschaft			
+BE_0000037	Individual	Sozialwissenschaften			
+BE_0000038	Individual	Spanisch			
+BE_0000039	Individual	Sport			
+BE_0000040	Individual	Studium und Beruf			
+BE_0000041	Individual	Theater			
+BE_0000042	Individual	Türkisch			
+BE_0000043	Individual	Wirtschaft-Arbeit-Technik			
+BE_0000044	Individual	Ukrainisch			
+BE_0000045	Individual	Wirtschaftswissenschaften			
+BE_0000046	Individual	Bautechnik			
+BE_0000047	Individual	Chemietechnik			
+BE_0000048	Individual	Bildende Kunst			
+BE_0000049	Individual	Politikwissenschaft			
+BE_0000050	Individual	Ethik			
+BW_0000000	Individual	Schulfächer (Baden-Württemberg)			
+BW_0000001	Individual	Alevitische Religionslehre			
+BW_0000002	Individual	Alltagskultur, Ernährung und Soziales (AES) - Wahlpflichtfach			
+BW_0000003	Individual	Altkatholische Religionslehre			
+BW_0000004	Individual	Astronomie - Wahlfach in der Oberstufe			
+BW_0000005	Individual	Aufbaukurs Informatik			
+BW_0000006	Individual	Basiskurs Medienbildung			
+BW_0000007	Individual	Bewegung, Spiel und Sport			
+BW_0000008	Individual	Bildende Kunst			
+BW_0000009	Individual	Biologie			
+BW_0000010	Individual	Biologie, Naturphänomene und Technik (BNT)			
+BW_0000011	Individual	Chemie			
+BW_0000012	Individual	Chinesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000013	Individual	Darstellende Geometrie - Wahlfach in der Oberstufe			
+BW_0000014	Individual	Deutsch			
+BW_0000015	Individual	Deutsch als Fremdsprache			
+BW_0000016	Individual	Digitale mathematische Werkzeuge (DmW) - Wahlfach in der Oberstufe			
+BW_0000017	Individual	Englisch			
+BW_0000018	Individual	Englisch als erste Fremdsprache			
+BW_0000019	Individual	Englisch als zweite Fremdsprache			
+BW_0000020	Individual	Englisch als zweite Fremdsprache - Wahlpflichtfach			
+BW_0000021	Individual	Ethik			
+BW_0000022	Individual	Evangelische Religionslehre			
+BW_0000023	Individual	Französisch			
+BW_0000024	Individual	Französisch als dritte Fremdsprache - Profilfach			
+BW_0000025	Individual	Französisch als erste Fremdsprache			
+BW_0000026	Individual	Französisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000027	Individual	Französisch als zweite Fremdsprache - Wahlpflichtfach			
+BW_0000028	Individual	Gemeinschaftskunde			
+BW_0000029	Individual	Geographie			
+BW_0000030	Individual	Geologie - Wahlfach in der Oberstufe			
+BW_0000031	Individual	Geschichte			
+BW_0000032	Individual	Griechisch als dritte Fremdsprache - Profilfach			
+BW_0000033	Individual	Griechisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000034	Individual	Hebräisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000035	Individual	Imformatik, Mathematik, Physik (IMP) - Profilfach			
+BW_0000036	Individual	Informatik - Wahlfach in der Oberstufe (Schulversuch)			
+BW_0000037	Individual	Informatik (Schulversuch)			
+BW_0000038	Individual	Islamische Religionslehre sunnitischer Prägung			
+BW_0000039	Individual	Italienisch als dritte Fremdsprache - Profilfach			
+BW_0000040	Individual	Italienisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000041	Individual	Japanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000042	Individual	Jüdische Religionslehre			
+BW_0000043	Individual	Katholische Religionslehre			
+BW_0000044	Individual	Kunst/Werken			
+BW_0000045	Individual	Latein als dritte Fremdsprache - Profilfach			
+BW_0000046	Individual	Latein als erste Fremdsprache			
+BW_0000047	Individual	Latein als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000048	Individual	Latein als zweite Fremdsprache			
+BW_0000049	Individual	Literatur - Wahlfach in der Oberstufe			
+BW_0000050	Individual	Literatur und Theater			
+BW_0000051	Individual	Mathematik			
+BW_0000052	Individual	Musik			
+BW_0000053	Individual	Musik - Profilfach			
+BW_0000054	Individual	Naturwissenschaft und Technik (NwT) - Basisfach in der Kursstufe			
+BW_0000055	Individual	Naturwissenschaft und Technik (NwT) - Profilfach			
+BW_0000056	Individual	Naturwissenschaft und Technik (NwT) - Schulversuch Leistungsfach in der Kursstufe			
+BW_0000057	Individual	Orthodoxe Religionslehre			
+BW_0000058	Individual	Philosophie - Wahlfach in der Oberstufe			
+BW_0000059	Individual	Physik			
+BW_0000060	Individual	Portugiesisch als dritte Fremdsprache - Profilfach			
+BW_0000061	Individual	Portugiesisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000062	Individual	Psychologie - Wahlfach in der Oberstufe			
+BW_0000063	Individual	Russisch als dritte Fremdsprache - Profilfach			
+BW_0000064	Individual	Russisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000065	Individual	Russisch als zweite Fremdsprache			
+BW_0000066	Individual	Sachunterricht			
+BW_0000067	Individual	Spanisch als dritte Fremdsprache - Profilfach			
+BW_0000068	Individual	Spanisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000069	Individual	Sport			
+BW_0000070	Individual	Sport - Profilfach			
+BW_0000071	Individual	Sport - Wahlpflichtfach			
+BW_0000072	Individual	Syrisch-Orthodoxe Religionslehre			
+BW_0000073	Individual	Technik - Wahlpflichtfach			
+BW_0000074	Individual	Türkisch als spät beginnende Fremdsprache - Wahlfach in der Oberstufe			
+BW_0000075	Individual	Wirtschaft			
+BW_0000076	Individual	Wirtschaft / Berufs- und Studienorientierung (WBS)			
+BY_0000000	Individual	Schulfächer (Bayern)			
+BY_0000001	Individual	Deutsch			
+BY_0000002	Individual	Deutsch als Zweitsprache			
+BY_0000003	Individual	Englisch			
+BY_0000004	Individual	Ethik			
+BY_0000005	Individual	Evangelische Religionslehre			
+BY_0000006	Individual	Heimat- und Sachunterricht			
+BY_0000007	Individual	Islamischer Unterricht			
+BY_0000008	Individual	Katholische Religionslehre			
+BY_0000009	Individual	Kunst			
+BY_0000010	Individual	Mathematik			
+BY_0000011	Individual	Musik			
+BY_0000012	Individual	Orthodoxe Religionslehre			
+BY_0000013	Individual	Sport			
+BY_0000014	Individual	Werken und Gestalten			
+BY_0000015	Individual	Buchführung			
+BY_0000016	Individual	Ernährung und Soziales			
+BY_0000017	Individual	Geschichte/Politik/Geographie			
+BY_0000018	Individual	Informatik			
+BY_0000019	Individual	Informatik und digitales Gestalten			
+BY_0000020	Individual	Natur und Technik			
+BY_0000021	Individual	Tastenschreiben (Lehrgang)			
+BY_0000022	Individual	Technik			
+BY_0000023	Individual	Wirtschaft und Beruf			
+BY_0000024	Individual	Wirtschaft und Kommunikation			
+BY_0000025	Individual	Betriebswirtschaftslehre / Rechnungswesen			
+BY_0000026	Individual	Biologie			
+BY_0000027	Individual	Chemie			
+BY_0000028	Individual	Ernährung und Gesundheit			
+BY_0000029	Individual	Französisch			
+BY_0000030	Individual	Geographie			
+BY_0000031	Individual	Geschichte			
+BY_0000032	Individual	Informationstechnologie			
+BY_0000033	Individual	Israelitische Religionslehre			
+BY_0000034	Individual	Physik			
+BY_0000035	Individual	Politik und Gesellschaft			
+BY_0000036	Individual	Soziallehre			
+BY_0000037	Individual	Sozialwesen			
+BY_0000038	Individual	Spanisch			
+BY_0000039	Individual	Textiles Gestalten			
+BY_0000040	Individual	Werken			
+BY_0000041	Individual	Wirtschaft und Recht			
+BY_0000042	Individual	Archäologie			
+BY_0000043	Individual	Berufliche Orientierung			
+BY_0000044	Individual	Biologisch-chemisches Praktikum			
+BY_0000045	Individual	Chinesisch			
+BY_0000046	Individual	Geologie			
+BY_0000047	Individual	Griechisch			
+BY_0000048	Individual	Instrumentalensemble			
+BY_0000049	Individual	Italienisch			
+BY_0000050	Individual	Latein			
+BY_0000051	Individual	Natur und Technik (Gym)			
+BY_0000052	Individual	Polnisch			
+BY_0000053	Individual	Psychologie			
+BY_0000054	Individual	Russisch			
+BY_0000055	Individual	Sozialpraktische Grundbildung			
+BY_0000056	Individual	Sozialwissenschaftliche Arbeitsfelder			
+BY_0000057	Individual	Sport und Gesellschaft			
+BY_0000058	Individual	Tanz- und Bewegungskünstetheater			
+BY_0000059	Individual	Theater und Film			
+BY_0000060	Individual	Tschechisch			
+BY_0000061	Individual	Türkisch			
+BY_0000062	Individual	Vokalensemble			
+BY_0000063	Individual	Wirtschaftsinformatik			
+BY_0000064	Individual	Wissenschaftspopädeutisches Seminar			
+BY_0000065	Individual	Betriebswirtschaftliche Steuerung und Kontrolle			
+BY_0000066	Individual	Digitale Bildung			
+BY_0000067	Individual	Geschichte/Politik und Gesellschaft (WS)			
+BY_0000068	Individual	Informationsverarbeitung			
+BY_0000069	Individual	Mensch, Umwelt, Technik			
+BY_0000070	Individual	Mensch und Umwelt			
+BY_0000071	Individual	Musisch-ästhetische Bildung			
+BY_0000072	Individual	Wirtschaftsgeographie			
+BY_0000073	Individual	Ökonomische Bildung			
+BY_0000074	Individual	Ökonomische Bildung und Digitale Bildung			
+BY_0000075	Individual	Übungsunternehmen			
+BY_0000076	Individual	Biotechnologie			
+BY_0000077	Individual	Englisch Book Club			
+BY_0000078	Individual	Experimentelles Gestalten			
+BY_0000079	Individual	Fachpraktische Ausbildung			
+BY_0000080	Individual	Geschichte/Politik und Gesellschaft (FOS/BOS)			
+BY_0000081	Individual	Gestaltung			
+BY_0000082	Individual	Gesundheitswirtschaft und Recht			
+BY_0000083	Individual	Gesundheitswissenschaften			
+BY_0000084	Individual	Internatinal Business Studies			
+BY_0000085	Individual	Internationale Betriebswirtschaftslehre und Volkswirtschaftslehre			
+BY_0000086	Individual	Internationale Politik			
+BY_0000087	Individual	Kommunikation und Interaktion			
+BY_0000088	Individual	Medien			
+BY_0000089	Individual	Naturwissenschaften			
+BY_0000090	Individual	Pädagogik/Psychologie			
+BY_0000091	Individual	Rechtslehre			
+BY_0000092	Individual	Sozialpsychologie			
+BY_0000093	Individual	Sozialwirtschaft und Recht			
+BY_0000094	Individual	Soziologie			
+BY_0000095	Individual	Spektrum der Gesundheit			
+BY_0000096	Individual	Studier- und Arbeitstechniken			
+BY_0000097	Individual	Technologie			
+BY_0000098	Individual	Volkswirtschaftslehre			
+BY_0000099	Individual	Wirtschaft Aktuell			
+BY_0000100	Individual	Beruf und Arbeit			
+BY_0000101	Individual	Freizeit			
+BY_0000102	Individual	Grundlegender entwicklungsbezogener Unterricht			
+BY_0000103	Individual	Leben in der Gesellschaft			
+BY_0000104	Individual	Mobilität			
+BY_0000105	Individual	Persönlichkeit und soziale Beziehungen			
+BY_0000106	Individual	Sach- und lebensbezogener Unterricht			
+BY_0000107	Individual	Sport und Bewegung			
+BY_0000108	Individual	Wohnen			
+BY_0000109	Individual	Rhythmik und Musik			
+BY_0000110	Individual	Berufs- und Lebensorientierung - Praxis Ernährung und Soziales			
+BY_0000111	Individual	Berufs- und Lebensorientierung - Praxis Technik			
+BY_0000112	Individual	Berufs- und Lebensorientierung - Theorie			
+BY_0000113	Individual	Geschichte/Politik/Geographie und Natur und Technik (FS)			
+BY_0000114	Individual	Blindenkurzschrift			
+BY_0000115	Individual	Blindheit und Lebenspraxis			
+BY_0000116	Individual	Informations- und Kommunikationstechnische Bildung			
+BY_0000117	Individual	Werken und Gestalten / Kunst			
+BY_0000118	Individual	Ästhetische Bildung			
+HB_0000000	Individual	Schulfächer (Bremen)			
+HB_0000001	Individual	Ästhetik			
+HB_0000002	Individual	Bildungsplan fortgeführte Fremdsprachen			
+HB_0000003	Individual	Biologie			
+HB_0000004	Individual	Biologie bilingual			
+HB_0000005	Individual	Chemie			
+HB_0000006	Individual	Chinesisch			
+HB_0000007	Individual	Darstellendes Spiel			
+HB_0000008	Individual	Deutsch			
+HB_0000009	Individual	Deutsch als Zweitsprache			
+HB_0000010	Individual	Englisch			
+HB_0000011	Individual	European Studies			
+HB_0000012	Individual	Französisch			
+HB_0000013	Individual	Französisch und Spanisch			
+HB_0000014	Individual	Französisch/Spanisch 2. Fremdsprache			
+HB_0000015	Individual	Französisch/Spanisch 3. Fremdsprache			
+HB_0000016	Individual	Geographie			
+HB_0000017	Individual	Geschichte			
+HB_0000018	Individual	Geschichte bilingual			
+HB_0000019	Individual	Gesellschaft und Politik			
+HB_0000020	Individual	Herkunftssprachen			
+HB_0000021	Individual	Informatik			
+HB_0000022	Individual	Kunst			
+HB_0000023	Individual	Latein			
+HB_0000024	Individual	Latein 2. Fremdsprache			
+HB_0000025	Individual	Latein 3. Fremdsprache			
+HB_0000026	Individual	Mathematik			
+HB_0000027	Individual	Medienbildung			
+HB_0000028	Individual	Musik			
+HB_0000029	Individual	Naturwissenschaften, Biologie, Chemie, Physik			
+HB_0000030	Individual	Pädagogik			
+HB_0000031	Individual	Philosophie			
+HB_0000032	Individual	Physik			
+HB_0000033	Individual	Politik			
+HB_0000034	Individual	Polnisch			
+HB_0000035	Individual	Psychologie			
+HB_0000036	Individual	Religion			
+HB_0000037	Individual	Russisch			
+HB_0000038	Individual	Sachunterricht			
+HB_0000039	Individual	Soziologie			
+HB_0000040	Individual	Spanisch			
+HB_0000041	Individual	Sport			
+HB_0000042	Individual	Türkisch			
+HB_0000043	Individual	Welt-Umweltkunde, Geschichte, Geographie, Politik			
+HB_0000044	Individual	Wirtschaft-Arbeit-Technik			
+HB_0000045	Individual	Wirtschaft/Arbeit/Technik			
+HB_0000046	Individual	Wirtschaftslehre			
+HE_0000000	Individual	Schulfächer (Hessen)			
+HE_0000001	Individual	Alevitische Religion			
+HE_0000002	Individual	Arabisch			
+HE_0000003	Individual	Arbeitslehre			
+HE_0000004	Individual	Biologie			
+HE_0000005	Individual	Chemie			
+HE_0000006	Individual	Chinesisch			
+HE_0000007	Individual	Darstellendes Spiel			
+HE_0000008	Individual	Deutsch			
+HE_0000009	Individual	Deutsche Gebärdensprache			
+HE_0000010	Individual	Englisch			
+HE_0000011	Individual	Erdkunde			
+HE_0000012	Individual	Ethik			
+HE_0000013	Individual	Evangelische Religion			
+HE_0000014	Individual	Französisch			
+HE_0000015	Individual	Geographie			
+HE_0000016	Individual	Geschichte			
+HE_0000017	Individual	Griechisch			
+HE_0000018	Individual	Informatik			
+HE_0000019	Individual	Informatik (Wahlunterricht im gymnasialen Bildungsgang)			
+HE_0000020	Individual	Islamische Religion			
+HE_0000021	Individual	Italienisch			
+HE_0000022	Individual	Jüdische Religion			
+HE_0000023	Individual	Katholische Religion			
+HE_0000024	Individual	Kunst			
+HE_0000025	Individual	Latein			
+HE_0000026	Individual	Litauisch			
+HE_0000027	Individual	Mathematik			
+HE_0000028	Individual	Moderne Fremdsprachen			
+HE_0000029	Individual	Musik			
+HE_0000030	Individual	Philosophie			
+HE_0000031	Individual	Physik			
+HE_0000032	Individual	Politik und Wirtschaft			
+HE_0000033	Individual	Polnisch			
+HE_0000034	Individual	Russisch			
+HE_0000035	Individual	Sachunterricht			
+HE_0000036	Individual	Spanisch			
+HE_0000037	Individual	Sport			
+HE_0000038	Individual	Wirtschaftswissenschaften			
+HH_0000000	Individual	Schulfächer (Hamburg)			
+HH_0000001	Individual	Sprachbildung als Querschnittsaufgabe-Rahmenvorgaben			
+HH_0000002	Individual	Aufgabengebiete			
+HH_0000003	Individual	Bildende Kunst			
+HH_0000004	Individual	Deutsch			
+HH_0000005	Individual	Deutsch als Zweitsprache in Vorbereitungsklassen			
+HH_0000006	Individual	Englisch			
+HH_0000007	Individual	Neuere Fremdsprachen: Englisch			
+HH_0000008	Individual	Herkunftssprachen			
+HH_0000009	Individual	Mathematik			
+HH_0000010	Individual	Musik			
+HH_0000011	Individual	Niederdeutsch			
+HH_0000012	Individual	Religion			
+HH_0000013	Individual	Sachunterricht			
+HH_0000014	Individual	Sport			
+HH_0000015	Individual	Theater			
+HH_0000016	Individual	Alte Sprachen: Latein			
+HH_0000017	Individual	Alte Sprachen			
+HH_0000018	Individual	Alte Sprachen: Griechisch			
+HH_0000019	Individual	Berufliche Orientierung - Leben, Arbeit, Beruf			
+HH_0000020	Individual	Biologie			
+HH_0000021	Individual	Chemie			
+HH_0000022	Individual	Geographie			
+HH_0000023	Individual	Gecshichte			
+HH_0000024	Individual	Informatik			
+HH_0000025	Individual	Lernbereich Gesellschaftswissenschaften			
+HH_0000026	Individual	Lernbereich Naturwissenschatfen und Technik			
+HH_0000027	Individual	Naturwissenschaften/Technik			
+HH_0000028	Individual	Naturwissenschaftliches Praktikum			
+HH_0000029	Individual	Neuere Sprachen			
+HH_0000030	Individual	Neuere Fremdsprachen: Arabisch			
+HH_0000031	Individual	Neuere Fremdsprachen: Chinesisch			
+HH_0000032	Individual	Neuere Fremdsprachen: Farsi			
+HH_0000033	Individual	Neuere Fremdsprachen: Französisch			
+HH_0000034	Individual	Neuere Fremdsprachen: Italienisch			
+HH_0000035	Individual	Neuere Fremdsprachen: Polnisch			
+HH_0000036	Individual	Neuere Fremdsprachen: Portugiesisch			
+HH_0000037	Individual	Neuere Fremdsprachen: Russisch			
+HH_0000038	Individual	Neuere Fremdsprachen: Spanisch			
+HH_0000039	Individual	Neuere Fremdsprachen: Türkisch			
+HH_0000040	Individual	Politik/Gesellschaft/Wirtschaft			
+HH_0000041	Individual	Physik			
+HH_0000042	Individual	Pädagogik			
+HH_0000043	Individual	Philosophie			
+HH_0000044	Individual	Rahmenvorgaben für die berufliche Orientierung			
+HH_0000045	Individual	Seminar			
+HH_0000046	Individual	Wirtschaft			
+HH_0000047	Individual	Psychologie			
+HH_0000048	Individual	Recht			
+HH_0000049	Individual	Fachrichtung Pädagogik/Psychologie an beruflichen Gymnasien			
+HH_0000050	Individual	Fachrichtung Technik an beruflichen Gymnasien			
+HH_0000051	Individual	Fachrichtung Wirtschaft an beruflichen Gymnasien			
+MV_0000000	Individual	Schulfächer (Mecklenburg-Vorpommern)			
+MV_0000001	Individual	Astronomie			
+MV_0000002	Individual	AWT			
+MV_0000003	Individual	Berufliche Orientierung			
+MV_0000004	Individual	Biologie			
+MV_0000005	Individual	Chemie			
+MV_0000006	Individual	Darstellendes Spiel			
+MV_0000007	Individual	Deutsch			
+MV_0000008	Individual	Deutsch als Zweitsprache			
+MV_0000009	Individual	Deutsche Gebärdensprache			
+MV_0000010	Individual	Englisch			
+MV_0000011	Individual	Evangelische Religion			
+MV_0000012	Individual	Französisch			
+MV_0000013	Individual	Fremdsprachen an Grundschulen			
+MV_0000014	Individual	Geografie			
+MV_0000015	Individual	Geschichte			
+MV_0000016	Individual	Geschichte und politische Bildung			
+MV_0000017	Individual	Gesellschaftswissenschaften			
+MV_0000018	Individual	Griechisch			
+MV_0000019	Individual	Informatik			
+MV_0000020	Individual	Informatik und Medienbildung			
+MV_0000021	Individual	Katholische Religion			
+MV_0000022	Individual	Kunst			
+MV_0000023	Individual	Kunst und Gestaltung			
+MV_0000024	Individual	Latein			
+MV_0000025	Individual	Mathematik			
+MV_0000026	Individual	MINT			
+MV_0000027	Individual	Musik			
+MV_0000028	Individual	Musikensemble			
+MV_0000029	Individual	Naturwissenschaften			
+MV_0000030	Individual	Niederdeutsch			
+MV_0000031	Individual	Philosophie			
+MV_0000032	Individual	Philosophieren mit Kindern			
+MV_0000033	Individual	Physik			
+MV_0000034	Individual	Polnisch			
+MV_0000035	Individual	Russisch			
+MV_0000036	Individual	Sachunterricht			
+MV_0000037	Individual	Schwedisch			
+MV_0000038	Individual	Sozialkunde			
+MV_0000039	Individual	Spanisch			
+MV_0000040	Individual	Sport			
+MV_0000041	Individual	System Erde			
+MV_0000042	Individual	Theater/Darstellendes Spiel			
+MV_0000043	Individual	Weltkunde			
+MV_0000044	Individual	Werken			
+MV_0000045	Individual	Wirtschaft			
+NI_0000000	Individual	Schulfächer (Niedersachsen)			
+NI_0000001	Individual	Arbeit-Wirtschaft-Technik			
+NI_0000002	Individual	Biologie			
+NI_0000003	Individual	Chemie			
+NI_0000004	Individual	Chinesisch			
+NI_0000005	Individual	Darstellendes Spiel			
+NI_0000006	Individual	Deutsch			
+NI_0000007	Individual	Deutsch als Zweitsprache			
+NI_0000008	Individual	Deutsche Gebärdensprache			
+NI_0000009	Individual	Englisch			
+NI_0000010	Individual	Erdkunde			
+NI_0000011	Individual	Evangelische Religion			
+NI_0000012	Individual	Französisch			
+NI_0000013	Individual	Geschichte			
+NI_0000014	Individual	Gesellschaftslehre			
+NI_0000015	Individual	Gestaltendes Werken			
+NI_0000016	Individual	Griechisch			
+NI_0000017	Individual	Hauswirtschaft			
+NI_0000018	Individual	Herkunftssprachlicher Unterricht			
+NI_0000019	Individual	Informatik			
+NI_0000020	Individual	Islamische Religion			
+NI_0000021	Individual	Italienisch			
+NI_0000022	Individual	Japanisch			
+NI_0000023	Individual	Katholische Religion			
+NI_0000024	Individual	Kunst			
+NI_0000025	Individual	Latein			
+NI_0000026	Individual	Mathematik			
+NI_0000027	Individual	Musik			
+NI_0000028	Individual	Naturwissenchaften			
+NI_0000029	Individual	Niederdeutsch			
+NI_0000030	Individual	Niederländisch			
+NI_0000031	Individual	Philosophie			
+NI_0000032	Individual	Physik			
+NI_0000033	Individual	Politik			
+NI_0000034	Individual	Politik-Wirtschaft			
+NI_0000035	Individual	Polnisch			
+NI_0000036	Individual	Profil Gesundheit und Soziales			
+NI_0000037	Individual	Profil Technik			
+NI_0000038	Individual	Profil Wirtschaft			
+NI_0000039	Individual	Psychologie			
+NI_0000040	Individual	Recht			
+NI_0000041	Individual	Russisch			
+NI_0000042	Individual	Sachunterricht			
+NI_0000043	Individual	Spanisch			
+NI_0000044	Individual	Sport			
+NI_0000045	Individual	Technik			
+NI_0000046	Individual	Textiles Gestalten			
+NI_0000047	Individual	Theater / Darstellendes Spiel			
+NI_0000048	Individual	Türkisch			
+NI_0000049	Individual	Werte und Normen			
+NI_0000050	Individual	Wirtschaft			
+NW_0000000	Individual	Schulfächer (Nordrhein-Westfalen)			
+NW_0000001	Individual	Alevitischer Religionsunterricht			
+NW_0000002	Individual	Arbeitslehre			
+NW_0000003	Individual	Biologie			
+NW_0000004	Individual	Chemie			
+NW_0000005	Individual	Chinesisch			
+NW_0000006	Individual	Deutsch			
+NW_0000007	Individual	Deutsche Gebärdensprache			
+NW_0000008	Individual	Englisch			
+NW_0000009	Individual	Erdkunde			
+NW_0000010	Individual	Ernährungslehre			
+NW_0000011	Individual	Erziehungswissenschaft			
+NW_0000012	Individual	Evangelische Religionslehre			
+NW_0000013	Individual	Französisch			
+NW_0000014	Individual	Geographie			
+NW_0000015	Individual	Geschichte			
+NW_0000016	Individual	Gesellschaftslehre (Erkunde, Geschichte, Politik)			
+NW_0000017	Individual	Gesellschaftslehre (Wirtschaft-Politik, Erdkunde, Geschichte)			
+NW_0000018	Individual	Griechisch			
+NW_0000019	Individual	Hauswirtschaft			
+NW_0000020	Individual	Hebräisch			
+NW_0000021	Individual	Informatik			
+NW_0000022	Individual	Islamischer Religionsunterricht			
+NW_0000023	Individual	Italienisch			
+NW_0000024	Individual	Japanisch			
+NW_0000025	Individual	Jüdische Religionslehre			
+NW_0000026	Individual	Katholische Religionslehre			
+NW_0000027	Individual	Kunst			
+NW_0000028	Individual	Latein			
+NW_0000029	Individual	Lateinisch			
+NW_0000030	Individual	Literatur			
+NW_0000031	Individual	Mathematik			
+NW_0000032	Individual	Musik			
+NW_0000033	Individual	Naturwissenschaften			
+NW_0000034	Individual	Neugriechisch			
+NW_0000035	Individual	Niederländisch			
+NW_0000036	Individual	Orthodoxe Religionslehre			
+NW_0000037	Individual	Philosophie			
+NW_0000038	Individual	Physik			
+NW_0000039	Individual	Politik			
+NW_0000040	Individual	Portugiesisch			
+NW_0000041	Individual	Praktische Philosophie			
+NW_0000042	Individual	Psychologie			
+NW_0000043	Individual	Recht			
+NW_0000044	Individual	Russisch			
+NW_0000045	Individual	Sachunterricht			
+NW_0000046	Individual	Sozialwissenschaften und Sozialwissenschaften/Wirtschaft			
+NW_0000047	Individual	Spanisch			
+NW_0000048	Individual	Sport			
+NW_0000049	Individual	Syrisch-Orthodoxe Religionslehre			
+NW_0000050	Individual	Technik			
+NW_0000051	Individual	Textilgestaltung			
+NW_0000052	Individual	Türkisch			
+NW_0000053	Individual	Wirtschaft			
+NW_0000054	Individual	Wirtschaft und Arbeitswelt (Wirtschaft, Hauswirtschaft, Technik)			
+NW_0000055	Individual	Wirtschaft-Politik			
+NW_0000056	Individual	WP Arbeitslehre			
+NW_0000057	Individual	WP Biologie			
+NW_0000058	Individual	WP Chemie			
+NW_0000059	Individual	WP Darstellen und Gestalten			
+NW_0000060	Individual	WP Informatik			
+NW_0000061	Individual	WP Kunst			
+NW_0000062	Individual	WP Musik			
+NW_0000063	Individual	WP Naturwissenschaften			
+NW_0000064	Individual	WP Physik			
+NW_0000065	Individual	WP Sozialwissenschaften			
+NW_0000066	Individual	WP Technik			
+NW_0000067	Individual	WP Wirschaft			
+NW_0000068	Individual	WP Wirtschaft und Arbeitswelt (Wirtschaft, Hauswirtschaft, Technik)			
+RP_0000000	Individual	Schulfächer (Rheinland-Pfalz)			
+RP_0000001	Individual	Arbeitslehre			
+RP_0000002	Individual	Bildende Kunst			
+RP_0000003	Individual	Bildende Kunst/Werken			
+RP_0000004	Individual	Kunst			
+RP_0000005	Individual	Biologie			
+RP_0000006	Individual	Biologie, Chemie, Physik			
+RP_0000007	Individual	Naturwissenschaften			
+RP_0000008	Individual	Chemie			
+RP_0000009	Individual	Physik-Chemie			
+RP_0000010	Individual	Darstellendes Spiel			
+RP_0000011	Individual	Deutsch			
+RP_0000012	Individual	Deutsch als Zweitsprache			
+RP_0000013	Individual	Englisch			
+RP_0000014	Individual	Fremdsprache			
+RP_0000015	Individual	Erdkunde: Bilingual - Englisch			
+RP_0000016	Individual	Gemeinschaftskunde: Bilingual - Englisch			
+RP_0000017	Individual	Erdkunde			
+RP_0000018	Individual	Erdkunde: Bilingual - Französisch			
+RP_0000019	Individual	Gemeinschaftskunde: Bilingual - Französisch			
+RP_0000020	Individual	Gemeinschaftskunde: Grund- und Leistungskurs			
+RP_0000021	Individual	Gesellschaftslehre			
+RP_0000022	Individual	Gesellschaftswissenschaftliche Fächer			
+RP_0000023	Individual	Ethik			
+RP_0000024	Individual	Französisch			
+RP_0000025	Individual	Geschichte-Sozialkunde			
+RP_0000026	Individual	Griechisch			
+RP_0000027	Individual	Hauswirtschaft und Sozialwesen			
+RP_0000028	Individual	Technik und Naturwissenschaft			
+RP_0000029	Individual	Wirtschaft und Verwaltung			
+RP_0000030	Individual	Informatik			
+RP_0000031	Individual	Italienisch			
+RP_0000032	Individual	Kommunikation und Medien			
+RP_0000033	Individual	Kultur			
+RP_0000034	Individual	Latein			
+RP_0000035	Individual	Mathematik			
+RP_0000036	Individual	Musik			
+RP_0000037	Individual	Ökologie			
+RP_0000038	Individual	Ökonomische Bildung an allgemeinbildenden Schulen			
+RP_0000039	Individual	Philosophie			
+RP_0000040	Individual	Physik			
+RP_0000041	Individual	Evangelische Religion			
+RP_0000042	Individual	Katholische Religion			
+RP_0000043	Individual	Alevitische Religion			
+RP_0000044	Individual	Mennonitische Religion			
+RP_0000045	Individual	Russisch			
+RP_0000046	Individual	Sachunterricht			
+RP_0000047	Individual	Sozialpädagogik			
+RP_0000048	Individual	Spanisch			
+RP_0000049	Individual	Sport			
+RP_0000050	Individual	Sport und Gesundheit			
+RP_0000051	Individual	Textiles Gestalten			
+RP_0000052	Individual	Wirtschafts- und Sozialkunde			
+RP_0000053	Individual	Herkunftssprachen-Unterricht			
+RP_0000054	Individual	Latein als erste Fremdsprache			
+RP_0000055	Individual	Latein als zweite Fremdsprache			
+RP_0000056	Individual	Latein als dritte Fremdsprache			
+RP_0000057	Individual	Griechisch als dritte fakultative Fremdsprache 9-10			
+RP_0000058	Individual	Griechisch als dritte Pflichtfremdsprache 8-10			
+RP_0000059	Individual	Erdkunde			
+RP_0000060	Individual	Geschichte			
+RP_0000061	Individual	Sozialkunde			
+RP_0000062	Individual	Russisch als 2. Pflichtfremdsprache			
+RP_0000063	Individual	Russisch als 3. Pflichtfremdsprache			
+SH_0000000	Individual	Schulfächer (Schleswig-Holstein)			
+SH_0000001	Individual	Biologie			
+SH_0000002	Individual	Chemie			
+SH_0000003	Individual	Chinesisch			
+SH_0000004	Individual	Dänisch			
+SH_0000005	Individual	Darstellendes Spiel			
+SH_0000006	Individual	Deutsch			
+SH_0000007	Individual	Englisch			
+SH_0000008	Individual	Evangelische Religion			
+SH_0000009	Individual	Französisch			
+SH_0000010	Individual	Friesisch			
+SH_0000011	Individual	Geographie			
+SH_0000012	Individual	Geschichte			
+SH_0000013	Individual	Gestalten			
+SH_0000014	Individual	Griechisch			
+SH_0000015	Individual	Informatik			
+SH_0000016	Individual	Islamunterricht			
+SH_0000017	Individual	Italienisch			
+SH_0000018	Individual	Katholische Religion			
+SH_0000019	Individual	Kunst			
+SH_0000020	Individual	Latein			
+SH_0000021	Individual	Mathematik			
+SH_0000022	Individual	Musik			
+SH_0000023	Individual	Naturwissenschaften			
+SH_0000024	Individual	Philosophie			
+SH_0000025	Individual	Physik			
+SH_0000026	Individual	Russisch			
+SH_0000027	Individual	Sachunterricht			
+SH_0000028	Individual	Spanisch			
+SH_0000029	Individual	Sport			
+SH_0000030	Individual	Technik			
+SH_0000031	Individual	Textillehre			
+SH_0000032	Individual	Verbraucherbildung			
+SH_0000033	Individual	Weltkunde			
+SH_0000034	Individual	Wirtschaft/Politik			
+SH_0000035	Individual	Wirtschaftslehre			
+SL_0000000	Individual	Schulfächer (Saarland)			
+SL_0000001	Individual	Allgemeine Ethik			
+SL_0000002	Individual	Arbeitslehre			
+SL_0000003	Individual	Beruf und Wirtschaft			
+SL_0000004	Individual	Bildende Kunst			
+SL_0000005	Individual	Biologie			
+SL_0000006	Individual	Biologie Themenfelder			
+SL_0000007	Individual	Chemie			
+SL_0000008	Individual	Chemie Themenfelder			
+SL_0000009	Individual	Darstellendes Spiel			
+SL_0000010	Individual	Deutsch			
+SL_0000011	Individual	Englisch			
+SL_0000012	Individual	Englisch (1. und 2. Fremdsprache)			
+SL_0000013	Individual	Englisch 1. Fremdsprache			
+SL_0000014	Individual	Englisch 2. Fremdsprache			
+SL_0000015	Individual	Englisch 3. Fremdsprache			
+SL_0000016	Individual	Erdkunde			
+SL_0000017	Individual	Erdkunde bilingual deutsch-englisch			
+SL_0000018	Individual	Erdkunde bilingual deutsch-französisch			
+SL_0000019	Individual	Erdkunde Themenfelder			
+SL_0000020	Individual	Evangelische Religion			
+SL_0000021	Individual	Französisch			
+SL_0000022	Individual	Französisch (1. und 2. Fremdsprache)			
+SL_0000023	Individual	Französisch 1. Fremdsprache			
+SL_0000024	Individual	Französisch 2. Fremdsprache			
+SL_0000025	Individual	Französisch 3. Fremdsprache			
+SL_0000026	Individual	Geschichte			
+SL_0000027	Individual	Geschichte bilingual deutsch-englisch			
+SL_0000028	Individual	Geschichte bilingual deutsch-französisch			
+SL_0000029	Individual	Geschichte Themenfelder			
+SL_0000030	Individual	Gesellschaftswissenschaften			
+SL_0000031	Individual	Gesellschaftswissenschaften Themenfelder			
+SL_0000032	Individual	Griechisch			
+SL_0000033	Individual	Griechisch 3. Fremdsprache			
+SL_0000034	Individual	Herkunftssprachlicher Unterricht			
+SL_0000035	Individual	Informatik			
+SL_0000036	Individual	Informatik / Informationstechnische Grundbildung			
+SL_0000037	Individual	Islamischer Religionsunterricht			
+SL_0000038	Individual	Italienisch			
+SL_0000039	Individual	Italienisch 3. Fremdsprache			
+SL_0000040	Individual	Katholische Religion			
+SL_0000041	Individual	Katholischer Religionsunterricht			
+SL_0000042	Individual	Latein			
+SL_0000043	Individual	Latein 1. Fremdsprache			
+SL_0000044	Individual	Latein 2. Fremdsprache			
+SL_0000045	Individual	Latein 3. Fremdsprache			
+SL_0000046	Individual	Lernen lernen			
+SL_0000047	Individual	Mathematik			
+SL_0000048	Individual	Musik			
+SL_0000049	Individual	Naturwissenschaften			
+SL_0000050	Individual	Philosophie			
+SL_0000051	Individual	Physik			
+SL_0000052	Individual	Physik Themenfelder			
+SL_0000053	Individual	Politik			
+SL_0000054	Individual	Politik bilingual deutsch-englisch			
+SL_0000055	Individual	Sachunterricht			
+SL_0000056	Individual	Sozialkunde			
+SL_0000057	Individual	Sozialkunde bilingual deutsch-englisch			
+SL_0000058	Individual	Sozialkunde bilingual deutsch-französisch			
+SL_0000059	Individual	Sozialkunde Themenfelder			
+SL_0000060	Individual	Spanisch			
+SL_0000061	Individual	Spanisch 3. Fremdsprache			
+SL_0000062	Individual	Sport			
+SL_0000063	Individual	Technik			
+SL_0000064	Individual	Wirtschaftslehre			
+SN_0000000	Individual	Schulfächer (Sachsen)			
+SN_0000001	Individual	Deutsch			
+SN_0000002	Individual	Deutsch als Zweitsprache			
+SN_0000003	Individual	Englisch			
+SN_0000004	Individual	Ethik			
+SN_0000005	Individual	Evangelische Religion			
+SN_0000006	Individual	Herkunftssprache im Wahlbereich			
+SN_0000007	Individual	Intensives Sprachlernen			
+SN_0000008	Individual	Intensives Sprachlernen Sorbisch als Fremdsprache			
+SN_0000009	Individual	Jüdische Religion			
+SN_0000010	Individual	Katholische Religion			
+SN_0000011	Individual	Kunst			
+SN_0000012	Individual	Mathematik			
+SN_0000013	Individual	Musik			
+SN_0000014	Individual	Sachunterricht			
+SN_0000015	Individual	Sorbisch			
+SN_0000016	Individual	Sport			
+SN_0000017	Individual	Werken			
+SN_0000018	Individual	Biologie			
+SN_0000019	Individual	Chemie			
+SN_0000020	Individual	Gemeinschaftskunde/Rechtserziehung			
+SN_0000021	Individual	Gemeinschaftskunde/Rechtserziehung/Wirtschaft			
+SN_0000022	Individual	Geographie			
+SN_0000023	Individual	Geschichte			
+SN_0000024	Individual	Herkunftssprache - Ersatz für 2. Fremdsprache			
+SN_0000025	Individual	Informatik			
+SN_0000026	Individual	Physik			
+SN_0000027	Individual	Sorbisch im Wahlbereich			
+SN_0000028	Individual	Technik/Computer			
+SN_0000029	Individual	Wirtschaft-Technik-Haushalt/Soziales			
+SN_0000030	Individual	2. Fremdsprache			
+SN_0000031	Individual	Astronomie			
+SN_0000032	Individual	Auf dem Weg ins Berufsleben			
+SN_0000033	Individual	Biotechnologie und Bionik			
+SN_0000034	Individual	Chinesisch			
+SN_0000035	Individual	Französisch			
+SN_0000036	Individual	Französisch AbiBac			
+SN_0000037	Individual	Geographie AbiBac			
+SN_0000038	Individual	Geschichte - bikulturell - AbiBac			
+SN_0000039	Individual	Graecum und antike Kultur			
+SN_0000040	Individual	Griechisch			
+SN_0000041	Individual	Italienisch			
+SN_0000042	Individual	Latein			
+SN_0000043	Individual	Latinum und antike Kultur			
+SN_0000044	Individual	Philosophie			
+SN_0000045	Individual	Polnisch			
+SN_0000046	Individual	Russisch			
+SN_0000047	Individual	Schulspezifisches Profil			
+SN_0000048	Individual	Schulspezifisches Profil unternehmerische Bildung			
+SN_0000049	Individual	Spanisch			
+SN_0000050	Individual	Tschechisch			
+ST_0000000	Individual	Schulfächer (Sachsen-Anhalt)			
+ST_0000001	Individual	Angewandte Naturwissenschaften			
+ST_0000002	Individual	Astronomie			
+ST_0000003	Individual	Biologie			
+ST_0000004	Individual	Chemie			
+ST_0000005	Individual	Deutsch			
+ST_0000006	Individual	Deutsch als Zweitsprache			
+ST_0000007	Individual	Englisch			
+ST_0000008	Individual	Ethikunterricht			
+ST_0000009	Individual	Evangelischer Religionsunterricht			
+ST_0000010	Individual	Französisch			
+ST_0000011	Individual	Geographie			
+ST_0000012	Individual	Geschichte			
+ST_0000013	Individual	Gestalten			
+ST_0000014	Individual	Griechisch			
+ST_0000015	Individual	Hauswirtschaft			
+ST_0000016	Individual	Informatik			
+ST_0000017	Individual	Italienisch			
+ST_0000018	Individual	Katholischer Religionsunterricht			
+ST_0000019	Individual	Kunst (Kunsterziehung)			
+ST_0000020	Individual	Latein			
+ST_0000021	Individual	Lernen in der digitalen Welt			
+ST_0000022	Individual	Lernmethoden, Arbeit am PC und moderne Medienwelten			
+ST_0000023	Individual	Mathematik			
+ST_0000024	Individual	Moderne Medienwelten			
+ST_0000025	Individual	Musik			
+ST_0000026	Individual	Philosophie			
+ST_0000027	Individual	Physik			
+ST_0000028	Individual	Planen, Bauen und Gestalten			
+ST_0000029	Individual	Psychologie			
+ST_0000030	Individual	Rechtskunde			
+ST_0000031	Individual	Russisch			
+ST_0000032	Individual	Sachunterricht			
+ST_0000033	Individual	Sozialkunde			
+ST_0000034	Individual	Spanisch			
+ST_0000035	Individual	Sport			
+ST_0000036	Individual	Technik			
+ST_0000037	Individual	Wirtschaft			
+ST_0000038	Individual	Wirtschaftslehre			
+TH_0000000	Individual	Schulfächer (Thüringen)			
+TH_0000001	Individual	Astronomie			
+TH_0000002	Individual	Biologie			
+TH_0000003	Individual	Chemie			
+TH_0000004	Individual	Darstellen und Gestalten			
+TH_0000005	Individual	Deutsch			
+TH_0000006	Individual	Englisch			
+TH_0000007	Individual	Ethik			
+TH_0000008	Individual	Evangelische Religionslehre			
+TH_0000009	Individual	Französisch			
+TH_0000010	Individual	Fremdsprache			
+TH_0000011	Individual	Geografie			
+TH_0000012	Individual	Geografie in englischer Sprache			
+TH_0000013	Individual	Geografie in französischer Sprache			
+TH_0000014	Individual	Geschichte			
+TH_0000015	Individual	Geschichte in englischer Sprache			
+TH_0000016	Individual	Geschichte in französischer Sprache			
+TH_0000017	Individual	Griechisch			
+TH_0000018	Individual	Heimat- und Sachkunde			
+TH_0000019	Individual	Informatik			
+TH_0000020	Individual	Italienisch			
+TH_0000021	Individual	Jüdische Religionslehre			
+TH_0000022	Individual	Katholische Religionslehre			
+TH_0000023	Individual	Kunst			
+TH_0000024	Individual	Kursplan Medienkunde in der Grundschule			
+TH_0000025	Individual	Latein			
+TH_0000026	Individual	Mathematik			
+TH_0000027	Individual	Medienbildung und Informatik 5/6			
+TH_0000028	Individual	Mensch-Natur-Technik			
+TH_0000029	Individual	Musik			
+TH_0000030	Individual	Natur und Technik			
+TH_0000031	Individual	Physik			
+TH_0000032	Individual	Russisch			
+TH_0000033	Individual	Schulgarten			
+TH_0000034	Individual	Sozialkunde			
+TH_0000035	Individual	Sozialkunde in englischer Sprache			
+TH_0000036	Individual	Sozialkunde in französischer Sprache			
+TH_0000037	Individual	Sozialwesen			
+TH_0000038	Individual	Spanisch			
+TH_0000039	Individual	Sport			
+TH_0000040	Individual	Technik TGS			
+TH_0000041	Individual	Technisches Werken			
+TH_0000042	Individual	Wahlpflichtfach Gesellschaftswissenschaften			
+TH_0000043	Individual	Wahlpflichtfach Informatik			
+TH_0000044	Individual	Wahlpflichtfach Naturwissenschaften und Technik			
+TH_0000045	Individual	Werken			
+TH_0000046	Individual	Wirtschaft und Recht			
+TH_0000047	Individual	Wirtschaft-Recht-Technik			
+TH_0000048	Individual	Wirtschaft-Umwelt-Europa			
