@@ -176,10 +176,12 @@ Sekundarbereich_I: a Schulstufe: .
 Primarbereich: a Schulstufe: .
 ```
 
-`@prefix hat_Teil: <> .` ist leer und im Block unbenutzt (er verwendet nur
-`hat_Jahrgangsstufe:`) — das steht schon so im FWU-Original
-(`docs/patterns/pattern5.ttl`, geprüft per `grep`) und wird beim Kopieren weggelassen;
-`hat Teil` ist `obo:BFO_0000051`, wie in den anderen Patterns.
+`@prefix hat_Teil: <> .` ist im FWU-Original leer deklariert **und** wird im Block trotzdem
+verwendet (`Sekundarbereich_II: … hat_Teil: G8_Einführungsphase: , …` oben) — geprüft per
+`grep` gegen `docs/patterns/pattern5.ttl`. Wörtlich kopiert bedeutet `hat_Teil:` dadurch
+nicht „hat Teil“ (`obo:BFO_0000051`), sondern löst sich gegen die Basis-IRI des Dokuments
+auf. Beim Kopieren `@prefix hat_Teil: <http://purl.obolibrary.org/obo/BFO_0000051> .`
+deklarieren, wie in den anderen Patterns.
 
 Dokumentation: https://fwu-de.github.io/lehrplan-ontologie/docs/patterns/#pattern-5-jahrgangstufeschulstufe-und-phasen-der-sekundarstufe-ii
 
