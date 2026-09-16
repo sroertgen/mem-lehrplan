@@ -1,0 +1,3 @@
+.worktrees/
+.vendor/
+.DS_Store
