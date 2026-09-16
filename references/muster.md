@@ -7,7 +7,8 @@ Namensraum `ex:` bleibt als Platzhalter stehen, im eigenen Dokument wird daraus 
 ## Lehrplanwurzel
 
 Der Wurzelknoten eines Lehrplans trägt die Klasse des Landes, das Bundesland, Schulfach,
-Schulart und die Schulstufe, plus den Titel als Wertknoten.
+Schulart und die Schulstufe, plus den Titel als Wertknoten und die Quell-URL des
+Originaldokuments an `uri` (LP_0000463, ohne deklarierten Range — einfacher String).
 
 ```turtle
 @prefix ex: <https://www.example.org/> .

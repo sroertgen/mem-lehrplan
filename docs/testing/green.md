@@ -322,7 +322,7 @@ sind strukturell identisch (`Element (SH)` ⊓ `hat Funktion = Hinweisbeschreibu
 und ließen sich vor dieser Runde nur über die `skos:editorialNote` unterscheiden (das Fach,
 für das die Klasse angelegt wurde) — eine Angabe, die in `references/terms/lp-terms.tsv`,
 `scripts/lookup.sh` und `references/laender/*.md` bis zu diesem Zeitpunkt nicht sichtbar
-war. 21 der 46 SH-Klassen tragen eine solche Note.
+war. 26 der 37 SH-Klassen tragen eine solche Note.
 
 Der REFACTOR-Commit dieser Fix-Runde (`editorialNote`-Spalte in `gen-terms.py`,
 `gen-laender.py`, `scripts/lookup.sh`; neunte Regel in `references/fallstricke.md`; je ein
@@ -378,6 +378,8 @@ Begründung (wörtlich, ohne die Pfadangabe zur Antwortdatei):
 > `grep -n "BFO_0000051" references/lp-base.ttl`, dass keine solche Restriktion bei den
 > betroffenen Klassen vorkommt — alles im Worktree
 > `/home/laoc/coding/comenius/mem-lehrplan/.worktrees/skill`.
+
+(Pfad des damaligen Worktrees)
 
 ### Lauf 2 (`szenario-3-r2-lauf-2.md`)
 

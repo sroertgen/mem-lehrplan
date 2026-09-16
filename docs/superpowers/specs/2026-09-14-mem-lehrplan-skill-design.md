@@ -342,6 +342,22 @@ spezifikation, Lerninhalt, Hinweis, Verweis), plus der ID-Präfix in `sf-terms.t
   (Portierung von `gen-term-maps.py` aus der Wissensbasis), `laender/`, kopiert
   `patterns/` und `lp-base.ttl`, schreibt `VERSION`. Python 3 ohne weitere Pakete.
 
+### 4.6 Nachtrag 2026-09-16: was die GREEN-Runden an §4.2 und §4.4 änderten
+
+§4.2 nennt sechs Spalten für die Term-Tabellen (`id · type · label_de · label_en · parent ·
+comment_de`) mit 988/911/106 Zeilen. Ausgeliefert sind sieben Spalten: die siebte, `note`,
+hält `skos:editorialNote` und kam erst nach GREEN-Runde 1 dazu, weil die SH-Schwesterklassen
+LP_0030280 und LP_0030059 sich sonst überhaupt nicht unterscheiden ließen — strukturell
+identisch, nur die editorialNote trennt sie (Ruling `progress.md:66`). Die Tabellengrößen
+sind 988/910/105, nicht 911/106 — die Spec-Zahlen zählten die Kopfzeile mit.
+
+§4.4 führt in der Fallstricke-Tabelle noch „SH-Klassen LP_0030278/LP_0030280 sind für SHACL
+unsichtbar“. Das ist seit `mem-explorer` 0.4.0 geschlossen (§3.5: die Hierarchie enthält jetzt
+die aus `owl:intersectionOf` abgeleiteten `subClassOf`-Kanten, SHACL sieht beide Klassen).
+`references/fallstricke.md` formuliert die Regel bereits umgekehrt — als geschlossenen
+blinden Fleck, nicht als offenen; wer noch die alte Formulierung dieser Spec zitiert, zitiert
+einen überholten Stand.
+
 ## 5. Tests — die Skill wird gegen Ausgangsläufe geschrieben
 
 Skill-Schreiben ist TDD an Prozessdokumentation: erst ansehen, was ein Agent ohne Skill

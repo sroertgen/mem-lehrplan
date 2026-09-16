@@ -9,7 +9,7 @@ description: >
 license: CC-BY-SA-4.0
 compatibility: >
   Node 22+ for `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check`; bash, grep, awk for scripts/; pdftotext optional.
-  Works offline — all ontology references are bundled.
+  Works offline; ontology references are bundled.
 metadata:
   author: sroertgen
   ontology: "1.0.0rc4"
@@ -20,28 +20,29 @@ metadata:
 
 ## Kernregel
 
-Die Dokumentation der Lehrplan-Ontologie ist die Autorität — nicht der MEM-Store, nicht ein
-lokal gefundenes Referenzdokument, nicht dein Gedächtnis. Jede ID kommt aus
-`scripts/lookup.sh`, jede Struktur aus einem Muster in `references/muster.md`. Jeder Befund
-wird gegen sein Soll behoben; Text aus der Vorlage bleibt wörtlich.
+Die Dokumentation der Lehrplan-Ontologie ist die Autorität — nicht der MEM-Store, kein
+lokales Referenzdokument, nicht dein Gedächtnis. Jede ID kommt aus
+`scripts/lookup.sh`, jede Struktur nach `references/muster.md`. Jeder Befund
+wird gegen sein Soll behoben; Vorlagentext bleibt wörtlich.
 
 ## Ablauf
 
 1. `references/muster.md`, `references/konventionen.md` und `references/laender/<XX>.md` des
-   Landes lesen; `references/beispiel.ttl` ist die zu kopierende Vorlage.
+   Landes lesen; `references/beispiel.ttl` dient als Vorlage.
 2. Jede ID mit `scripts/lookup.sh <Wort|ID>` nachschlagen, den Klasseninhalt mit
-   `scripts/klasse.sh <LP_ID>`. Keine ID aus dem Gedächtnis.
-3. Schreiben: benannte Knoten mit IRI im eigenen Namensraum; Titel, Beschreibung, Nummer als
+   `scripts/klasse.sh <LP_ID>`. Nie aus dem Gedächtnis.
+3. Schreiben: benannte Knoten mit IRI im Namensraum; Titel, Beschreibung, Nummer als
    Wertknoten mit `hat Wert` (LP_0000344); Jahrgangsstufen als Individuen (LP_2000001–13);
    Hierarchie über `hat Teil` (obo:BFO_0000051); `hat Position` (LP_0000460) für die
    Reihenfolge; keine Blank Nodes.
 4. `npx --registry=https://git.edufeed.org/api/packages/edufeed/npm/ mem-explorer check datei.ttl` — Exit 0 heißt kein Fehler.
 5. Bericht gruppenweise mit den **Soll**-Blöcken abarbeiten (`references/befunde.md`).
-   Reasoner-Artefakte bleiben, wie sie sind; IRIs nie umbenennen.
+   Reasoner-Artefakte bleiben unverändert; IRIs nie umbenennen.
 6. Wiederholen bis Exit 0, dann Bericht und Datei dem Menschen für den PDF-Abgleich geben —
    Texttreue und Vollständigkeit prüft das Werkzeug nicht.
 
-Ausführlich, mit dem Weg vom PDF zur Struktur: `references/arbeitsablauf.md`.
+Alle Pfade sind relativ zum Skill-Ordner (wo diese Datei liegt); von woanders mit vollem Pfad
+aufrufen. Ausführlich, mit dem Weg vom PDF zur Struktur: `references/arbeitsablauf.md`.
 
 ## Schnellreferenz
 
@@ -54,7 +55,7 @@ Ausführlich, mit dem Weg vom PDF zur Struktur: `references/arbeitsablauf.md`.
 | hat Jahrgangsstufe → Individuum | LP_0000026 → LP_2000005 … | mehrwertig, kein Literal |
 | von Bundesland → Individuum | LP_0000029 → LP_30000xx | SH = LP_3000054 |
 | hat Schulfach / für Schulart | LP_0000537 / LP_0000812 | schulfach:/schulart:-IRIs, nicht `lp:` |
-| hat Schulstufe → Individuum | LP_0000047 → LP_0000045 (Sek I) | Pattern 5 |
+| hat Schulstufe → Individuum | LP_0000047 → LP_0000045 (Sek I) | Pattern 1 (Wurzel) |
 
 ## Rote Flaggen — anhalten und nachschlagen
 

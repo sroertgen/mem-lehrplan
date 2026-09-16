@@ -55,7 +55,7 @@ git diff --stat references/                # was sich in der Ontologie geaendert
 ## Tests
 
 Vier Szenarien (Transformieren, Nachbessern, Nachschlagen, Retrieval) in
-`docs/testing/szenarien.md`, je einmal ohne Skill als Ausgangslauf
+`docs/testing/szenarien.md`, drei davon je zweimal ohne Skill als Ausgangslauf
 (`docs/testing/baseline.md`, sechs Läufe) und einmal mit Skill (`docs/testing/green.md`).
 Alle vier Szenarien bestehen dort zwei aufeinanderfolgende Läufe: Szenario 1 und 2 bereits
 in der ersten Runde, Szenario 3 erst nach einem Refactor in der zweiten Runde, Szenario 4
