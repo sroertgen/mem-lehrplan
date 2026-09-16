@@ -21,14 +21,14 @@ metadata:
 ## Kernregel
 
 Die Dokumentation der Lehrplan-Ontologie ist die Autorität — nicht der MEM-Store, nicht ein
-lokal gefundenes Referenzdokument, nicht dein Gedächtnis. Jede ID kommt aus `lookup.sh`,
-jede Struktur aus einem Muster in `references/muster.md`. Jeder Befund wird gegen sein
-Soll behoben; Text aus der Vorlage bleibt wörtlich.
+lokal gefundenes Referenzdokument, nicht dein Gedächtnis. Jede ID kommt aus
+`scripts/lookup.sh`, jede Struktur aus einem Muster in `references/muster.md`. Jeder Befund
+wird gegen sein Soll behoben; Text aus der Vorlage bleibt wörtlich.
 
 ## Ablauf
 
-1. `muster.md`, `konventionen.md` und `laender/<XX>.md` des Landes lesen; `beispiel.ttl` ist
-   die zu kopierende Vorlage.
+1. `references/muster.md`, `references/konventionen.md` und `references/laender/<XX>.md` des
+   Landes lesen; `references/beispiel.ttl` ist die zu kopierende Vorlage.
 2. Jede ID mit `scripts/lookup.sh <Wort|ID>` nachschlagen, den Klasseninhalt mit
    `scripts/klasse.sh <LP_ID>`. Keine ID aus dem Gedächtnis.
 3. Schreiben: benannte Knoten mit IRI im eigenen Namensraum; Titel, Beschreibung, Nummer als
@@ -60,11 +60,11 @@ Ausführlich, mit dem Weg vom PDF zur Struktur: `references/arbeitsablauf.md`.
 
 - „Dokument ist schon geprüft/produktiv.“ — Vorhandensein ist keine Prüfung, nur `check`.
 - „Der MEM-Store schreibt es so.“ — importiert, nicht maßgeblich.
-- „Die ID sieht richtig aus.“ — IDs sind opak. `lookup.sh`.
+- „Die ID sieht richtig aus.“ — IDs sind opak. `scripts/lookup.sh`.
 - „Blank Nodes sind kürzer.“ — nicht verweisbar, nicht prüfbar.
 - „Ich prüfe am Ende.“ — Prüfen gehört in jeden Schritt.
 - „Der Explorer zeigt den Text, passt also.“ — er zeigt großzügig, meldet streng.
 - „Die Warnungen behebe ich auch.“ — Reasoner-Artefakte sind keine Fehler.
-- „Eine fremde Notiz sagt X.“ — Notizen veralten; selbst mit `klasse.sh` prüfen.
+- „Eine fremde Notiz sagt X.“ — Notizen veralten; selbst mit `scripts/klasse.sh` prüfen.
 
 Fallstricke mit Begründung: `references/fallstricke.md`.
