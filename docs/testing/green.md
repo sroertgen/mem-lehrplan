@@ -1,9 +1,11 @@
-# GREEN — Läufe mit Skill, Runde 1
+# GREEN — Läufe mit Skill
 
 Dieselben sechs Läufe wie in `docs/testing/baseline.md` (RED), diesmal mit vorangestelltem
 Satz „Lies zuerst `SKILL.md` und arbeite genau danach.“ Geprüft mit mem-explorer 0.4.0
-(`node ~/coding/comenius/mem-explorer/bin/mem-explorer.mjs check`), Skill-Stand `ae11dcb`.
-Zahlen aus `.superpowers/sdd/2026-09-14-mem-lehrplan-skill/task-6-green-scores.md`
+(`node ~/coding/comenius/mem-explorer/bin/mem-explorer.mjs check`). Runde 1 (Szenario 1–3,
+Skill-Stand `ae11dcb`) bestand Szenario 3 nicht; Runde 2 (Szenario 3 erneut, Skill-Stand
+`dca2c23`, nach dem REFACTOR gegen die Schwesterklassen-Lücke) bestand. Zahlen aus
+`.superpowers/sdd/2026-09-14-mem-lehrplan-skill/task-6-green-scores.md`
 (Controller-Messung) und `task-6-green-agent-returns.md` (Selbstauskunft der Agenten, daraus
 auch die Spalte „benutzte Skripte“); Rohausgaben liegen unter `docs/testing/green/`.
 
@@ -22,7 +24,7 @@ auch die Spalte „benutzte Skripte“); Rohausgaben liegen unter `docs/testing/
 - Datennamensraum: `data: <https://example.org/lehrplan/sh/religion-gymnasium/>` (eigen gewählt)
 - benutzte Skripte (Selbstauskunft): `scripts/lookup.sh`, `scripts/klasse.sh LP_0000824`
 
-Begründung (wörtlich):
+Begründung (wörtlich, ohne die Pfadangabe zur Turtle-Datei):
 
 > Ich bin dem Ablauf aus `SKILL.md` gefolgt: erst `references/muster.md` (Pattern 1
 > Lehrplanwurzel, Pattern 2 Titel/Beschreibung/Nummer, Pattern 6 Hierarchie über `hat Teil`)
@@ -35,11 +37,12 @@ Begründung (wörtlich):
 > und Inhalt SH, LP_3000054 Schleswig-Holstein, SH_0000008 Evangelische Religion, SH_0000003
 > Gymnasium) statt sie aus der Vorlage zu übernehmen. Mit `scripts/klasse.sh LP_0000824` habe
 > ich geprüft, dass die Restriktion `hat Teil → allValuesFrom LP_0002103 „Element (SH)“`
-> einen direkten Sprung von der Fachanforderungs-Wurzel zum Kompetenzbereich erlaubt […] —
-> deshalb habe ich anders als im Beispiel keine erfundene Lehrplanfragment-Ebene eingefügt,
-> weil der Auszug keinen übergeordneten Abschnittstitel nennt. Der dritte Themenpunkt aus der
-> Aufgabe […] fehlte im Beispiel und wurde als drittes `LP_0030280`-Element mit eigener
-> Position ergänzt.
+> einen direkten Sprung von der Fachanforderungs-Wurzel zum Kompetenzbereich erlaubt, da
+> LP_0030070 über eine anonyme Intersection ebenfalls als Element (SH) gilt — deshalb habe
+> ich anders als im Beispiel keine erfundene Lehrplanfragment-Ebene eingefügt, weil der
+> Auszug keinen übergeordneten Abschnittstitel nennt. Der dritte Themenpunkt aus der Aufgabe
+> („Gottesvorstellungen in anderen Religionen“) fehlte im Beispiel und wurde als drittes
+> `LP_0030280`-Element mit eigener Position ergänzt.
 
 ### Lauf 2 (`szenario-1-lauf-2.ttl`)
 
@@ -54,21 +57,25 @@ Begründung (wörtlich):
 - Datennamensraum: `data: <https://example.org/lehrplan/sh/ev-religion/>` (eigen gewählt)
 - benutzte Skripte (Selbstauskunft): `scripts/lookup.sh`, `scripts/klasse.sh`
 
-Begründung (wörtlich):
+Begründung (wörtlich, ohne die Pfadangabe zur Turtle-Datei):
 
 > Ich bin genau dem Ablauf aus `SKILL.md` gefolgt: `references/muster.md` lieferte die
 > Strukturmuster (Pattern 1 Lehrplanwurzel, Pattern 2 Titel/Beschreibung/Nummer als eigene
-> Wertknoten, Pattern 6 Hierarchie über `hat Teil`, plus `hat Position`), … und
-> `references/laender/SH.md` die Landesklassenliste, aus der ich LP_0000824 …, LP_0030070 …,
-> LP_0030278 … und LP_0030280 … auswählte. `references/beispiel.ttl` diente als
+> Wertknoten, Pattern 6 Hierarchie über `hat Teil`, plus `hat Position`), `references/konventionen.md`
+> die projektspezifischen Regeln (eigener `data:`-Namensraum, lesbare Slugs, Text wörtlich
+> ohne Sprachtag, Seitenkommentar je Knoten), und `references/laender/SH.md` die
+> Landesklassenliste, aus der ich LP_0000824 (Fachanforderung SH), LP_0030070
+> (Kompetenzbereich SH), LP_0030278 (Prozessbezogene Kompetenz SH) und LP_0030280
+> (Mögliches Thema und Inhalt SH) auswählte. `references/beispiel.ttl` diente als
 > Strukturvorlage, weil es denselben Fall (SH, Ev. Religion, „Die Frage nach Gott") bereits
 > einmal durchbuchstabiert — den Inhalt (drei statt zwei Themen-Bullets, abweichender
 > Beschreibungstext) habe ich aber wörtlich aus dem gegebenen Auszug übernommen statt es zu
-> kopieren. Jede ID habe ich mit `scripts/lookup.sh` … verifiziert und die drei Landesklassen
-> zusätzlich mit `scripts/klasse.sh` gegen ihre OWL-Definition in `lp-base.ttl` geprüft, um zu
-> bestätigen, dass sie als Teile eines Kompetenzbereichs zulässig sind. Bewusst weggelassen
-> habe ich eine Lehrplanfragment-Zwischenebene, weil der Auszug keine übergeordnete
-> Abschnittsangabe enthält und ich nichts erfinden wollte, was nicht im Text steht.
+> kopieren. Jede ID habe ich mit `scripts/lookup.sh` (Schulfach SH_0000008, Schulart
+> SH_0000003, alle LP_-Klassen) verifiziert und die drei Landesklassen zusätzlich mit
+> `scripts/klasse.sh` gegen ihre OWL-Definition in `lp-base.ttl` geprüft, um zu bestätigen,
+> dass sie als Teile eines Kompetenzbereichs zulässig sind. Bewusst weggelassen habe ich eine
+> Lehrplanfragment-Zwischenebene, weil der Auszug keine übergeordnete Abschnittsangabe
+> enthält und ich nichts erfinden wollte, was nicht im Text steht.
 
 ## Szenario 2 — Nachbessern
 
@@ -89,14 +96,35 @@ Begründung (wörtlich):
 - benutzte Skripte (Selbstauskunft): `scripts/lookup.sh`; Prüfschleife über
   `node bin/mem-explorer.mjs check`
 
-Begründung (wörtlich, gekürzt):
+Begründung (wörtlich):
 
-> **Was ich geändert habe, je Befundgruppe:** […] Gestützt habe ich mich auf
-> `references/befunde.md` (Soll-Muster je Regel, inkl. der Beispiele, die wörtlich auf diese
-> Datei zugeschnitten sind), das Original `references/beispiel.ttl` als Referenzwert für die
-> genauen Titel-/Beschreibungstexte, sowie `scripts/lookup.sh` zur Bestätigung der
-> Klassen-/Property-IDs […]. Verifiziert mit `node bin/mem-explorer.mjs check` im Projekt
-> `mem-explorer`: Exit 0 […]. Keine IRI wurde umbenannt oder entfernt.
+> Beide Originaldateien sind unverändert (nur gelesen, nicht geschrieben).
+>
+> **Was ich geändert habe, je Befundgruppe:**
+>
+> - **Literal an ObjectProperty / hat Titel** (`fachanforderung`): Den Literal
+>   `"Fachanforderungen Evangelische Religion"` von der Kante entfernt und stattdessen einen
+>   neuen Knoten `data:fachanforderung-titel` (`a lp:LP_0000346`, `hat Wert`) eingehängt.
+> - **Wertknoten als Blank Node / hat Beschreibung** (`kb-gott`): Den Blank Node
+>   `[ a lp:LP_0030003 ; rdfs:label … ]` durch den benannten Knoten `data:kb-gott-beschreibung`
+>   mit `hat Wert` ersetzt.
+> - **Text nicht an „hat Wert“** (`kb-gott-titel`): Dem vorhandenen, benannten Titel-Knoten
+>   das fehlende `lp:LP_0000344 "1 Die Frage nach Gott"` ergänzt, `rdfs:label` blieb stehen.
+> - **Literal an ObjectProperty / hat Jahrgangsstufe** (`kb-gott-pk-1`): Das Literal `"5-6"`
+>   durch die beiden Individuen `lp:LP_2000005 , lp:LP_2000006` ersetzt.
+> - **Ziel ohne geforderte Klasse + Pflichtangabe fehlt / ist Teil von**
+>   (`kb-gott-inhalt-1-hinweis`): Nur den Typ von `lp:LP_0000852` (CE-Hinweis) auf
+>   `lp:LP_0030003` (Beschreibung) umgesetzt — IRI und die `hat Beschreibung`-Kante blieben
+>   unverändert; das behebt zugleich die zugehörige fehlende `ist Teil von`-Pflichtangabe,
+>   weil diese Shape nur an CE-Hinweis-Knoten gilt.
+>
+> Gestützt habe ich mich auf `references/befunde.md` (Soll-Muster je Regel, inkl. der
+> Beispiele, die wörtlich auf diese Datei zugeschnitten sind), das Original
+> `references/beispiel.ttl` als Referenzwert für die genauen Titel-/Beschreibungstexte, sowie
+> `scripts/lookup.sh` zur Bestätigung der Klassen-/Property-IDs (LP_0000346, LP_0030003,
+> LP_0000344, LP_2000005/6, LP_0000852). Verifiziert mit `node bin/mem-explorer.mjs check` im
+> Projekt `mem-explorer`: Exit 0, 0 Fehler, 0 Warnungen, nur noch die erwarteten 17
+> Reasoner-Artefakt-Hinweise. Keine IRI wurde umbenannt oder entfernt.
 
 ### Lauf 2 (`szenario-2-lauf-2.ttl`)
 
@@ -115,17 +143,43 @@ Begründung (wörtlich, gekürzt):
 - benutzte Skripte (Selbstauskunft): `scripts/klasse.sh LP_0000852` bzw. `LP_0030003`;
   Prüfschleife über `node bin/mem-explorer.mjs check`
 
-Begründung (wörtlich, gekürzt):
+Begründung (wörtlich):
 
-> **Was ich je Befundgruppe geändert habe:** […] 4. **Ziel ohne geforderte Klasse +
-> Pflichtangabe „ist Teil von"** (`kb-gott-inhalt-1-hinweis`): Den Knoten von `lp:LP_0000852`
-> (CE-Hinweis) auf `lp:LP_0030003` (Beschreibung) umgetypt, IRI und Kante unverändert. Mit
-> `scripts/klasse.sh LP_0000852` bzw. `LP_0030003` geprüft, dass nur CE-Hinweis eine
-> `obo:BFO_0000050`-Restriktion trägt […] — bestätigt durch den Vergleich mit
-> `references/beispiel.ttl`, wo der analoge Knoten `kb-gott-beschreibung` denselben Befund
-> nicht hat. **Grundlage/Werkzeuge:** `SKILL.md`-Ablauf, `references/befunde.md` […],
+> Der Explorer bestätigt Exit 0: 0 Fehler, 0 Warnungen, alle 17 verbleibenden Hinweise sind
+> Reasoner-Artefakte (kein Handlungsbedarf, gemäß `references/befunde.md`).
+>
+> **Was ich je Befundgruppe geändert habe:**
+>
+> 1. **Literal an ObjectProperty — hat Titel** (`fachanforderung`): Das Literal
+>    `"Fachanforderungen Evangelische Religion"` direkt an `lp:LP_0030056` durch einen neuen
+>    benannten Knoten `data:fachanforderung-titel` (Klasse `lp:LP_0000346` „Titel") mit dem
+>    Text an `lp:LP_0000344` ersetzt — Pattern 2.
+> 2. **Wertknoten als Blank Node + Text nicht an „hat Wert"** (`kb-gott`, hat Beschreibung):
+>    Den `[ a lp:LP_0030003 ; rdfs:label "…" ]`-Blank-Node durch den benannten Knoten
+>    `data:kb-gott-beschreibung` ersetzt, mit `hat Wert` ergänzt. Sowie separat
+>    `data:kb-gott-titel` um das fehlende `lp:LP_0000344` ergänzt (rdfs:label blieb als
+>    technische Kurzbezeichnung stehen, Titeltext kam separat dazu — Konvention aus
+>    `konventionen.md`).
+> 3. **Literal an ObjectProperty — hat Jahrgangsstufe** (`kb-gott-pk-1`): `"5-6"` durch die
+>    Individuen `lp:LP_2000005 , lp:LP_2000006` ersetzt (Pattern 5).
+> 4. **Ziel ohne geforderte Klasse + Pflichtangabe „ist Teil von"**
+>    (`kb-gott-inhalt-1-hinweis`): Den Knoten von `lp:LP_0000852` (CE-Hinweis) auf
+>    `lp:LP_0030003` (Beschreibung) umgetypt, IRI und Kante unverändert. Mit
+>    `scripts/klasse.sh LP_0000852` bzw. `LP_0030003` geprüft, dass nur CE-Hinweis eine
+>    `obo:BFO_0000050`-Restriktion trägt (deshalb löste die Umtypung beide gemeldeten Befunde
+>    gleichzeitig, ohne eine Kante ergänzen zu müssen) — bestätigt durch den Vergleich mit
+>    `references/beispiel.ttl`, wo der analoge Knoten `kb-gott-beschreibung` denselben Befund
+>    nicht hat.
+>
+> **Grundlage/Werkzeuge:** `SKILL.md`-Ablauf, `references/befunde.md` (Soll-Blöcke je Regel),
+> `references/muster.md` (Pattern 2/5), `references/konventionen.md` (Label vs. Titel),
 > `references/beispiel.ttl` als unbeschädigte Vorlage desselben Ausschnitts für die neuen
-> Textwerte […]. Beide Originaldateien wurden nicht verändert.
+> Textwerte, `scripts/klasse.sh` zur Bestätigung der Klassen-Restriktionen, sowie
+> `node bin/mem-explorer.mjs check` (aus `/home/laoc/coding/comenius/mem-explorer`) zur
+> Schlussprüfung — Exit 0.
+>
+> Beide Originaldateien wurden nicht verändert; die korrigierte Datei liegt unter
+> `/tmp/claude-1000/-home-laoc-coding-comenius-mem-explorer/89cfbaf0-2f8e-4e41-9688-22b9b56c69a4/scratchpad/green/szenario-2-lauf-2.ttl`.
 
 ## Szenario 3 — Nachschlagen
 
@@ -141,17 +195,29 @@ Begründung (wörtlich, gekürzt):
 - benutzte Skripte (Selbstauskunft): `scripts/lookup.sh "Möglicher Inhalt"`,
   `scripts/klasse.sh LP_0030059/LP_0002103/LP_0000261/LP_0000332/LP_0000852`
 
-Begründung (wörtlich):
+Begründung (wörtlich, ohne die Pfadangabe zur Antwortdatei):
 
-> **Kernaussage:** Für eine „Konkretion“ […] in Schleswig-Holstein ist die Klasse
-> `LP_0030059` „Möglicher Inhalt (SH)“ vorgesehen; sie enthält jedoch **keine**
-> `owl:Restriction` auf `hat Teil` […] — die Ontologie schreibt also nicht vor, was ein
-> solcher Knoten als Teile haben darf oder muss. […] **Herkunft der Angaben:** Die
-> Klassenzuordnung stammt aus `scripts/lookup.sh "Möglicher Inhalt"` und aus
-> `references/laender/SH.md` bzw. `references/arbeitsablauf.md` (Zuordnung „Konkretionen“ →
-> Lerninhalt-Klasse des Landes). […] Ich habe genau nach `SKILL.md` gearbeitet: nur
-> `lookup.sh`/`klasse.sh` und die referenzierten Dateien, keine ID aus dem Gedächtnis, keine
-> Subagenten.
+> **Kernaussage:** Für eine „Konkretion“ (möglicher Inhalt zu einem Kompetenzbereich) in
+> Schleswig-Holstein ist die Klasse `LP_0030059` „Möglicher Inhalt (SH)“ vorgesehen; sie
+> enthält jedoch **keine** `owl:Restriction` auf `hat Teil` (`obo:BFO_0000051`) — weder
+> direkt noch in ihrer gesamten Oberklassenkette (`LP_0002103` „Element (SH)“ →
+> `LP_0000261` „Curriculares Element“) — die Ontologie schreibt also nicht vor, was ein
+> solcher Knoten als Teile haben darf oder muss. Auffällig: der Funktionswert der Klasse
+> (`hat Funktion` LP_0000483 = `LP_0001014` „Hinweisbeschreibungsfunktion“) ist derselbe,
+> der die generische Klasse `LP_0000852` „CE-Hinweis“ definiert, nicht der Wert von
+> `LP_0000332` „CE-Lerninhalt“ (`LP_0000480`) — trotz des Namens ist der SH-Knoten also
+> funktional eher ein Hinweis- als ein Lerninhalt-Typ, und auch CE-Hinweis regelt nirgends,
+> was es enthalten darf.
+>
+> **Herkunft der Angaben:** Die Klassenzuordnung stammt aus `scripts/lookup.sh "Möglicher
+> Inhalt"` und aus `references/laender/SH.md` bzw. `references/arbeitsablauf.md` (Zuordnung
+> „Konkretionen“ → Lerninhalt-Klasse des Landes). Die Definitionsblöcke und die Prüfung auf
+> fehlende `hat Teil`-Restriktionen stammen aus
+> `scripts/klasse.sh LP_0030059/LP_0002103/LP_0000261/LP_0000332/LP_0000852`, gegengeprüft
+> direkt gegen `references/lp-base.ttl`. Das generische Hierarchiemuster (`hat Teil` von
+> Lehrplan bis CE-Hinweis) stammt aus `references/patterns/pattern6.ttl`. Ich habe genau
+> nach `SKILL.md` gearbeitet: nur `lookup.sh`/`klasse.sh` und die referenzierten Dateien,
+> keine ID aus dem Gedächtnis, keine Subagenten.
 
 Lauf 1 folgt dem Ablauf sauber (nur nachgeschlagene IDs, keine erfundene ID, keine lokale
 Datendatei) und landet trotzdem bei der falschen von zwei strukturgleichen Klassen: der
@@ -173,45 +239,62 @@ für einen fachneutralen Prompt ausweist.
 - benutzte Skripte (Selbstauskunft): `scripts/lookup.sh LP_0030280`,
   `scripts/klasse.sh LP_0030280`/`LP_0002103`/`LP_0000261`, `grep` über `references/lp-base.ttl`
 
-Begründung (wörtlich):
+Begründung (wörtlich, ohne die Pfadangabe zur Antwortdatei):
 
-> **Klasse:** … `LP_0030280` … Bestätigt durch echte Nutzdaten: … Die Klassenidentität
-> kommt aus den echten SH-Nutzdaten
-> `~/coding/comenius/relidesk-mem-lehrplan-transformation/schleswig-holstein/sekundarstufe.ttl`
-> (dort tragen die „Mögliche Konkretionen"-Container und ihre Stichpunkte durchgängig
-> `rdf:type lp:LP_0030280`) — **Namenserraten aus `references/laender/SH.md` allein reichte
-> nicht, da mehrere Klassen „Inhalt" im Namen tragen.** Label/Typ bestätigt mit
-> `scripts/lookup.sh LP_0030280`. […] `LP_0030280` hat **keine benannte Oberklasse** — nur
-> eine anonyme `owl:intersectionOf` […]. Das ist einer der in `mem-explorer/CLAUDE.md`
-> dokumentierten blinden Flecken: 22 der 37 SH-Klassen […] hängen nur über eine anonyme
-> Intersection an ihrer Oberklasse.
+> **Kernaussage:** Für eine „Konkretion" (möglicher Inhalt zu einem Kompetenzbereich) in
+> Schleswig-Holstein ist die Klasse `lp:LP_0030280` („Mögliches Thema und Inhalt (SH)“)
+> vorgesehen; die Ontologie schränkt aber nicht ein, was ein solcher Knoten als Teile
+> (`obo:BFO_0000051`, hat Teil) haben darf — weder eine OWL-Restriktion an der Klasse selbst
+> noch eine SHACL-Shape existiert dafür. In den echten Daten (Datenkonvention, nicht
+> Ontologie-Zwang) enthalten Konkretions-Container weitere Knoten desselben Typs `LP_0030280`.
+>
+> **Woher die Angaben stammen:**
+> - Die Klassenidentität kommt aus den echten SH-Nutzdaten
+>   `~/coding/comenius/relidesk-mem-lehrplan-transformation/schleswig-holstein/sekundarstufe.ttl`
+>   (dort tragen die „Mögliche Konkretionen“-Container und ihre Stichpunkte durchgängig
+>   `rdf:type lp:LP_0030280`) — Namenserraten aus `references/laender/SH.md` allein reichte
+>   nicht, da mehrere Klassen „Inhalt“ im Namen tragen.
+> - Label/Typ bestätigt mit `scripts/lookup.sh LP_0030280`.
+> - Die vollständige Klassendefinition (anonyme `owl:intersectionOf`, keine
+>   `hat Teil`-Restriktion) kommt aus `scripts/klasse.sh LP_0030280`, `LP_0002103`,
+>   `LP_0000261`, sowie einem gezielten `grep` über `references/lp-base.ttl` nach
+>   `owl:onProperty obo:BFO_0000051` — die einzige derartige Restriktion in der
+>   SH-Hierarchie sitzt an der Wurzelklasse `LP_0000824`, nicht an `LP_0030280`.
+> - Zusätzlich geprüft gegen `src/lib/ontology/generated/shapes.ttl` und `hierarchy.ttl` im
+>   mem-explorer-Repo: keine SHACL-Shape zielt auf `LP_0030280`.
 
-Lauf 2 nennt die richtige Klasse, aber — im eigenen Wortlaut — nur, weil eine externe,
+Lauf 2 nennt die richtige Klasse, aber — im eigenen Wortlaut oben — nur, weil eine externe,
 ungeprüfte Nutzdatendatei (`relidesk-mem-lehrplan-transformation/…`) als Schiedsrichter
 zwischen den beiden gleich aussehenden Kandidaten diente: dieselbe Rationalisierung
 („ein reales, vorhandenes Dokument entscheidet“), die schon in der Baseline zum
-Szenario-1-Scheitern führte, jetzt mit richtigem statt falschem Ergebnis. Zusätzlich
-zitiert dieser Lauf erneut den in `mem-explorer/CLAUDE.md` dokumentierten „blinden Fleck“ —
-denselben, den `references/fallstricke.md` (Regel 8, aus der Baseline) bereits als seit
-mem-explorer 0.4.0 überholt markiert; die Skill-Regel dazu war zum Zeitpunkt dieses Laufs
-bereits im Skill-Stand `ae11dcb` vorhanden und wurde trotzdem nicht befolgt (siehe
-Vorbehalte).
+Szenario-1-Scheitern führte, jetzt mit richtigem statt falschem Ergebnis. Die vollständige
+Antwortdatei (`docs/testing/green/szenario-3-lauf-2.md`, nicht Teil der obigen
+Selbstauskunft-Zusammenfassung) geht darüber hinaus und zitiert zusätzlich den in
+`mem-explorer/CLAUDE.md` dokumentierten „blinden Fleck“ als Beleg für die fehlende
+Oberklasse — denselben, den `references/fallstricke.md` (Regel 8, aus der Baseline) bereits
+als seit mem-explorer 0.4.0 überholt markiert; die Skill-Regel dazu war zum Zeitpunkt dieses
+Laufs bereits im Skill-Stand `ae11dcb` vorhanden und wurde trotzdem nicht befolgt (siehe
+Vorbehalte). Die oben genannte Kennzahl zum „blinden Fleck“ (2×) stammt aus dieser
+vollständigen Antwortdatei, nicht aus der hier zitierten Kurz-Selbstauskunft.
 
 ## Vergleich Baseline → GREEN
 
-| Szenario | Kennzahl | Baseline (RED) | GREEN (Runde 1) |
-|---|---|---|---|
-| 1 | Exit | 1 / 1 | 0 / 0 |
-| 1 | Blank Nodes | 4 / 5 | 0 / 0 |
-| 1 | `hat Wert`-Zeilen | 0 / 0 | 8 / 8 |
-| 1 | CE-Hinweis (LP_0000852) als Typ | 1× / 1× | 0× / 0× |
-| 1 | Erfundene IDs | 0/19 · 0/19 | 0/24 · 0/24 |
-| 2 | Exit | 0 / 0 | 0 / 0 |
-| 2 | Blank Nodes | 0 / 0 | 0 / 0 |
-| 2 | IRIs verändert | nein / nein | nein / nein |
-| 2 | Reasoner-Artefakt „repariert“ | 0 / 0 | 0 / 0 |
-| 3 | Nennt LP_0030280 | 14× / 19× (beide richtig, aber via blinden Fleck) | 0× (falsche Klasse) / 26× (richtig, via lokale Datei) |
-| 3 | Zitiert „blinden Fleck“ | 2× / 2× | 0× / 2× |
+| Szenario | Kennzahl | Baseline (RED) | GREEN (Runde 1) | GREEN (Runde 2) |
+|---|---|---|---|---|
+| 1 | Exit | 1 / 1 | 0 / 0 | – |
+| 1 | Blank Nodes | 4 / 5 | 0 / 0 | – |
+| 1 | `hat Wert`-Zeilen | 0 / 0 | 8 / 8 | – |
+| 1 | CE-Hinweis (LP_0000852) als Typ | 1× / 1× | 0× / 0× | – |
+| 1 | Erfundene IDs | 0/19 · 0/19 | 0/24 · 0/24 | – |
+| 2 | Exit | 0 / 0 | 0 / 0 | – |
+| 2 | Blank Nodes | 0 / 0 | 0 / 0 | – |
+| 2 | IRIs verändert | nein / nein | nein / nein | – |
+| 2 | Reasoner-Artefakt „repariert“ | 0 / 0 | 0 / 0 | – |
+| 3 | Nennt LP_0030280 | 14× / 19× (beide richtig, aber via blinden Fleck) | 0× (falsche Klasse) / 26× (richtig, via lokale Datei) | 2× / 3× (beide zusätzlich mit LP_0030059) |
+| 3 | Nennt LP_0030059 | – (nicht erhoben) | 12× (statt LP_0030280) / 1× | 7× / 3× |
+| 3 | editorialNote genannt | – (gab es noch nicht) | – (gab es noch nicht) | 7× / 7× |
+| 3 | Zitiert „blinden Fleck“ | 2× / 2× | 0× / 2× | 0× / 0× |
+| 3 | Lokale Datendatei/Wissensbasis als Quelle | ja / ja | nein / ja | nein / nein |
 
 Szenario 1 und 2 sind gegenüber der Baseline eindeutig verbessert (Szenario 1 kippt von
 Exit 1 mit Blank Nodes und Nulltreffern bei `hat Wert` auf Exit 0 ohne Blank Nodes;
@@ -250,7 +333,132 @@ steht noch aus.
 
 ## Runde 2
 
-Steht aus.
+Zwei neue Läufe für Szenario 3, Skill-Stand `dca2c23` (nach dem REFACTOR: editorialNote-Spalte,
+aktualisiertes Erfolgsmaß in `szenarien.md`, korrigierter „unsichtbar“-Satz in
+`laender/*.md`). Gleicher Prompt wie in Runde 1/Baseline, mit vorangestelltem
+Skill-Hinweis. Zahlen aus dem Abschnitt „Szenario 3 — Runde 2“ von `task-6-green-scores.md`,
+Zitate aus den Abschnitten `szenario-3-r2-lauf-1`/`-2` von `task-6-green-agent-returns.md`;
+Rohausgaben unter `docs/testing/green/szenario-3-r2-lauf-1.md` und `-2.md`.
+
+### Lauf 1 (`szenario-3-r2-lauf-1.md`)
+
+- 612 Wörter
+- Nennt LP_0030280: 2 Vorkommen; nennt LP_0030059: 7 Vorkommen — beide Kandidatenklassen genannt
+- editorialNote genannt: 7 Vorkommen
+- Lokale Datendatei/Wissensbasis als Quelle: 0
+- „blinder Fleck“ zitiert: 0
+- Teile-Restriktion: keine gefunden — `scripts/klasse.sh LP_0030059` zeigt keinen
+  `owl:Restriction`-Block auf `obo:BFO_0000051`; der Knoten ist laut Lauf 1 ein Blatt der
+  Gliederung
+- Quellen laut Datei: `references/arbeitsablauf.md`, `references/laender/SH.md`,
+  `references/lp-base.ttl`, `references/muster.md`, `scripts/klasse.sh`, `scripts/lookup.sh`
+- benutzte Skripte (Selbstauskunft): `scripts/lookup.sh "möglicher inhalt"`,
+  `scripts/klasse.sh` (für `LP_0030059`, `LP_0030070`, `LP_0000332`, `LP_0000852` und
+  weitere Vergleichskandidaten), `grep -n "BFO_0000051" references/lp-base.ttl`
+
+Begründung (wörtlich, ohne die Pfadangabe zur Antwortdatei):
+
+> **Kernaussage:** Für eine „Konkretion“ (möglicher Inhalt zu einem Kompetenzbereich) in SH
+> ist `LP_0030059` „Möglicher Inhalt (SH)“ vorgesehen — Unterklasse von `LP_0002103`
+> „Element (SH)“ mit `hat Funktion` → `Hinweisbeschreibungsfunktion` (`LP_0001014`),
+> strukturell also vom Typ CE-Hinweis (`LP_0000852`), nicht CE-Lerninhalt. SH hat dafür
+> keine einzige fachübergreifende Klasse, sondern vier strukturgleiche Schwestern (Englisch
+> Sek I/II, Sachunterricht, Physik), unterschieden nur durch `skos:editorialNote`. Laut
+> Ontologie sind diesem Knotentyp **keine Teile** zugewiesen: `scripts/klasse.sh LP_0030059`
+> zeigt keinen `owl:Restriction`-Block auf `obo:BFO_0000051` (hat Teil) — der Knoten ist ein
+> Blatt der Gliederung.
+>
+> Woher die Angaben stammen: die Klassen-ID über `scripts/lookup.sh "möglicher inhalt"`; die
+> Definitionsblöcke (inkl. Bestätigung des fehlenden hat-Teil-Restriktion) über
+> `scripts/klasse.sh` für `LP_0030059`, `LP_0030070` (Kompetenzbereich SH), `LP_0000332`
+> (CE-Lerninhalt), `LP_0000852` (CE-Hinweis) und weitere Vergleichskandidaten; die
+> Landesklassentabelle aus `references/laender/SH.md`; das allgemeine Hierarchiemuster aus
+> `references/muster.md` (Pattern 6); die Bestätigung über
+> `grep -n "BFO_0000051" references/lp-base.ttl`, dass keine solche Restriktion bei den
+> betroffenen Klassen vorkommt — alles im Worktree
+> `/home/laoc/coding/comenius/mem-lehrplan/.worktrees/skill`.
+
+### Lauf 2 (`szenario-3-r2-lauf-2.md`)
+
+- 721 Wörter
+- Nennt LP_0030280: 3 Vorkommen; nennt LP_0030059: 3 Vorkommen — beide Kandidatenklassen genannt
+- editorialNote genannt: 7 Vorkommen
+- Lokale Datendatei/Wissensbasis als Quelle: 0
+- „blinder Fleck“ zitiert: 0
+- Teile-Restriktion: nach Rolle differenziert — eine Klasse mit CE-Lerninhalt-Rolle darf
+  laut Ontologie nur einen weiteren CE-Lerninhalt-artigen Knoten als Teil haben (kein
+  CE-Bereich, keine CE-Kompetenzspezifikation), praktisch ergänzt um einen CE-Hinweis-Knoten
+  (Pattern 6); eine Klasse mit CE-Hinweis-Rolle trägt keine eigene `hat Teil`-Restriktion und
+  ist strukturell ein Blattknoten
+- nennt zusätzliche strukturgleiche Klassen zum Vergleich: LP_0030282 „Inhalt (SH)“,
+  LP_0030254 „Thema und Inhalt (SH)“ (CE-Lerninhalt-Rolle)
+- Quellen laut Datei: `references/arbeitsablauf.md`, `references/fallstricke.md`,
+  `references/laender/SH.md`, `references/lp-base.ttl`, `references/muster.md`,
+  `references/patterns/pattern…`, `references/terms/lp-terms.tsv`, `scripts/klasse.sh`,
+  `scripts/lookup.sh`
+- benutzte Skripte (Selbstauskunft): `scripts/klasse.sh` (für `LP_0030070`, `LP_0002103`,
+  alle „Inhalt/Thema/Möglich…“-Kandidaten, `LP_0000332`, `LP_0000852`), `scripts/lookup.sh`
+
+Begründung (wörtlich, ohne die Pfadangabe zur Antwortdatei):
+
+> **Kernaussage:** Der Kompetenzbereich selbst ist `LP_0030070` „Kompetenzbereich (SH)“.
+> Für die „Konkretion" (Kompetenzbereich-Inhalt) gibt es in Schleswig-Holstein **keine
+> einzige Klasse**, sondern mehrere strukturgleiche Schwesterklassen (`owl:intersectionOf`
+> aus `LP_0002103` „Element (SH)" + einer Funktions-Restriktion auf `LP_0000483`
+> „hat Funktion"), die je nach Fach entweder die Rolle von `LP_0000332` „CE-Lerninhalt"
+> (Lerninhaltsbeschreibungsfunktion `LP_0000480`, z. B. `LP_0030282` Inhalt SH, `LP_0030254`
+> Thema und Inhalt SH) oder von `LP_0000852` „CE-Hinweis" (Hinweisbeschreibungsfunktion
+> `LP_0001014`, z. B. `LP_0030059` Möglicher Inhalt SH – Englisch Primar, `LP_0030280`
+> Mögliches Thema und Inhalt SH – Sachunterricht) übernehmen; unterschieden wird
+> ausschließlich über die `editorialNote` (Fach), nicht über den Namen. Als Teile darf eine
+> Klasse mit CE-Lerninhalt-Rolle laut Ontologie nur einen weiteren CE-Lerninhalt-artigen
+> Knoten haben (kein CE-Bereich, keine CE-Kompetenzspezifikation), praktisch ergänzt um
+> einen CE-Hinweis-Knoten (Pattern 6); eine Klasse mit CE-Hinweis-Rolle trägt keine eigene
+> `hat Teil`-Restriktion und ist strukturell ein Blattknoten.
+>
+> **Herkunft der Angaben:** Klassenliste und editorialNotes aus `references/laender/SH.md`;
+> jede genannte ID einzeln mit `scripts/klasse.sh <ID>` gegen `references/lp-base.ttl`
+> geprüft (LP_0030070, LP_0002103, alle „Inhalt/Thema/Möglich…"-Kandidaten, LP_0000332
+> CE-Lerninhalt, LP_0000852 CE-Hinweis); IDs zusätzlich mit `scripts/lookup.sh`
+> gegenkontrolliert; Kommentartexte aus `references/terms/lp-terms.tsv`; der Begriff
+> „Konkretion" als generischer Workflow-Ausdruck sowie das Hierarchie-Muster aus
+> `references/arbeitsablauf.md` und `references/patterns/pattern6.ttl`/`references/muster.md`.
+> `references/fallstricke.md` (Zeile 21/34) dokumentiert diese Verwechslungsgefahr exakt für
+> dieses Szenario — wurde zur Einordnung gelesen, die dort genannte "richtige" ID aber nicht
+> ungeprüft übernommen, sondern jede Kandidaten-ID erneut selbst über `klasse.sh` verifiziert,
+> da im aktuellen Auftrag kein Fach genannt ist.
+
+Beide Läufe bestehen das in der Fix-Runde 1 aktualisierte Erfolgsmaß aus
+`docs/testing/szenarien.md` (2/2): beide Kandidatenklassen mit editorialNote genannt, keine
+Teile-Restriktion per `scripts/klasse.sh` unbelegt behauptet, Quellen ausschließlich aus der
+Skill selbst, keine lokale Datendatei, kein „blinder Fleck“ zitiert. Lauf 2 geht über das
+Erfolgsmaß hinaus und ordnet die strukturgleichen Schwesterklassen zusätzlich nach ihrer
+Funktion (Lerninhalts- vs. Hinweisbeschreibungsfunktion), mit zwei weiteren Beispielen zum
+Vergleich (LP_0030282, LP_0030254).
+
+## Ergebnis
+
+Alle drei Szenarien bestehen jetzt zwei aufeinanderfolgende Läufe: Szenario 1 und 2 bereits
+in Runde 1 (Skill-Stand `ae11dcb`, siehe „Runde 1: Befund“), Szenario 3 erst in Runde 2, nach
+dem REFACTOR. Damit ist die im Plan festgelegte Abbruchbedingung erfüllt: „Abbruch, wenn zwei
+aufeinanderfolgende Läufe je Szenario bestehen“
+(`docs/superpowers/plans/2026-09-14-mem-lehrplan-skill.md`, Task 6, Step 8).
+
+Was zwischen Runde 1 und Runde 2 für Szenario 3 geändert wurde, steht in zwei Commits:
+
+- `75b8f8e` — REFACTOR: `editorialNote`-Spalte in `scripts/gen-terms.py`/`gen-laender.py`/
+  `scripts/lookup.sh`, neunte Regel in `references/fallstricke.md`, je ein Satz in
+  `references/muster.md`/`references/arbeitsablauf.md`, aktualisiertes Erfolgsmaß in
+  `docs/testing/szenarien.md`.
+- `dca2c23` — den seit mem-explorer 0.4.0 falschen „für SHACL unsichtbar“-Satz in
+  `references/laender/*.md` (u. a. `SH.md`, von wo aus der Szenario-3-Agent die
+  Landesklassen liest) durch die korrekte Zwei-Satz-Erklärung ersetzt.
+
+Ohne diese beiden Commits bestand Szenario 3 keinen der vier bis dahin gemessenen Läufe
+(Baseline nannte die richtige Klasse nur über den veralteten „blinden Fleck“, Runde 1 einmal
+falsch und einmal nur über eine externe Datendatei); mit beiden Commits bestehen beide
+Runde-2-Läufe unabhängig voneinander und ohne externe Quelle (siehe Vorbehalt 4 unten für
+eine Einschränkung dieser Aussage bei Lauf 2).
 
 ## Vorbehalte
 
@@ -285,3 +493,17 @@ Steht aus.
    veralteten Begründung folgt). Das zeigt, dass eine Regel im Skill zu haben nicht dasselbe
    ist wie sie tatsächlich befolgt zu bekommen — ein Befund für eine mögliche künftige
    Runde, nicht Teil des REFACTORs dieser Fix-Runde.
+4. **Szenario 3, Runde 2, Lauf 2: liest im Skill exakt die Beschreibung des eigenen Tests.**
+   `references/fallstricke.md` beschreibt seit dem REFACTOR (neunte Regel plus
+   Rationalisierungstabellen-Zeile) genau dieses Szenario — mit beiden Kandidaten-IDs und der
+   „richtigen“ Antwort aus Runde 1. Lauf 2 liest diese Datei ausdrücklich zur Einordnung, hält
+   aber selbst fest, dass er die dort genannte ID nicht einfach übernommen hat: „…
+   `references/fallstricke.md` (Zeile 21/34) dokumentiert diese Verwechslungsgefahr exakt für
+   dieses Szenario — wurde zur Einordnung gelesen, die dort genannte "richtige" ID aber nicht
+   ungeprüft übernommen, sondern jede Kandidaten-ID erneut selbst über `klasse.sh` verifiziert,
+   da im aktuellen Auftrag kein Fach genannt ist.“ Das ist eine ehrliche Grenze dieser
+   Testrunde: die Skill wird hier teilweise auf genau dem Fall geprüft, gegen den sie
+   geschrieben wurde (Skill-TDD), nicht auf einem unabhängigen. Der Lauf zeigt zwar gutes
+   Verhalten (Verifikation über `klasse.sh` statt Kopie der genannten ID), belegt aber nicht,
+   dass ein unabhängiges drittes Szenario mit derselben Art von Ambiguität ebenso bestehen
+   würde.
