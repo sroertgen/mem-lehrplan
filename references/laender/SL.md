@@ -52,7 +52,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000187 | Erster Abschluss (SL) |
 | LP_0000211 | Mittlerer Abschluss (SL) |
 | LP_0001025 | Fachniveau Sek II (SL) |
-| LP_0001028 | Bildungsgangniveau (SL) |
 | LP_0002232 | Kompetenzerwartung (SL) |
 | LP_0002233 | Hinweis zur Umsetzung (SL) |
 | LP_0002235 | Verbindliches Fachwissen (SL) |
@@ -109,6 +108,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030244 | Verstehen und Handeln (SL) |
 | LP_0030261 | Dialogisches Sprechen – mündliche Interaktion (SL) |
 | LP_0030262 | Zusammenhängendes monologisches Sprechen – mündliche Produktion (SL) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0001028 | Bildungsgangniveau (SL) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (12)
 

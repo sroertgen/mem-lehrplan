@@ -61,7 +61,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000350 | Lernziel (RP) |
 | LP_0000432 | Kompetenz (RP) |
 | LP_0001018 | Fachniveau Sek II (RP) |
-| LP_0001019 | Bildungsgangniveau (RP) |
 | LP_0002195 | Inhalt zum Erwerb der Kompetenzen (RP) |
 | LP_0002197 | Inhalt (RP) |
 | LP_0002198 | Hinweis und Vernetzung (RP) |
@@ -77,6 +76,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030111 | Beitrag zur Entwicklung der Basiskonzepte (RP) |
 | LP_0030112 | Erschließung des Themenfeldes durch Kontextorientierung (RP) |
 | LP_0030113 | Differenzierungsmöglichkeit (RP) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0001019 | Bildungsgangniveau (RP) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (10)
 

@@ -22,14 +22,19 @@ TYPES = {
     "owl:NamedIndividual": "Individual",
 }
 
+LIT = r'"""(?:[^\\]|\\.)*?"""|"(?:[^"\\]|\\.)*"'
+
 def literals(block, pred, lang=None):
     out, tag = [], (f"@{lang}" if lang else "")
-    for m in re.finditer(re.escape(pred) + r'\s+((?:"(?:[^"\\]|\\.)*"(?:@[a-zA-Z-]+)?\s*,?\s*)+)', block):
-        for lm in re.finditer(r'"((?:[^"\\]|\\.)*)"(@[a-zA-Z-]+)?', m.group(1)):
-            val, l = lm.group(1), lm.group(2) or ""
+    for m in re.finditer(re.escape(pred) + r'\s+((?:(?:' + LIT + r')(?:@[a-zA-Z-]+)?\s*,?\s*)+)', block):
+        for lm in re.finditer(r'"""((?:[^\\]|\\.)*?)"""(@[a-zA-Z-]+)?|"((?:[^"\\]|\\.)*)"(@[a-zA-Z-]+)?', m.group(1)):
+            val, l = (lm.group(1), lm.group(2)) if lm.group(1) is not None else (lm.group(3), lm.group(4))
+            l = l or ""
             if lang and l != tag:
                 continue
-            out.append(val.replace('\\"', '"').replace("\\n", " "))
+            val = val.replace('\\"', '"').replace("\\n", " ")
+            val = re.sub(r'\s*\n\s*', ' ', val)
+            out.append(val)
     return out
 
 def iris(block, pred):

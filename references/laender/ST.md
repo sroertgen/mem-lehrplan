@@ -52,7 +52,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000171 | Allgemeine Hochschulreife (ST) |
 | LP_0000185 | Erster Abschluss (ST) |
 | LP_0000209 | Mittlerer Abschluss (ST) |
-| LP_0001035 | Bildungsgangniveau (ST) |
 | LP_0002094 | Fachniveau Sek II (ST) |
 | LP_0002177 | Kompetenz (ST) |
 | LP_0002178 | Flexibel anwendbares Grundwissen (ST) |
@@ -68,6 +67,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030185 | Sprachlernkompetenz (ST) |
 | LP_0030186 | Text- und Medienkompetenz (ST) |
 | LP_0030200 | Textsorte (ST) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0001035 | Bildungsgangniveau (ST) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (13)
 

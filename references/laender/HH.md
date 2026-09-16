@@ -61,7 +61,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000163 | Allgemeine Hochschulreife (HH) |
 | LP_0000179 | Erster Abschluss (HH) |
 | LP_0000203 | Mittlerer Abschluss (HH) |
-| LP_0001108 | Bildungsgangniveau (HH) |
 | LP_0002072 | Fachniveau Sek II (HH) |
 | LP_0002214 | Beobachtungskriterium (HH) |
 | LP_0002215 | Regelanforderung (HH) |
@@ -70,6 +69,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030165 | Leitgedanke (HH) |
 | LP_0030166 | Beitrag zur Leitperspektive (HH) |
 | LP_0030172 | Bildungsstandard (HH) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0001108 | Bildungsgangniveau (HH) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (14)
 

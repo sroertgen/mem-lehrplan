@@ -52,8 +52,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000105 | Mittlerer Abschluss (BE) |
 | LP_0000106 | Erster Abschluss (BE) |
 | LP_0000109 | Allgemeine Hochschulreife (BE) |
-| LP_0000572 | Bildungsgangniveau (BE) |
-| LP_0000577 | Gymnasialniveau Sek I (BE) |
 | LP_0001169 | Fachniveau Sek II (BE) |
 | LP_0001226 | Eingangsvoraussetzung (BE) |
 | LP_0001227 | Unterrichtsanregung (BE) |
@@ -72,6 +70,13 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030122 | Fachmethode (BE) |
 | LP_0030124 | Beispiel für Unterrichtseinheiten (BE) |
 | LP_0030248 | Kompetenzerwerb im Themenfeld (BE) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0000572 | Bildungsgangniveau (BE) | LP_0000028 „Bildungsgangniveau“ |
+| LP_0000577 | Gymnasialniveau Sek I (BE) | LP_0000572 „Bildungsgangniveau (BE)“ |
 
 ## Individuen des Landes (7)
 

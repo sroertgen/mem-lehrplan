@@ -49,9 +49,14 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0002169 | Bildungsstandard (HE) |
 | LP_0002228 | Lernzeitbezogene Kompetenzerwartung (HE) |
 | LP_0030037 | Schwerpunktsetzung (HE) |
-| LP_0030039 | Bildungsgangniveau (HE) |
 | LP_0030076 | Inhalt zu einem Inhaltsfeld (HE) |
 | LP_0030245 | Hinweis zu Bezüge zu Kompetenzbereichen / Standards (HE) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0030039 | Bildungsgangniveau (HE) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (10)
 

@@ -66,7 +66,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0002207 | Umsetzung im Unterricht (NI) |
 | LP_0030014 | Ergänzung zur Kompetenz (NI) |
 | LP_0030055 | Fachniveau Sek II (NI) |
-| LP_0030080 | Bildungsgangniveau (NI) |
 | LP_0030204 | Methodenkompetenz (NI) |
 | LP_0030205 | Lernstrategie und Arbeitstechnik (NI) |
 | LP_0030213 | Prozessbezogene Kompetenz (NI) |
@@ -84,6 +83,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030230 | Fakultative Erweiterung (NI) |
 | LP_0030231 | Hinweis zum Einsatz digitaler Mathematikwerkzeuge (NI) |
 | LP_0030232 | Online-Material (NI) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0030080 | Bildungsgangniveau (NI) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (18)
 

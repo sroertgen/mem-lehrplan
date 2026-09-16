@@ -49,7 +49,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000170 | Allgemeine Hochschulreife (MV) |
 | LP_0000184 | Erster Abschluss (MV) |
 | LP_0000208 | Mittlerer Abschluss (MV) |
-| LP_0001011 | Bildungsgangniveau (MV) |
 | LP_0002081 | Fachniveau Sek II (MV) |
 | LP_0002140 | Kompetenz (MV) |
 | LP_0002144 | Verbindlicher Inhalt (MV) |
@@ -58,6 +57,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0002153 | Standard (MV) |
 | LP_0002163 | Beispiel Verknüpfung von Inhalt und Kompetenzbereich (MV) |
 | LP_0030048 | Verbindliches Ziel (MV) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0001011 | Bildungsgangniveau (MV) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (12)
 

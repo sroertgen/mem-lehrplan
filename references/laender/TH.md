@@ -53,7 +53,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000160 | Allgemeine Hochschulreife (TH) |
 | LP_0000176 | Erster Abschluss (TH) |
 | LP_0000200 | Mittlerer Abschluss (TH) |
-| LP_0001038 | Bildungsgangniveau (TH) |
 | LP_0002098 | Fachniveau Sek II (TH) |
 | LP_0030019 | Sachkompetenz (TH) |
 | LP_0030026 | Kompetenz (TH) |
@@ -68,6 +67,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030291 | Wesentlicher inhaltlicher Aspekt (TH) |
 | LP_0030295 | Schülerexperiment (TH) |
 | LP_0030296 | Projektvorschlag (TH) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0001038 | Bildungsgangniveau (TH) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (12)
 

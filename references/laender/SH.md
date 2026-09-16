@@ -59,7 +59,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030023 | Themenvorschlag (SH) |
 | LP_0030059 | Möglicher Inhalt (SH) |
 | LP_0030079 | Mögliche Textsorte / Kommunikationssituation (SH) |
-| LP_0030091 | Bildungsgangniveau (SH) |
 | LP_0030254 | Thema und Inhalt (SH) |
 | LP_0030256 | Kompetenz (SH) |
 | LP_0030260 | Vorgabe und Hinweis (SH) |
@@ -72,6 +71,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030280 | Mögliches Thema und Inhalt (SH) |
 | LP_0030281 | Mögliches Thema (SH) |
 | LP_0030282 | Inhalt (SH) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0030091 | Bildungsgangniveau (SH) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (11)
 

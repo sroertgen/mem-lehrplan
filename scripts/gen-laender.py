@@ -56,10 +56,15 @@ def main():
         rows = [r for r in lp.values() if r["label_de"].endswith(f"({code})")]
         classes = [r for r in rows if r["type"] == "Class"]
         indiv = [r for r in rows if r["type"] == "Individual"]
-        groups = {bid: [] for bid, _ in BASES}; anon = []
+        groups = {bid: [] for bid, _ in BASES}; anon = []; other = []
         for r in classes:
             b = base_of(r["id"], lp)
-            (groups[b] if b else anon).append(r)
+            if b:
+                groups[b].append(r)
+            elif r["parent"]:
+                other.append(r)
+            else:
+                anon.append(r)
         L = [f"# {name} ({code})", "",
              f"Bundesland-Individuum: `lp:{land_id}` — `von Bundesland` (LP_0000029) zeigt darauf.", "",
              f"Schulfach-IDs: Präfix `{code}_` in `references/terms/sf-terms.tsv` "
@@ -80,6 +85,14 @@ def main():
                   "sind sie unsichtbar (`rdfs:subClassOf*` endet im Blank Node); die Explorer-Regeln "
                   "greifen trotzdem.", "", "| ID | Klasse |", "|---|---|"]
             L += [f"| {r['id']} | {r['label_de']} |" for r in anon] + [""]
+        if other:
+            L += ["### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)", "",
+                  "| ID | Klasse | Oberklasse |", "|---|---|---|"]
+            for r in other:
+                pid = r["parent"].split(",")[0]
+                plabel = lp.get(pid, {}).get("label_de", "")
+                L += [f"| {r['id']} | {r['label_de']} | {pid} „{plabel}“ |"]
+            L += [""]
         if indiv:
             L += [f"## Individuen des Landes ({len(indiv)})", "", "| ID | Bezeichnung |", "|---|---|"]
             L += [f"| {r['id']} | {r['label_de']} |" for r in indiv] + [""]

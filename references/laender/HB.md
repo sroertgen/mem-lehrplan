@@ -53,7 +53,6 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000174 | Allgemeine Hochschulreife (HB) |
 | LP_0000188 | Erster Abschluss (HB) |
 | LP_0000212 | Mittlerer Abschluss (HB) |
-| LP_0001105 | Bildungsgangniveau (HB) |
 | LP_0002119 | Fachniveau Sek II (HB) |
 | LP_0002128 | Anforderung (HB) |
 | LP_0002129 | Inhalt (HB) |
@@ -63,6 +62,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030235 | Prozessbezogene Anforderung (HB) |
 | LP_0030236 | Inhaltsbezogene Anforderung (HB) |
 | LP_0030243 | Erweiterungsbaustein (Zugangswege/Anwendungsbereiche/Vertiefungen) (HB) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0001105 | Bildungsgangniveau (HB) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (12)
 

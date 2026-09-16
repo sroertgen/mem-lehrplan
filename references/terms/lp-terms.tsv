@@ -6,18 +6,18 @@ LP_0000004	Class	Fremdsprachenfach		LP_0000001	Ein “Fremsprachenfach” ist ei
 LP_0000005	Class	Gesellschaftswissenschaftsfach		LP_0000001	Ein “Gesellschaftswissenschaftsfach” ist ein “Schulfach”, in dem sich mit kulturellen, sozialen, ökonomischen und politischen Themen auseinandergesetzt wird. Zu den Gesellschaftswissenschaftsfächern gehören die Fächer Erziehungswissenschaften, Geographie, Geschichte, Sachunterricht, Sozialkunde, Politikwissenschaft und Wirtschaftskunde.
 LP_0000006	Class	Lehrprozess	teaching process	obo:BFO_0000015	
 LP_0000007	Class	Lernprozess	learning process	obo:BFO_0000015	
-LP_0000009	Class	Jahrgangsstufe	class level	obo:IAO_0000030	
+LP_0000009	Class	Jahrgangsstufe	class level	obo:IAO_0000030	Eine “Jahrgangsstufe” ist eine “Informationseinheit”. Sie umfasst die Gesamtheit der Klassen und Kurse, in denen Lernende gemeinsam einen bestimmten Abschnitt ihrer schulischen Laufbahn durchlaufen. Eine Jahrgangsstufe bezeichnet eine systematische Einteilung der Lernenden und gibt an, in welcher Phase ihres Bildungswegs sie sich befinden und legt die für sie vorgesehenen Kompetenzen und Lerninhal
 LP_0000010	Class	Person	person	obo:BFO_0000030	
 LP_0000011	Class	Lehrer Rolle	teacher role	obo:BFO_0000023	
 LP_0000012	Class	Schüler Rolle	student  role	obo:BFO_0000023	
-LP_0000013	Class	Kompetenz	competence	obo:BFO_0000016	
+LP_0000013	Class	Kompetenz	competence	obo:BFO_0000016	Eine „Kompetenz“ ist eine Eigenschaft, die eine Person entweder bereits besitzt oder im Verlauf eines Lernprozesses erwirbt. Sie ist die Fähigkeit eines Lernenden, Wissen und Können zur Lösung von Problemen anzuwenden (vgl. KMK). Die Ontologie unterscheidet zwischen “Kompetenz” und “CE-Kompetenzspezifikation”: Im Unterschied zur “CE-Kompetenzspezifikation”, die eine “Kompetenz” im Rahmen eines Leh
 LP_0000014	Individual	E Niveau (BW)			
 LP_0000015	AnnotationProperty	tracker item			
 LP_0000016	Individual	G Niveau (BW)			
 LP_0000017	ObjectProperty	konkretisiert Lehrplan	concretizes curriculum	obo:RO_0000059	
 LP_0000018	Individual	Gymnasialniveau Sek I (BW)			
-LP_0000019	Class	Schulabschluss	educational qualification	obo:BFO_0000035	
-LP_0000020	Class	Schulstufe	educational level	obo:IAO_0000030	
+LP_0000019	Class	Schulabschluss	educational qualification	obo:BFO_0000035	Ein “Schulabschluss” ist ein “Prozessende”. Es ist ein offiziell anerkannter Bildungsabschluss, der am Ende eines bestimmten Bildungsgangs erworben wird. Er bestätigt den erfolgreichen Abschluss einer schulischen Laufbahn und dient als Qualifikationsnachweis für weiterführende Bildungswege oder den Eintritt in das Berufsleben. Schulabschlüsse unterscheiden sich je nach Schulart und Bundesland in i
+LP_0000020	Class	Schulstufe	educational level	obo:IAO_0000030	Die “Schulstufe” ist eine “Informationseinheit”. Sie bezeichnet eine bestimmte Phase der schulischen Laufbahn, in der Lernende bestimmte Ziele gemäß den Anforderungen des Bildungssystems erreichen sollen. Schulstufen dienen dazu, den Lernenden einen strukturierten Lernweg zu bieten, in dem die pädagogischen und didaktischen Anforderungen an die jeweiligen Altersgruppen angepasst sind. Die Schulstu
 LP_0000021	ObjectProperty	endet mit Abschluss	leads to qualification	obo:BFO_0000051	
 LP_0000022	Individual	M Niveau (BW)			
 LP_0000023	Individual	Gymnasialniveau Sek I (BY)			
@@ -25,7 +25,7 @@ LP_0000024	ObjectProperty	wird beschrieben von	described by
 LP_0000025	Individual	Mittelschulniveau (BY)			
 LP_0000026	ObjectProperty	hat Jahrgangsstufe	has class level	LP_0000024	
 LP_0000027	Individual	Mittlere-Reife-Klasse (BY)			
-LP_0000028	Class	Bildungsgangniveau	educational track level	LP_0000037	
+LP_0000028	Class	Bildungsgangniveau	educational track level	LP_0000037	Das “Bildungsgangniveau” ist ein “Niveau”, das die Anforderungen innerhalb eines “Bildungsgangs” beschreibt und dabei den Unterschied in den Leistungsniveaus zwischen verschiedenen Bildungsgängen kennzeichnet. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden. In der Ontologie wird unterschieden zwischen dem “Hau
 LP_0000029	ObjectProperty	von Bundesland	of federal state	LP_0000024	
 LP_0000030	Individual	Realschulniveau (BY)			
 LP_0000031	Individual	Regelklasse (BY)			
@@ -33,9 +33,9 @@ LP_0000032	Individual	Orientierungsstufe (MV)
 LP_0000034	Individual	Erweitertes Anforderungsniveau (HB)			
 LP_0000035	Individual	Grundlegendes Anforderungsniveau (HB)			
 LP_0000036	Individual	Primarbereich			
-LP_0000037	Class	Niveau	niveau	obo:IAO_0000030	
+LP_0000037	Class	Niveau	niveau	obo:IAO_0000030	Das “Niveau” ist eine “Informationseinheit”. Sie bezeichnet eine Kategorisierung des Ausmaßes der Ausprägung eines oder mehrerer bestimmten Merkmale. Im Bildungskontext bezeichnet das “Niveau” das Level, die Komplexität, die Tiefe oder den Schwierigkeitsgrad eines Lerninhalts oder einer Kompetenz, die in einem Lehrplan oder Bildungsstandard festgelegt ist. Das Niveau gibt an, welche Anforderungen 
 LP_0000038	Individual	Gymnasialniveau Sek I (HB)			
-LP_0000039	Class	BistaFach		LP_0000001	
+LP_0000039	Class	BistaFach		LP_0000001	Ein “Bistafach” ist ein “Schulfach”, zu dem es von der KMK veröffentlichte Bildungsstandards gibt. Die Bistafächer sind Deutsch, Mathematik, die erste Fremdsprache (Englisch oder Französisch) und die drei Naturwissenschaften Biologie, Chemie und Physik.
 LP_0000040	Class	Bundesland Bezeichnung	state designation	obo:IAO_0000030	Klasse der Bezeichnungen der deutschen Bundesländer, deren Kultusministerien für die Lehrpläne zuständig ist.
 LP_0000041	ObjectProperty	hat Einheit	has unit	obo:BFO_0000051	
 LP_0000043	Class	Oberstufenphase	secondary phase	obo:IAO_0000030	
@@ -52,11 +52,11 @@ LP_0000055	Individual	G9 Einführungsphase
 LP_0000056	Class	Einführungsphase		LP_0000043	
 LP_0000057	Class	Qualifikationsphase		LP_0000043	
 LP_0000060	Individual	Allgemeinbildender Schulabschluss (HH)			
-LP_0000069	Class	Gymnasialniveau Sek I		LP_0000028	
+LP_0000069	Class	Gymnasialniveau Sek I		LP_0000028	Das "Gymnasialniveau Sek I” ist ein “Bildungsgangniveau”, welches das Niveau des "gymnasialen Bildungsgangs" im Sekundarbereich I beschreibt und somit meistens die Jahrgangsstufen 5-10 umfasst. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.
 LP_0000071	ObjectProperty	benötigt Niveau	requires level	LP_0000024	
 LP_0000076	Class	Allgemeine Hochschulreife			
-LP_0000078	Class	Mittlerer Schulabschluss			
-LP_0000079	Class	Erster Schulabschluss			
+LP_0000078	Class	Mittlerer Schulabschluss			Der “Mittlere Schulabschluss” ist ein “Schulabschluss” und ein allgemeinbildender Schulabschluss. Er wird nach der Jahrgangsstufe 10 verliehen. In den Bundesländern trägt der “Mittlere Schulabschluss” verschiedene Bezeichnungen: - Mittlerer Schulabschluss (BY, BE, HB, HH, SH, BW, NW) - Mittlere Reife (MV) - Mittlerer Bildungsabschluss (SL) - Realschulabschluss (HE, NI, SN, ST, TH) - Berechtigung z
+LP_0000079	Class	Erster Schulabschluss			Der “Erste Schulabschluss” ist ein “Schulabschluss” und ist der erste allgemeinbildende Schulabschluss. Er wird je nach Bundesland und Schulart nach der Jahrgangsstufe 9 oder 10 verliehen. In den Bundesländern trägt der “Erste Schulabschluss” verschiedene Bezeichnungen: - Erster allgemeinbildender Schulabschluss (HH, NW, SH) - Hauptschulabschluss (BW, HE, NI, SL, SN, ST, TH) - Berufsbildungsreife 
 LP_0000086	ObjectProperty	ist Niveau von	is niveau of	obo:IAO_0000136	
 LP_0000090	Individual	Gymnasialniveau Sek I (HE)			
 LP_0000091	Individual	Hauptschulniveau (HE)			
@@ -79,7 +79,7 @@ LP_0000107	Individual	Gymnasialniveau Sek I (NI)
 LP_0000108	Individual	Hauptschulniveau (NI)			
 LP_0000109	Class	Allgemeine Hochschulreife (BE)			
 LP_0000110	Individual	Oberschulniveau (NI)			
-LP_0000111	Class	Schulart	school type		
+LP_0000111	Class	Schulart	school type		Eine “Schulart” ist eine “Informationseinheit”. Sie beschreibt eine durch bestimmte Merkmale gekennzeichnete Form der Schule, die deren organisatorische Struktur, pädagogische Ausrichtung, die Dauer des Bildungsgangabschnitts sowie die angestrebten Schulabschlüsse festlegt. Sie kann je nach Bildungssystem und Bundesland unterschiedliche Bezeichnungen und Konzepte umfassen, wie Grundschule, Gymnasi
 LP_0000116	Individual	Realschulniveau (NI)			
 LP_0000117	Individual	Vertiefendes Niveau (NI)			
 LP_0000118	Individual	Zusätzliche Anforderungen (Z-Kurs) (NI)			
@@ -166,10 +166,10 @@ LP_0000247	Individual	Berufsbildungsreife (HB)
 LP_0000248	Individual	Mittlerer Schulabschluss (HB)			
 LP_0000249	Individual	Sekundarstufenniveau (SH)			
 LP_0000260	Individual	A Kurs (SL)			
-LP_0000261	Class	Curriculares Element	curricular element	obo:IAO_0000030	
-LP_0000263	Class	CE-Kompetenzspezifikation	competency specification	LP_0000261	
+LP_0000261	Class	Curriculares Element	curricular element	obo:IAO_0000030	Ein “Curriculares Element” ist eine Informationseinheit, die bei der Beschreibung der Bestandteile eines Lehrplans oder Bildungsstandards verwendet wird. In der Ontologie fungiert das “Curriculare Element" als Superklasse, um die Elemente zu ordnen, aus denen sich Beschreibungen der zu erwerbenden Inhalte und Kompetenzen eines Lehrplans oder eines Bildungsstandards zusammensetzen. Ein “Curriculare
+LP_0000263	Class	CE-Kompetenzspezifikation	competency specification	LP_0000261	Eine “CE-Kompetenzspezifikation” ist ein “Curriculares Element”, das eine Kompetenz beschreibt. Es enthält üblicherweise einen Operator und beginnt zum Beispiel mit “Die Schülerinnen und Schüler [...]” oder “Die Lernenden [...]”. Die Ontologie unterscheidet zwischen “CE-Kompetenzspezifikation” und “Kompetenz”: Unter einer Kompetenz wird die Fähigkeit eines Lernenden verstanden, Wissen und Können z
 LP_0000264	Individual	E Kurs (SL)			
-LP_0000265	Class	Fachniveau Sek II		LP_0000037	
+LP_0000265	Class	Fachniveau Sek II		LP_0000037	Das “Fachniveau Sek II” ist ein “Niveau”. Es bezeichnet das Anforderungsniveau eines bestimmten Fachs in der Sekundarstufe II und bringt zum Ausdruck, ob ein “Curriculares Element” einem “Grundkurs” oder einem “Leistungskurs” zugeordnet ist. Die beiden Fachniveaus unterscheiden sich in der Komplexität und Tiefe des Unterrichts sowie im Umfang der Inhalte und der zu erbringenden Leistungen. Während
 LP_0000266	Individual	G Kurs (SL)			
 LP_0000267	Individual	Gemeinschaftsschulniveau (SL)			
 LP_0000268	Class	Leitidee (Bista)			
@@ -199,16 +199,16 @@ LP_0000313	Individual	Hauptschulabschluss (TH)
 LP_0000314	Individual	Qualifizierender Hauptschulabschluss (TH)			
 LP_0000315	Individual	Realschulabschluss (TH)			
 LP_0000328	Class	Thema (RP)		LP_0000349	
-LP_0000332	Class	CE-Lerninhalt	learning content	LP_0000261	
+LP_0000332	Class	CE-Lerninhalt	learning content	LP_0000261	Ein “CE-Lerninhalt” ist ein “Curriculares Element", das einen Lerninhalt in Form konkreter Themen beschreibt. Der „CE-Lerninhalt“ liefert die inhaltliche Basis für die Gestaltung des Unterrichts. Anhand des "CE-Lerninhalts" können Kompetenzen erworben werden. Ein CE-Lerninhalt kann einen anderen CE-Lerninhalt enthalten, aber kein anderes Element (wie z.B. CE-Bereich oder CE-Kompetenzspezifikation)
 LP_0000336	Class	Fachbezogene Kompetenzspezifikation		LP_0000263	
 LP_0000337	Class	Fachübergreifende Kompetenzspezifikation		LP_0000263	
 LP_0000342	Class	Element (RP)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Rheinland-Pfalz
 LP_0000343	ObjectProperty	hat Schulartfunktion	has school type function	obo:RO_0000085	
 LP_0000344	DatatypeProperty	hat Wert	has value		
 LP_0000345	Class	Teilthema (RP)		LP_0000328	
-LP_0000346	Class	Titel	title	obo:IAO_0000300	
+LP_0000346	Class	Titel	title	obo:IAO_0000300	Ein Titel ist eine textuelle Entität, die dazu dient, eine andere Entität eindeutig zu benennen oder kurz zu kennzeichnen und primär zur Identifikation oder Wiedererkennung dieser Entität verwendet wird. Er ist die menschenlesbare, inhaltlich beschreibende Bezeichnung einer Entität (z. B. eines Kompetenzbereichs, Themas oder Abschnitts).
 LP_0000347	Class	Identifikationsnummer	ID number	obo:IAO_0000028	
-LP_0000349	Class	CE-Bereich	area	LP_0000261	
+LP_0000349	Class	CE-Bereich	area	LP_0000261	Ein “CE-Bereich” ist ein “Curriculares Element”. Ein “CE-Bereich” kann anderen “CE-Bereichen” über- oder untergeordnet sein. Das Element dient der Gliederung von Lehrplänen und Bildungsstandards, indem es “CE-Kompetenzspezifikationen” und/oder “CE-Lerninhalte” unter einem gemeinsamen inhaltlichen Fokus zusammenfasst, der durch den “CE-Bereich” definiert wird.
 LP_0000350	Class	Lernziel (RP)			
 LP_0000352	Class	Unterteilthema (RP)		LP_0000345	
 LP_0000353	Class	Lehrplanfragment (RP)		LP_0001015	
@@ -242,7 +242,7 @@ LP_0000433	Class	Lehrplan (RP)		LP_0000438
 LP_0000434	Class	Element (BY)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Bayern
 LP_0000435	Class	Fachniveau Sek II (BY)			
 LP_0000437	Individual	Naturwissenschaften (Schulfach)			
-LP_0000438	Class	Lehrplan	curriculum	obo:IAO_0000030	
+LP_0000438	Class	Lehrplan	curriculum	obo:IAO_0000030	Ein Lehrplan ist eine Informationseinheit, die eine systematische Zusammenstellung von curricularen Elementen umfasst. Er definiert verbindlich die Kompetenzen und Inhalte, die Schülerinnen und Schüler in einem bestimmten Fach, einer Jahrgangsstufe, einer Schulart oder einem Bildungsgang eines Bundeslandes erwerben sollen. Ein Lehrplan ist immer spezifisch auf die Bildungspolitik eines Bundeslande
 LP_0000440	ObjectProperty	für Bildungsgangabschnitt	for educational track	obo:RO_0000056	
 LP_0000441	Class	Element (BB)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Brandenburg.
 LP_0000443	Class	Niveaustufe BE/BB		obo:IAO_0000030	
@@ -301,14 +301,14 @@ LP_0000526	Individual	Grundlegendes Anforderungsniveau (ST)
 LP_0000527	Individual	Erhöhtes Anforderungsniveau (ST)			
 LP_0000528	Individual	Grundlegendes Anforderungsniveau (TH)			
 LP_0000529	Individual	Erhöhtes Anforderungsniveau (TH)			
-LP_0000530	Class	Grundkursniveau		LP_0000265	
-LP_0000531	Class	Leistungskursniveau		LP_0000265	
+LP_0000530	Class	Grundkursniveau		LP_0000265	Ein "Grundkursniveau" ist ein “Fachniveau Sek II” im gymnasialen Bildungsgang der Sekundarstufe II, das Inhalte und Kompetenzen auf einem grundlegenden Anforderungsniveau vermittelt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb eines Fachs behandelt werden.
+LP_0000531	Class	Leistungskursniveau		LP_0000265	Ein "Leistungskursniveau" ist ein “Fachniveau Sek II” im gymnasialen Bildungsgang der Sekundarstufe II, das Inhalte und Kompetenzen auf einem vertieften Anforderungsniveau vermittelt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb eines Fachs behandelt werden.
 LP_0000532	Individual	Optional			
 LP_0000533	Individual	Verbindlich			
 LP_0000535	Individual	Unterrichtsstunde			Die Unterrichtsstunde ist ein festgelegter Zeitabschnitt für den Unterrichtsablauf.
 LP_0000536	Class	Element (Bista)	element (Bista)	LP_0000261	Lehrplan Element bezogen auf die Vorgaben der KMK Bildungsstandards
 LP_0000537	ObjectProperty	hat Schulfach	has school subject	LP_0000024	Wird verwendet, um Etwas einem Fach oder einem Fach mit besonderem "Bezug" (z.B. Zweite-Fremdsprache) zuzuordnen.
-LP_0000540	Class	Schulfachbezug	school subject property	obo:IAO_0000030	
+LP_0000540	Class	Schulfachbezug	school subject property	obo:IAO_0000030	Ein “Schulfachbezug” ist eine “Informationseinheit” und gibt die Funktion und Spezifikation eines “Schulfachs”  in einem bestimmten Kontext an. Beispiele für “Schulfachbezug” sind “Erste Fremdsprache”, “Pflichtfach” oder “Wahlfach”.
 LP_0000541	Class	Erste Fremdsprache		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als erste Fremdsprache gemeint ist.
 LP_0000542	Class	Zweite Fremdsprache		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als dritte Fremdsprache gemeint ist.
 LP_0000543	Class	Dritte Fremdsprache		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als dritte Fremdsprache gemeint ist.
@@ -323,7 +323,7 @@ LP_0000553	DatatypeProperty	veröffentlicht am		LP_0000344
 LP_0000554	Class	Didaktische Voraussetzung	didactic prerequisite	LP_0030065	Ein didaktischer Verweis, der ausdrückt, dass das Zielobjekt vor dem Quellobjekt beherrscht werden sollte, damit dieses in einem curricular und didaktisch begründeten Lernpfad sinnvoll bearbeitet werden kann.
 LP_0000555	ObjectProperty	ist Schulartfunktion von		obo:RO_0000079	
 LP_0000556	ObjectProperty	hat Oberstufensphase		LP_0000024	
-LP_0000571	Class	Bildungsstandard (KMK)	educational standard (KMK)	obo:IAO_0000030	
+LP_0000571	Class	Bildungsstandard (KMK)	educational standard (KMK)	obo:IAO_0000030	Der “Bildungsstandard” ist eine “Informationseinheit”, die klar definierte, verbindliche Lernziele beschreibt, welche die Lernenden zu einem bestimmten Zeitpunkt erreichen sollen. Sie sorgt für eine einheitliche Qualität und Transparenz im Bildungssystem und ermöglicht eine objektive Messung der Leistungen. Die von der Kultusministerkonferenz (KMK) verabschiedeten Bildungsstandards greifen allgeme
 LP_0000572	Class	Bildungsgangniveau (BE)		LP_0000028	Ein Lehrplanelement von Berlin mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und Jahrgangsstufe zum Ausdruck gebracht wird. Unterklassen entprechen den konkreten Abschlussniveaus. Deren Instanzen enthalten die Verknüfung zu Niveaustufe und Jahrgangsstufe. Ein Lehrplanelement von Berlin/Brandenburg mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und
 LP_0000573	Class	BOA Niveau		LP_0000572	Abschluss Niveau, das zum berufsorientierenden Abschluss befähigt.
 LP_0000574	Class	BBR Niveau		LP_0000572	Abschluss Niveau, das zur Berufsbildungsreife befähigt.
@@ -366,7 +366,7 @@ LP_0000613	Individual	Gymnasialniveau Sek I F
 LP_0000614	Individual	Gymnasialniveau Sek I G			
 LP_0000615	Individual	Gymnasialniveau Sek I H			
 LP_0000616	Individual	Niveaustufe H			
-LP_0000627	Individual	Fragmentfunktion			
+LP_0000627	Individual	Fragmentfunktion			Ist eine Stukturierungsfunktion, die ein Lehrplanelement inne haben kann. Ein Lehrplanelement, das diese Funktion inne hat, identifiziert einen Teil des Lehrplan. Die Art des Lehrplanteils muss nicht näher spezifizert sein. Wenngleich diese Definition auch auf Kompetenzbereiche oder Themenfelder anwendbar ist, ist sie ihnen ausdrücklich nicht gleichzusetzen, über- oder unterzuordnen. Die Funktion 
 LP_0000802	Class	Anforderungsbereich		LP_0000037	Umfasst Repräsentationen für die drei Anforderungsbereiche. Im deutschen und österreichischen Schulsystem werden die Lernziele meist in drei Anforderungsbereiche aufgeteilt, die ein unterschiedliches Ausmaß von Eigenleistung und komplexem Denken vom Schüler erfordern. Der Anforderungsbereich I umfasst meist eine Reproduktion, Anforderungsbereich II eine Reorganisation (Umgestaltung) sowie einen Tr
 LP_0000803	Individual	Anforderungsbereich 1: Reproduktion			
 LP_0000804	Individual	Anforderungsbereich 2: Reorganisation und Transfer			
@@ -379,8 +379,8 @@ LP_0000810	Class	Schulklasse	school class	LP_0000808	Eine Schulklasse ist eine o
 LP_0000812	ObjectProperty	für Schulart	for type of school	LP_0000024	
 LP_0000813	Class	Hauptschulbildungsgang	Hauptschule track	LP_0000816	ALT Der Hauptschulbildungsgang bereitet Schülerinnen in erster Linie auf eine berufliche Ausbildung und den direkten Einstieg ins Berufsleben vor. Er endet in der Regel nach der 9. oder 10. Klasse mit dem Hauptschulabschluss. Der Fokus liegt auf einer grundlegenden Allgemeinbildung, verbunden mit praktischen und berufsvorbereitenden Elementen. Schülerinnen erlernen neben den Kernfächern (Deutsch, 
 LP_0000814	Class	Realschulbildungsgang	Realschule track	LP_0000816	ALT Der Realschulbildungsgang vermittelt eine solide Allgemeinbildung mit einem Schwerpunkt auf praxisorientierten Inhalten. Er führt nach der 10. Klasse zur Mittleren Reife (auch Realschulabschluss genannt), die den Zugang zu weiterführenden Schulen (z. B. Fachoberschulen) oder einer Berufsausbildung ermöglicht. Der Unterricht ist weniger theorielastig als am Gymnasium, aber trotzdem anspruchsvol
-LP_0000815	Class	Gymnasialer Bildungsgang	Gymnasium track	LP_0000816	 
-LP_0000816	Class	Bildungsgang	educational track	obo:BFO_0000015	 
+LP_0000815	Class	Gymnasialer Bildungsgang	Gymnasium track	LP_0000816	ALT Der gymnasiale Bildungsgang zielt darauf ab, Schüler*innen auf das Abitur und ein späteres Studium vorzubereiten. Er dauert in der Regel bis zur 12. oder 13. Klasse und endet mit der allgemeinen Hochschulreife (Abitur), die den Zugang zu Universitäten und Hochschulen ermöglicht. Der Lehrplan ist meist akademisch anspruchsvoller und theoretischer im Vergleich zu anderen Schulformen. Der gymnasi
+LP_0000816	Class	Bildungsgang	educational track	obo:BFO_0000015	ALT Bildungsgang beschreibt im deutschen Bildungssystem eine strukturierte Abfolge von Bildungsstufen und -inhalten, die zu einem bestimmten Schulabschluss führt. Ein Bildungsgang legt fest, welche Fächer, Lerninhalte und Kompetenzen während einer bestimmten Schulzeit vermittelt werden und wie lange diese Bildungsphase dauert. Er umfasst dabei die gesamte Schullaufbahn, die durch den jeweiligen Ab
 LP_0000818	Class	Lehrplan (SN)		LP_0000438	
 LP_0000819	Class	LehrplanPLUS (BY)		LP_0000438	
 LP_0000820	Class	Lehrplan (TH)		LP_0000438	
@@ -390,13 +390,13 @@ LP_0000823	Class	Kerncurriculum (NI)		LP_0000438
 LP_0000824	Class	Fachanforderung (SH)		LP_0000438	
 LP_0000825	Class	Lehrplan (SL)		LP_0000438	
 LP_0000826	Class	Lehrplan (ST)		LP_0000438	
-LP_0000832	Class	Realschulniveau		LP_0000028	
+LP_0000832	Class	Realschulniveau		LP_0000028	Das “Realschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des "Realschulbildungsgangs" beschreibt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.
 LP_0000833	ObjectProperty	hat Bildungsgangniveau	has educational track level	LP_0000024	
-LP_0000834	Class	Hauptschulniveau		LP_0000028	
-LP_0000835	Class	Gymnasialniveau Sek II		LP_0000028	
+LP_0000834	Class	Hauptschulniveau		LP_0000028	Das “Hauptschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des "Hauptschulbildungsgangs" beschreibt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.
+LP_0000835	Class	Gymnasialniveau Sek II		LP_0000028	Das “Gymnasialniveau Sek II” ist ein “Bildungsgangniveau”, welches das Niveau des "gymnasialen Bildungsgangs" im Sekundarbereich II beschreibt und somit meistens die Jahrgangsstufen 11-13 umfasst. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.
 LP_0000840	ObjectProperty	hat Niveau	has niveau	LP_0000024	
 LP_0000845	Class	Progression	progression	obo:IAO_0000030	
-LP_0000852	Class	CE-Hinweis	note	LP_0000261	
+LP_0000852	Class	CE-Hinweis	note	LP_0000261	Ein “CE-Hinweis” ist ein “Curriculares Element”, das ergänzende Informationen oder Anregungen zu einem “CE-Bereich”, einem “CE-Lerninhalt” oder einer “CE-Kompetenzspezifikation” beinhaltet. Der “CE-Hinweis” hat einen Empfehlungscharakter. Beispiele: - praktische oder methodische Empfehlungen - Vorschläge oder Hinweise zur Umsetzung im Unterricht - Vertiefungsvorschläge - Differenzierungsvorschläge
 LP_0001000	Class	Kernlehrplan (NW)		LP_0000438	
 LP_0001001	Class	Lehrplanfragment (HE)		LP_0001015	
 LP_0001002	Class	Inhaltsfeld (HE)		LP_0000349	

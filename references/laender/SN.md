@@ -49,10 +49,15 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000165 | Allgemeine Hochschulreife (SN) |
 | LP_0000181 | Erster Abschluss (SN) |
 | LP_0000205 | Mittlerer Abschluss (SN) |
-| LP_0001032 | Bildungsgangniveau (SN) |
 | LP_0002090 | Fachniveau Sek II (SN) |
 | LP_0002115 | Lernziel und Lerninhalt (SN) |
 | LP_0002116 | Bemerkung (SN) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0001032 | Bildungsgangniveau (SN) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (12)
 

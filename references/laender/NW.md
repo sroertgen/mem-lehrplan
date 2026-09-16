@@ -53,9 +53,14 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0002192 | Inhaltlicher Schwerpunkt (NW) |
 | LP_0030005 | Ergänzung zu einem Basiskonzept (NW) |
 | LP_0030006 | Möglicher Kontext (NW) |
-| LP_0030041 | Bildungsgangniveau (NW) |
 | LP_0030074 | Fachliche Konkretisierung (NW) |
 | LP_0030075 | Inhalt (NW) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0030041 | Bildungsgangniveau (NW) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (15)
 

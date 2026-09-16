@@ -71,7 +71,12 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0030250 | Fachmethode (BB) |
 | LP_0030251 | Technik (BB) |
 | LP_0030253 | Möglicher Kontext (BB) |
-| LP_0030366 | Bildungsgangniveau (BB) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0030366 | Bildungsgangniveau (BB) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (8)
 

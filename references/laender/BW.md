@@ -54,11 +54,16 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0000144 | Erster Abschluss (BW) |
 | LP_0000145 | Mittlerer Abschluss (BW) |
 | LP_0000146 | Allgemeine Hochschulreife (BW) |
-| LP_0001101 | Bildungsgangniveau (BW) |
 | LP_0002060 | Denkanstoß (BW) |
 | LP_0002061 | Teilkompetenz (BW) |
 | LP_0002064 | Fachniveau Sek II (BW) |
 | LP_0030247 | Standard (BW) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0001101 | Bildungsgangniveau (BW) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (12)
 

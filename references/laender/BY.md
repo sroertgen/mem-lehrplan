@@ -64,8 +64,13 @@ Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie entha
 | LP_0002048 | Kompetenzerwartung und Inhalt (BY) |
 | LP_0002049 | Kompetenzerwartung (BY) |
 | LP_0002050 | Inhalt zu den Kompetenzen (BY) |
-| LP_0030053 | Bildungsgangniveau (BY) |
 | LP_0030303 | Erläuterung (BY) |
+
+### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
+
+| ID | Klasse | Oberklasse |
+|---|---|---|
+| LP_0030053 | Bildungsgangniveau (BY) | LP_0000028 „Bildungsgangniveau“ |
 
 ## Individuen des Landes (17)
 
