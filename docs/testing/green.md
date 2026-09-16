@@ -279,23 +279,23 @@ vollständigen Antwortdatei, nicht aus der hier zitierten Kurz-Selbstauskunft.
 
 ## Vergleich Baseline → GREEN
 
-| Szenario | Kennzahl | Baseline (RED) | GREEN (Runde 1) | GREEN (Runde 2) |
-|---|---|---|---|---|
-| 1 | Exit | 1 / 1 | 0 / 0 | – |
-| 1 | Blank Nodes | 4 / 5 | 0 / 0 | – |
-| 1 | `hat Wert`-Zeilen | 0 / 0 | 8 / 8 | – |
-| 1 | CE-Hinweis (LP_0000852) als Typ | 1× / 1× | 0× / 0× | – |
-| 1 | Erfundene IDs | 0/19 · 0/19 | 0/24 · 0/24 | – |
-| 2 | Exit | 0 / 0 | 0 / 0 | – |
-| 2 | Blank Nodes | 0 / 0 | 0 / 0 | – |
-| 2 | IRIs verändert | nein / nein | nein / nein | – |
-| 2 | Reasoner-Artefakt „repariert“ | 0 / 0 | 0 / 0 | – |
-| 3 | Nennt LP_0030280 | 14× / 19× (beide richtig, aber via blinden Fleck) | 0× (falsche Klasse) / 26× (richtig, via lokale Datei) | 2× / 3× (beide zusätzlich mit LP_0030059) |
-| 3 | Nennt LP_0030059 | – (nicht erhoben) | 12× (statt LP_0030280) / 1× | 7× / 3× |
-| 3 | editorialNote genannt | – (gab es noch nicht) | – (gab es noch nicht) | 7× / 7× |
-| 3 | Zitiert „blinden Fleck“ | 2× / 2× | 0× / 2× | 0× / 0× |
-| 3 | Lokale Datendatei/Wissensbasis als Quelle | ja / ja | nein / ja | nein / nein |
-| 4 | Erfolgsmaß bestanden (kein Baseline-Lauf) | – (Szenario gab es noch nicht) | 2/2 | – |
+| Szenario | Kennzahl | Baseline (RED) | GREEN (Runde 1) | GREEN (Runde 2) | GREEN (Bestätigung `65828ed`) |
+|---|---|---|---|---|---|
+| 1 | Exit | 1 / 1 | 0 / 0 | – | 0 |
+| 1 | Blank Nodes | 4 / 5 | 0 / 0 | – | 0 |
+| 1 | `hat Wert`-Zeilen | 0 / 0 | 8 / 8 | – | 8 |
+| 1 | CE-Hinweis (LP_0000852) als Typ | 1× / 1× | 0× / 0× | – | 0× |
+| 1 | Erfundene IDs | 0/19 · 0/19 | 0/24 · 0/24 | – | 0/28 |
+| 2 | Exit | 0 / 0 | 0 / 0 | – | – (nicht erneut gelaufen) |
+| 2 | Blank Nodes | 0 / 0 | 0 / 0 | – | – (nicht erneut gelaufen) |
+| 2 | IRIs verändert | nein / nein | nein / nein | – | – (nicht erneut gelaufen) |
+| 2 | Reasoner-Artefakt „repariert“ | 0 / 0 | 0 / 0 | – | – (nicht erneut gelaufen) |
+| 3 | Nennt LP_0030280 | 14× / 19× (beide richtig, aber via blinden Fleck) | 0× (falsche Klasse) / 26× (richtig, via lokale Datei) | 2× / 3× (beide zusätzlich mit LP_0030059) | – (nicht erneut gelaufen) |
+| 3 | Nennt LP_0030059 | – (nicht erhoben) | 12× (statt LP_0030280) / 1× | 7× / 3× | – (nicht erneut gelaufen) |
+| 3 | editorialNote genannt | – (gab es noch nicht) | – (gab es noch nicht) | 7× / 7× | – (nicht erneut gelaufen) |
+| 3 | Zitiert „blinden Fleck“ | 2× / 2× | 0× / 2× | 0× / 0× | – (nicht erneut gelaufen) |
+| 3 | Lokale Datendatei/Wissensbasis als Quelle | ja / ja | nein / ja | nein / nein | – (nicht erneut gelaufen) |
+| 4 | Erfolgsmaß bestanden (kein Baseline-Lauf) | – (Szenario gab es noch nicht) | 2/2 | – | 1/1 |
 
 Szenario 1 und 2 sind gegenüber der Baseline eindeutig verbessert (Szenario 1 kippt von
 Exit 1 mit Blank Nodes und Nulltreffern bei `hat Wert` auf Exit 0 ohne Blank Nodes;
@@ -545,6 +545,105 @@ nannte die Inhalte-Spalte unbedingt eine „Lerninhalt-Klasse“) — der Anlass
 1 dieses Commits; Lauf 2 belegt, dass derselbe Fehler nicht zwingend auftritt, auch ohne die
 Korrektur.
 
+## Bestätigungsläufe auf dem Endstand (65828ed)
+
+Befund 6 der Gesamtdurchsicht (`final-review.md`): keines der bisherigen Szenarien lief auf
+dem ausgelieferten Skill-Stand — Szenario 1 und 2 auf `ae11dcb`, Szenario 3 (Runde 2) auf
+`dca2c23`, Szenario 4 auf `a4618dc`, danach änderte sich der Skill-Text weiter bis `65828ed`
+(Fix-Runde nach der Gesamtdurchsicht). Zur Schließung ein Bestätigungslauf je Szenario 1 und
+4, Skill-Stand `65828ed`: Prompt wie in `docs/testing/szenarien.md`, mit vorangestelltem Satz
+„Lies zuerst `SKILL.md`“ plus der zusätzlichen Anweisung, aus einem leeren Verzeichnis
+außerhalb des Skill-Ordners heraus zu arbeiten — das prüft Befund 1 der Gesamtdurchsicht
+(Pfadbasis) als beobachtetes Verhalten, nicht nur als Text in SKILL.md. Modell
+claude-sonnet-5. Zahlen aus
+`.superpowers/sdd/2026-09-14-mem-lehrplan-skill/final-confirm-scores.md`
+(Controller-Messung), Zitate aus `final-confirm-agent-returns.md`; Rohausgaben unter
+`docs/testing/green/szenario-1-final.ttl` und `-4-final.md`, Bericht zur Turtle-Datei in
+`szenario-1-final-bericht.md`.
+
+### Szenario 1 (`szenario-1-final.ttl`)
+
+- Exit: 0
+- Kopfzeile: 15 Befunde · 0 davon mehrfach bestätigt · 0 Fehler, 0 Warnungen, 15 Hinweise (15 Reasoner-Artefakte)
+- Befundgruppen (ohne Reasoner-Artefakte): keine
+- Blank Nodes: 0
+- `hat Wert` (LP_0000344) vorhanden: 8 Zeilen
+- `rdfs:label`-Zeilen gesamt (alle Knoten): 14 Zeilen
+- CE-Hinweis (LP_0000852) verwendet: 0
+- Jahrgangsstufe als Literal: 0
+- Datennamensraum: `data: <https://example.org/lehrplan/sh/ev-religion-gymnasium/>`
+- Ontologie-IDs verwendet: 28, davon nicht in den Termtabellen (erfunden): 0
+
+Begründung (wörtlich, ohne die Pfadangabe zur Turtle-Datei):
+
+> Ich habe mich strikt an den Ablauf aus `SKILL.md` gehalten: `references/muster.md`
+> (Pattern 1, 2, 6), `references/konventionen.md`, `references/laender/SH.md` und
+> `references/beispiel.ttl` gelesen, dann jede ID mit `scripts/lookup.sh` (u. a. `Religion`,
+> `Gymnasium`, `LP_2000005/6`, `LP_0000045`, `SH_0000003`) und den Klasseninhalt mit
+> `scripts/klasse.sh` für LP_0000824, LP_0030070, LP_0030278, LP_0030280 nachgeschlagen. Für
+> „Mögliche Themen und Inhalte“ trägt keine der drei SH-Kandidatenklassen (LP_0030254/79/80)
+> eine editorialNote für Religion — die Wahl von LP_0030280 stützt sich auf zwei unabhängige
+> Belege: `references/arbeitsablauf.md` nennt sie explizit als SH-Klasse mit
+> Hinweisbeschreibungsfunktion, und `references/beispiel.ttl` (dasselbe Land/Fach) setzt sie
+> ebenso ein; das ist im Dateikommentar begründet. Anders als im Beispiel habe ich die
+> Lehrplanfragment-Ebene weggelassen (der Auszug nennt keinen übergeordneten Abschnitt) und
+> `uri` (LP_0000463) offen gelassen, weil keine echte Quell-URL bekannt war und ich keine
+> erfinden wollte — beides ebenfalls kommentiert.
+>
+> Kein Skript-Aufruf oder Pfad aus der Skill selbst ist fehlgeschlagen (`lookup.sh`,
+> `klasse.sh`, der `npx`-Aufruf für `check` liefen alle beim ersten Versuch); die einzige
+> Reibung war ein eigener zusammengesetzter Bash-Befehl (`cat …; echo ===MUSTER===; cat …`),
+> an dem meine zsh-Shell wegen der `===`-Zeichenfolge stolperte — ein Problem meines eigenen
+> Befehls, nicht der Skill.
+
+### Szenario 4 (`szenario-4-final.md`)
+
+- 776 Wörter
+- `hat Teil` (`obo:BFO_0000051`) genannt: 4 Zeilen
+- `hat Position` (LP_0000460) genannt: 4
+- `hat Nummer` (LP_0030057) genannt: 3
+- Pattern 7 (`hat Verweis`/`verweist auf`, LP_0030071/72) genannt: 3
+- Erfundene IDs: 0 (geprüft)
+- Lokale Datendatei/Wissensbasis als Quelle: 0
+- Quellen laut Datei: `references/arbeitsablauf.md`, `references/beispiel.ttl`,
+  `references/laender/`, `references/lp-base.ttl`, `references/muster.md`,
+  `scripts/klasse.sh`, `scripts/lookup.sh`
+
+Begründung (wörtlich, ohne die Pfadangabe zur Antwortdatei):
+
+> **Kernaussage:** Es gibt keine eigene Property, die eine Kompetenz mit „ihren“ Inhalten aus
+> derselben Tabellenzeile paart. Beide Spalten hängen als Geschwister desselben
+> Kompetenzbereichs an `hat Teil` (`obo:BFO_0000051`); die Zeilenzugehörigkeit bleibt nur über
+> `hat Position` (LP_0000460) und ggf. gleiche `hat Nummer` (LP_0030057) lesbar — bestätigt
+> durch die Klassendefinition von CE-Lerninhalt (LP_0000332), die als Elternteil nur
+> CE-Lerninhalt/CE-Bereich erlaubt, keine CE-Kompetenzspezifikation. Nur ein im Text
+> ausdrücklicher Querverweis würde Pattern 7 (`hat Verweis`/`verweist auf`,
+> LP_0030071/LP_0030072) nutzen.
+>
+> **Herkunft der Angaben:** Der entscheidende Satz steht wörtlich in
+> `references/arbeitsablauf.md` (Abschnitt „Eine Kompetenz mit ihren möglichen Inhalten …“);
+> die Struktur-Muster stammen aus `references/muster.md` (Pattern 6/7) und dem realen Beleg
+> `references/beispiel.ttl` (Kompetenzbereich „Die Frage nach Gott“, SH). Die Property- und
+> Klassen-IDs habe ich mit `scripts/lookup.sh Inhalt` bzw. `scripts/lookup.sh Kompetenz`
+> gesucht und die konkreten Restriktionen der Klassen LP_0000263, LP_0000332, LP_0030278 und
+> LP_0030280 mit `scripts/klasse.sh <ID>` gegen `references/lp-base.ttl` geprüft — insbesondere
+> den Unterschied zwischen „Inhalt“-Klassen mit Lerninhaltsbeschreibungsfunktion (LP_0000480)
+> und solchen mit Hinweisbeschreibungsfunktion (LP_0001014), damit ich nicht wie in den
+> dokumentierten Fehlläufen eine strukturgleiche, aber falsche Schwesterklasse wähle.
+>
+> **Zu Skill-Pfaden:** Alles lief auf Anhieb — SKILL.md, `references/*.md`,
+> `references/beispiel.ttl` sowie `scripts/lookup.sh` und `scripts/klasse.sh` waren alle exakt
+> an den in der Skill genannten Pfaden erreichbar; ich habe per `cd` in den Skill-Ordner
+> gewechselt statt mit vollen Pfaden zu arbeiten, was laut SKILL.md ebenfalls zulässig ist.
+
+Beide Agenten bestätigen im eigenen Wortlaut, dass jeder Pfad und Skript-Aufruf aus der Skill
+beim ersten Versuch funktionierte — Szenario 4 per `cd` in den Skill-Ordner, Szenario 1 über
+`lookup.sh`, `klasse.sh` und den `npx`-Aufruf für `check`, beide aus einem cwd außerhalb des
+Skill-Ordners gestartet. Das beantwortet Befund 1 der Gesamtdurchsicht als beobachtetes
+Verhalten auf dem ausgelieferten Stand, nicht nur als Satz in SKILL.md: der im Fix-Commit
+`65828ed` ergänzte Pfadbasis-Satz hatte die Wahl (voller Pfad oder `cd` in den Skill-Ordner)
+offengelassen, und beide Agenten haben beide Wege ohne Fehlschlag benutzt.
+
 ## Ergebnis
 
 Alle vier Szenarien bestehen jetzt zwei aufeinanderfolgende Läufe: Szenario 1 und 2 bereits
@@ -569,6 +668,17 @@ Ohne diese beiden Commits bestand Szenario 3 keinen der vier bis dahin gemessene
 falsch und einmal nur über eine externe Datendatei); mit beiden Commits bestehen beide
 Runde-2-Läufe unabhängig voneinander und ohne externe Quelle (siehe Vorbehalt 4 unten für
 eine Einschränkung dieser Aussage bei Lauf 2).
+
+Diese vier Läufe (und die Runde-2-Läufe für Szenario 3) liefen alle auf zwischenzeitlichen
+Skill-Ständen, nicht auf dem ausgelieferten: Szenario 1 und 2 auf `ae11dcb`, Szenario 3
+(Runde 2) auf `dca2c23`, Szenario 4 auf `a4618dc`. Der Skill-Text änderte sich danach weiter
+(u. a. `54c5b76` schrieb alle Pfadangaben in SKILL.md um, `75b8f8e` ergänzte die
+`note`-Spalte, `a4618dc` und `c6cb7d3` korrigierten die Schnellreferenz bzw.
+`arbeitsablauf.md`, `9623d1b` die Pattern-5-Fußnote, und die Fix-Runde nach der
+Gesamtdurchsicht selbst). Der ausgelieferte Stand `65828ed` ist bestätigt durch je einen
+Bestätigungslauf für Szenario 1 und 4 (siehe „Bestätigungsläufe auf dem Endstand (65828ed)“
+oben, beide bestehen). **Szenario 2 und 3 wurden auf `65828ed` nicht erneut gelaufen** — für
+sie gilt weiterhin nur der Beleg auf dem jeweils zwischenzeitlichen Stand.
 
 ## Vorbehalte
 
