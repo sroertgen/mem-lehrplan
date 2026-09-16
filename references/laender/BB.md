@@ -11,66 +11,66 @@ Achtung: Schulfach- und Schulart-IDs kollidieren im lokalen Namen (`BB_0000003` 
 
 ### unter Lehrplan (Wurzel) (LP_0000438)
 
-| ID | Klasse |
-|---|---|
-| LP_0000807 | Rahmenlehrplan (BB) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000807 | Rahmenlehrplan (BB) |  |
 
 ### unter CE-Fragment (LP_0001015)
 
-| ID | Klasse |
-|---|---|
-| LP_0002223 | Lehrplanfragment (BB) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002223 | Lehrplanfragment (BB) |  |
 
 ### unter CE-Bereich (LP_0000349)
 
-| ID | Klasse |
-|---|---|
-| LP_0000448 | Thema (BB) |
-| LP_0000449 | Themenfeld (BB) |
-| LP_0000459 | Kompetenzbereich (BB) |
-| LP_0002224 | Leitidee (BB) |
-| LP_0030047 | Basiskonzept (BB) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000448 | Thema (BB) | kommt u.a. in Englisch vor |
+| LP_0000449 | Themenfeld (BB) | kommt u.a. in Englisch  und Physik vor. "Themenbereich" in Mathe |
+| LP_0000459 | Kompetenzbereich (BB) |  |
+| LP_0002224 | Leitidee (BB) | Kommt in den Lehrplänen der Sek II für das Fach Mathematik vor. (In den Lehrplänen der Primarstufe und der Sek I für das Fach Mathematik werden stattdessen die Begriffe “Inhaltsbezogene mathematische Standards” oder “Themenbereiche” verwendet.) Der Begriff kommt aus den Bildungsstandards und bezeichnet dort einen inhaltsbezogenen Kompetenzbereich im Fach Mathematik. |
+| LP_0030047 | Basiskonzept (BB) | NaWis |
 
 ### unter Curriculares Element (direkt) (LP_0000261)
 
-| ID | Klasse |
-|---|---|
-| LP_0000441 | Element (BB) |
-| LP_0000451 | Übung (BB) |
-| LP_0030042 | Verweis auf Bezüge zu den Basiskonzepten (BB) |
-| LP_0030255 | Verweis auf Materialien (BB) |
-| LP_0030257 | Verweis auf vernetzte Kompetenzen (BB) |
-| LP_0030259 | Verweis auf standardillustrierende Aufgaben (BB) |
-| LP_0030333 | Fachübergreifendes Thema (BB) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000441 | Element (BB) | Die Unterschiede zw. Berlin und Brandenburg müssten evtl. noch mal genauer geprüft werden. Ggf. sind die Klassen hier noch zu trennen. |
+| LP_0000451 | Übung (BB) |  |
+| LP_0030042 | Verweis auf Bezüge zu den Basiskonzepten (BB) | NaWis |
+| LP_0030255 | Verweis auf Materialien (BB) | Verlinkung zu Materialsammlung (=Dokumente) |
+| LP_0030257 | Verweis auf vernetzte Kompetenzen (BB) | Verlinkung zu Kompetenzen anderer Fächer (meist zu "Medienbildung") |
+| LP_0030259 | Verweis auf standardillustrierende Aufgaben (BB) | Verlinkung zu Dokument |
+| LP_0030333 | Fachübergreifendes Thema (BB) |  |
 
 ### Oberklasse ist ein anonymer OWL-Ausdruck
 
 Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie enthalten dürfen und wo sie hängen, zeigt `scripts/klasse.sh <ID>`. Für SHACL sind sie unsichtbar (`rdfs:subClassOf*` endet im Blank Node); die Explorer-Regeln greifen trotzdem.
 
-| ID | Klasse |
-|---|---|
-| LP_0000175 | Allgemeine Hochschulreife (BB) |
-| LP_0000189 | Erster Abschluss (BB) |
-| LP_0000213 | Mittlerer Abschluss (BB) |
-| LP_0000445 | Inhalt (BB) |
-| LP_0000446 | Lernmaterial (BB) |
-| LP_0000447 | Standard (BB) |
-| LP_0000450 | Zusatzmaterial (BB) |
-| LP_0002069 | Fachniveau Sek II (BB) |
-| LP_0002225 | Eingangsvoraussetzung (BB) |
-| LP_0002226 | Gegenstand (BB) |
-| LP_0002227 | Unterrichtsanregung (BB) |
-| LP_0030007 | Kompetenzerwerb im Themenfeld (BB) |
-| LP_0030008 | Möglicher Inhalt (BB) |
-| LP_0030043 | Beispiel zu einem Basiskonzept (BB) |
-| LP_0030052 | Experiment/Untersuchung (BB) |
-| LP_0030066 | Vertiefungsmöglichkeit (BB) |
-| LP_0030210 | Fachbegriff (BB) |
-| LP_0030214 | Beispiel für Unterrichtseinheiten (BB) |
-| LP_0030246 | Beispiel für Differenzierungsmöglichkeiten (BB) |
-| LP_0030250 | Fachmethode (BB) |
-| LP_0030251 | Technik (BB) |
-| LP_0030253 | Möglicher Kontext (BB) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000175 | Allgemeine Hochschulreife (BB) |  |
+| LP_0000189 | Erster Abschluss (BB) |  |
+| LP_0000213 | Mittlerer Abschluss (BB) |  |
+| LP_0000445 | Inhalt (BB) |  |
+| LP_0000446 | Lernmaterial (BB) |  |
+| LP_0000447 | Standard (BB) | Inhaltsbezogener mathematischer Standard (BB) |
+| LP_0000450 | Zusatzmaterial (BB) |  |
+| LP_0002069 | Fachniveau Sek II (BB) |  |
+| LP_0002225 | Eingangsvoraussetzung (BB) | Sek II |
+| LP_0002226 | Gegenstand (BB) | Kommt bisher nur in Deutsch Sek II vor. |
+| LP_0002227 | Unterrichtsanregung (BB) | Sachunterricht |
+| LP_0030007 | Kompetenzerwerb im Themenfeld (BB) | Englisch Sek II |
+| LP_0030008 | Möglicher Inhalt (BB) |  |
+| LP_0030043 | Beispiel zu einem Basiskonzept (BB) | NaWis |
+| LP_0030052 | Experiment/Untersuchung (BB) | NaWis |
+| LP_0030066 | Vertiefungsmöglichkeit (BB) | Englisch |
+| LP_0030210 | Fachbegriff (BB) | Kommt in den Naturwissenschaften vor. |
+| LP_0030214 | Beispiel für Unterrichtseinheiten (BB) | NaWi 7-10 |
+| LP_0030246 | Beispiel für Differenzierungsmöglichkeiten (BB) | Physik Sek I |
+| LP_0030250 | Fachmethode (BB) | NaWi 5/6 |
+| LP_0030251 | Technik (BB) | NaWi 5/6 |
+| LP_0030253 | Möglicher Kontext (BB) | Kommt in Physik Sek I und Sek II vor. "weiterer Kontext" in NaWi 7-10 |
 
 ### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
 

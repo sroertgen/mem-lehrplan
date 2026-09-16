@@ -52,6 +52,7 @@ nicht „behoben“ (kein `ist Teil von`, kein `hat Funktion` hinzugefügt).
 > einem Kompetenzbereich) in Schleswig-Holstein vorgesehen, und was darf ein solcher Knoten
 > laut Ontologie als Teile haben? Nenne die IDs.
 
-Erfolgsmaß: Antwort nennt LP_0030280 („Mögliches Thema und Inhalt (SH)“) und liest die
-Restriktionen mit `scripts/klasse.sh` bzw. aus `references/laender/SH.md`; kein Raten; die
-Antwort zeigt, woher sie stammt.
+Erfolgsmaß: Antwort nennt LP_0030280 („Mögliches Thema und Inhalt (SH)“) und LP_0030059
+(„Möglicher Inhalt (SH)“) als strukturgleiche Kandidaten mit ihrer editorialNote, stellt
+mit `scripts/klasse.sh` fest, dass die Ontologie für sie keine Teile-Restriktion definiert,
+und zeigt, woher jede Angabe stammt; kein Raten, keine lokale Datendatei als Quelle.

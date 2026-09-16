@@ -1,989 +1,989 @@
-id	type	label_de	label_en	parent	comment_de
-LP_0000001	Class	Schulfach	school subject	obo:IAO_0000030	Ein Schulfach ist eine Informationseinheit, die die Bezeichnung eines an Schulen unterrichteten Fachgebiets darstellt, welches die thematische Gliederung der allgemeinen schulischen Bildung widerspiegelt und der inhaltlichen Strukturierung des Unterrichts dient.
-LP_0000002	Class	MINT-Fach		LP_0000001	Ein “MINT-Fach” ist ein “Schulfach”, in dem sich die Lernenden mit einem der vier Bereiche Mathematik, Informatik, Naturwissenschaft und Technik auseinandersetzen.
-LP_0000003	Class	Naturwissenschaftsfach		LP_0000002	Ein “Naturwissenschaftsfach” ist ein “MINT-Fach”, das die belebte und unbelebte Materie als Gegenstand hat. Die drei Naturwissenschaftsfächer sind die Fächer Biologie, Chemie und Physik.
-LP_0000004	Class	Fremdsprachenfach		LP_0000001	Ein “Fremsprachenfach” ist ein “Schulfach”, in dem die Lernenden eine Fremdsprache erlernen. In Deutschland übliche Fremdsprachenfächer sind zum Beispiel die Fächer Englisch und Französisch.
-LP_0000005	Class	Gesellschaftswissenschaftsfach		LP_0000001	Ein “Gesellschaftswissenschaftsfach” ist ein “Schulfach”, in dem sich mit kulturellen, sozialen, ökonomischen und politischen Themen auseinandergesetzt wird. Zu den Gesellschaftswissenschaftsfächern gehören die Fächer Erziehungswissenschaften, Geographie, Geschichte, Sachunterricht, Sozialkunde, Politikwissenschaft und Wirtschaftskunde.
-LP_0000006	Class	Lehrprozess	teaching process	obo:BFO_0000015	
-LP_0000007	Class	Lernprozess	learning process	obo:BFO_0000015	
-LP_0000009	Class	Jahrgangsstufe	class level	obo:IAO_0000030	Eine “Jahrgangsstufe” ist eine “Informationseinheit”. Sie umfasst die Gesamtheit der Klassen und Kurse, in denen Lernende gemeinsam einen bestimmten Abschnitt ihrer schulischen Laufbahn durchlaufen. Eine Jahrgangsstufe bezeichnet eine systematische Einteilung der Lernenden und gibt an, in welcher Phase ihres Bildungswegs sie sich befinden und legt die für sie vorgesehenen Kompetenzen und Lerninhal
-LP_0000010	Class	Person	person	obo:BFO_0000030	
-LP_0000011	Class	Lehrer Rolle	teacher role	obo:BFO_0000023	
-LP_0000012	Class	Schüler Rolle	student  role	obo:BFO_0000023	
-LP_0000013	Class	Kompetenz	competence	obo:BFO_0000016	Eine „Kompetenz“ ist eine Eigenschaft, die eine Person entweder bereits besitzt oder im Verlauf eines Lernprozesses erwirbt. Sie ist die Fähigkeit eines Lernenden, Wissen und Können zur Lösung von Problemen anzuwenden (vgl. KMK). Die Ontologie unterscheidet zwischen “Kompetenz” und “CE-Kompetenzspezifikation”: Im Unterschied zur “CE-Kompetenzspezifikation”, die eine “Kompetenz” im Rahmen eines Leh
-LP_0000014	Individual	E Niveau (BW)			
-LP_0000015	AnnotationProperty	tracker item			
-LP_0000016	Individual	G Niveau (BW)			
-LP_0000017	ObjectProperty	konkretisiert Lehrplan	concretizes curriculum	obo:RO_0000059	
-LP_0000018	Individual	Gymnasialniveau Sek I (BW)			
-LP_0000019	Class	Schulabschluss	educational qualification	obo:BFO_0000035	Ein “Schulabschluss” ist ein “Prozessende”. Es ist ein offiziell anerkannter Bildungsabschluss, der am Ende eines bestimmten Bildungsgangs erworben wird. Er bestätigt den erfolgreichen Abschluss einer schulischen Laufbahn und dient als Qualifikationsnachweis für weiterführende Bildungswege oder den Eintritt in das Berufsleben. Schulabschlüsse unterscheiden sich je nach Schulart und Bundesland in i
-LP_0000020	Class	Schulstufe	educational level	obo:IAO_0000030	Die “Schulstufe” ist eine “Informationseinheit”. Sie bezeichnet eine bestimmte Phase der schulischen Laufbahn, in der Lernende bestimmte Ziele gemäß den Anforderungen des Bildungssystems erreichen sollen. Schulstufen dienen dazu, den Lernenden einen strukturierten Lernweg zu bieten, in dem die pädagogischen und didaktischen Anforderungen an die jeweiligen Altersgruppen angepasst sind. Die Schulstu
-LP_0000021	ObjectProperty	endet mit Abschluss	leads to qualification	obo:BFO_0000051	
-LP_0000022	Individual	M Niveau (BW)			
-LP_0000023	Individual	Gymnasialniveau Sek I (BY)			
-LP_0000024	ObjectProperty	wird beschrieben von	described by		
-LP_0000025	Individual	Mittelschulniveau (BY)			
-LP_0000026	ObjectProperty	hat Jahrgangsstufe	has class level	LP_0000024	
-LP_0000027	Individual	Mittlere-Reife-Klasse (BY)			
-LP_0000028	Class	Bildungsgangniveau	educational track level	LP_0000037	Das “Bildungsgangniveau” ist ein “Niveau”, das die Anforderungen innerhalb eines “Bildungsgangs” beschreibt und dabei den Unterschied in den Leistungsniveaus zwischen verschiedenen Bildungsgängen kennzeichnet. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden. In der Ontologie wird unterschieden zwischen dem “Hau
-LP_0000029	ObjectProperty	von Bundesland	of federal state	LP_0000024	
-LP_0000030	Individual	Realschulniveau (BY)			
-LP_0000031	Individual	Regelklasse (BY)			
-LP_0000032	Individual	Orientierungsstufe (MV)			
-LP_0000034	Individual	Erweitertes Anforderungsniveau (HB)			
-LP_0000035	Individual	Grundlegendes Anforderungsniveau (HB)			
-LP_0000036	Individual	Primarbereich			
-LP_0000037	Class	Niveau	niveau	obo:IAO_0000030	Das “Niveau” ist eine “Informationseinheit”. Sie bezeichnet eine Kategorisierung des Ausmaßes der Ausprägung eines oder mehrerer bestimmten Merkmale. Im Bildungskontext bezeichnet das “Niveau” das Level, die Komplexität, die Tiefe oder den Schwierigkeitsgrad eines Lerninhalts oder einer Kompetenz, die in einem Lehrplan oder Bildungsstandard festgelegt ist. Das Niveau gibt an, welche Anforderungen 
-LP_0000038	Individual	Gymnasialniveau Sek I (HB)			
-LP_0000039	Class	BistaFach		LP_0000001	Ein “Bistafach” ist ein “Schulfach”, zu dem es von der KMK veröffentlichte Bildungsstandards gibt. Die Bistafächer sind Deutsch, Mathematik, die erste Fremdsprache (Englisch oder Französisch) und die drei Naturwissenschaften Biologie, Chemie und Physik.
-LP_0000040	Class	Bundesland Bezeichnung	state designation	obo:IAO_0000030	Klasse der Bezeichnungen der deutschen Bundesländer, deren Kultusministerien für die Lehrpläne zuständig ist.
-LP_0000041	ObjectProperty	hat Einheit	has unit	obo:BFO_0000051	
-LP_0000043	Class	Oberstufenphase	secondary phase	obo:IAO_0000030	
-LP_0000044	Individual	Oberschulniveau (HB)			
-LP_0000045	Individual	Sekundarbereich I			
-LP_0000046	Individual	Sekundarbereich II			
-LP_0000047	ObjectProperty	hat Schulstufe	has educational level	LP_0000024	
-LP_0000050	Individual	G8 Qualifikationsphase			
-LP_0000051	Individual	G8 Einführungsphase			
-LP_0000052	Individual	G9 Qualifikationsphase			
-LP_0000053	Class	Berlin-Brandenburg		LP_0000040	
-LP_0000054	Class	Ohne-Berlin-Brandenburg		LP_0000040	
-LP_0000055	Individual	G9 Einführungsphase			
-LP_0000056	Class	Einführungsphase		LP_0000043	
-LP_0000057	Class	Qualifikationsphase		LP_0000043	
-LP_0000060	Individual	Allgemeinbildender Schulabschluss (HH)			
-LP_0000069	Class	Gymnasialniveau Sek I		LP_0000028	Das "Gymnasialniveau Sek I” ist ein “Bildungsgangniveau”, welches das Niveau des "gymnasialen Bildungsgangs" im Sekundarbereich I beschreibt und somit meistens die Jahrgangsstufen 5-10 umfasst. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.
-LP_0000071	ObjectProperty	benötigt Niveau	requires level	LP_0000024	
-LP_0000076	Class	Allgemeine Hochschulreife			
-LP_0000078	Class	Mittlerer Schulabschluss			Der “Mittlere Schulabschluss” ist ein “Schulabschluss” und ein allgemeinbildender Schulabschluss. Er wird nach der Jahrgangsstufe 10 verliehen. In den Bundesländern trägt der “Mittlere Schulabschluss” verschiedene Bezeichnungen: - Mittlerer Schulabschluss (BY, BE, HB, HH, SH, BW, NW) - Mittlere Reife (MV) - Mittlerer Bildungsabschluss (SL) - Realschulabschluss (HE, NI, SN, ST, TH) - Berechtigung z
-LP_0000079	Class	Erster Schulabschluss			Der “Erste Schulabschluss” ist ein “Schulabschluss” und ist der erste allgemeinbildende Schulabschluss. Er wird je nach Bundesland und Schulart nach der Jahrgangsstufe 9 oder 10 verliehen. In den Bundesländern trägt der “Erste Schulabschluss” verschiedene Bezeichnungen: - Erster allgemeinbildender Schulabschluss (HH, NW, SH) - Hauptschulabschluss (BW, HE, NI, SL, SN, ST, TH) - Berufsbildungsreife 
-LP_0000086	ObjectProperty	ist Niveau von	is niveau of	obo:IAO_0000136	
-LP_0000090	Individual	Gymnasialniveau Sek I (HE)			
-LP_0000091	Individual	Hauptschulniveau (HE)			
-LP_0000092	Individual	Realschulniveau (HE)			
-LP_0000093	Individual	Erhöhte Anforderungen (HH)			
-LP_0000094	Individual	Gymnasialniveau Sek I (HH)			
-LP_0000095	Individual	Mindestanforderungen (HH)			
-LP_0000096	Individual	Mindestanforderungen für den ersten allgemeinbildenden Schulabschluss (HH)			
-LP_0000097	Individual	Mindestanforderungen für den mittleren Schulabschluss (HH)			
-LP_0000098	Individual	Mindestanforderungen für den Übergang in die Studienstufe (HH)			
-LP_0000099	Individual	Gymnasialniveau Sek I (MV)			
-LP_0000100	Individual	Bildungsgangniveau Berufsreife (MV)			
-LP_0000101	Individual	Bildungsgangniveau Mittlere Reife (MV)			
-LP_0000102	Individual	Orientierungsstufenniveau (MV)			
-LP_0000103	Individual	Erhöhte Anforderungen (E-Kurs) (NI)			
-LP_0000104	Individual	Grundlegende Anforderungen (G-Kurs) (NI)			
-LP_0000105	Class	Mittlerer Abschluss (BE)			
-LP_0000106	Class	Erster Abschluss (BE)			
-LP_0000107	Individual	Gymnasialniveau Sek I (NI)			
-LP_0000108	Individual	Hauptschulniveau (NI)			
-LP_0000109	Class	Allgemeine Hochschulreife (BE)			
-LP_0000110	Individual	Oberschulniveau (NI)			
-LP_0000111	Class	Schulart	school type		Eine “Schulart” ist eine “Informationseinheit”. Sie beschreibt eine durch bestimmte Merkmale gekennzeichnete Form der Schule, die deren organisatorische Struktur, pädagogische Ausrichtung, die Dauer des Bildungsgangabschnitts sowie die angestrebten Schulabschlüsse festlegt. Sie kann je nach Bildungssystem und Bundesland unterschiedliche Bezeichnungen und Konzepte umfassen, wie Grundschule, Gymnasi
-LP_0000116	Individual	Realschulniveau (NI)			
-LP_0000117	Individual	Vertiefendes Niveau (NI)			
-LP_0000118	Individual	Zusätzliche Anforderungen (Z-Kurs) (NI)			
-LP_0000129	Individual	Zusätzliche Voraussetzungen für den Erwerb des Mittleres Schulabschlusses (NI)			
-LP_0000130	Individual	Erweiterungskurs (NW)			
-LP_0000131	Individual	Gesamt-/Sekundarschulniveau (NW)			
-LP_0000132	Individual	Gymnasialniveau Sek I (NW)			
-LP_0000133	Individual	Allgemeinbildender Schulabschluss (BE)			
-LP_0000134	Individual	Hauptschulniveau (NW)			
-LP_0000135	Individual	Berufsbildungsreife (BE)			
-LP_0000136	Individual	Erweiterte Berufsbildungsreife (BE)			
-LP_0000137	Individual	Mittlerer Schulabschluss (BE)			
-LP_0000138	Individual	Niveau Mittlerer Schulabschluss (NW)			
-LP_0000142	Individual	Realschulniveau (NW)			
-LP_0000143	Individual	Erhöhtes Kompetenzniveau (RP)			
-LP_0000144	Class	Erster Abschluss (BW)			
-LP_0000145	Class	Mittlerer Abschluss (BW)			
-LP_0000146	Class	Allgemeine Hochschulreife (BW)			
-LP_0000147	Individual	Grundlegendes Kompetenzniveau (RP)			
-LP_0000148	Individual	Allgemeinbildender Schulabschluss (BW)			
-LP_0000149	Individual	Hauptschulabschluss (BW)			
-LP_0000150	Individual	Mittlerer Schulabschluss (BW)			
-LP_0000151	Individual	Mittleres Kompetenzniveau (RP)			
-LP_0000152	Individual	Qualifizierender Abschluss der Mittelschule (BY)			
-LP_0000153	Individual	Erfolgreicher Abschluss der Mittelschule (BY)			
-LP_0000154	Individual	Mittlerer Schulabschluss der Mittelschule (BY)			
-LP_0000155	Individual	Mittlerer Schulabschluss der Realschule (BY)			
-LP_0000156	Individual	Mittlerer Schulabschluss der Wirtschaftsschule (BY)			
-LP_0000157	Individual	Allgemeinbildender Schulabschluss (BY)			
-LP_0000160	Class	Allgemeine Hochschulreife (TH)			
-LP_0000161	Class	Allgemeine Hochschulreife (NI)			
-LP_0000162	Class	Allgemeine Hochschulreife (NW)			
-LP_0000163	Class	Allgemeine Hochschulreife (HH)			
-LP_0000164	Class	Allgemeine Hochschulreife (RP)			
-LP_0000165	Class	Allgemeine Hochschulreife (SN)			
-LP_0000168	Class	Allgemeine Hochschulreife (HE)			
-LP_0000169	Class	Allgemeine Hochschulreife (BY)			
-LP_0000170	Class	Allgemeine Hochschulreife (MV)			
-LP_0000171	Class	Allgemeine Hochschulreife (ST)			
-LP_0000172	Class	Allgemeine Hochschulreife (SH)			
-LP_0000173	Class	Allgemeine Hochschulreife (SL)			
-LP_0000174	Class	Allgemeine Hochschulreife (HB)			
-LP_0000175	Class	Allgemeine Hochschulreife (BB)			
-LP_0000176	Class	Erster Abschluss (TH)			
-LP_0000177	Class	Erster Abschluss (NI)			
-LP_0000178	Class	Erster Abschluss (NW)			
-LP_0000179	Class	Erster Abschluss (HH)			
-LP_0000180	Class	Erster Abschluss (RP)			
-LP_0000181	Class	Erster Abschluss (SN)			
-LP_0000182	Class	Erster Abschluss (HE)			
-LP_0000183	Class	Erster Abschluss (BY)			
-LP_0000184	Class	Erster Abschluss (MV)			
-LP_0000185	Class	Erster Abschluss (ST)			
-LP_0000186	Class	Erster Abschluss (SH)			
-LP_0000187	Class	Erster Abschluss (SL)			
-LP_0000188	Class	Erster Abschluss (HB)			
-LP_0000189	Class	Erster Abschluss (BB)			
-LP_0000192	Individual	Mittlerer Schulabschluss Gymnasium (BY)			
-LP_0000193	Individual	Anforderungen für den Ersten allgemeinbildenden Schulabschluss (SH)			
-LP_0000200	Class	Mittlerer Abschluss (TH)			
-LP_0000201	Class	Mittlerer Abschluss (NI)			
-LP_0000202	Class	Mittlerer Abschluss (NW)			
-LP_0000203	Class	Mittlerer Abschluss (HH)			
-LP_0000204	Class	Mittlerer Abschluss (RP)			
-LP_0000205	Class	Mittlerer Abschluss (SN)			
-LP_0000206	Class	Mittlerer Abschluss (HE)			
-LP_0000207	Class	Mittlerer Abschluss (BY)			
-LP_0000208	Class	Mittlerer Abschluss (MV)			
-LP_0000209	Class	Mittlerer Abschluss (ST)			
-LP_0000210	Class	Mittlerer Abschluss (SH)			
-LP_0000211	Class	Mittlerer Abschluss (SL)			
-LP_0000212	Class	Mittlerer Abschluss (HB)			
-LP_0000213	Class	Mittlerer Abschluss (BB)			
-LP_0000216	Individual	Anforderungen für den Mittleren Schulabschluss (SH)			
-LP_0000231	Individual	Berufsbildungsreife (BB)			
-LP_0000232	Individual	Erweiterte Berufsbildungsreife (BB)			
-LP_0000233	Individual	Fachoberschulreife (BB)			
-LP_0000234	Individual	Berechtigung zum Besuch der gymnasialen Oberstufe (BB)			
-LP_0000235	Individual	Allgemeinbildender Schulabschluss (BB)			
-LP_0000236	Individual	Anforderungen für die Allgemeine Hochschulreife Sek I (SH)			
-LP_0000245	Individual	Allgemeinbildender Schulabschluss (HB)			
-LP_0000246	Individual	Erweiterte Berufsbildungsreife (HB)			
-LP_0000247	Individual	Berufsbildungsreife (HB)			
-LP_0000248	Individual	Mittlerer Schulabschluss (HB)			
-LP_0000249	Individual	Sekundarstufenniveau (SH)			
-LP_0000260	Individual	A Kurs (SL)			
-LP_0000261	Class	Curriculares Element	curricular element	obo:IAO_0000030	Ein “Curriculares Element” ist eine Informationseinheit, die bei der Beschreibung der Bestandteile eines Lehrplans oder Bildungsstandards verwendet wird. In der Ontologie fungiert das “Curriculare Element" als Superklasse, um die Elemente zu ordnen, aus denen sich Beschreibungen der zu erwerbenden Inhalte und Kompetenzen eines Lehrplans oder eines Bildungsstandards zusammensetzen. Ein “Curriculare
-LP_0000263	Class	CE-Kompetenzspezifikation	competency specification	LP_0000261	Eine “CE-Kompetenzspezifikation” ist ein “Curriculares Element”, das eine Kompetenz beschreibt. Es enthält üblicherweise einen Operator und beginnt zum Beispiel mit “Die Schülerinnen und Schüler [...]” oder “Die Lernenden [...]”. Die Ontologie unterscheidet zwischen “CE-Kompetenzspezifikation” und “Kompetenz”: Unter einer Kompetenz wird die Fähigkeit eines Lernenden verstanden, Wissen und Können z
-LP_0000264	Individual	E Kurs (SL)			
-LP_0000265	Class	Fachniveau Sek II		LP_0000037	Das “Fachniveau Sek II” ist ein “Niveau”. Es bezeichnet das Anforderungsniveau eines bestimmten Fachs in der Sekundarstufe II und bringt zum Ausdruck, ob ein “Curriculares Element” einem “Grundkurs” oder einem “Leistungskurs” zugeordnet ist. Die beiden Fachniveaus unterscheiden sich in der Komplexität und Tiefe des Unterrichts sowie im Umfang der Inhalte und der zu erbringenden Leistungen. Während
-LP_0000266	Individual	G Kurs (SL)			
-LP_0000267	Individual	Gemeinschaftsschulniveau (SL)			
-LP_0000268	Class	Leitidee (Bista)			
-LP_0000269	Individual	Gymnasialniveau Sek I (SL)			
-LP_0000270	Individual	Mittlerer Schulabschluss (HH)			
-LP_0000271	Individual	Erster allgemeinbildender Schulabschluss (HH)			
-LP_0000272	Individual	Erweiterter erste allgemeinbildender Schulabschluss (HH)			
-LP_0000279	Individual	Gymnasialniveau Sek I (SN)			
-LP_0000280	Individual	Allgemeinbildender Schulabschluss (RP)			
-LP_0000281	Individual	Qualifizierter Sekundarabschluss I (RP)			
-LP_0000282	Individual	Berufsreife (RP)			
-LP_0000293	Individual	Hauptschulbildungsgangniveau (SN)			
-LP_0000294	Individual	Oberschulniveau (SN)			
-LP_0000295	Individual	Realschulbildungsgangniveau (SN)			
-LP_0000296	Individual	Gymnasialniveau Sek I (ST)			
-LP_0000297	Individual	Hauptschulabschlussbezogener Unterricht (ST)			
-LP_0000298	Individual	Realschulabschlussbezogener Unterricht (ST)			
-LP_0000299	Individual	Sekundarschulniveau (ST)			
-LP_0000300	Individual	Allgemeinbildender Schulabschluss (SL)			
-LP_0000301	Individual	Hauptschulabschluss (SL)			
-LP_0000302	Individual	Mittlerer Bildungsabschluss (SL)			
-LP_0000309	Individual	Regelschulniveau (TH)			
-LP_0000310	Individual	Hauptschulabschlussbezogener Kurs (TH)			
-LP_0000311	Individual	Realschulabschlussbezogener Kurs (TH)			
-LP_0000312	Individual	Allgemeinbildender Schulabschluss (TH)			
-LP_0000313	Individual	Hauptschulabschluss (TH)			
-LP_0000314	Individual	Qualifizierender Hauptschulabschluss (TH)			
-LP_0000315	Individual	Realschulabschluss (TH)			
-LP_0000328	Class	Thema (RP)		LP_0000349	
-LP_0000332	Class	CE-Lerninhalt	learning content	LP_0000261	Ein “CE-Lerninhalt” ist ein “Curriculares Element", das einen Lerninhalt in Form konkreter Themen beschreibt. Der „CE-Lerninhalt“ liefert die inhaltliche Basis für die Gestaltung des Unterrichts. Anhand des "CE-Lerninhalts" können Kompetenzen erworben werden. Ein CE-Lerninhalt kann einen anderen CE-Lerninhalt enthalten, aber kein anderes Element (wie z.B. CE-Bereich oder CE-Kompetenzspezifikation)
-LP_0000336	Class	Fachbezogene Kompetenzspezifikation		LP_0000263	
-LP_0000337	Class	Fachübergreifende Kompetenzspezifikation		LP_0000263	
-LP_0000342	Class	Element (RP)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Rheinland-Pfalz
-LP_0000343	ObjectProperty	hat Schulartfunktion	has school type function	obo:RO_0000085	
-LP_0000344	DatatypeProperty	hat Wert	has value		
-LP_0000345	Class	Teilthema (RP)		LP_0000328	
-LP_0000346	Class	Titel	title	obo:IAO_0000300	Ein Titel ist eine textuelle Entität, die dazu dient, eine andere Entität eindeutig zu benennen oder kurz zu kennzeichnen und primär zur Identifikation oder Wiedererkennung dieser Entität verwendet wird. Er ist die menschenlesbare, inhaltlich beschreibende Bezeichnung einer Entität (z. B. eines Kompetenzbereichs, Themas oder Abschnitts).
-LP_0000347	Class	Identifikationsnummer	ID number	obo:IAO_0000028	
-LP_0000349	Class	CE-Bereich	area	LP_0000261	Ein “CE-Bereich” ist ein “Curriculares Element”. Ein “CE-Bereich” kann anderen “CE-Bereichen” über- oder untergeordnet sein. Das Element dient der Gliederung von Lehrplänen und Bildungsstandards, indem es “CE-Kompetenzspezifikationen” und/oder “CE-Lerninhalte” unter einem gemeinsamen inhaltlichen Fokus zusammenfasst, der durch den “CE-Bereich” definiert wird.
-LP_0000350	Class	Lernziel (RP)			
-LP_0000352	Class	Unterteilthema (RP)		LP_0000345	
-LP_0000353	Class	Lehrplanfragment (RP)		LP_0001015	
-LP_0000361	Individual	Allgemeinbildender Schulabschluss (MV)			
-LP_0000362	Individual	Berufsreife (MV)			
-LP_0000363	Individual	Mittlere Reife (MV)			
-LP_0000373	Individual	Allgemeinbildender Schulabschluss (NW)			
-LP_0000374	Individual	Erster Schulabschluss (NW)			
-LP_0000375	Individual	Erweiterter Erster Schulabschluss (NW)			
-LP_0000376	Individual	Mittlerer Schulabschluss (NW)			
-LP_0000377	Individual	Mittlerer Schulabschluss mit Berechtigung zur gymnasialen Oberstufe (NW)			
-LP_0000389	Individual	Allgemeinbildender Schulabschluss (SN)			
-LP_0000390	Individual	Hauptschulabschluss (SN)			
-LP_0000391	Individual	Qualifizierender Hauptschulabschluss (SN)			
-LP_0000392	Individual	Realschulabschluss (SN)			
-LP_0000402	Individual	Allgemeinbildender Schulabschluss (ST)			
-LP_0000403	Individual	Hauptschulabschluss (ST)			
-LP_0000404	Individual	Qualifizierter Hauptschulabschluss (ST)			
-LP_0000405	Individual	Realschulabschluss (ST)			
-LP_0000406	Individual	Erweiterter Realschulabschluss (ST)			
-LP_0000421	Class	KombinierterBereichRP		LP_0000342	
-LP_0000423	Class	Verweis auf standardillustrierende Aufgaben (BE)		LP_0030065	
-LP_0000424	Class	Verweis auf vernetzte Kompetenzen  (BE)		LP_0030065	
-LP_0000425	Class	Verweis auf Materialien (BE)		LP_0030065	
-LP_0000426	Class	Element (HH)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Hamburg
-LP_0000428	Class	Inhalt (HH)		LP_0000349	
-LP_0000429	Class	Themenfeld	subject area	obo:IAO_0000300	Ein Themenfeld ist eine textuelle Entität, die einen fachlichen, inhaltlichen oder konzeptuellen Bereich bezeichnet, dem eine Entität thematisch zugeordnet ist.
-LP_0000431	Class	Kompetenzbereich (RP)		LP_0000349	
-LP_0000432	Class	Kompetenz (RP)			
-LP_0000433	Class	Lehrplan (RP)		LP_0000438	
-LP_0000434	Class	Element (BY)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Bayern
-LP_0000435	Class	Fachniveau Sek II (BY)			
-LP_0000437	Individual	Naturwissenschaften (Schulfach)			
-LP_0000438	Class	Lehrplan	curriculum	obo:IAO_0000030	Ein Lehrplan ist eine Informationseinheit, die eine systematische Zusammenstellung von curricularen Elementen umfasst. Er definiert verbindlich die Kompetenzen und Inhalte, die Schülerinnen und Schüler in einem bestimmten Fach, einer Jahrgangsstufe, einer Schulart oder einem Bildungsgang eines Bundeslandes erwerben sollen. Ein Lehrplan ist immer spezifisch auf die Bildungspolitik eines Bundeslande
-LP_0000440	ObjectProperty	für Bildungsgangabschnitt	for educational track	obo:RO_0000056	
-LP_0000441	Class	Element (BB)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Brandenburg.
-LP_0000443	Class	Niveaustufe BE/BB		obo:IAO_0000030	
-LP_0000445	Class	Inhalt (BB)	learning content (BB)		
-LP_0000446	Class	Lernmaterial (BB)	learning material (BB)		
-LP_0000447	Class	Standard (BB)	standard (BB)		operationalisierbar und meßbar
-LP_0000448	Class	Thema (BB)	topic (BB)	LP_0000349	
-LP_0000449	Class	Themenfeld (BB)	topic area (BB)	LP_0000349	
-LP_0000450	Class	Zusatzmaterial (BB)	additional material (BB)		
-LP_0000451	Class	Übung (BB)	exercise (BB)	LP_0000441	
-LP_0000452	Individual	Moderne Fremdsprachen (Schulfach)			
-LP_0000453	Individual	Lebensgestaltung Ethik Religionskunde (Schulfach)			
-LP_0000459	Class	Kompetenzbereich (BB)		LP_0000349	
-LP_0000460	DatatypeProperty	hat Position			
-LP_0000463	DatatypeProperty	uri			
-LP_0000464	Individual	Niveaustufe A			
-LP_0000465	Individual	Niveaustufe B			
-LP_0000466	Individual	Niveaustufe C			
-LP_0000467	Individual	Niveaustufe D			
-LP_0000468	Individual	Niveaustufe E			
-LP_0000469	Individual	Niveaustufe F			
-LP_0000470	Individual	Niveaustufe G			
-LP_0000475	Class	Schulartfunktion	school type function	obo:BFO_0000034	
-LP_0000477	ObjectProperty	konkretisiert Schulart	concretizes type of school	obo:RO_0000059	
-LP_0000478	Class	Funktionsspezifikation	function specification	obo:IAO_0000030	
-LP_0000479	Individual	Kompetenzbeschreibungsfunktion			Ein Element, das diese Funktion inne hat, beschreibt Kompetenzen, die SuS haben können oder eine Ausführung in der die Kompetenz angewandt wird.
-LP_0000480	Individual	Lerninhaltsbeschreibungsfunktion			Ein Element, das diese Funktion inne hat, beschreibt Inhalte, die im Unterricht vermittelt werden. Es beschreibt konkrete Themen oder Handlungsanweisungen zur Gestaltung des Unterrichts oder Mittel zum Erlangen von Kompetenzen.
-LP_0000481	Individual	Materialbeschreibungsfunktion			Ein Element, das diese Funktion inne hat, beschreibt Materialien, die im Unterricht verwendet werden können.
-LP_0000482	Class	Strukturierungsfunktion		LP_0000478	Elemente, die diese Funktion inne haben, strukturieren die Lehrpläne.
-LP_0000483	ObjectProperty	hat Funktion	has function specification	LP_0000024	
-LP_0000493	Class	Beschreibungsfunktion		LP_0000478	Elemente, die diese Funktion inne haben, beschreiben Teile des Lehrplans.
-LP_0000495	ObjectProperty	ist Funktion von	is function specification of	obo:IAO_0000136	
-LP_0000497	Individual	Bereichsfunktion			Ein Lehrplanelement, das diese Funtion inne hat, beschreibt einen Kompetenzbereich. Einem Kompetenzberich können Teilkomptenzbereiche untergeordnet werden. Ein Lehrplanelement, das diese Funtion inne hat, beschreibt einen Teilkompetenzbereich. Teilkompetenzbereiche sind üblicherweise einem Kompetenzbereich oder anderen Teilkompetenzbereich untergeordnet.
-LP_0000499	Class	Bezugsfunktionen		LP_0000478	
-LP_0000500	Individual	Prozessbezugsfunktion			
-LP_0000501	Individual	Inhaltsbezugsfunktion			
-LP_0000506	Individual	Grundkursfach (BB)			
-LP_0000507	Individual	Leistungskursfach (BB)			
-LP_0000508	Class	Zeitspezifikation	temporal specification	obo:IAO_0000027	Ein Data Item, dass für eine Unterrichtseinheit einen Wert für Zeitdauer und die dazugehörige Einheit beschreibt.
-LP_0000510	Individual	Leistungsfach (BW)			
-LP_0000511	Individual	Basisfach (BW)			
-LP_0000512	Individual	Grundlegendes Anforderungsniveau (BY)			
-LP_0000513	Individual	Vertiefungskurs (BY)			
-LP_0000515	Individual	Grundlegendes Anforderungsniveau (HE)			
-LP_0000516	Individual	Erhöhtes Anforderungsniveau (HE)			
-LP_0000517	Individual	Erhöhtes Anforderungsniveau (HH)			
-LP_0000518	Individual	Grundlegendes Anforderungsniveau (HH)			
-LP_0000519	Individual	Grundkurs (MV)			
-LP_0000520	Individual	Leistungskurs (MV)			
-LP_0000521	Individual	Grundkurs (NW)			
-LP_0000522	Individual	Leistungskurs (NW)			
-LP_0000523	Individual	Grundkurs (SN)			
-LP_0000524	Individual	Leistungskurs (SN)			
-LP_0000525	Individual	Erhöhtes Anforderungsniveau (BY)			
-LP_0000526	Individual	Grundlegendes Anforderungsniveau (ST)			
-LP_0000527	Individual	Erhöhtes Anforderungsniveau (ST)			
-LP_0000528	Individual	Grundlegendes Anforderungsniveau (TH)			
-LP_0000529	Individual	Erhöhtes Anforderungsniveau (TH)			
-LP_0000530	Class	Grundkursniveau		LP_0000265	Ein "Grundkursniveau" ist ein “Fachniveau Sek II” im gymnasialen Bildungsgang der Sekundarstufe II, das Inhalte und Kompetenzen auf einem grundlegenden Anforderungsniveau vermittelt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb eines Fachs behandelt werden.
-LP_0000531	Class	Leistungskursniveau		LP_0000265	Ein "Leistungskursniveau" ist ein “Fachniveau Sek II” im gymnasialen Bildungsgang der Sekundarstufe II, das Inhalte und Kompetenzen auf einem vertieften Anforderungsniveau vermittelt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb eines Fachs behandelt werden.
-LP_0000532	Individual	Optional			
-LP_0000533	Individual	Verbindlich			
-LP_0000535	Individual	Unterrichtsstunde			Die Unterrichtsstunde ist ein festgelegter Zeitabschnitt für den Unterrichtsablauf.
-LP_0000536	Class	Element (Bista)	element (Bista)	LP_0000261	Lehrplan Element bezogen auf die Vorgaben der KMK Bildungsstandards
-LP_0000537	ObjectProperty	hat Schulfach	has school subject	LP_0000024	Wird verwendet, um Etwas einem Fach oder einem Fach mit besonderem "Bezug" (z.B. Zweite-Fremdsprache) zuzuordnen.
-LP_0000540	Class	Schulfachbezug	school subject property	obo:IAO_0000030	Ein “Schulfachbezug” ist eine “Informationseinheit” und gibt die Funktion und Spezifikation eines “Schulfachs”  in einem bestimmten Kontext an. Beispiele für “Schulfachbezug” sind “Erste Fremdsprache”, “Pflichtfach” oder “Wahlfach”.
-LP_0000541	Class	Erste Fremdsprache		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als erste Fremdsprache gemeint ist.
-LP_0000542	Class	Zweite Fremdsprache		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als dritte Fremdsprache gemeint ist.
-LP_0000543	Class	Dritte Fremdsprache		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als dritte Fremdsprache gemeint ist.
-LP_0000544	Class	Pflichtfach		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als Pflichtfach gemeint ist.
-LP_0000545	Class	Wahlpflichtfach		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als Wahlpflicht gemeint ist.
-LP_0000547	Class	Gültigkeitsbereich	validity scope	obo:IAO_0000030	Ein information content entity, dass den zetlichen Gültigkeitsbereich eines Lehrplans beschreibt.
-LP_0000548	DatatypeProperty	von Datum		LP_0000344	
-LP_0000549	DatatypeProperty	bis Datum	to date	LP_0000344	
-LP_0000550	ObjectProperty	hat Gültigkeitsbereich	has validity scope	LP_0000024	
-LP_0000551	Class	Wahlfach		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als Wahlfach/fakultatives Fach gemeint ist.
-LP_0000553	DatatypeProperty	veröffentlicht am		LP_0000344	
-LP_0000554	Class	Didaktische Voraussetzung	didactic prerequisite	LP_0030065	Ein didaktischer Verweis, der ausdrückt, dass das Zielobjekt vor dem Quellobjekt beherrscht werden sollte, damit dieses in einem curricular und didaktisch begründeten Lernpfad sinnvoll bearbeitet werden kann.
-LP_0000555	ObjectProperty	ist Schulartfunktion von		obo:RO_0000079	
-LP_0000556	ObjectProperty	hat Oberstufensphase		LP_0000024	
-LP_0000571	Class	Bildungsstandard (KMK)	educational standard (KMK)	obo:IAO_0000030	Der “Bildungsstandard” ist eine “Informationseinheit”, die klar definierte, verbindliche Lernziele beschreibt, welche die Lernenden zu einem bestimmten Zeitpunkt erreichen sollen. Sie sorgt für eine einheitliche Qualität und Transparenz im Bildungssystem und ermöglicht eine objektive Messung der Leistungen. Die von der Kultusministerkonferenz (KMK) verabschiedeten Bildungsstandards greifen allgeme
-LP_0000572	Class	Bildungsgangniveau (BE)		LP_0000028	Ein Lehrplanelement von Berlin mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und Jahrgangsstufe zum Ausdruck gebracht wird. Unterklassen entprechen den konkreten Abschlussniveaus. Deren Instanzen enthalten die Verknüfung zu Niveaustufe und Jahrgangsstufe. Ein Lehrplanelement von Berlin/Brandenburg mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und
-LP_0000573	Class	BOA Niveau		LP_0000572	Abschluss Niveau, das zum berufsorientierenden Abschluss befähigt.
-LP_0000574	Class	BBR Niveau		LP_0000572	Abschluss Niveau, das zur Berufsbildungsreife befähigt.
-LP_0000575	Class	EBBR Niveau		LP_0000572	Abschluss Niveau, dass zur erweiterten Berufsbildungsreife befähigt
-LP_0000576	Class	MSA Niveau		LP_0000572	Abschluss Niveau, das zum mittlereren Schulabschluss befähigt.
-LP_0000577	Class	Gymnasialniveau Sek I (BE)		LP_0000572	Abschluss Niveau, das zum Übergang in die 2-jährige Qualifikationsphase (Abitur) befähigt.
-LP_0000578	ObjectProperty	hat Niveaustufe	has niveau stage	LP_0000024	
-LP_0000580	ObjectProperty	ist Niveaustufe von	is niveau stage of	obo:IAO_0000136	
-LP_0000583	Individual	BOA A			
-LP_0000584	Individual	BOA B			
-LP_0000585	Individual	BOA C			
-LP_0000586	Individual	BOA D			
-LP_0000587	Individual	BOA E			
-LP_0000588	Individual	BBR A			
-LP_0000589	Individual	BBR B			
-LP_0000590	Individual	BBR C			
-LP_0000591	Individual	BBR D			
-LP_0000592	Individual	BBR E			
-LP_0000593	Individual	BBR F			
-LP_0000594	Individual	EBBR A			
-LP_0000595	Individual	EBBR B			
-LP_0000596	Individual	EBBR C			
-LP_0000597	Individual	EBBR D			
-LP_0000598	Individual	EBBR E			
-LP_0000599	Individual	EBBR F			
-LP_0000600	Individual	EBBR G			
-LP_0000601	Individual	MSA A			
-LP_0000602	Individual	MSA B			
-LP_0000603	Individual	MSA C			
-LP_0000604	Individual	MSA D			
-LP_0000605	Individual	MSA E			
-LP_0000606	Individual	MSA F			
-LP_0000607	Individual	MSA G			
-LP_0000608	Individual	Gymnasialniveau Sek I A			
-LP_0000609	Individual	Gymnasialniveau Sek I B			
-LP_0000610	Individual	Gymnasialniveau Sek I C			
-LP_0000611	Individual	Gymnasialniveau Sek I D			
-LP_0000612	Individual	Gymnasialniveau Sek I E			
-LP_0000613	Individual	Gymnasialniveau Sek I F			
-LP_0000614	Individual	Gymnasialniveau Sek I G			
-LP_0000615	Individual	Gymnasialniveau Sek I H			
-LP_0000616	Individual	Niveaustufe H			
-LP_0000627	Individual	Fragmentfunktion			Ist eine Stukturierungsfunktion, die ein Lehrplanelement inne haben kann. Ein Lehrplanelement, das diese Funktion inne hat, identifiziert einen Teil des Lehrplan. Die Art des Lehrplanteils muss nicht näher spezifizert sein. Wenngleich diese Definition auch auf Kompetenzbereiche oder Themenfelder anwendbar ist, ist sie ihnen ausdrücklich nicht gleichzusetzen, über- oder unterzuordnen. Die Funktion 
-LP_0000802	Class	Anforderungsbereich		LP_0000037	Umfasst Repräsentationen für die drei Anforderungsbereiche. Im deutschen und österreichischen Schulsystem werden die Lernziele meist in drei Anforderungsbereiche aufgeteilt, die ein unterschiedliches Ausmaß von Eigenleistung und komplexem Denken vom Schüler erfordern. Der Anforderungsbereich I umfasst meist eine Reproduktion, Anforderungsbereich II eine Reorganisation (Umgestaltung) sowie einen Tr
-LP_0000803	Individual	Anforderungsbereich 1: Reproduktion			
-LP_0000804	Individual	Anforderungsbereich 2: Reorganisation und Transfer			
-LP_0000805	Individual	Anforderungsbereich 3: Reflexion und Problemlösung			
-LP_0000806	Class	Bildungsplan (BW)		LP_0000438	
-LP_0000807	Class	Rahmenlehrplan (BB)		LP_0000438	
-LP_0000808	Class	Organisation	organization	obo:BFO_0000040	Eine Organisation ist eine materielle entität, die Rollen inne haben kann, Mitglieder hat und über ein Regelwerk verfügt. Mitglieder einer Organisation sind entweder andere Organisationen oder einzelne Personen. Mitglieder können spezifische Organisationsrollen innehaben, die durch das Regelwerk der Organisation festgelegt werden. Das Regelwerk bestimmt außerdem, wie Entscheidungen im Namen der Or
-LP_0000809	Class	Schule	school		Eine Schule ist eine Organisation (Bildungseinrichtung), in der Lernende im Rahmen eines geregelten Bildungsauftrags nach verbindlichen Lehrplänen unterrichtet werden.
-LP_0000810	Class	Schulklasse	school class	LP_0000808	Eine Schulklasse ist eine organisatorisch festgelegte Lerngruppe von Schülerinnen und Schülern, die in der Regel derselben Jahrgangsstufe angehören und über einen bestimmten Zeitraum gemeinsam unterrichtet werden.
-LP_0000812	ObjectProperty	für Schulart	for type of school	LP_0000024	
-LP_0000813	Class	Hauptschulbildungsgang	Hauptschule track	LP_0000816	ALT Der Hauptschulbildungsgang bereitet Schülerinnen in erster Linie auf eine berufliche Ausbildung und den direkten Einstieg ins Berufsleben vor. Er endet in der Regel nach der 9. oder 10. Klasse mit dem Hauptschulabschluss. Der Fokus liegt auf einer grundlegenden Allgemeinbildung, verbunden mit praktischen und berufsvorbereitenden Elementen. Schülerinnen erlernen neben den Kernfächern (Deutsch, 
-LP_0000814	Class	Realschulbildungsgang	Realschule track	LP_0000816	ALT Der Realschulbildungsgang vermittelt eine solide Allgemeinbildung mit einem Schwerpunkt auf praxisorientierten Inhalten. Er führt nach der 10. Klasse zur Mittleren Reife (auch Realschulabschluss genannt), die den Zugang zu weiterführenden Schulen (z. B. Fachoberschulen) oder einer Berufsausbildung ermöglicht. Der Unterricht ist weniger theorielastig als am Gymnasium, aber trotzdem anspruchsvol
-LP_0000815	Class	Gymnasialer Bildungsgang	Gymnasium track	LP_0000816	ALT Der gymnasiale Bildungsgang zielt darauf ab, Schüler*innen auf das Abitur und ein späteres Studium vorzubereiten. Er dauert in der Regel bis zur 12. oder 13. Klasse und endet mit der allgemeinen Hochschulreife (Abitur), die den Zugang zu Universitäten und Hochschulen ermöglicht. Der Lehrplan ist meist akademisch anspruchsvoller und theoretischer im Vergleich zu anderen Schulformen. Der gymnasi
-LP_0000816	Class	Bildungsgang	educational track	obo:BFO_0000015	ALT Bildungsgang beschreibt im deutschen Bildungssystem eine strukturierte Abfolge von Bildungsstufen und -inhalten, die zu einem bestimmten Schulabschluss führt. Ein Bildungsgang legt fest, welche Fächer, Lerninhalte und Kompetenzen während einer bestimmten Schulzeit vermittelt werden und wie lange diese Bildungsphase dauert. Er umfasst dabei die gesamte Schullaufbahn, die durch den jeweiligen Ab
-LP_0000818	Class	Lehrplan (SN)		LP_0000438	
-LP_0000819	Class	LehrplanPLUS (BY)		LP_0000438	
-LP_0000820	Class	Lehrplan (TH)		LP_0000438	
-LP_0000821	Class	Bildungsplan (HB)		LP_0000438	
-LP_0000822	Class	Bildungsplan (HH)		LP_0000438	
-LP_0000823	Class	Kerncurriculum (NI)		LP_0000438	
-LP_0000824	Class	Fachanforderung (SH)		LP_0000438	
-LP_0000825	Class	Lehrplan (SL)		LP_0000438	
-LP_0000826	Class	Lehrplan (ST)		LP_0000438	
-LP_0000832	Class	Realschulniveau		LP_0000028	Das “Realschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des "Realschulbildungsgangs" beschreibt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.
-LP_0000833	ObjectProperty	hat Bildungsgangniveau	has educational track level	LP_0000024	
-LP_0000834	Class	Hauptschulniveau		LP_0000028	Das “Hauptschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des "Hauptschulbildungsgangs" beschreibt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.
-LP_0000835	Class	Gymnasialniveau Sek II		LP_0000028	Das “Gymnasialniveau Sek II” ist ein “Bildungsgangniveau”, welches das Niveau des "gymnasialen Bildungsgangs" im Sekundarbereich II beschreibt und somit meistens die Jahrgangsstufen 11-13 umfasst. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.
-LP_0000840	ObjectProperty	hat Niveau	has niveau	LP_0000024	
-LP_0000845	Class	Progression	progression	obo:IAO_0000030	
-LP_0000852	Class	CE-Hinweis	note	LP_0000261	Ein “CE-Hinweis” ist ein “Curriculares Element”, das ergänzende Informationen oder Anregungen zu einem “CE-Bereich”, einem “CE-Lerninhalt” oder einer “CE-Kompetenzspezifikation” beinhaltet. Der “CE-Hinweis” hat einen Empfehlungscharakter. Beispiele: - praktische oder methodische Empfehlungen - Vorschläge oder Hinweise zur Umsetzung im Unterricht - Vertiefungsvorschläge - Differenzierungsvorschläge
-LP_0001000	Class	Kernlehrplan (NW)		LP_0000438	
-LP_0001001	Class	Lehrplanfragment (HE)		LP_0001015	
-LP_0001002	Class	Inhaltsfeld (HE)		LP_0000349	
-LP_0001003	Class	Erwartete Kompetenz (NI)			
-LP_0001005	Class	Kompetenzbereich (HE)		LP_0000349	
-LP_0001006	Class	Lehrplanfragment (NI)		LP_0001015	
-LP_0001007	Class	Kerninhalt (NI)			
-LP_0001009	Class	Ergänzender Hinweis (NI)			
-LP_0001011	Class	Bildungsgangniveau (MV)		LP_0000028	
-LP_0001014	Individual	Hinweisbeschreibungsfunktion			
-LP_0001015	Class	CE-Fragment	fragment	LP_0000261	
-LP_0001018	Class	Fachniveau Sek II (RP)			
-LP_0001019	Class	Bildungsgangniveau (RP)		LP_0000028	
-LP_0001020	Individual	Grundkurs (RP)			
-LP_0001021	Individual	Leistungskurs (RP)			
-LP_0001025	Class	Fachniveau Sek II (SL)			
-LP_0001026	Individual	Grundkurs (SL)			
-LP_0001027	Individual	Leistungskurs (SL)			
-LP_0001028	Class	Bildungsgangniveau (SL)		LP_0000028	
-LP_0001032	Class	Bildungsgangniveau (SN)		LP_0000028	
-LP_0001035	Class	Bildungsgangniveau (ST)		LP_0000028	
-LP_0001038	Class	Bildungsgangniveau (TH)		LP_0000028	
-LP_0001101	Class	Bildungsgangniveau (BW)		LP_0000028	
-LP_0001105	Class	Bildungsgangniveau (HB)		LP_0000028	
-LP_0001108	Class	Bildungsgangniveau (HH)		LP_0000028	
-LP_0001116	Individual	Grundlegendes Anforderungsniveau (NI)			
-LP_0001117	Individual	Erhöhtes Anforderungsniveau (NI)			
-LP_0001169	Class	Fachniveau Sek II (BE)			
-LP_0001223	Class	Lehrplanfragment (BE)		LP_0001015	
-LP_0001224	Class	Leitidee (BE)		LP_0000349	
-LP_0001226	Class	Eingangsvoraussetzung (BE)			
-LP_0001227	Class	Unterrichtsanregung (BE)			
-LP_0001228	Class	Gegenstand (BE)			
-LP_0001441	Class	Element (BE)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Brandenburg.
-LP_0001445	Class	Inhalt (BE)	learning content (BE)		
-LP_0001446	Class	Lernmaterial (BE)	learning material (BE)		
-LP_0001447	Class	Standard (BE)	standard (BE)		operationalisierbar und meßbar
-LP_0001448	Class	Thema (BE)	topic (BE)	LP_0000349	
-LP_0001449	Class	Themenfeld (BE)	topic area (BE)	LP_0000349	
-LP_0001450	Class	Zusatzmaterial (BE)	additional material (BE)		
-LP_0001451	Class	Übung (BE)	exercise (BE)	LP_0001441	
-LP_0001459	Class	Kompetenzbereich (BE)		LP_0000349	
-LP_0001516	Individual	Grundkursfach (BE)			
-LP_0001517	Individual	Leistungskursfach (BE)			
-LP_0002000	Individual	Allgemeinbildender Schulabschluss (HE)			
-LP_0002001	Individual	Hauptschulabschluss (HE)			
-LP_0002002	Individual	Realschulabschluss (HE)			
-LP_0002020	Individual	Allgemeinbildender Schulabschluss (NI)			
-LP_0002021	Individual	Hauptschulabschluss (NI)			
-LP_0002022	Individual	Realschulabschluss (NI)			
-LP_0002023	Individual	Erweiterter Sekundarabschluss I (NI)			
-LP_0002033	Individual	Allgemeinbildender Schulabschluss (SH)			
-LP_0002034	Individual	Erster allgemeinbildender Schulabschluss (SH)			
-LP_0002035	Individual	Mittlerer Schulabschluss (SH)			
-LP_0002043	Class	Fachlehrplan (BY)		LP_0002044	
-LP_0002044	Class	Lehrplanfragment (BY)		LP_0001015	
-LP_0002046	Class	Lernbereich (BY)		LP_0000349	
-LP_0002048	Class	Kompetenzerwartung und Inhalt (BY)			
-LP_0002049	Class	Kompetenzerwartung (BY)			
-LP_0002050	Class	Inhalt zu den Kompetenzen (BY)			
-LP_0002051	Class	Element (BW)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Baden-Württemberg
-LP_0002052	Class	Lehrplanfragment (BW)		LP_0001015	
-LP_0002057	Class	Prozessbezogene Kompetenz (BW)		LP_0000349	
-LP_0002059	Class	Inhaltsbezogene Kompetenz (BW)		LP_0000349	
-LP_0002060	Class	Denkanstoß (BW)			
-LP_0002061	Class	Teilkompetenz (BW)			
-LP_0002063	Class	Leitidee (BW)		LP_0000349	
-LP_0002064	Class	Fachniveau Sek II (BW)			
-LP_0002069	Class	Fachniveau Sek II (BB)			
-LP_0002072	Class	Fachniveau Sek II (HH)			
-LP_0002076	Class	Element (HE)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Hessen
-LP_0002077	Class	Fachniveau Sek II (HE)			
-LP_0002080	Class	Element (MV)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Mecklenburg-Vorpommern
-LP_0002081	Class	Fachniveau Sek II (MV)			
-LP_0002085	Class	Element (NW)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Nordrhein-Westfalen
-LP_0002086	Class	Fachniveau Sek II (NW)			
-LP_0002089	Class	Element (SN)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Sachsen
-LP_0002090	Class	Fachniveau Sek II (SN)			
-LP_0002093	Class	Element (ST)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Sachsen-Anhalt
-LP_0002094	Class	Fachniveau Sek II (ST)			
-LP_0002097	Class	Element (TH)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Thüringen
-LP_0002098	Class	Fachniveau Sek II (TH)			
-LP_0002101	Class	Element (NI)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Niedersachsen
-LP_0002102	Class	Element (SL)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan des Saarland
-LP_0002103	Class	Element (SH)		LP_0000261	
-LP_0002109	Individual	Hauptschulabschluss 10 (NI)			
-LP_0002110	Class	Lehrplanfragment (SN)		LP_0001015	
-LP_0002113	Class	Lernbereich (SN)		LP_0000349	
-LP_0002114	Class	Wahlbereich (SN)		LP_0000349	
-LP_0002115	Class	Lernziel und Lerninhalt (SN)			
-LP_0002116	Class	Bemerkung (SN)			
-LP_0002118	Class	Element (HB)		LP_0000261	
-LP_0002119	Class	Fachniveau Sek II (HB)			
-LP_0002120	Individual	Anforderungsniveau Grundkurs (HB)			
-LP_0002121	Individual	Anforderungsniveau Leistungskurs (HB)			
-LP_0002122	Class	Lehrplanfragment (HB)		LP_0001015	
-LP_0002126	Class	Aufgabenbereich (HB)		LP_0000349	
-LP_0002128	Class	Anforderung (HB)			
-LP_0002129	Class	Inhalt (HB)			
-LP_0002130	Class	Themenbereich (HB)		LP_0000349	
-LP_0002133	Class	Themenfeld (HB)		LP_0000349	
-LP_0002134	Class	Kommentar (HB)			
-LP_0002135	Class	Kompetenzbereich (HB)		LP_0000349	
-LP_0002136	Class	Lehrplanfragment (MV)		LP_0001015	
-LP_0002139	Class	Kompetenzbereich (MV)		LP_0000349	
-LP_0002140	Class	Kompetenz (MV)			
-LP_0002143	Class	Themenbereich (MV)		LP_0000349	
-LP_0002144	Class	Verbindlicher Inhalt (MV)			
-LP_0002145	Class	Hinweis und Anregung (MV)			
-LP_0002147	Class	Thema (MV)		LP_0000349	
-LP_0002149	Class	Verweis auf Möglichkeiten der Verknüpfung (MV)		LP_0030065	
-LP_0002151	Class	Konkretisierung (MV)			
-LP_0002153	Class	Standard (MV)			
-LP_0002158	Individual	Verweisbeschreibungsfunktion			
-LP_0002163	Class	Beispiel Verknüpfung von Inhalt und Kompetenzbereich (MV)			
-LP_0002164	Class	Rahmenplan (MV)		LP_0000438	
-LP_0002169	Class	Bildungsstandard (HE)			
-LP_0002171	Individual	Domänenbezugsfunktion			
-LP_0002174	Class	Lehrplanfragment (ST)		LP_0001015	
-LP_0002175	Class	Kompetenzbereich (ST)		LP_0000349	
-LP_0002177	Class	Kompetenz (ST)			
-LP_0002178	Class	Flexibel anwendbares Grundwissen (ST)			
-LP_0002179	Class	Grundlegender Wissensbestand (ST)			
-LP_0002181	Class	Kompetenzschwerpunkt (ST)		LP_0000349	
-LP_0002182	Class	Gegenstandsfeld (ST)			
-LP_0002184	Class	Kerncurriculum (HE)		LP_0000438	
-LP_0002186	Class	Lehrplanfragment (NW)		LP_0001015	
-LP_0002187	Class	Kompetenzbereich (NW)		LP_0000349	
-LP_0002188	Class	Kompetenzerwartung (NW)			
-LP_0002190	Class	Teilkompetenzbereich (NW)		LP_0000349	
-LP_0002191	Class	Inhaltsfeld (NW)		LP_0000349	
-LP_0002192	Class	Inhaltlicher Schwerpunkt (NW)			
-LP_0002193	Class	Sachgebiet (HB)		LP_0000349	
-LP_0002195	Class	Inhalt zum Erwerb der Kompetenzen (RP)			
-LP_0002196	Class	Leitidee (RP)		LP_0000349	
-LP_0002197	Class	Inhalt (RP)			
-LP_0002198	Class	Hinweis und Vernetzung (RP)			
-LP_0002200	Class	Ziel / Inhalt (Sach- und Methodenkompetenz) (RP)			
-LP_0002201	Class	Hinweis zur Unterrichtsgestaltung und Methodenkompetenz (RP)			
-LP_0002202	Class	Kernbereich (RP)		LP_0000349	
-LP_0002203	Class	Kompetenzbereich (NI)		LP_0000349	
-LP_0002205	Class	Kernkompetenz (NI)		LP_0000349	
-LP_0002206	Class	Beispiel (NI)			
-LP_0002207	Class	Umsetzung im Unterricht (NI)			
-LP_0002208	Class	Lernbereich (NI)		LP_0000349	
-LP_0002209	Class	Thema (NI)		LP_0000349	
-LP_0002210	Class	Lehrplanfragment (HH)		LP_0001015	
-LP_0002211	Class	Leitidee (HH)		LP_0000349	
-LP_0002212	Class	Kompetenzbereich (HH)		LP_0000349	
-LP_0002214	Class	Beobachtungskriterium (HH)			
-LP_0002215	Class	Regelanforderung (HH)			
-LP_0002218	Class	Thema (HH)		LP_0000349	
-LP_0002219	Class	Modul (HH)		LP_0000349	
-LP_0002220	Class	Sachgebiet (HH)		LP_0000349	
-LP_0002221	Class	Kompetenz (HH)			
-LP_0002223	Class	Lehrplanfragment (BB)		LP_0001015	
-LP_0002224	Class	Leitidee (BB)		LP_0000349	
-LP_0002225	Class	Eingangsvoraussetzung (BB)			
-LP_0002226	Class	Gegenstand (BB)			
-LP_0002227	Class	Unterrichtsanregung (BB)			
-LP_0002228	Class	Lernzeitbezogene Kompetenzerwartung (HE)			
-LP_0002229	Class	Lehrplanfragment (SL)		LP_0001015	
-LP_0002230	Class	Leitidee (SL)		LP_0000349	
-LP_0002232	Class	Kompetenzerwartung (SL)			
-LP_0002233	Class	Hinweis zur Umsetzung (SL)			
-LP_0002234	Class	Themenfeld (SL)		LP_0000349	
-LP_0002235	Class	Verbindliches Fachwissen (SL)			
-LP_0002238	Class	Verbindlicher Kompetenzschwerpunkt (SL)			
-LP_0002239	Class	Vorschlag und Hinweis (SL)			
-LP_0002240	Class	Basisbegriff (SL)			
-LP_0002241	Class	Lernbereich (SL)		LP_0000349	
-LP_0002243	Class	Kompetenzbereich (SL)		LP_0000349	
-LP_0010001	Class	Fremdsprachenniveau		LP_0000037	Das “Fremdsprachenniveau” ist ein “Niveau”. Es entspricht dem Gemeinsamen Europäischen Referenzrahmen für Sprachen (GER), der die Sprachbeherrschung einer Fremdsprache in sechs Stufen von A1 (Anfänger) bis C2 (annähernd muttersprachliches Niveau) systematisiert. Das Fremdsprachenniveau gibt an, in welchem Umfang Lernende die Sprache verstehen, sprechen, lesen und schreiben können, und dient als Ve
-LP_0030001	Class	Schwerpunktthema (HB)			
-LP_0030002	Class	Grundfertigkeit (MV)		LP_0000349	
-LP_0030003	Class	Beschreibung	description	obo:IAO_0000300	Eine Beschreibung ist eine textuelle Entität, die Eigenschaften, Merkmale, Inhalte oder Zusammenhänge einer Entität in erklärender oder erläuternder Form darstellt. Sie ergänzt den Titel oder Namen und dient dazu, den Inhalt, Zweck, Status oder Kontext eines Objekts verständlicher zu machen. Sie kann mehrere Sätze oder Absätze enthalten.
-LP_0030004	Class	Rahmenlehrplan (BE)		LP_0000438	
-LP_0030005	Class	Ergänzung zu einem Basiskonzept (NW)			
-LP_0030006	Class	Möglicher Kontext (NW)			
-LP_0030007	Class	Kompetenzerwerb im Themenfeld (BB)			
-LP_0030008	Class	Möglicher Inhalt (BB)			
-LP_0030009	Class	Verweis auf Basiskonzept (NW)		LP_0002085	
-LP_0030010	Class	Fachniveau Sek II (SH)			
-LP_0030011	Class	Verweis auf Basiskonzept (HB)		LP_0002118	
-LP_0030012	Class	Verweis auf Orientierungsrahmen (HB)		LP_0002118	
-LP_0030013	Class	Verweis auf Kompetenz (HB)		LP_0030065	
-LP_0030014	Class	Ergänzung zur Kompetenz (NI)			
-LP_0030015	Class	Verweis auf Basiskonzept (SL)		LP_0002102	
-LP_0030016	Class	Verweis auf thematische Querverbindungen im Lehrplan (SL)		LP_0030065	
-LP_0030017	Class	Verweis auf Möglichkeit zur Abstimmung (ST)		LP_0030065	
-LP_0030018	Class	KMK-Bildungsstandard (SH)			
-LP_0030019	Class	Sachkompetenz (TH)			
-LP_0030020	Class	Textsorte (SH)		LP_0000349	
-LP_0030021	Class	Inhalt und Wissbestand (SH)			
-LP_0030022	Class	Konkretisierung - Hinweis und Vorschlag (SH)			
-LP_0030023	Class	Themenvorschlag (SH)			
-LP_0030024	Class	Lernbereich (TH)		LP_0000349	
-LP_0030025	Class	Kompetenzbereich (TH)		LP_0000349	
-LP_0030026	Class	Kompetenz (TH)			
-LP_0030027	Class	Erfahrungbereich (RP)		LP_0000349	
-LP_0030028	Class	Lehrplanfragment (TH)		LP_0001015	
-LP_0030029	Class	Thema (TH)		LP_0000349	
-LP_0030030	Class	Themenfeld (RP)		LP_0000349	
-LP_0030031	Class	Inhalt (TH)			
-LP_0030032	Class	Schwerpunkt (TH)		LP_0000349	
-LP_0030033	Class	Lehrplanfragment (SH)		LP_0001015	
-LP_0030034	Class	Thematischer Leitgedanke (RP)		LP_0000349	
-LP_0030035	Class	Lernbereich (RP)		LP_0000349	
-LP_0030036	Class	Fähigkeit (RP)			
-LP_0030037	Class	Schwerpunktsetzung (HE)			
-LP_0030038	Class	Themenfeld (HE)		LP_0000349	
-LP_0030039	Class	Bildungsgangniveau (HE)		LP_0000028	
-LP_0030040	Individual	Grundlegendes Niveau (SH)			
-LP_0030041	Class	Bildungsgangniveau (NW)		LP_0000028	
-LP_0030042	Class	Verweis auf Bezüge zu den Basiskonzepten (BB)		LP_0000441	
-LP_0030043	Class	Beispiel zu einem Basiskonzept (BB)			
-LP_0030044	Class	Beispiel zu einem Basiskonzept (BE)			
-LP_0030045	Class	Verweis auf Bezüge zu den Basiskonzepten (BE)		LP_0001441	
-LP_0030046	Individual	Erhöhtes Niveau (SH)			
-LP_0030047	Class	Basiskonzept (BB)		LP_0000349	
-LP_0030048	Class	Verbindliches Ziel (MV)			
-LP_0030049	Class	Themenfeld (BW)		LP_0000349	
-LP_0030050	Class	Allgemeines fachliches Ziel (SN)		LP_0000349	
-LP_0030051	ObjectProperty	hat Beschreibung	has description	LP_0000024	
-LP_0030052	Class	Experiment/Untersuchung (BB)			
-LP_0030053	Class	Bildungsgangniveau (BY)		LP_0000028	
-LP_0030054	Class	Leitidee (MV)		LP_0000349	
-LP_0030055	Class	Fachniveau Sek II (NI)			
-LP_0030056	ObjectProperty	hat Titel	has title	LP_0000024	
-LP_0030057	ObjectProperty	hat Nummer	has number	LP_0000024	
-LP_0030058	Class	Aufgabenstellung (SL)			
-LP_0030059	Class	Möglicher Inhalt (SH)			
-LP_0030060	Class	Literaturhinweis (SL)			
-LP_0030061	Class	Verbindliche Form mündlicher Kommunikation (SL)			
-LP_0030062	Class	Verbindliche fachspezifische Fertigkeit/Fähigkeit und fachspezifische Methode (SL)			
-LP_0030063	Class	Verbindlicher Lerngegenstand (SL)			
-LP_0030064	Class	Vorschlag und Hinweis zu Inhalten und Methoden (SL)			
-LP_0030065	Class	CE-Verweis	reference	LP_0000261	Ein “CE-Verweis” ist ein “Curriculares Element”, das einen Bezug von einem Curricularen Element zu einem anderen Element desselben Lehrplans, eines anderen Lehrplans oder externen Ressourcen herstellt. Dabei ist der “CE-Verweis” nicht selbst das verlinkte Objekt, sondern stellt eine Referenz darauf dar.
-LP_0030066	Class	Vertiefungsmöglichkeit (BB)			
-LP_0030067	Class	Inhaltsbereich (SH)		LP_0000349	
-LP_0030068	Class	Vertiefungsmöglichkeit (BE)			
-LP_0030069	Class	Thema (BW)		LP_0000349	
-LP_0030070	Class	Kompetenzbereich (SH)		LP_0000349	
-LP_0030071	ObjectProperty	hat Verweis	has reference	LP_0000024	
-LP_0030072	ObjectProperty	verweist auf	refers to	obo:IAO_0000136	
-LP_0030073	Class	Bereich (NW)		LP_0000349	
-LP_0030074	Class	Fachliche Konkretisierung (NW)			
-LP_0030075	Class	Inhalt (NW)			
-LP_0030076	Class	Inhalt zu einem Inhaltsfeld (HE)			
-LP_0030077	Class	Basiskonzept (NW)		LP_0000349	
-LP_0030078	Class	Themenbereich (ST)		LP_0000349	
-LP_0030079	Class	Mögliche Textsorte / Kommunikationssituation (SH)			
-LP_0030080	Class	Bildungsgangniveau (NI)		LP_0000028	
-LP_0030081	Class	Kommunikative Kompetenz (ST)			
-LP_0030082	Class	Inhaltsbezogene Kompetenz (ST)			
-LP_0030083	Class	Prozessbezogene Kompetenz (ST)			
-LP_0030084	Class	Themenbereich (SH)		LP_0000349	
-LP_0030085	Class	Sprachliches Mittel (ST)		LP_0000349	
-LP_0030086	Class	Soziokulturelles Orientierungswissen (ST)			
-LP_0030087	Class	Bereich (ST)		LP_0000349	
-LP_0030088	Class	Verweis auf Bezüge zu fächerübergreifenden Themen (ST)		LP_0002093	
-LP_0030089	Class	Verbindliches Schülerexperiment (ST)			
-LP_0030090	Class	Kommunikativer Inhalt (ST)			
-LP_0030091	Class	Bildungsgangniveau (SH)		LP_0000028	
-LP_0030092	Class	Themenbereich (SL)		LP_0000349	
-LP_0030093	Class	Sprachanlass (SL)			
-LP_0030094	Class	Redemittel (SL)			
-LP_0030095	Class	Themenfeld (SH)		LP_0000349	
-LP_0030096	Class	Inhaltsbereich (ST)		LP_0000349	
-LP_0030097	Class	Ziel (TH)			
-LP_0030098	Class	Lehrplanbaustein (RP)		LP_0000349	
-LP_0030099	Class	Hinweis zur unterrichtlichen Umsetzung (RP)			
-LP_0030100	Class	Inhalt und Zusammenhang (RP)			
-LP_0030101	Class	Teilkompetenzbereich (RP)		LP_0000431	
-LP_0030102	Class	Teilteilkompetenzbereich (RP)		LP_0030101	
-LP_0030103	Class	Anwendungsfähiges Wissen (RP)			
-LP_0030104	Class	Teilleitgedanke (RP)		LP_0030034	
-LP_0030105	Class	Teillernbereich (RP)		LP_0030035	
-LP_0030106	Class	Teilteillernbereich (RP)		LP_0030105	
-LP_0030107	Class	Teilerfahrungsberich (RP)		LP_0030027	
-LP_0030108	Class	Fachbegriff (RP)			
-LP_0030109	Class	Entwicklung des Konzepts (RP)			
-LP_0030110	Class	Kontext (RP)			
-LP_0030111	Class	Beitrag zur Entwicklung der Basiskonzepte (RP)			
-LP_0030112	Class	Erschließung des Themenfeldes durch Kontextorientierung (RP)			
-LP_0030113	Class	Differenzierungsmöglichkeit (RP)			
-LP_0030114	Class	Experiment (BW)		LP_0000349	
-LP_0030115	Class	Anforderung (HH)			
-LP_0030116	Class	Möglicher Kontext (BE)			
-LP_0030117	Class	Fachbegriff (BE)			
-LP_0030118	Class	Beispiel für Differenzierungsmöglichkeiten (BE)			
-LP_0030119	Class	Experiment/Untersuchung (BE)			
-LP_0030120	Class	Technik (BE)			
-LP_0030121	Class	Verbindliche Form des Schreibens (SL)			
-LP_0030122	Class	Fachmethode (BE)			
-LP_0030123	Class	Basiskonzept (BE)		LP_0000349	
-LP_0030124	Class	Beispiel für Unterrichtseinheiten (BE)			
-LP_0030125	Class	Inhaltsbezogene Kompetenz (SL)			
-LP_0030126	Class	Verfügung über sprachliche Mittel (SL)		LP_0000349	
-LP_0030127	Class	Inhalt und Thema (SL)			
-LP_0030128	Class	Beispiel (SL)			
-LP_0030129	Class	Methodenkompetenz/Lern- und Kommunikationsstrategie (SL)			
-LP_0030130	Class	Orientierungswissen (SL)			
-LP_0030131	Class	Begegnungssituaton (SL)			
-LP_0030132	Class	Einstellung (SL)			
-LP_0030133	Class	Relevantes Genre (SL)			
-LP_0030134	Class	Wortschatz (SL)			
-LP_0030135	Class	Geeignete Methode / Anlass für das exemplarische Arbeiten (SL)			
-LP_0030136	Class	Hinweis für die Konzeption von Lernaufgaben mit IK-Schwerpunkt  (SL)			
-LP_0030137	Class	Mögliche Sprecharrangements und Genres (SL)			
-LP_0030138	Class	Literatur und Film im Unterricht der Hauptphase (SL)			
-LP_0030139	Class	Themenkomplex (SL)		LP_0000349	
-LP_0030140	Class	Verbindliche Textsorte (SL)			
-LP_0030141	Class	Vorgabe zum Erwerb von Methodenkompetenz (SL)			
-LP_0030142	Class	Basiskonzept (SL)		LP_0000349	
-LP_0030143	Class	Standard für den Kompetenzbereich Fachwissen (SL)			
-LP_0030144	Class	Themenbereich (HH)		LP_0000349	
-LP_0030145	Class	Verwendung von Lehrwerken (SL)			
-LP_0030146	Class	Möglicher Einstieg / Motivation / Kontext (SL)			
-LP_0030147	Class	Zusammenarbeit mit anderen Fächern (SL)			
-LP_0030148	Class	Außerschulischer Lernort und außerunterrichtliche Veranstaltung (SL)			
-LP_0030149	Class	Berufsorientierender Aspekt (SL)			
-LP_0030150	Class	Unterstützungsangebot (SL)			
-LP_0030151	Class	Prozessbezogene Kompetenz (SL)			
-LP_0030152	Class	Hinweis zum sprachsensiblen Fachunterricht (SL)			
-LP_0030153	Class	Orientierungsrahmen (HB)		LP_0030325	
-LP_0030154	Class	Fachübergreifender und fächerverbindender Bezug (SL)			
-LP_0030155	Class	Geeignetes (Schüler-)Experiment (SL)			
-LP_0030156	Class	Projekt (SL)			
-LP_0030157	Class	Sach-, Erkenntnisgewinnungs-, Kommunikations- und Bewertungskompetenz (SL)			
-LP_0030158	Class	Bildung für nachhaltige Entwicklung (SL)			
-LP_0030159	Class	Medienbildung (SL)			
-LP_0030160	Class	Hinweis zur Unterrichtsgestaltung (SL)			
-LP_0030161	Class	Hinweis zu Methoden und Arbeitstechniken (SL)			
-LP_0030162	Class	Methodik und Fachdidaktik (SL)			
-LP_0030163	Class	Einsatz digitaler Mathematikwerkzeuge (SL)			
-LP_0030164	Class	Anregung zur selbstständigen Schülerarbeit (SL)			
-LP_0030165	Class	Leitgedanke (HH)			
-LP_0030166	Class	Beitrag zur Leitperspektive (HH)			
-LP_0030167	Class	Verweis auf Leitperspektiven (HH)		LP_0000426	
-LP_0030168	Class	Verweis auf Kompetenzen (HH)		LP_0030065	
-LP_0030169	Class	Redemittel und grammatische Grundlagen (HH)		LP_0000349	
-LP_0030170	Class	Basisgrammatik (HH)		LP_0000349	
-LP_0030171	Class	Fachperspektive (HH)		LP_0000349	
-LP_0030172	Class	Bildungsstandard (HH)			
-LP_0030173	Class	Basiskonzept (HH)		LP_0000349	
-LP_0030174	Class	Kompetenzbereich (BW)		LP_0000349	
-LP_0030175	Class	Verweis auf die prozessbezogenen Kompetenzen (BW)		LP_0030065	
-LP_0030176	Class	Verweis auf andere Standards für inhaltsbezogene Kompetenzen desselben Fachs (BW)		LP_0030065	
-LP_0030177	Class	Verweis auf Leitperspektiven (BW)		LP_0002051	
-LP_0030178	Class	Verweis auf andere Fächer (BW)		LP_0030065	
-LP_0030179	Class	Umsetzungshilfen (BW)		LP_0030065	
-LP_0030180	Class	Verweis auf DaZ (BY)		LP_0000434	
-LP_0030181	Class	Verweis auf übergreifende Ziele (BY)		LP_0000434	
-LP_0030182	Class	Verweis auf Querverweise (BY)		LP_0000434	
-LP_0030183	Class	Verweis auf Servicematerialien (BY)		LP_0030065	
-LP_0030184	Class	Interkulturelle Kompetenz (ST)			
-LP_0030185	Class	Sprachlernkompetenz (ST)			
-LP_0030186	Class	Text- und Medienkompetenz (ST)			
-LP_0030187	Class	Verweis auf Kompetenzerwartung (NW)		LP_0030065	
-LP_0030188	Class	Verweis auf Lernbereich des gleichen Faches der gleichen Klassenstufe (SN)		LP_0030065	
-LP_0030189	Class	Verweis auf Lernbereich des gleichen Faches einer anderen Klassenstufe (SN)		LP_0030065	
-LP_0030190	Class	Verweis auf Klassenstufe, Lernbereich eines anderen Faches (SN)		LP_0030065	
-LP_0030191	Class	Verweis auf ein überfachliches Bildungs- und Erziehungsziel (SN)		LP_0002089	
-LP_0030192	Class	Verweis auf Bezüge zu Kompetenzbereichen / Standards (HE)		LP_0030065	
-LP_0030193	Class	Verweis auf Aufgabengebiete (HH)		LP_0000426	
-LP_0030194	Class	Verweis auf Sprachbildung (HH)		LP_0030065	
-LP_0030195	Class	Verweis auf fachübergreifende Bezüge (HH)		LP_0030065	
-LP_0030196	Class	Verweis auf Fachbegriffe (HH)		LP_0030065	
-LP_0030197	Class	Verweis auf fachinterne Bezüge (HH)		LP_0030065	
-LP_0030198	Class	Verweis auf allgemeine mathematische Kompetenzen (ST)		LP_0030065	
-LP_0030199	Class	Verweis auf Kompetenzbereich (MV)		LP_0002080	
-LP_0030200	Class	Textsorte (ST)			
-LP_0030201	Class	Kommunikative Teilkompetenz (NI)		LP_0000349	
-LP_0030202	Class	Sprachliches Mittel (NI)		LP_0000349	
-LP_0030203	Class	Leitidee (NI)		LP_0000349	
-LP_0030204	Class	Methodenkompetenz (NI)			
-LP_0030205	Class	Lernstrategie und Arbeitstechnik (NI)			
-LP_0030206	Class	Standard (HB)			
-LP_0030207	Class	Themenfeld (NI)		LP_0000349	
-LP_0030208	Class	Teilaspekt (NI)		LP_0000349	
-LP_0030209	Class	Fachliche Perspektive (NI)		LP_0000349	
-LP_0030210	Class	Fachbegriff (BB)			
-LP_0030211	Class	Themenbereich (NI)		LP_0000349	
-LP_0030212	Class	Verweis auf Vernetzungsmöglichkeiten (NI)		LP_0030065	
-LP_0030213	Class	Prozessbezogene Kompetenz (NI)			
-LP_0030214	Class	Beispiel für Unterrichtseinheiten (BB)			
-LP_0030215	Class	Inhaltsbezogene Kompetenz (NI)			
-LP_0030216	Class	Verweis auf Fachbezug (NI)			
-LP_0030217	Class	Inhaltsbereich (NI)		LP_0000349	
-LP_0030218	Class	Verbindlicher Unterrichtsinhalt (NI)			
-LP_0030219	Class	Autor und Textgruppe (NI)			
-LP_0030220	Class	Empfohlene Schreibform und Übung (NI)			
-LP_0030221	Class	Rahmenthema (NI)		LP_0000349	
-LP_0030222	Class	Pflichtmodul (NI)		LP_0000349	
-LP_0030223	Class	Wahlpflichtmodul (NI)		LP_0000349	
-LP_0030224	Class	Verbindlicher Unterrichtsaspekt (NI)			
-LP_0030225	Class	Möglicher Unterrichtsaspekt (NI)			
-LP_0030226	Class	Sprachbildung (NI)			
-LP_0030227	Class	Weiterführende Anforderung (NI)			
-LP_0030228	Class	Hinweis zum Einsatz digitaler Medien und Werkzeuge (NI)			
-LP_0030229	Class	Unterrichtsidee zur Handlungsorientierung online (NI)			
-LP_0030230	Class	Fakultative Erweiterung (NI)			
-LP_0030231	Class	Hinweis zum Einsatz digitaler Mathematikwerkzeuge (NI)			
-LP_0030232	Class	Online-Material (NI)			
-LP_0030233	Class	Verweis auf Inhaltsbezogene Kompetenzbereiche (NI)		LP_0002101	
-LP_0030234	Class	Verweis auf Prozessbezogene Kompetenzbereiche (NI)		LP_0002101	
-LP_0030235	Class	Prozessbezogene Anforderung (HB)			
-LP_0030236	Class	Inhaltsbezogene Anforderung (HB)			
-LP_0030237	Class	Fakultativer Inhalt (SL)			
-LP_0030238	Class	Rahmenthema (HB)		LP_0000349	
-LP_0030239	Class	Basiskonzept (HB)		LP_0000349	
-LP_0030240	Class	Grammatik (SL)			
-LP_0030241	Class	Aussprache und Prosodie (SL)			
-LP_0030242	Class	Inhaltsbereich (HB)		LP_0000349	
-LP_0030243	Class	Erweiterungsbaustein (Zugangswege/Anwendungsbereiche/Vertiefungen) (HB)			
-LP_0030244	Class	Verstehen und Handeln (SL)			
-LP_0030245	Class	Hinweis zu Bezüge zu Kompetenzbereichen / Standards (HE)			
-LP_0030246	Class	Beispiel für Differenzierungsmöglichkeiten (BB)			
-LP_0030247	Class	Standard (BW)			
-LP_0030248	Class	Kompetenzerwerb im Themenfeld (BE)			
-LP_0030249	Class	Sachgebiet (SH)		LP_0000349	
-LP_0030250	Class	Fachmethode (BB)			
-LP_0030251	Class	Technik (BB)			
-LP_0030252	Class	Thema (SH)		LP_0000349	
-LP_0030253	Class	Möglicher Kontext (BB)			
-LP_0030254	Class	Thema und Inhalt (SH)			
-LP_0030255	Class	Verweis auf Materialien (BB)		LP_0030065	
-LP_0030256	Class	Kompetenz (SH)			
-LP_0030257	Class	Verweis auf vernetzte Kompetenzen (BB)		LP_0030065	
-LP_0030258	Class	Leitidee (SH)		LP_0000349	
-LP_0030259	Class	Verweis auf standardillustrierende Aufgaben (BB)		LP_0030065	
-LP_0030260	Class	Vorgabe und Hinweis (SH)			
-LP_0030261	Class	Dialogisches Sprechen – mündliche Interaktion (SL)			
-LP_0030262	Class	Zusammenhängendes monologisches Sprechen – mündliche Produktion (SL)			
-LP_0030263	Class	Kompetenzbereich (Bistas)		LP_0000349	
-LP_0030264	Class	Domänenspezifischer Kompetenzbereich (Bistas)			
-LP_0030265	Class	Prozessbezogener Kompetenzbereich (Bistas)			
-LP_0030266	Class	Standard (Bistas)			
-LP_0030268	Class	Basiskonzept (Bistas)		LP_0000349	
-LP_0030269	Class	Verbindlicher inhaltlicher Aspekt (Bistas)		LP_0000349	
-LP_0030270	Class	Basiskonzept (SH)		LP_0000349	
-LP_0030271	Class	Inhaltsbezogene Kompetenz (SH)			
-LP_0030272	Class	Verbindlicher Inhalt (SH)			
-LP_0030273	Class	Bereich (SH)		LP_0000349	
-LP_0030274	Class	Verweis auf Basiskonzept (SH)		LP_0002103	
-LP_0030275	Class	Aspekt (SH)			
-LP_0030276	Class	Beispielinhalt (SH)			
-LP_0030277	Class	Methodenkompetenz (TH)			
-LP_0030278	Class	Prozessbezogene Kompetenz (SH)			
-LP_0030279	Class	Verbindliches Thema und Inhalt (SH)			
-LP_0030280	Class	Mögliches Thema und Inhalt (SH)			
-LP_0030281	Class	Mögliches Thema (SH)			
-LP_0030282	Class	Inhalt (SH)			
-LP_0030283	Class	Selbst- und Sozialkompetenz (TH)			
-LP_0030284	Class	Möglicher inhaltlicher Aspekt (TH)			
-LP_0030285	Class	Thema und Kommunikationsbereich (TH)		LP_0000349	
-LP_0030286	Class	Einblick in andere Kulturen (TH)		LP_0000349	
-LP_0030287	Class	Sprachfunktion/Redeabsicht (TH)			
-LP_0030288	Class	Mögliches sprachliche Mittel zur Realisierung der Redeabsichten (TH)			
-LP_0030289	Class	Thema und Situation (TH)		LP_0000349	
-LP_0030290	Class	Wesentlicher inhaltlicher Schwerpunkt (TH)			
-LP_0030291	Class	Wesentlicher inhaltlicher Aspekt (TH)			
-LP_0030292	Class	Sprachliches Mittel (TH)		LP_0000349	
-LP_0030293	Class	Structure (TH)		LP_0000349	
-LP_0030294	Class	Themenkomplex (TH)		LP_0000349	
-LP_0030295	Class	Schülerexperiment (TH)			
-LP_0030296	Class	Projektvorschlag (TH)			
-LP_0030297	Class	Themenbereich (TH)		LP_0000349	
-LP_0030298	Class	Inhaltsbereich (TH)		LP_0000349	
-LP_0030299	Class	Verweis auf Aufgabe (BY)		LP_0030183	
-LP_0030300	Class	Verweis auf Material (BY)		LP_0030183	
-LP_0030301	Class	Verweis auf mebis (BY)		LP_0030183	
-LP_0030302	Class	Verweis auf Erläuterung (BY)		LP_0030183	
-LP_0030303	Class	Erläuterung (BY)			
-LP_0030304	Class	Bildungs- und Erziehungsauftrag (BY)		LP_0002044	
-LP_0030305	Class	Übergreifende Bildungs- und Erziehungsziele (BY)		LP_0002044	
-LP_0030306	Class	Fachprofil (BY)		LP_0002044	
-LP_0030307	Class	Grundlegende Kompetenzen (Jahrgangsstufenprofil) (BY)		LP_0002044	
-LP_0030308	Class	Bayerische Leitlinie für die Bildung und Erziehung von Kindern bis zum Ender der Grundschulzeit (BY)		LP_0030304	
-LP_0030309	Class	Kompetenzbereich (BY)		LP_0000349	
-LP_0030310	Class	Prozessbezogene Kompetenz (BY)		LP_0000349	
-LP_0030311	Class	Gegenstandsbereich (BY)		LP_0000349	
-LP_0030312	Individual	C1 Fachkundige Sprachkenntnisse			
-LP_0030313	Individual	C2 Annähernd muttersprachliche Kenntnisse			
-LP_0030314	Individual	B2 Selbständige Sprachverwendung			
-LP_0030315	Individual	B1 Fortgeschrittene Sprachverwendung			
-LP_0030316	Individual	A2 Grundlegende Kenntnisse			
-LP_0030317	Individual	A1 Anfänger			
-LP_0030318	Class	Schlüsselkompetenz (ST)		LP_0030325	
-LP_0030325	Class	CE-Leitperspektive	guiding perspective	LP_0000261	
-LP_0030326	Individual	Leitperspektivenbeschreibungsfunktion			
-LP_0030327	Class	Leitperspektive (HH)		LP_0030325	
-LP_0030328	Class	Querschnittsthema (MV)		LP_0030325	
-LP_0030329	Class	Bildungs- und Erziehungsziel (SN)		LP_0030325	
-LP_0030330	Class	Fachübergreifendes Thema (ST)		LP_0030325	
-LP_0030331	Class	Übergreifendes Bildungs- und Erziehungsziel (BY)		LP_0030325	
-LP_0030332	Class	Fachübergreifendes Thema (BE)		LP_0030325	
-LP_0030333	Class	Fachübergreifendes Thema (BB)		LP_0030325	
-LP_0030334	Class	Leitperspektive (BW)		LP_0030325	
-LP_0030335	Class	Weiteres Thema (Bistas)		LP_0030325	
-LP_0030336	Class	Aufgabengebiet (HH)		LP_0030325	
-LP_0030345	Individual	Gymnasialniveau Sek II (BW)			
-LP_0030346	Individual	Gymnasialniveau Sek II (BY)			
-LP_0030347	Individual	Oberstufenniveau (HB)			
-LP_0030348	Individual	Oberstufenniveau (HE)			
-LP_0030349	Individual	Studienstufenniveau (HH)			
-LP_0030350	Individual	Gymnasialniveau Sek II (MV)			
-LP_0030351	Individual	Gymnasialniveau Sek II (NW)			
-LP_0030352	Individual	Oberstufenniveau (NI)			
-LP_0030353	Individual	Niveau Sekundarstufe II (RP)			
-LP_0030354	Individual	Anforderungen für die Allgemeine Hochschulreife Sek II (SH)			
-LP_0030355	Individual	Oberstufenniveau (SL)			
-LP_0030356	Individual	Gymnasialniveau Sek II (SN)			
-LP_0030357	Individual	Gymnasialniveau Sek II (ST)			
-LP_0030358	Individual	Gymnasialniveau Sek II (TH)			
-LP_0030359	Individual	Gymnasialniveau Sek I (TH)			
-LP_0030360	Individual	Oberstufenniveau (BW)			
-LP_0030361	Class	Grundschulniveau		LP_0000028	
-LP_0030362	Individual	Grundschulniveau (BW)			
-LP_0030363	Individual	Grundschulniveau (BY)			
-LP_0030364	Individual	Grundschulniveau (HB)			
-LP_0030365	Individual	Grundschulniveau (HE)			
-LP_0030366	Class	Bildungsgangniveau (BB)		LP_0000028	
-LP_0030367	Individual	Grundschulniveau (HH)			
-LP_0030368	Individual	Grundschulniveau (MV)			
-LP_0030369	Individual	Grundschulniveau (NI)			
-LP_0030370	Individual	Grundschulniveau (NW)			
-LP_0030371	Individual	Grundschulniveau (RP)			
-LP_0030372	Individual	Grundschulniveau (SH)			
-LP_0030373	Individual	Grundschulniveau (SL)			
-LP_0030374	Individual	Grundschulniveau (SN)			
-LP_0030375	Individual	Grundschulniveau (ST)			
-LP_0030376	Individual	Grundschulniveau (TH)			
-LP_0030377	Individual	Oberstufenniveau (BE)			
-LP_0030378	Class	EBR Niveau		LP_0000834	
-LP_0030379	Class	FOR Niveau		LP_0000832	
-LP_0030380	Class	FOR-Q Niveau		LP_0000069	
-LP_0030381	Individual	FOR-Q A			
-LP_0030382	Individual	FOR-Q B			
-LP_0030383	Individual	FOR-Q C			
-LP_0030384	Individual	FOR-Q D			
-LP_0030385	Individual	FOR-Q E			
-LP_0030386	Individual	FOR-Q F			
-LP_0030387	Individual	FOR-Q G			
-LP_0030388	Individual	FOR-Q H			
-LP_0030389	Individual	FOR A			
-LP_0030390	Individual	FOR B			
-LP_0030391	Individual	FOR C			
-LP_0030392	Individual	FOR D			
-LP_0030393	Individual	FOR E			
-LP_0030394	Individual	FOR F			
-LP_0030395	Individual	FOR G			
-LP_0030396	Individual	EBR A			
-LP_0030397	Individual	EBR B			
-LP_0030398	Individual	EBR C			
-LP_0030399	Individual	EBR D			
-LP_0030400	Individual	EBR E			
-LP_0030401	Individual	EBR F			
-LP_0030402	Individual	EBR G			
-LP_0030403	Individual	Oberstufenniveau (BB)			
-LP_2000001	Individual	Jahrgangsstufe 1	class level 1		
-LP_2000002	Individual	Jahrgangsstufe 2	class level 2		
-LP_2000003	Individual	Jahrgangsstufe 3	class level 3		
-LP_2000004	Individual	Jahrgangsstufe 4	class level 4		
-LP_2000005	Individual	Jahrgangsstufe 5	class level 5		
-LP_2000006	Individual	Jahrgangsstufe 6	class level 6		
-LP_2000007	Individual	Jahrgangsstufe 7	class level 7		
-LP_2000008	Individual	Jahrgangsstufe 8	class level 8		
-LP_2000009	Individual	Jahrgangsstufe 9	class level 9		
-LP_2000010	Individual	Jahrgangsstufe 10	class level 10		
-LP_2000011	Individual	Jahrgangsstufe 11	class level 11		
-LP_2000012	Individual	Jahrgangsstufe 12	class level 12		
-LP_2000013	Individual	Jahrgangsstufe 13	class level 13		
-LP_3000031	Individual	Thüringen			
-LP_3000043	Individual	Niedersachsen			
-LP_3000044	Individual	Nordrhein-Westfalen			
-LP_3000045	Individual	Hamburg			
-LP_3000046	Individual	Rheinland-Pfalz			
-LP_3000047	Individual	Sachsen			
-LP_3000048	Individual	Berlin			
-LP_3000049	Individual	Baden-Württemberg			
-LP_3000050	Individual	Hessen			
-LP_3000051	Individual	Bayern			
-LP_3000052	Individual	Mecklenburg-Vorpommern			
-LP_3000053	Individual	Sachsen-Anhalt			
-LP_3000054	Individual	Schleswig-Holstein			
-LP_3000055	Individual	Saarland			
-LP_3000056	Individual	Bremen			
-LP_3000057	Individual	Brandenburg			
+id	type	label_de	label_en	parent	comment_de	note
+LP_0000001	Class	Schulfach	school subject	obo:IAO_0000030	Ein Schulfach ist eine Informationseinheit, die die Bezeichnung eines an Schulen unterrichteten Fachgebiets darstellt, welches die thematische Gliederung der allgemeinen schulischen Bildung widerspiegelt und der inhaltlichen Strukturierung des Unterrichts dient.	
+LP_0000002	Class	MINT-Fach		LP_0000001	Ein “MINT-Fach” ist ein “Schulfach”, in dem sich die Lernenden mit einem der vier Bereiche Mathematik, Informatik, Naturwissenschaft und Technik auseinandersetzen.	
+LP_0000003	Class	Naturwissenschaftsfach		LP_0000002	Ein “Naturwissenschaftsfach” ist ein “MINT-Fach”, das die belebte und unbelebte Materie als Gegenstand hat. Die drei Naturwissenschaftsfächer sind die Fächer Biologie, Chemie und Physik.	
+LP_0000004	Class	Fremdsprachenfach		LP_0000001	Ein “Fremsprachenfach” ist ein “Schulfach”, in dem die Lernenden eine Fremdsprache erlernen. In Deutschland übliche Fremdsprachenfächer sind zum Beispiel die Fächer Englisch und Französisch.	
+LP_0000005	Class	Gesellschaftswissenschaftsfach		LP_0000001	Ein “Gesellschaftswissenschaftsfach” ist ein “Schulfach”, in dem sich mit kulturellen, sozialen, ökonomischen und politischen Themen auseinandergesetzt wird. Zu den Gesellschaftswissenschaftsfächern gehören die Fächer Erziehungswissenschaften, Geographie, Geschichte, Sachunterricht, Sozialkunde, Politikwissenschaft und Wirtschaftskunde.	
+LP_0000006	Class	Lehrprozess	teaching process	obo:BFO_0000015		
+LP_0000007	Class	Lernprozess	learning process	obo:BFO_0000015		
+LP_0000009	Class	Jahrgangsstufe	class level	obo:IAO_0000030	Eine “Jahrgangsstufe” ist eine “Informationseinheit”. Sie umfasst die Gesamtheit der Klassen und Kurse, in denen Lernende gemeinsam einen bestimmten Abschnitt ihrer schulischen Laufbahn durchlaufen. Eine Jahrgangsstufe bezeichnet eine systematische Einteilung der Lernenden und gibt an, in welcher Phase ihres Bildungswegs sie sich befinden und legt die für sie vorgesehenen Kompetenzen und Lerninhal	
+LP_0000010	Class	Person	person	obo:BFO_0000030		
+LP_0000011	Class	Lehrer Rolle	teacher role	obo:BFO_0000023		
+LP_0000012	Class	Schüler Rolle	student  role	obo:BFO_0000023		
+LP_0000013	Class	Kompetenz	competence	obo:BFO_0000016	Eine „Kompetenz“ ist eine Eigenschaft, die eine Person entweder bereits besitzt oder im Verlauf eines Lernprozesses erwirbt. Sie ist die Fähigkeit eines Lernenden, Wissen und Können zur Lösung von Problemen anzuwenden (vgl. KMK). Die Ontologie unterscheidet zwischen “Kompetenz” und “CE-Kompetenzspezifikation”: Im Unterschied zur “CE-Kompetenzspezifikation”, die eine “Kompetenz” im Rahmen eines Leh	
+LP_0000014	Individual	E Niveau (BW)				
+LP_0000015	AnnotationProperty	tracker item				
+LP_0000016	Individual	G Niveau (BW)				
+LP_0000017	ObjectProperty	konkretisiert Lehrplan	concretizes curriculum	obo:RO_0000059		
+LP_0000018	Individual	Gymnasialniveau Sek I (BW)				
+LP_0000019	Class	Schulabschluss	educational qualification	obo:BFO_0000035	Ein “Schulabschluss” ist ein “Prozessende”. Es ist ein offiziell anerkannter Bildungsabschluss, der am Ende eines bestimmten Bildungsgangs erworben wird. Er bestätigt den erfolgreichen Abschluss einer schulischen Laufbahn und dient als Qualifikationsnachweis für weiterführende Bildungswege oder den Eintritt in das Berufsleben. Schulabschlüsse unterscheiden sich je nach Schulart und Bundesland in i	
+LP_0000020	Class	Schulstufe	educational level	obo:IAO_0000030	Die “Schulstufe” ist eine “Informationseinheit”. Sie bezeichnet eine bestimmte Phase der schulischen Laufbahn, in der Lernende bestimmte Ziele gemäß den Anforderungen des Bildungssystems erreichen sollen. Schulstufen dienen dazu, den Lernenden einen strukturierten Lernweg zu bieten, in dem die pädagogischen und didaktischen Anforderungen an die jeweiligen Altersgruppen angepasst sind. Die Schulstu	
+LP_0000021	ObjectProperty	endet mit Abschluss	leads to qualification	obo:BFO_0000051		
+LP_0000022	Individual	M Niveau (BW)				
+LP_0000023	Individual	Gymnasialniveau Sek I (BY)				
+LP_0000024	ObjectProperty	wird beschrieben von	described by			
+LP_0000025	Individual	Mittelschulniveau (BY)				gilt für die Jahrgangsstufen 5-6
+LP_0000026	ObjectProperty	hat Jahrgangsstufe	has class level	LP_0000024		
+LP_0000027	Individual	Mittlere-Reife-Klasse (BY)				gilt für die Jahrgangsstufen 7-10
+LP_0000028	Class	Bildungsgangniveau	educational track level	LP_0000037	Das “Bildungsgangniveau” ist ein “Niveau”, das die Anforderungen innerhalb eines “Bildungsgangs” beschreibt und dabei den Unterschied in den Leistungsniveaus zwischen verschiedenen Bildungsgängen kennzeichnet. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden. In der Ontologie wird unterschieden zwischen dem “Hau	
+LP_0000029	ObjectProperty	von Bundesland	of federal state	LP_0000024		
+LP_0000030	Individual	Realschulniveau (BY)				
+LP_0000031	Individual	Regelklasse (BY)				
+LP_0000032	Individual	Orientierungsstufe (MV)				
+LP_0000034	Individual	Erweitertes Anforderungsniveau (HB)				
+LP_0000035	Individual	Grundlegendes Anforderungsniveau (HB)				gilt für die Jahrgangsstufen 7-10
+LP_0000036	Individual	Primarbereich				
+LP_0000037	Class	Niveau	niveau	obo:IAO_0000030	Das “Niveau” ist eine “Informationseinheit”. Sie bezeichnet eine Kategorisierung des Ausmaßes der Ausprägung eines oder mehrerer bestimmten Merkmale. Im Bildungskontext bezeichnet das “Niveau” das Level, die Komplexität, die Tiefe oder den Schwierigkeitsgrad eines Lerninhalts oder einer Kompetenz, die in einem Lehrplan oder Bildungsstandard festgelegt ist. Das Niveau gibt an, welche Anforderungen 	
+LP_0000038	Individual	Gymnasialniveau Sek I (HB)				
+LP_0000039	Class	BistaFach		LP_0000001	Ein “Bistafach” ist ein “Schulfach”, zu dem es von der KMK veröffentlichte Bildungsstandards gibt. Die Bistafächer sind Deutsch, Mathematik, die erste Fremdsprache (Englisch oder Französisch) und die drei Naturwissenschaften Biologie, Chemie und Physik.	
+LP_0000040	Class	Bundesland Bezeichnung	state designation	obo:IAO_0000030	Klasse der Bezeichnungen der deutschen Bundesländer, deren Kultusministerien für die Lehrpläne zuständig ist.	
+LP_0000041	ObjectProperty	hat Einheit	has unit	obo:BFO_0000051		
+LP_0000043	Class	Oberstufenphase	secondary phase	obo:IAO_0000030		
+LP_0000044	Individual	Oberschulniveau (HB)				gilt für die Jahrgangsstufen 5-6
+LP_0000045	Individual	Sekundarbereich I				
+LP_0000046	Individual	Sekundarbereich II				
+LP_0000047	ObjectProperty	hat Schulstufe	has educational level	LP_0000024		
+LP_0000050	Individual	G8 Qualifikationsphase				
+LP_0000051	Individual	G8 Einführungsphase				
+LP_0000052	Individual	G9 Qualifikationsphase				
+LP_0000053	Class	Berlin-Brandenburg		LP_0000040		
+LP_0000054	Class	Ohne-Berlin-Brandenburg		LP_0000040		
+LP_0000055	Individual	G9 Einführungsphase				
+LP_0000056	Class	Einführungsphase		LP_0000043		
+LP_0000057	Class	Qualifikationsphase		LP_0000043		
+LP_0000060	Individual	Allgemeinbildender Schulabschluss (HH)				
+LP_0000069	Class	Gymnasialniveau Sek I		LP_0000028	Das "Gymnasialniveau Sek I” ist ein “Bildungsgangniveau”, welches das Niveau des "gymnasialen Bildungsgangs" im Sekundarbereich I beschreibt und somit meistens die Jahrgangsstufen 5-10 umfasst. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.	
+LP_0000071	ObjectProperty	benötigt Niveau	requires level	LP_0000024		
+LP_0000076	Class	Allgemeine Hochschulreife				
+LP_0000078	Class	Mittlerer Schulabschluss			Der “Mittlere Schulabschluss” ist ein “Schulabschluss” und ein allgemeinbildender Schulabschluss. Er wird nach der Jahrgangsstufe 10 verliehen. In den Bundesländern trägt der “Mittlere Schulabschluss” verschiedene Bezeichnungen: - Mittlerer Schulabschluss (BY, BE, HB, HH, SH, BW, NW) - Mittlere Reife (MV) - Mittlerer Bildungsabschluss (SL) - Realschulabschluss (HE, NI, SN, ST, TH) - Berechtigung z	
+LP_0000079	Class	Erster Schulabschluss			Der “Erste Schulabschluss” ist ein “Schulabschluss” und ist der erste allgemeinbildende Schulabschluss. Er wird je nach Bundesland und Schulart nach der Jahrgangsstufe 9 oder 10 verliehen. In den Bundesländern trägt der “Erste Schulabschluss” verschiedene Bezeichnungen: - Erster allgemeinbildender Schulabschluss (HH, NW, SH) - Hauptschulabschluss (BW, HE, NI, SL, SN, ST, TH) - Berufsbildungsreife 	
+LP_0000086	ObjectProperty	ist Niveau von	is niveau of	obo:IAO_0000136		
+LP_0000090	Individual	Gymnasialniveau Sek I (HE)				
+LP_0000091	Individual	Hauptschulniveau (HE)				
+LP_0000092	Individual	Realschulniveau (HE)				
+LP_0000093	Individual	Erhöhte Anforderungen (HH)				gilt nur für die Jahrgangstufen 5-6
+LP_0000094	Individual	Gymnasialniveau Sek I (HH)				
+LP_0000095	Individual	Mindestanforderungen (HH)				gilt nur für die Jahrgangstufen 5-6
+LP_0000096	Individual	Mindestanforderungen für den ersten allgemeinbildenden Schulabschluss (HH)				gilt für die Jahrgangsstufen 7-9
+LP_0000097	Individual	Mindestanforderungen für den mittleren Schulabschluss (HH)				gilt für die Jahrgangsstufen 7-10
+LP_0000098	Individual	Mindestanforderungen für den Übergang in die Studienstufe (HH)				gilt für die Jahrgangsstufen 9-11
+LP_0000099	Individual	Gymnasialniveau Sek I (MV)				
+LP_0000100	Individual	Bildungsgangniveau Berufsreife (MV)				
+LP_0000101	Individual	Bildungsgangniveau Mittlere Reife (MV)				
+LP_0000102	Individual	Orientierungsstufenniveau (MV)				
+LP_0000103	Individual	Erhöhte Anforderungen (E-Kurs) (NI)				für die Gesamtschule
+LP_0000104	Individual	Grundlegende Anforderungen (G-Kurs) (NI)				für die Gesamtschule
+LP_0000105	Class	Mittlerer Abschluss (BE)				
+LP_0000106	Class	Erster Abschluss (BE)				
+LP_0000107	Individual	Gymnasialniveau Sek I (NI)				
+LP_0000108	Individual	Hauptschulniveau (NI)				
+LP_0000109	Class	Allgemeine Hochschulreife (BE)				
+LP_0000110	Individual	Oberschulniveau (NI)				
+LP_0000111	Class	Schulart	school type		Eine “Schulart” ist eine “Informationseinheit”. Sie beschreibt eine durch bestimmte Merkmale gekennzeichnete Form der Schule, die deren organisatorische Struktur, pädagogische Ausrichtung, die Dauer des Bildungsgangabschnitts sowie die angestrebten Schulabschlüsse festlegt. Sie kann je nach Bildungssystem und Bundesland unterschiedliche Bezeichnungen und Konzepte umfassen, wie Grundschule, Gymnasi	
+LP_0000116	Individual	Realschulniveau (NI)				
+LP_0000117	Individual	Vertiefendes Niveau (NI)				für die Gesamtschule
+LP_0000118	Individual	Zusätzliche Anforderungen (Z-Kurs) (NI)				für die Gesamtschule
+LP_0000129	Individual	Zusätzliche Voraussetzungen für den Erwerb des Mittleres Schulabschlusses (NI)				für die Hauptschule
+LP_0000130	Individual	Erweiterungskurs (NW)				für Gesamt- und Sekundarschule
+LP_0000131	Individual	Gesamt-/Sekundarschulniveau (NW)				Basisniveau für die Gesamtschule und die Sekundarschule
+LP_0000132	Individual	Gymnasialniveau Sek I (NW)				
+LP_0000133	Individual	Allgemeinbildender Schulabschluss (BE)				
+LP_0000134	Individual	Hauptschulniveau (NW)				
+LP_0000135	Individual	Berufsbildungsreife (BE)				
+LP_0000136	Individual	Erweiterte Berufsbildungsreife (BE)				
+LP_0000137	Individual	Mittlerer Schulabschluss (BE)				
+LP_0000138	Individual	Niveau Mittlerer Schulabschluss (NW)				für Hauptschule
+LP_0000142	Individual	Realschulniveau (NW)				
+LP_0000143	Individual	Erhöhtes Kompetenzniveau (RP)				
+LP_0000144	Class	Erster Abschluss (BW)				
+LP_0000145	Class	Mittlerer Abschluss (BW)				
+LP_0000146	Class	Allgemeine Hochschulreife (BW)				
+LP_0000147	Individual	Grundlegendes Kompetenzniveau (RP)				
+LP_0000148	Individual	Allgemeinbildender Schulabschluss (BW)				
+LP_0000149	Individual	Hauptschulabschluss (BW)				
+LP_0000150	Individual	Mittlerer Schulabschluss (BW)				
+LP_0000151	Individual	Mittleres Kompetenzniveau (RP)				
+LP_0000152	Individual	Qualifizierender Abschluss der Mittelschule (BY)				
+LP_0000153	Individual	Erfolgreicher Abschluss der Mittelschule (BY)				
+LP_0000154	Individual	Mittlerer Schulabschluss der Mittelschule (BY)				
+LP_0000155	Individual	Mittlerer Schulabschluss der Realschule (BY)				
+LP_0000156	Individual	Mittlerer Schulabschluss der Wirtschaftsschule (BY)				
+LP_0000157	Individual	Allgemeinbildender Schulabschluss (BY)				
+LP_0000160	Class	Allgemeine Hochschulreife (TH)				
+LP_0000161	Class	Allgemeine Hochschulreife (NI)				
+LP_0000162	Class	Allgemeine Hochschulreife (NW)				
+LP_0000163	Class	Allgemeine Hochschulreife (HH)				
+LP_0000164	Class	Allgemeine Hochschulreife (RP)				
+LP_0000165	Class	Allgemeine Hochschulreife (SN)				
+LP_0000168	Class	Allgemeine Hochschulreife (HE)				
+LP_0000169	Class	Allgemeine Hochschulreife (BY)				
+LP_0000170	Class	Allgemeine Hochschulreife (MV)				
+LP_0000171	Class	Allgemeine Hochschulreife (ST)				
+LP_0000172	Class	Allgemeine Hochschulreife (SH)				
+LP_0000173	Class	Allgemeine Hochschulreife (SL)				
+LP_0000174	Class	Allgemeine Hochschulreife (HB)				
+LP_0000175	Class	Allgemeine Hochschulreife (BB)				
+LP_0000176	Class	Erster Abschluss (TH)				
+LP_0000177	Class	Erster Abschluss (NI)				
+LP_0000178	Class	Erster Abschluss (NW)				
+LP_0000179	Class	Erster Abschluss (HH)				
+LP_0000180	Class	Erster Abschluss (RP)				
+LP_0000181	Class	Erster Abschluss (SN)				
+LP_0000182	Class	Erster Abschluss (HE)				
+LP_0000183	Class	Erster Abschluss (BY)				
+LP_0000184	Class	Erster Abschluss (MV)				
+LP_0000185	Class	Erster Abschluss (ST)				
+LP_0000186	Class	Erster Abschluss (SH)				
+LP_0000187	Class	Erster Abschluss (SL)				
+LP_0000188	Class	Erster Abschluss (HB)				
+LP_0000189	Class	Erster Abschluss (BB)				
+LP_0000192	Individual	Mittlerer Schulabschluss Gymnasium (BY)				
+LP_0000193	Individual	Anforderungen für den Ersten allgemeinbildenden Schulabschluss (SH)				
+LP_0000200	Class	Mittlerer Abschluss (TH)				
+LP_0000201	Class	Mittlerer Abschluss (NI)				
+LP_0000202	Class	Mittlerer Abschluss (NW)				
+LP_0000203	Class	Mittlerer Abschluss (HH)				
+LP_0000204	Class	Mittlerer Abschluss (RP)				
+LP_0000205	Class	Mittlerer Abschluss (SN)				
+LP_0000206	Class	Mittlerer Abschluss (HE)				
+LP_0000207	Class	Mittlerer Abschluss (BY)				
+LP_0000208	Class	Mittlerer Abschluss (MV)				
+LP_0000209	Class	Mittlerer Abschluss (ST)				
+LP_0000210	Class	Mittlerer Abschluss (SH)				
+LP_0000211	Class	Mittlerer Abschluss (SL)				
+LP_0000212	Class	Mittlerer Abschluss (HB)				
+LP_0000213	Class	Mittlerer Abschluss (BB)				
+LP_0000216	Individual	Anforderungen für den Mittleren Schulabschluss (SH)				
+LP_0000231	Individual	Berufsbildungsreife (BB)				
+LP_0000232	Individual	Erweiterte Berufsbildungsreife (BB)				
+LP_0000233	Individual	Fachoberschulreife (BB)				
+LP_0000234	Individual	Berechtigung zum Besuch der gymnasialen Oberstufe (BB)				
+LP_0000235	Individual	Allgemeinbildender Schulabschluss (BB)				
+LP_0000236	Individual	Anforderungen für die Allgemeine Hochschulreife Sek I (SH)				
+LP_0000245	Individual	Allgemeinbildender Schulabschluss (HB)				
+LP_0000246	Individual	Erweiterte Berufsbildungsreife (HB)				
+LP_0000247	Individual	Berufsbildungsreife (HB)				
+LP_0000248	Individual	Mittlerer Schulabschluss (HB)				
+LP_0000249	Individual	Sekundarstufenniveau (SH)				
+LP_0000260	Individual	A Kurs (SL)				
+LP_0000261	Class	Curriculares Element	curricular element	obo:IAO_0000030	Ein “Curriculares Element” ist eine Informationseinheit, die bei der Beschreibung der Bestandteile eines Lehrplans oder Bildungsstandards verwendet wird. In der Ontologie fungiert das “Curriculare Element" als Superklasse, um die Elemente zu ordnen, aus denen sich Beschreibungen der zu erwerbenden Inhalte und Kompetenzen eines Lehrplans oder eines Bildungsstandards zusammensetzen. Ein “Curriculare	Wir haben 'Curriculares Element' als Bezeichnung gewählt, weil die vorherige Bezeichnung 'Lehrplan Element' zu sehr auf Lehrpläne einschränkt. Es sollen auch Bildungsstandards beschrieben werden, daher würde 'Lehrplan Element' nicht gut passen.
+LP_0000263	Class	CE-Kompetenzspezifikation	competency specification	LP_0000261	Eine “CE-Kompetenzspezifikation” ist ein “Curriculares Element”, das eine Kompetenz beschreibt. Es enthält üblicherweise einen Operator und beginnt zum Beispiel mit “Die Schülerinnen und Schüler [...]” oder “Die Lernenden [...]”. Die Ontologie unterscheidet zwischen “CE-Kompetenzspezifikation” und “Kompetenz”: Unter einer Kompetenz wird die Fähigkeit eines Lernenden verstanden, Wissen und Können z	
+LP_0000264	Individual	E Kurs (SL)				gilt für die Jahrgangsstufen 7-10
+LP_0000265	Class	Fachniveau Sek II		LP_0000037	Das “Fachniveau Sek II” ist ein “Niveau”. Es bezeichnet das Anforderungsniveau eines bestimmten Fachs in der Sekundarstufe II und bringt zum Ausdruck, ob ein “Curriculares Element” einem “Grundkurs” oder einem “Leistungskurs” zugeordnet ist. Die beiden Fachniveaus unterscheiden sich in der Komplexität und Tiefe des Unterrichts sowie im Umfang der Inhalte und der zu erbringenden Leistungen. Während	
+LP_0000266	Individual	G Kurs (SL)				gilt für die Jahrgangsstufen 7-10
+LP_0000267	Individual	Gemeinschaftsschulniveau (SL)				gilt für die Jahrgangsstufen 5-6
+LP_0000268	Class	Leitidee (Bista)				Kommt vor in den Bildungsstandards für das Fach Mathematik
+LP_0000269	Individual	Gymnasialniveau Sek I (SL)				
+LP_0000270	Individual	Mittlerer Schulabschluss (HH)				
+LP_0000271	Individual	Erster allgemeinbildender Schulabschluss (HH)				
+LP_0000272	Individual	Erweiterter erste allgemeinbildender Schulabschluss (HH)				
+LP_0000279	Individual	Gymnasialniveau Sek I (SN)				
+LP_0000280	Individual	Allgemeinbildender Schulabschluss (RP)				
+LP_0000281	Individual	Qualifizierter Sekundarabschluss I (RP)				
+LP_0000282	Individual	Berufsreife (RP)				
+LP_0000293	Individual	Hauptschulbildungsgangniveau (SN)				Achtung hier ist das Niveau gemeint, nicht der Bildungsgang. gilt für die Jahrgangsstufen 7-9
+LP_0000294	Individual	Oberschulniveau (SN)				gilt für die Jahrgangsstufen 5-6
+LP_0000295	Individual	Realschulbildungsgangniveau (SN)				gilt für die Jahrgangsstufen 7-10
+LP_0000296	Individual	Gymnasialniveau Sek I (ST)				
+LP_0000297	Individual	Hauptschulabschlussbezogener Unterricht (ST)				gilt für die Jahrgangsstufen 7-9
+LP_0000298	Individual	Realschulabschlussbezogener Unterricht (ST)				gilt für die Jahrgangsstufen 7-10
+LP_0000299	Individual	Sekundarschulniveau (ST)				gilt für die Jahrgangsstufen 5-6
+LP_0000300	Individual	Allgemeinbildender Schulabschluss (SL)				
+LP_0000301	Individual	Hauptschulabschluss (SL)				
+LP_0000302	Individual	Mittlerer Bildungsabschluss (SL)				
+LP_0000309	Individual	Regelschulniveau (TH)				gilt für die Jahrgangsstufen 5-8
+LP_0000310	Individual	Hauptschulabschlussbezogener Kurs (TH)				gilt für die Jahrgangsstufen 9-10
+LP_0000311	Individual	Realschulabschlussbezogener Kurs (TH)				gilt für die Jahrgangsstufen 9-10
+LP_0000312	Individual	Allgemeinbildender Schulabschluss (TH)				
+LP_0000313	Individual	Hauptschulabschluss (TH)				
+LP_0000314	Individual	Qualifizierender Hauptschulabschluss (TH)				
+LP_0000315	Individual	Realschulabschluss (TH)				
+LP_0000328	Class	Thema (RP)		LP_0000349		kommt in Mathematik Sek II vor. s. außerdem Moderne Fremdsprache - Englisch Sek I.
+LP_0000332	Class	CE-Lerninhalt	learning content	LP_0000261	Ein “CE-Lerninhalt” ist ein “Curriculares Element", das einen Lerninhalt in Form konkreter Themen beschreibt. Der „CE-Lerninhalt“ liefert die inhaltliche Basis für die Gestaltung des Unterrichts. Anhand des "CE-Lerninhalts" können Kompetenzen erworben werden. Ein CE-Lerninhalt kann einen anderen CE-Lerninhalt enthalten, aber kein anderes Element (wie z.B. CE-Bereich oder CE-Kompetenzspezifikation)	
+LP_0000336	Class	Fachbezogene Kompetenzspezifikation		LP_0000263		Bezieht sich auf ein bestimmtes Fach
+LP_0000337	Class	Fachübergreifende Kompetenzspezifikation		LP_0000263		Bezüglich mehrere Fächer bzw. eines Fachverbund
+LP_0000342	Class	Element (RP)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Rheinland-Pfalz	
+LP_0000343	ObjectProperty	hat Schulartfunktion	has school type function	obo:RO_0000085		
+LP_0000344	DatatypeProperty	hat Wert	has value			
+LP_0000345	Class	Teilthema (RP)		LP_0000328		wird nicht so im LP benannt. Löschen?
+LP_0000346	Class	Titel	title	obo:IAO_0000300	Ein Titel ist eine textuelle Entität, die dazu dient, eine andere Entität eindeutig zu benennen oder kurz zu kennzeichnen und primär zur Identifikation oder Wiedererkennung dieser Entität verwendet wird. Er ist die menschenlesbare, inhaltlich beschreibende Bezeichnung einer Entität (z. B. eines Kompetenzbereichs, Themas oder Abschnitts).	
+LP_0000347	Class	Identifikationsnummer	ID number	obo:IAO_0000028		
+LP_0000349	Class	CE-Bereich	area	LP_0000261	Ein “CE-Bereich” ist ein “Curriculares Element”. Ein “CE-Bereich” kann anderen “CE-Bereichen” über- oder untergeordnet sein. Das Element dient der Gliederung von Lehrplänen und Bildungsstandards, indem es “CE-Kompetenzspezifikationen” und/oder “CE-Lerninhalte” unter einem gemeinsamen inhaltlichen Fokus zusammenfasst, der durch den “CE-Bereich” definiert wird.	Mögliche Properties: - Titel - Ordnungsnummer - Beschreibung - Stundenzahl - Jahrgangsstufe
+LP_0000350	Class	Lernziel (RP)				kommt in Gemeinschaftskunde Sek II vor
+LP_0000352	Class	Unterteilthema (RP)		LP_0000345		wird nicht so im LP benannt. Löschen?
+LP_0000353	Class	Lehrplanfragment (RP)		LP_0001015		
+LP_0000361	Individual	Allgemeinbildender Schulabschluss (MV)				
+LP_0000362	Individual	Berufsreife (MV)				
+LP_0000363	Individual	Mittlere Reife (MV)				
+LP_0000373	Individual	Allgemeinbildender Schulabschluss (NW)				
+LP_0000374	Individual	Erster Schulabschluss (NW)				
+LP_0000375	Individual	Erweiterter Erster Schulabschluss (NW)				
+LP_0000376	Individual	Mittlerer Schulabschluss (NW)				
+LP_0000377	Individual	Mittlerer Schulabschluss mit Berechtigung zur gymnasialen Oberstufe (NW)				
+LP_0000389	Individual	Allgemeinbildender Schulabschluss (SN)				
+LP_0000390	Individual	Hauptschulabschluss (SN)				
+LP_0000391	Individual	Qualifizierender Hauptschulabschluss (SN)				
+LP_0000392	Individual	Realschulabschluss (SN)				
+LP_0000402	Individual	Allgemeinbildender Schulabschluss (ST)				
+LP_0000403	Individual	Hauptschulabschluss (ST)				
+LP_0000404	Individual	Qualifizierter Hauptschulabschluss (ST)				
+LP_0000405	Individual	Realschulabschluss (ST)				
+LP_0000406	Individual	Erweiterter Realschulabschluss (ST)				
+LP_0000421	Class	KombinierterBereichRP		LP_0000342		
+LP_0000423	Class	Verweis auf standardillustrierende Aufgaben (BE)		LP_0030065		Verlinkung zu Dokument
+LP_0000424	Class	Verweis auf vernetzte Kompetenzen  (BE)		LP_0030065		Verlinkung zu Kompetenzen anderer Fächer (meist zu "Medienbildung")
+LP_0000425	Class	Verweis auf Materialien (BE)		LP_0030065		Verlinkung zu Materialsammlung (=Dokumente)
+LP_0000426	Class	Element (HH)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Hamburg	
+LP_0000428	Class	Inhalt (HH)		LP_0000349		
+LP_0000429	Class	Themenfeld	subject area	obo:IAO_0000300	Ein Themenfeld ist eine textuelle Entität, die einen fachlichen, inhaltlichen oder konzeptuellen Bereich bezeichnet, dem eine Entität thematisch zugeordnet ist.	Themenfeld wird Berlin/Brandenburg im Datendump im Zusammenhang mit Übung verwendet
+LP_0000431	Class	Kompetenzbereich (RP)		LP_0000349		
+LP_0000432	Class	Kompetenz (RP)				
+LP_0000433	Class	Lehrplan (RP)		LP_0000438		
+LP_0000434	Class	Element (BY)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Bayern	
+LP_0000435	Class	Fachniveau Sek II (BY)				in Bayern genannt Anforderungsniveau
+LP_0000437	Individual	Naturwissenschaften (Schulfach)				
+LP_0000438	Class	Lehrplan	curriculum	obo:IAO_0000030	Ein Lehrplan ist eine Informationseinheit, die eine systematische Zusammenstellung von curricularen Elementen umfasst. Er definiert verbindlich die Kompetenzen und Inhalte, die Schülerinnen und Schüler in einem bestimmten Fach, einer Jahrgangsstufe, einer Schulart oder einem Bildungsgang eines Bundeslandes erwerben sollen. Ein Lehrplan ist immer spezifisch auf die Bildungspolitik eines Bundeslande	
+LP_0000440	ObjectProperty	für Bildungsgangabschnitt	for educational track	obo:RO_0000056		
+LP_0000441	Class	Element (BB)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Brandenburg.	Die Unterschiede zw. Berlin und Brandenburg müssten evtl. noch mal genauer geprüft werden. Ggf. sind die Klassen hier noch zu trennen.
+LP_0000443	Class	Niveaustufe BE/BB		obo:IAO_0000030		
+LP_0000445	Class	Inhalt (BB)	learning content (BB)			
+LP_0000446	Class	Lernmaterial (BB)	learning material (BB)			
+LP_0000447	Class	Standard (BB)	standard (BB)		operationalisierbar und meßbar	Inhaltsbezogener mathematischer Standard (BB)
+LP_0000448	Class	Thema (BB)	topic (BB)	LP_0000349		kommt u.a. in Englisch vor
+LP_0000449	Class	Themenfeld (BB)	topic area (BB)	LP_0000349		kommt u.a. in Englisch  und Physik vor. "Themenbereich" in Mathe
+LP_0000450	Class	Zusatzmaterial (BB)	additional material (BB)			
+LP_0000451	Class	Übung (BB)	exercise (BB)	LP_0000441		
+LP_0000452	Individual	Moderne Fremdsprachen (Schulfach)				
+LP_0000453	Individual	Lebensgestaltung Ethik Religionskunde (Schulfach)				
+LP_0000459	Class	Kompetenzbereich (BB)		LP_0000349		
+LP_0000460	DatatypeProperty	hat Position				
+LP_0000463	DatatypeProperty	uri				
+LP_0000464	Individual	Niveaustufe A				
+LP_0000465	Individual	Niveaustufe B				
+LP_0000466	Individual	Niveaustufe C				
+LP_0000467	Individual	Niveaustufe D				
+LP_0000468	Individual	Niveaustufe E				
+LP_0000469	Individual	Niveaustufe F				
+LP_0000470	Individual	Niveaustufe G				
+LP_0000475	Class	Schulartfunktion	school type function	obo:BFO_0000034		
+LP_0000477	ObjectProperty	konkretisiert Schulart	concretizes type of school	obo:RO_0000059		
+LP_0000478	Class	Funktionsspezifikation	function specification	obo:IAO_0000030		
+LP_0000479	Individual	Kompetenzbeschreibungsfunktion			Ein Element, das diese Funktion inne hat, beschreibt Kompetenzen, die SuS haben können oder eine Ausführung in der die Kompetenz angewandt wird.	
+LP_0000480	Individual	Lerninhaltsbeschreibungsfunktion			Ein Element, das diese Funktion inne hat, beschreibt Inhalte, die im Unterricht vermittelt werden. Es beschreibt konkrete Themen oder Handlungsanweisungen zur Gestaltung des Unterrichts oder Mittel zum Erlangen von Kompetenzen.	
+LP_0000481	Individual	Materialbeschreibungsfunktion			Ein Element, das diese Funktion inne hat, beschreibt Materialien, die im Unterricht verwendet werden können.	
+LP_0000482	Class	Strukturierungsfunktion		LP_0000478	Elemente, die diese Funktion inne haben, strukturieren die Lehrpläne.	
+LP_0000483	ObjectProperty	hat Funktion	has function specification	LP_0000024		
+LP_0000493	Class	Beschreibungsfunktion		LP_0000478	Elemente, die diese Funktion inne haben, beschreiben Teile des Lehrplans.	
+LP_0000495	ObjectProperty	ist Funktion von	is function specification of	obo:IAO_0000136		
+LP_0000497	Individual	Bereichsfunktion			Ein Lehrplanelement, das diese Funtion inne hat, beschreibt einen Kompetenzbereich. Einem Kompetenzberich können Teilkomptenzbereiche untergeordnet werden. Ein Lehrplanelement, das diese Funtion inne hat, beschreibt einen Teilkompetenzbereich. Teilkompetenzbereiche sind üblicherweise einem Kompetenzbereich oder anderen Teilkompetenzbereich untergeordnet.	
+LP_0000499	Class	Bezugsfunktionen		LP_0000478		Die Bezugsfunktion ist kein Freitext, sondern wird als OWL-Restriktion direkt in die Klassendefinition des länderspezifischen CE eingebaut: Jede CE-Klasse wie Kompetenzbereich (HH), Lernbereich (BY) oder Inhaltsfeld (NW) trägt in ihrer rdfs:subClassOf-Axiomatik eine owl:hasValue-Restriktion auf hat Funktion (LP_0000483), die auf das entsprechende Bezugsfunktions-Individuum zeigt. Das bedeutet: Sob
+LP_0000500	Individual	Prozessbezugsfunktion				beschreibt prozessorientierte Kompetenzen – also wie gelernt oder gehandelt wird
+LP_0000501	Individual	Inhaltsbezugsfunktion				beschreibt inhaltsorientierte Kompetenzen – also was gelernt wird
+LP_0000506	Individual	Grundkursfach (BB)				
+LP_0000507	Individual	Leistungskursfach (BB)				
+LP_0000508	Class	Zeitspezifikation	temporal specification	obo:IAO_0000027	Ein Data Item, dass für eine Unterrichtseinheit einen Wert für Zeitdauer und die dazugehörige Einheit beschreibt.	
+LP_0000510	Individual	Leistungsfach (BW)				
+LP_0000511	Individual	Basisfach (BW)				
+LP_0000512	Individual	Grundlegendes Anforderungsniveau (BY)				
+LP_0000513	Individual	Vertiefungskurs (BY)				
+LP_0000515	Individual	Grundlegendes Anforderungsniveau (HE)				
+LP_0000516	Individual	Erhöhtes Anforderungsniveau (HE)				
+LP_0000517	Individual	Erhöhtes Anforderungsniveau (HH)				
+LP_0000518	Individual	Grundlegendes Anforderungsniveau (HH)				
+LP_0000519	Individual	Grundkurs (MV)				
+LP_0000520	Individual	Leistungskurs (MV)				
+LP_0000521	Individual	Grundkurs (NW)				
+LP_0000522	Individual	Leistungskurs (NW)				
+LP_0000523	Individual	Grundkurs (SN)				
+LP_0000524	Individual	Leistungskurs (SN)				
+LP_0000525	Individual	Erhöhtes Anforderungsniveau (BY)				Unterschied zu  Vertiefungskurs ?
+LP_0000526	Individual	Grundlegendes Anforderungsniveau (ST)				
+LP_0000527	Individual	Erhöhtes Anforderungsniveau (ST)				
+LP_0000528	Individual	Grundlegendes Anforderungsniveau (TH)				
+LP_0000529	Individual	Erhöhtes Anforderungsniveau (TH)				
+LP_0000530	Class	Grundkursniveau		LP_0000265	Ein "Grundkursniveau" ist ein “Fachniveau Sek II” im gymnasialen Bildungsgang der Sekundarstufe II, das Inhalte und Kompetenzen auf einem grundlegenden Anforderungsniveau vermittelt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb eines Fachs behandelt werden.	
+LP_0000531	Class	Leistungskursniveau		LP_0000265	Ein "Leistungskursniveau" ist ein “Fachniveau Sek II” im gymnasialen Bildungsgang der Sekundarstufe II, das Inhalte und Kompetenzen auf einem vertieften Anforderungsniveau vermittelt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb eines Fachs behandelt werden.	
+LP_0000532	Individual	Optional				
+LP_0000533	Individual	Verbindlich				
+LP_0000535	Individual	Unterrichtsstunde			Die Unterrichtsstunde ist ein festgelegter Zeitabschnitt für den Unterrichtsablauf.	Im Allgemeinen umfasst eine Schulstunde 45 Minuten.
+LP_0000536	Class	Element (Bista)	element (Bista)	LP_0000261	Lehrplan Element bezogen auf die Vorgaben der KMK Bildungsstandards	
+LP_0000537	ObjectProperty	hat Schulfach	has school subject	LP_0000024	Wird verwendet, um Etwas einem Fach oder einem Fach mit besonderem "Bezug" (z.B. Zweite-Fremdsprache) zuzuordnen.	wird üblicherweise am Lehrplan verwendet; kann ggf. auch an Kompetenzbereichen/Kompetenzspezifikation bzw. Themenbereichen/Themen verwendet werden, z.B. bei Lehrplänene die sich auf mehrere Fächer beziehen
+LP_0000540	Class	Schulfachbezug	school subject property	obo:IAO_0000030	Ein “Schulfachbezug” ist eine “Informationseinheit” und gibt die Funktion und Spezifikation eines “Schulfachs”  in einem bestimmten Kontext an. Beispiele für “Schulfachbezug” sind “Erste Fremdsprache”, “Pflichtfach” oder “Wahlfach”.	Die Bezeichnung Rolle war nicht günstig gewählt, da sie mit bfo:role verwechselt werden kann.
+LP_0000541	Class	Erste Fremdsprache		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als erste Fremdsprache gemeint ist.	
+LP_0000542	Class	Zweite Fremdsprache		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als dritte Fremdsprache gemeint ist.	
+LP_0000543	Class	Dritte Fremdsprache		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als dritte Fremdsprache gemeint ist.	
+LP_0000544	Class	Pflichtfach		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als Pflichtfach gemeint ist.	
+LP_0000545	Class	Wahlpflichtfach		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als Wahlpflicht gemeint ist.	Ggf. könnte auf Wahlfach und Pflichfach geschlossen werden. Dies ist aktuell nicht implementiert.
+LP_0000547	Class	Gültigkeitsbereich	validity scope	obo:IAO_0000030	Ein information content entity, dass den zetlichen Gültigkeitsbereich eines Lehrplans beschreibt.	
+LP_0000548	DatatypeProperty	von Datum		LP_0000344		
+LP_0000549	DatatypeProperty	bis Datum	to date	LP_0000344		
+LP_0000550	ObjectProperty	hat Gültigkeitsbereich	has validity scope	LP_0000024		
+LP_0000551	Class	Wahlfach		LP_0000540	Schulfachbezug, der ausdrückt, dass ein Schulfach als Wahlfach/fakultatives Fach gemeint ist.	
+LP_0000553	DatatypeProperty	veröffentlicht am		LP_0000344		
+LP_0000554	Class	Didaktische Voraussetzung	didactic prerequisite	LP_0030065	Ein didaktischer Verweis, der ausdrückt, dass das Zielobjekt vor dem Quellobjekt beherrscht werden sollte, damit dieses in einem curricular und didaktisch begründeten Lernpfad sinnvoll bearbeitet werden kann.	
+LP_0000555	ObjectProperty	ist Schulartfunktion von		obo:RO_0000079		
+LP_0000556	ObjectProperty	hat Oberstufensphase		LP_0000024		
+LP_0000571	Class	Bildungsstandard (KMK)	educational standard (KMK)	obo:IAO_0000030	Der “Bildungsstandard” ist eine “Informationseinheit”, die klar definierte, verbindliche Lernziele beschreibt, welche die Lernenden zu einem bestimmten Zeitpunkt erreichen sollen. Sie sorgt für eine einheitliche Qualität und Transparenz im Bildungssystem und ermöglicht eine objektive Messung der Leistungen. Die von der Kultusministerkonferenz (KMK) verabschiedeten Bildungsstandards greifen allgeme	
+LP_0000572	Class	Bildungsgangniveau (BE)		LP_0000028	Ein Lehrplanelement von Berlin mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und Jahrgangsstufe zum Ausdruck gebracht wird. Unterklassen entprechen den konkreten Abschlussniveaus. Deren Instanzen enthalten die Verknüfung zu Niveaustufe und Jahrgangsstufe. Ein Lehrplanelement von Berlin/Brandenburg mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und	
+LP_0000573	Class	BOA Niveau		LP_0000572	Abschluss Niveau, das zum berufsorientierenden Abschluss befähigt.	
+LP_0000574	Class	BBR Niveau		LP_0000572	Abschluss Niveau, das zur Berufsbildungsreife befähigt.	
+LP_0000575	Class	EBBR Niveau		LP_0000572	Abschluss Niveau, dass zur erweiterten Berufsbildungsreife befähigt	
+LP_0000576	Class	MSA Niveau		LP_0000572	Abschluss Niveau, das zum mittlereren Schulabschluss befähigt.	
+LP_0000577	Class	Gymnasialniveau Sek I (BE)		LP_0000572	Abschluss Niveau, das zum Übergang in die 2-jährige Qualifikationsphase (Abitur) befähigt.	
+LP_0000578	ObjectProperty	hat Niveaustufe	has niveau stage	LP_0000024		
+LP_0000580	ObjectProperty	ist Niveaustufe von	is niveau stage of	obo:IAO_0000136		
+LP_0000583	Individual	BOA A				
+LP_0000584	Individual	BOA B				
+LP_0000585	Individual	BOA C				
+LP_0000586	Individual	BOA D				
+LP_0000587	Individual	BOA E				
+LP_0000588	Individual	BBR A				
+LP_0000589	Individual	BBR B				
+LP_0000590	Individual	BBR C				
+LP_0000591	Individual	BBR D				
+LP_0000592	Individual	BBR E				
+LP_0000593	Individual	BBR F				
+LP_0000594	Individual	EBBR A				
+LP_0000595	Individual	EBBR B				
+LP_0000596	Individual	EBBR C				
+LP_0000597	Individual	EBBR D				
+LP_0000598	Individual	EBBR E				
+LP_0000599	Individual	EBBR F				
+LP_0000600	Individual	EBBR G				
+LP_0000601	Individual	MSA A				
+LP_0000602	Individual	MSA B				
+LP_0000603	Individual	MSA C				
+LP_0000604	Individual	MSA D				
+LP_0000605	Individual	MSA E				
+LP_0000606	Individual	MSA F				
+LP_0000607	Individual	MSA G				
+LP_0000608	Individual	Gymnasialniveau Sek I A				
+LP_0000609	Individual	Gymnasialniveau Sek I B				
+LP_0000610	Individual	Gymnasialniveau Sek I C				
+LP_0000611	Individual	Gymnasialniveau Sek I D				
+LP_0000612	Individual	Gymnasialniveau Sek I E				
+LP_0000613	Individual	Gymnasialniveau Sek I F				
+LP_0000614	Individual	Gymnasialniveau Sek I G				
+LP_0000615	Individual	Gymnasialniveau Sek I H				
+LP_0000616	Individual	Niveaustufe H				we should remove these and use the  LP_0* ones.
+LP_0000627	Individual	Fragmentfunktion			Ist eine Stukturierungsfunktion, die ein Lehrplanelement inne haben kann. Ein Lehrplanelement, das diese Funktion inne hat, identifiziert einen Teil des Lehrplan. Die Art des Lehrplanteils muss nicht näher spezifizert sein. Wenngleich diese Definition auch auf Kompetenzbereiche oder Themenfelder anwendbar ist, ist sie ihnen ausdrücklich nicht gleichzusetzen, über- oder unterzuordnen. Die Funktion 	
+LP_0000802	Class	Anforderungsbereich		LP_0000037	Umfasst Repräsentationen für die drei Anforderungsbereiche. Im deutschen und österreichischen Schulsystem werden die Lernziele meist in drei Anforderungsbereiche aufgeteilt, die ein unterschiedliches Ausmaß von Eigenleistung und komplexem Denken vom Schüler erfordern. Der Anforderungsbereich I umfasst meist eine Reproduktion, Anforderungsbereich II eine Reorganisation (Umgestaltung) sowie einen Tr	https://de.wikipedia.org/wiki/Operator_(Bildungswesen)
+LP_0000803	Individual	Anforderungsbereich 1: Reproduktion				
+LP_0000804	Individual	Anforderungsbereich 2: Reorganisation und Transfer				
+LP_0000805	Individual	Anforderungsbereich 3: Reflexion und Problemlösung				
+LP_0000806	Class	Bildungsplan (BW)		LP_0000438		
+LP_0000807	Class	Rahmenlehrplan (BB)		LP_0000438		
+LP_0000808	Class	Organisation	organization	obo:BFO_0000040	Eine Organisation ist eine materielle entität, die Rollen inne haben kann, Mitglieder hat und über ein Regelwerk verfügt. Mitglieder einer Organisation sind entweder andere Organisationen oder einzelne Personen. Mitglieder können spezifische Organisationsrollen innehaben, die durch das Regelwerk der Organisation festgelegt werden. Das Regelwerk bestimmt außerdem, wie Entscheidungen im Namen der Or	
+LP_0000809	Class	Schule	school		Eine Schule ist eine Organisation (Bildungseinrichtung), in der Lernende im Rahmen eines geregelten Bildungsauftrags nach verbindlichen Lehrplänen unterrichtet werden.	
+LP_0000810	Class	Schulklasse	school class	LP_0000808	Eine Schulklasse ist eine organisatorisch festgelegte Lerngruppe von Schülerinnen und Schülern, die in der Regel derselben Jahrgangsstufe angehören und über einen bestimmten Zeitraum gemeinsam unterrichtet werden.	
+LP_0000812	ObjectProperty	für Schulart	for type of school	LP_0000024		
+LP_0000813	Class	Hauptschulbildungsgang	Hauptschule track	LP_0000816	ALT Der Hauptschulbildungsgang bereitet Schülerinnen in erster Linie auf eine berufliche Ausbildung und den direkten Einstieg ins Berufsleben vor. Er endet in der Regel nach der 9. oder 10. Klasse mit dem Hauptschulabschluss. Der Fokus liegt auf einer grundlegenden Allgemeinbildung, verbunden mit praktischen und berufsvorbereitenden Elementen. Schülerinnen erlernen neben den Kernfächern (Deutsch, 	
+LP_0000814	Class	Realschulbildungsgang	Realschule track	LP_0000816	ALT Der Realschulbildungsgang vermittelt eine solide Allgemeinbildung mit einem Schwerpunkt auf praxisorientierten Inhalten. Er führt nach der 10. Klasse zur Mittleren Reife (auch Realschulabschluss genannt), die den Zugang zu weiterführenden Schulen (z. B. Fachoberschulen) oder einer Berufsausbildung ermöglicht. Der Unterricht ist weniger theorielastig als am Gymnasium, aber trotzdem anspruchsvol	
+LP_0000815	Class	Gymnasialer Bildungsgang	Gymnasium track	LP_0000816	ALT Der gymnasiale Bildungsgang zielt darauf ab, Schüler*innen auf das Abitur und ein späteres Studium vorzubereiten. Er dauert in der Regel bis zur 12. oder 13. Klasse und endet mit der allgemeinen Hochschulreife (Abitur), die den Zugang zu Universitäten und Hochschulen ermöglicht. Der Lehrplan ist meist akademisch anspruchsvoller und theoretischer im Vergleich zu anderen Schulformen. Der gymnasi	
+LP_0000816	Class	Bildungsgang	educational track	obo:BFO_0000015	ALT Bildungsgang beschreibt im deutschen Bildungssystem eine strukturierte Abfolge von Bildungsstufen und -inhalten, die zu einem bestimmten Schulabschluss führt. Ein Bildungsgang legt fest, welche Fächer, Lerninhalte und Kompetenzen während einer bestimmten Schulzeit vermittelt werden und wie lange diese Bildungsphase dauert. Er umfasst dabei die gesamte Schullaufbahn, die durch den jeweiligen Ab	
+LP_0000818	Class	Lehrplan (SN)		LP_0000438		
+LP_0000819	Class	LehrplanPLUS (BY)		LP_0000438		
+LP_0000820	Class	Lehrplan (TH)		LP_0000438		
+LP_0000821	Class	Bildungsplan (HB)		LP_0000438		
+LP_0000822	Class	Bildungsplan (HH)		LP_0000438		
+LP_0000823	Class	Kerncurriculum (NI)		LP_0000438		
+LP_0000824	Class	Fachanforderung (SH)		LP_0000438		
+LP_0000825	Class	Lehrplan (SL)		LP_0000438		
+LP_0000826	Class	Lehrplan (ST)		LP_0000438		
+LP_0000832	Class	Realschulniveau		LP_0000028	Das “Realschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des "Realschulbildungsgangs" beschreibt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.	
+LP_0000833	ObjectProperty	hat Bildungsgangniveau	has educational track level	LP_0000024		
+LP_0000834	Class	Hauptschulniveau		LP_0000028	Das “Hauptschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des "Hauptschulbildungsgangs" beschreibt. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.	
+LP_0000835	Class	Gymnasialniveau Sek II		LP_0000028	Das “Gymnasialniveau Sek II” ist ein “Bildungsgangniveau”, welches das Niveau des "gymnasialen Bildungsgangs" im Sekundarbereich II beschreibt und somit meistens die Jahrgangsstufen 11-13 umfasst. Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden.	
+LP_0000840	ObjectProperty	hat Niveau	has niveau	LP_0000024		
+LP_0000845	Class	Progression	progression	obo:IAO_0000030		
+LP_0000852	Class	CE-Hinweis	note	LP_0000261	Ein “CE-Hinweis” ist ein “Curriculares Element”, das ergänzende Informationen oder Anregungen zu einem “CE-Bereich”, einem “CE-Lerninhalt” oder einer “CE-Kompetenzspezifikation” beinhaltet. Der “CE-Hinweis” hat einen Empfehlungscharakter. Beispiele: - praktische oder methodische Empfehlungen - Vorschläge oder Hinweise zur Umsetzung im Unterricht - Vertiefungsvorschläge - Differenzierungsvorschläge	
+LP_0001000	Class	Kernlehrplan (NW)		LP_0000438		
+LP_0001001	Class	Lehrplanfragment (HE)		LP_0001015		
+LP_0001002	Class	Inhaltsfeld (HE)		LP_0000349		
+LP_0001003	Class	Erwartete Kompetenz (NI)				
+LP_0001005	Class	Kompetenzbereich (HE)		LP_0000349		
+LP_0001006	Class	Lehrplanfragment (NI)		LP_0001015		
+LP_0001007	Class	Kerninhalt (NI)				Mathe
+LP_0001009	Class	Ergänzender Hinweis (NI)				Deutsch Primar
+LP_0001011	Class	Bildungsgangniveau (MV)		LP_0000028		
+LP_0001014	Individual	Hinweisbeschreibungsfunktion				
+LP_0001015	Class	CE-Fragment	fragment	LP_0000261		Mögliche Properties: - Titel - Ordnungsnummer - Schulfach - Schulart / Bildungsgang - Schulstufe Meistens handelt es sich hierbei um Überschriften von Kapiteln in Lehrplänen oder Bildungsstandards.
+LP_0001018	Class	Fachniveau Sek II (RP)				
+LP_0001019	Class	Bildungsgangniveau (RP)		LP_0000028		
+LP_0001020	Individual	Grundkurs (RP)				
+LP_0001021	Individual	Leistungskurs (RP)				
+LP_0001025	Class	Fachniveau Sek II (SL)				
+LP_0001026	Individual	Grundkurs (SL)				
+LP_0001027	Individual	Leistungskurs (SL)				
+LP_0001028	Class	Bildungsgangniveau (SL)		LP_0000028		
+LP_0001032	Class	Bildungsgangniveau (SN)		LP_0000028		
+LP_0001035	Class	Bildungsgangniveau (ST)		LP_0000028		
+LP_0001038	Class	Bildungsgangniveau (TH)		LP_0000028		
+LP_0001101	Class	Bildungsgangniveau (BW)		LP_0000028		
+LP_0001105	Class	Bildungsgangniveau (HB)		LP_0000028		
+LP_0001108	Class	Bildungsgangniveau (HH)		LP_0000028		
+LP_0001116	Individual	Grundlegendes Anforderungsniveau (NI)				
+LP_0001117	Individual	Erhöhtes Anforderungsniveau (NI)				
+LP_0001169	Class	Fachniveau Sek II (BE)				
+LP_0001223	Class	Lehrplanfragment (BE)		LP_0001015		
+LP_0001224	Class	Leitidee (BE)		LP_0000349		Kommt in den Lehrplänen der Sek II für das Fach Mathematik vor. (In den Lehrplänen der Primarstufe und der Sek I für das Fach Mathematik werden stattdessen die Begriffe “Inhaltsbezogene mathematische Standards” oder “Themenbereiche” verwendet.) Der Begriff kommt aus den Bildungsstandards und bezeichnet dort einen inhaltsbezogenen Kompetenzbereich im Fach Mathematik.
+LP_0001226	Class	Eingangsvoraussetzung (BE)				Sek II
+LP_0001227	Class	Unterrichtsanregung (BE)				Sachunterricht
+LP_0001228	Class	Gegenstand (BE)				Kommt bisher nur in Deutsch Sek II vor.
+LP_0001441	Class	Element (BE)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Brandenburg.	Die Unterschiede zw. Berlin und Brandenburg müssten evtl. noch mal genauer geprüft werden. Ggf. sind die Klassen hier noch zu trennen.
+LP_0001445	Class	Inhalt (BE)	learning content (BE)			
+LP_0001446	Class	Lernmaterial (BE)	learning material (BE)			
+LP_0001447	Class	Standard (BE)	standard (BE)		operationalisierbar und meßbar	Inhaltsbezogener mathematischer Standard (BE)
+LP_0001448	Class	Thema (BE)	topic (BE)	LP_0000349		kommt u.a. in Englisch vor
+LP_0001449	Class	Themenfeld (BE)	topic area (BE)	LP_0000349		kommt u.a. in Englisch und Physik vor. "Themenbereich" in Mathe
+LP_0001450	Class	Zusatzmaterial (BE)	additional material (BE)			
+LP_0001451	Class	Übung (BE)	exercise (BE)	LP_0001441		
+LP_0001459	Class	Kompetenzbereich (BE)		LP_0000349		
+LP_0001516	Individual	Grundkursfach (BE)				
+LP_0001517	Individual	Leistungskursfach (BE)				
+LP_0002000	Individual	Allgemeinbildender Schulabschluss (HE)				
+LP_0002001	Individual	Hauptschulabschluss (HE)				
+LP_0002002	Individual	Realschulabschluss (HE)				
+LP_0002020	Individual	Allgemeinbildender Schulabschluss (NI)				
+LP_0002021	Individual	Hauptschulabschluss (NI)				
+LP_0002022	Individual	Realschulabschluss (NI)				
+LP_0002023	Individual	Erweiterter Sekundarabschluss I (NI)				
+LP_0002033	Individual	Allgemeinbildender Schulabschluss (SH)				
+LP_0002034	Individual	Erster allgemeinbildender Schulabschluss (SH)				
+LP_0002035	Individual	Mittlerer Schulabschluss (SH)				
+LP_0002043	Class	Fachlehrplan (BY)		LP_0002044		enthält Lernbereiche auf verschiedenen Ebenen, Kompetenzerwartungen und Inhalte
+LP_0002044	Class	Lehrplanfragment (BY)		LP_0001015		
+LP_0002046	Class	Lernbereich (BY)		LP_0000349		
+LP_0002048	Class	Kompetenzerwartung und Inhalt (BY)				
+LP_0002049	Class	Kompetenzerwartung (BY)				
+LP_0002050	Class	Inhalt zu den Kompetenzen (BY)				
+LP_0002051	Class	Element (BW)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Baden-Württemberg	
+LP_0002052	Class	Lehrplanfragment (BW)		LP_0001015		
+LP_0002057	Class	Prozessbezogene Kompetenz (BW)		LP_0000349		Kompetenzberschreibungselement
+LP_0002059	Class	Inhaltsbezogene Kompetenz (BW)		LP_0000349		
+LP_0002060	Class	Denkanstoß (BW)				
+LP_0002061	Class	Teilkompetenz (BW)				
+LP_0002063	Class	Leitidee (BW)		LP_0000349		
+LP_0002064	Class	Fachniveau Sek II (BW)				
+LP_0002069	Class	Fachniveau Sek II (BB)				
+LP_0002072	Class	Fachniveau Sek II (HH)				
+LP_0002076	Class	Element (HE)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Hessen	
+LP_0002077	Class	Fachniveau Sek II (HE)				
+LP_0002080	Class	Element (MV)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Mecklenburg-Vorpommern	
+LP_0002081	Class	Fachniveau Sek II (MV)				
+LP_0002085	Class	Element (NW)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Nordrhein-Westfalen	
+LP_0002086	Class	Fachniveau Sek II (NW)				
+LP_0002089	Class	Element (SN)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Sachsen	
+LP_0002090	Class	Fachniveau Sek II (SN)				
+LP_0002093	Class	Element (ST)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Sachsen-Anhalt	
+LP_0002094	Class	Fachniveau Sek II (ST)				
+LP_0002097	Class	Element (TH)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Thüringen	
+LP_0002098	Class	Fachniveau Sek II (TH)				
+LP_0002101	Class	Element (NI)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan von Niedersachsen	
+LP_0002102	Class	Element (SL)		LP_0000261	Lehrplan Element bezogen auf den Lehrplan des Saarland	
+LP_0002103	Class	Element (SH)		LP_0000261		
+LP_0002109	Individual	Hauptschulabschluss 10 (NI)				
+LP_0002110	Class	Lehrplanfragment (SN)		LP_0001015		
+LP_0002113	Class	Lernbereich (SN)		LP_0000349		
+LP_0002114	Class	Wahlbereich (SN)		LP_0000349		
+LP_0002115	Class	Lernziel und Lerninhalt (SN)				
+LP_0002116	Class	Bemerkung (SN)				
+LP_0002118	Class	Element (HB)		LP_0000261		
+LP_0002119	Class	Fachniveau Sek II (HB)				
+LP_0002120	Individual	Anforderungsniveau Grundkurs (HB)				
+LP_0002121	Individual	Anforderungsniveau Leistungskurs (HB)				
+LP_0002122	Class	Lehrplanfragment (HB)		LP_0001015		
+LP_0002126	Class	Aufgabenbereich (HB)		LP_0000349		Deutsch Primar
+LP_0002128	Class	Anforderung (HB)				"Anforderung" in Mathe Primar Deutsch Primar, Sek I und Sek II Englisch Primar, Sek I und Sek II "Kompetenz" in Mathe Sek I und Sek II "Kompetenzerwartung" in Physik Sek II
+LP_0002129	Class	Inhalt (HB)				Mathe Primar Deutsch Primar, Sek I und Sek II Englisch Primar, Sek I und Sek II Sachunterricht Primar "Sachinhalt" in Physik Sek II
+LP_0002130	Class	Themenbereich (HB)		LP_0000349		Deutsch Sek I und Sek II Mathe Sek I Englisch Primar, Sek I und Sek II
+LP_0002133	Class	Themenfeld (HB)		LP_0000349		Mathe Primar
+LP_0002134	Class	Kommentar (HB)				Mathe Sek II Physik Sek II
+LP_0002135	Class	Kompetenzbereich (HB)		LP_0000349		u.a. Mathe Sek I und Sek II
+LP_0002136	Class	Lehrplanfragment (MV)		LP_0001015		
+LP_0002139	Class	Kompetenzbereich (MV)		LP_0000349		
+LP_0002140	Class	Kompetenz (MV)				"Fachspezifische Kompetenz" in Mathe Primar
+LP_0002143	Class	Themenbereich (MV)		LP_0000349		"Arbeitsbereich" in Deustch "Gegenstandsfeld" in Kunst "Lebens- und Lernbereich" in Fremdsprache Primar Aus dem Lehrplan Deutsch Gesamtschule (2024) zu “Arbeitsbereich”: “Im Rahmenplan werden Arbeitsbereiche ausgewiesen, denen inhaltlich verbundene Themen zugeordnet werden. Die Fortführung der Arbeitsbereiche in den aufsteigenden Klassen ermöglicht Anknüpfungspunkte für die Lernenden im Sinne eine
+LP_0002144	Class	Verbindlicher Inhalt (MV)				Aus dem Lehrplan Deutsch Gesamtschule (2024) zu “verbindliche Inhalte”: “Die Konkretisierung der Themen erfolgt in Form der Ausweisung verbindlicher Inhalte in Abschnitt 2.3.”
+LP_0002145	Class	Hinweis und Anregung (MV)				Aus dem Lehrplan Deutsch Gesamtschule (2024) “Hinweise und Anregungen”: “Neben Anregungen für die Umsetzung im Unterricht werden sowohl didaktische und methodische Hinweise zur Auseinandersetzung mit den verbindlichen Inhalten gegeben als auch exemplarisch Möglichkeiten für die fachübergreifende und fächerverbindende Arbeit sowie fachinterne Verknüpfungen aufgezeigt.” Sie sind einem verbindlichen 
+LP_0002147	Class	Thema (MV)		LP_0000349		Aus dem Lehrplan Deutsch Gesamtschule (2024) zu “Themen”: “Für den Unterricht werden in Abschnitt 2.3 verbindliche und/oder wahlobligatorische Themen benannt und im Tabellenkopf hervorgehoben. Die Reihenfolge der Themen hat keinen normativen, sondern empfehlenden Charakter.” Kommen u.a. im Fach Mathematik, Biologie und Englisch vor.
+LP_0002149	Class	Verweis auf Möglichkeiten der Verknüpfung (MV)		LP_0030065		verweist auf andere Arbeitsbereiche und Querschnittsthemen
+LP_0002151	Class	Konkretisierung (MV)				
+LP_0002153	Class	Standard (MV)				"KMK-Bildungsstandard" bisher nur in Fach Deutsch, Schulstufe Sek II gefunden. Ist gleichzusetzen mit Kompetenzen. Aus dem Lehrplan Deutsch Gesamtschule (2024) zu "Kompetenzen": “Im Zentrum des Fachunterrichts steht der Kompetenzerwerb. Die Kompetenzen werden in der Auseinandersetzung mit den verbindlichen Themen entwickelt. In Abschnitt 2.2 werden die zu erreichenden Kompetenzen benannt. “
+LP_0002158	Individual	Verweisbeschreibungsfunktion				
+LP_0002163	Class	Beispiel Verknüpfung von Inhalt und Kompetenzbereich (MV)				Ist einem Themenbereich (o.ä.) untergeordnet (bzw. einem verbindlichen Inhalt oder einem Hinweis zugeordnet) und zusätzlich einem Kompetenzbereich zugeordnet.
+LP_0002164	Class	Rahmenplan (MV)		LP_0000438		
+LP_0002169	Class	Bildungsstandard (HE)				sollen erreicht werden bis zum Ende einer Schulstufe
+LP_0002171	Individual	Domänenbezugsfunktion				bezieht sich auf eine fachliche Domäne (z.B. eine Kompetenzdomäne wie Lesen, Schreiben)
+LP_0002174	Class	Lehrplanfragment (ST)		LP_0001015		
+LP_0002175	Class	Kompetenzbereich (ST)		LP_0000349		
+LP_0002177	Class	Kompetenz (ST)				
+LP_0002178	Class	Flexibel anwendbares Grundwissen (ST)				Primar (Deutsch, Mathe, Sachunterricht)
+LP_0002179	Class	Grundlegender Wissensbestand (ST)				(Sek I und II)
+LP_0002181	Class	Kompetenzschwerpunkt (ST)		LP_0000349		
+LP_0002182	Class	Gegenstandsfeld (ST)				Kommt bisher nur in Sek II Deutsch vor
+LP_0002184	Class	Kerncurriculum (HE)		LP_0000438		
+LP_0002186	Class	Lehrplanfragment (NW)		LP_0001015		
+LP_0002187	Class	Kompetenzbereich (NW)		LP_0000349		Aus dem Kernlehrplan: “Kompetenzbereiche repräsentieren die Grunddimensionen des fachlichen Handelns. Sie dienen dazu, die einzelnen Teiloperationen entlang der fachlichen Kerne zu strukturieren und den Zugriff für die am Lehr-Lernprozess Beteiligten zu verdeutlichen.”
+LP_0002188	Class	Kompetenzerwartung (NW)				Aus dem Kernlehrplan: “Kompetenzerwartungen führen Prozesse und Gegenstände zusammen und beschreiben die fachlichen Anforderungen und intendierten Lernergebnisse..“
+LP_0002190	Class	Teilkompetenzbereich (NW)		LP_0000349		Fach Moderne Fremdsprachen - Englisch und Französisch
+LP_0002191	Class	Inhaltsfeld (NW)		LP_0000349		Aus dem Kernlehrplan: “Inhaltsfelder systematisieren mit ihren jeweiligen inhaltlichen Schwerpunkten die im Unterricht der Realschule verbindlichen und unverzichtbaren Gegenstände und liefern Hinweise für die inhaltliche Ausrichtung des Lehrens und Lernens.”
+LP_0002192	Class	Inhaltlicher Schwerpunkt (NW)				
+LP_0002193	Class	Sachgebiet (HB)		LP_0000349		in Mathe Sek II
+LP_0002195	Class	Inhalt zum Erwerb der Kompetenzen (RP)				kommt in Mathematik Primar vor
+LP_0002196	Class	Leitidee (RP)		LP_0000349		nur in Mathematik (s. Bistas)
+LP_0002197	Class	Inhalt (RP)				kommt in Mathematik Sek I vor (=Lernbeschreibungsfunktion) kommt in Physik Sek II vor (=Lernbeschreibungsfunktion) kommt in Englisch Grundschule vor (=Kompetenzspezifikationsfunktion) s. außerdem Englisch Sek I (=Lernbeschreibungsfunktion?)
+LP_0002198	Class	Hinweis und Vernetzung (RP)				kommt in Mathematik Sek I vor
+LP_0002200	Class	Ziel / Inhalt (Sach- und Methodenkompetenz) (RP)				kommt in Mathematik Sek II vor
+LP_0002201	Class	Hinweis zur Unterrichtsgestaltung und Methodenkompetenz (RP)				kommt in Mathematik Sek II vor
+LP_0002202	Class	Kernbereich (RP)		LP_0000349		kommt in Deutsch Sek I vor
+LP_0002203	Class	Kompetenzbereich (NI)		LP_0000349		Prozessbezogener Kompetenzbereich (NI)
+LP_0002205	Class	Kernkompetenz (NI)		LP_0000349		Mathe
+LP_0002206	Class	Beispiel (NI)				Englisch Primar
+LP_0002207	Class	Umsetzung im Unterricht (NI)				Mathe Primar
+LP_0002208	Class	Lernbereich (NI)		LP_0000349		Mathe Sek I & II
+LP_0002209	Class	Thema (NI)		LP_0000349		Kommt bisher nur in Sek I Integrierte Gesamtschule in Mathe vor.
+LP_0002210	Class	Lehrplanfragment (HH)		LP_0001015		
+LP_0002211	Class	Leitidee (HH)		LP_0000349		
+LP_0002212	Class	Kompetenzbereich (HH)		LP_0000349		
+LP_0002214	Class	Beobachtungskriterium (HH)				"Beobachtungsfragen" in Sachunterrricht Primar Kommt nur in der Primarstufe für die Jahrgänge 1-2 vor.
+LP_0002215	Class	Regelanforderung (HH)				Kommt nur in der Primarstufe für die Jahrgänge 3-4 vor.
+LP_0002218	Class	Thema (HH)		LP_0000349		
+LP_0002219	Class	Modul (HH)		LP_0000349		In Mathematik Sek II unter Inhalte.
+LP_0002220	Class	Sachgebiet (HH)		LP_0000349		Kommt bisher nur in Sek II Mathematik vor.
+LP_0002221	Class	Kompetenz (HH)				
+LP_0002223	Class	Lehrplanfragment (BB)		LP_0001015		
+LP_0002224	Class	Leitidee (BB)		LP_0000349		Kommt in den Lehrplänen der Sek II für das Fach Mathematik vor. (In den Lehrplänen der Primarstufe und der Sek I für das Fach Mathematik werden stattdessen die Begriffe “Inhaltsbezogene mathematische Standards” oder “Themenbereiche” verwendet.) Der Begriff kommt aus den Bildungsstandards und bezeichnet dort einen inhaltsbezogenen Kompetenzbereich im Fach Mathematik.
+LP_0002225	Class	Eingangsvoraussetzung (BB)				Sek II
+LP_0002226	Class	Gegenstand (BB)				Kommt bisher nur in Deutsch Sek II vor.
+LP_0002227	Class	Unterrichtsanregung (BB)				Sachunterricht
+LP_0002228	Class	Lernzeitbezogene Kompetenzerwartung (HE)				Sollen erreicht werden bis zum Ende einer Jahrgangsstufe (Zwischenstufe hinzum Abschlussprofil)
+LP_0002229	Class	Lehrplanfragment (SL)		LP_0001015		
+LP_0002230	Class	Leitidee (SL)		LP_0000349		Mathematik
+LP_0002232	Class	Kompetenzerwartung (SL)				Kompetenz (SL)
+LP_0002233	Class	Hinweis zur Umsetzung (SL)				
+LP_0002234	Class	Themenfeld (SL)		LP_0000349		u.a Mathematik Sek I, Physik
+LP_0002235	Class	Verbindliches Fachwissen (SL)				
+LP_0002238	Class	Verbindlicher Kompetenzschwerpunkt (SL)				Mathematik Gemeinschaftsschule, Oberstufe
+LP_0002239	Class	Vorschlag und Hinweis (SL)				Kommt vor im Fach Mathematik in der Gemeinschaftsschule und im Gymnasium in der Sek I und Sek II. Und im Fach Deutsch in der Primarstufe, in der Sek I in der Gemeinschaftsschule und in der Sek II in der gymasialen Oberstufe. Ist oft nochmal untergliedert. In Deutsch untergliedert in z.B.: "Zur Unterrichtsgestaltung", ""Zu Methoden und Arbeitstechniken", "Zur Aufgabenstellung", "Zu Leistungsfestste
+LP_0002240	Class	Basisbegriff (SL)				kommt vor im Fach Mathematik im Gymnasium Sek I und Naturwissenschaften/ Physik Gemeinschaftsschule
+LP_0002241	Class	Lernbereich (SL)		LP_0000349		Mathematik Sek II
+LP_0002243	Class	Kompetenzbereich (SL)		LP_0000349		
+LP_0010001	Class	Fremdsprachenniveau		LP_0000037	Das “Fremdsprachenniveau” ist ein “Niveau”. Es entspricht dem Gemeinsamen Europäischen Referenzrahmen für Sprachen (GER), der die Sprachbeherrschung einer Fremdsprache in sechs Stufen von A1 (Anfänger) bis C2 (annähernd muttersprachliches Niveau) systematisiert. Das Fremdsprachenniveau gibt an, in welchem Umfang Lernende die Sprache verstehen, sprechen, lesen und schreiben können, und dient als Ve	
+LP_0030001	Class	Schwerpunktthema (HB)				ändern sich alle 3 Jahre (durch Abiprüfungen, alle SekII Fächer) → gibt Hefte für Schwerpunktsetzungen
+LP_0030002	Class	Grundfertigkeit (MV)		LP_0000349		Englisch
+LP_0030003	Class	Beschreibung	description	obo:IAO_0000300	Eine Beschreibung ist eine textuelle Entität, die Eigenschaften, Merkmale, Inhalte oder Zusammenhänge einer Entität in erklärender oder erläuternder Form darstellt. Sie ergänzt den Titel oder Namen und dient dazu, den Inhalt, Zweck, Status oder Kontext eines Objekts verständlicher zu machen. Sie kann mehrere Sätze oder Absätze enthalten.	
+LP_0030004	Class	Rahmenlehrplan (BE)		LP_0000438		
+LP_0030005	Class	Ergänzung zu einem Basiskonzept (NW)				Der Begriff kommt so nicht im Lehrplan vor. Kommt nur in den Naturwissenschaften vor. Ist eine Ergänzung zu den Bezügen zu den Basiskonzepten und ergänzt gleichzeitig die davor genannten inhaltlichen Schwerpunkte.
+LP_0030006	Class	Möglicher Kontext (NW)				
+LP_0030007	Class	Kompetenzerwerb im Themenfeld (BB)				Englisch Sek II
+LP_0030008	Class	Möglicher Inhalt (BB)				
+LP_0030009	Class	Verweis auf Basiskonzept (NW)		LP_0002085		
+LP_0030010	Class	Fachniveau Sek II (SH)				
+LP_0030011	Class	Verweis auf Basiskonzept (HB)		LP_0002118		
+LP_0030012	Class	Verweis auf Orientierungsrahmen (HB)		LP_0002118		
+LP_0030013	Class	Verweis auf Kompetenz (HB)		LP_0030065		
+LP_0030014	Class	Ergänzung zur Kompetenz (NI)				(Deutsch Oberschule, Bezeichnung kommt so nicht im Lehrplan vor
+LP_0030015	Class	Verweis auf Basiskonzept (SL)		LP_0002102		Nawis
+LP_0030016	Class	Verweis auf thematische Querverbindungen im Lehrplan (SL)		LP_0030065		Mathe
+LP_0030017	Class	Verweis auf Möglichkeit zur Abstimmung (ST)		LP_0030065		
+LP_0030018	Class	KMK-Bildungsstandard (SH)				Deutsch
+LP_0030019	Class	Sachkompetenz (TH)				
+LP_0030020	Class	Textsorte (SH)		LP_0000349		Deutsch
+LP_0030021	Class	Inhalt und Wissbestand (SH)				Deutsch Sek II
+LP_0030022	Class	Konkretisierung - Hinweis und Vorschlag (SH)				Deutsch sind entweder auf einen Bildungsstandard bezogen oder auf einen Inhalt und Wissensbestand
+LP_0030023	Class	Themenvorschlag (SH)				Deutsch Sek II
+LP_0030024	Class	Lernbereich (TH)		LP_0000349		Mathe Primar Fremdsprach Primar, Englisch Sek I & II Heimat- und Sachkunde Primar, Natur und Technik Sek I
+LP_0030025	Class	Kompetenzbereich (TH)		LP_0000349		
+LP_0030026	Class	Kompetenz (TH)				
+LP_0030027	Class	Erfahrungbereich (RP)		LP_0000349		kommt vor in Grundschule Sachunterricht
+LP_0030028	Class	Lehrplanfragment (TH)		LP_0001015		
+LP_0030029	Class	Thema (TH)		LP_0000349		Deutsch Sek I
+LP_0030030	Class	Themenfeld (RP)		LP_0000349		kommt in Physik Sek I vor
+LP_0030031	Class	Inhalt (TH)				
+LP_0030032	Class	Schwerpunkt (TH)		LP_0000349		Deutsch Gymnasium Sek I? Englisch Sek I und Sek II
+LP_0030033	Class	Lehrplanfragment (SH)		LP_0001015		
+LP_0030034	Class	Thematischer Leitgedanke (RP)		LP_0000349		kommt in Fremdsprache (Englisch) Primar vor
+LP_0030035	Class	Lernbereich (RP)		LP_0000349		kommt in Englisch Sek II vor
+LP_0030036	Class	Fähigkeit (RP)				kommt vor in Englisch Sek II
+LP_0030037	Class	Schwerpunktsetzung (HE)				"Schwerpunktsetzung" kommt z.B. vor in Mathematik Sek I. "Inhaltlicher Schwerpunkt" z.B. in Physik Sek I.
+LP_0030038	Class	Themenfeld (HE)		LP_0000349		
+LP_0030039	Class	Bildungsgangniveau (HE)		LP_0000028		
+LP_0030040	Individual	Grundlegendes Niveau (SH)				
+LP_0030041	Class	Bildungsgangniveau (NW)		LP_0000028		
+LP_0030042	Class	Verweis auf Bezüge zu den Basiskonzepten (BB)		LP_0000441		NaWis
+LP_0030043	Class	Beispiel zu einem Basiskonzept (BB)				NaWis
+LP_0030044	Class	Beispiel zu einem Basiskonzept (BE)				NaWis
+LP_0030045	Class	Verweis auf Bezüge zu den Basiskonzepten (BE)		LP_0001441		NaWis
+LP_0030046	Individual	Erhöhtes Niveau (SH)				
+LP_0030047	Class	Basiskonzept (BB)		LP_0000349		NaWis
+LP_0030048	Class	Verbindliches Ziel (MV)				
+LP_0030049	Class	Themenfeld (BW)		LP_0000349		
+LP_0030050	Class	Allgemeines fachliches Ziel (SN)		LP_0000349		
+LP_0030051	ObjectProperty	hat Beschreibung	has description	LP_0000024		
+LP_0030052	Class	Experiment/Untersuchung (BB)				NaWis
+LP_0030053	Class	Bildungsgangniveau (BY)		LP_0000028		
+LP_0030054	Class	Leitidee (MV)		LP_0000349		Mathe Primar
+LP_0030055	Class	Fachniveau Sek II (NI)				
+LP_0030056	ObjectProperty	hat Titel	has title	LP_0000024		
+LP_0030057	ObjectProperty	hat Nummer	has number	LP_0000024		
+LP_0030058	Class	Aufgabenstellung (SL)				kommt vor im Fach Deutsch Gemeinschaftsschule und Gymnasiale Oberstufe
+LP_0030059	Class	Möglicher Inhalt (SH)				Englisch Primar
+LP_0030060	Class	Literaturhinweis (SL)				Deutsch Sek II
+LP_0030061	Class	Verbindliche Form mündlicher Kommunikation (SL)				Deutsch Gemeinschaftschule
+LP_0030062	Class	Verbindliche fachspezifische Fertigkeit/Fähigkeit und fachspezifische Methode (SL)				Deutsch Sek I & II
+LP_0030063	Class	Verbindlicher Lerngegenstand (SL)				Deutsch Gymnasium Sek I und Sek II
+LP_0030064	Class	Vorschlag und Hinweis zu Inhalten und Methoden (SL)				Deutsch Sek II
+LP_0030065	Class	CE-Verweis	reference	LP_0000261	Ein “CE-Verweis” ist ein “Curriculares Element”, das einen Bezug von einem Curricularen Element zu einem anderen Element desselben Lehrplans, eines anderen Lehrplans oder externen Ressourcen herstellt. Dabei ist der “CE-Verweis” nicht selbst das verlinkte Objekt, sondern stellt eine Referenz darauf dar.	
+LP_0030066	Class	Vertiefungsmöglichkeit (BB)				Englisch
+LP_0030067	Class	Inhaltsbereich (SH)		LP_0000349		Mathe Primar
+LP_0030068	Class	Vertiefungsmöglichkeit (BE)				Englisch
+LP_0030069	Class	Thema (BW)		LP_0000349		
+LP_0030070	Class	Kompetenzbereich (SH)		LP_0000349		
+LP_0030071	ObjectProperty	hat Verweis	has reference	LP_0000024		
+LP_0030072	ObjectProperty	verweist auf	refers to	obo:IAO_0000136		
+LP_0030073	Class	Bereich (NW)		LP_0000349		Fach Englisch, Primar
+LP_0030074	Class	Fachliche Konkretisierung (NW)				Fach Englisch
+LP_0030075	Class	Inhalt (NW)				Fach Sachunterricht Primar. Inhalte stehen in Klammern hinter den Kompetenzerwartungen.
+LP_0030076	Class	Inhalt zu einem Inhaltsfeld (HE)				Hiermit sind die Fließtexte gemeint, die in der Tabelle zu den Inhaltsfeldern stehen. Bezeichnung “Inhalt” wird nicht im Lehrplan verwendet!
+LP_0030077	Class	Basiskonzept (NW)		LP_0000349		Fach Naturwissenschaften (Biologie, Chemie, Physik) -> noch offen, wie wir es definieren!
+LP_0030078	Class	Themenbereich (ST)		LP_0000349		Englisch Primar
+LP_0030079	Class	Mögliche Textsorte / Kommunikationssituation (SH)				Englisch Sek I
+LP_0030080	Class	Bildungsgangniveau (NI)		LP_0000028		
+LP_0030081	Class	Kommunikative Kompetenz (ST)				Englisch Primar und Sekundarschule. Hinweis: Die Überschrift “Kommunikative Kompetenz” selbst ist ein Kompetenzbereich (= CE-Bereich).
+LP_0030082	Class	Inhaltsbezogene Kompetenz (ST)				kommt vor in Priamr für die Fächer Englisch, Sachunterricht und Mathe (hier heißen sie "inhaltliche mathematische Kompetenzen")
+LP_0030083	Class	Prozessbezogene Kompetenz (ST)				kommt vor in Priamr für die Fächer Englisch, Sachunterricht und Mathe (hier heißen sie "allgemeine mathematische Kompetenzen")
+LP_0030084	Class	Themenbereich (SH)		LP_0000349		Englisch Sek I & II ("Verbindlicher Themenbereich" in Sek II)
+LP_0030085	Class	Sprachliches Mittel (ST)		LP_0000349		Englisch Gymnasium, Sekundarschule (Vergügung über ...) und Grundschule (Flexibel anwendbares Grundwissen zu ...) Kommt in dem Fach Englisch vor: In der Grundschule unter “Inhaltsbezogene Kompetenzen” und in der Sekundarschule und im Gymnasium unter dem Kompetenzbereich “Funktional-kommunikative Kompetenzen”. Beispiel für sprachliche Mittel sind “Wortschatz” oder “Grammatik”.
+LP_0030086	Class	Soziokulturelles Orientierungswissen (ST)				Kommt in dem Fach Englisch für die Sekundarschule und das Gymnasium vor unter dem Kompetenzbereich “Interkulturelle Kompetenzen”.
+LP_0030087	Class	Bereich (ST)		LP_0000349		Sachunterricht Prmiar
+LP_0030088	Class	Verweis auf Bezüge zu fächerübergreifenden Themen (ST)		LP_0002093		
+LP_0030089	Class	Verbindliches Schülerexperiment (ST)				Physik Sek II
+LP_0030090	Class	Kommunikativer Inhalt (ST)				Kommt in dem Fach Englisch für die Sekundarschule und das Gymnasium vor. "Inhalt und Gegenstand der Kommunikation" ist in der Primarstufe einem Themenbereich untergeordnet (dem auch inhaltsbezogene Kompetenzen untergeordnet sind).
+LP_0030091	Class	Bildungsgangniveau (SH)		LP_0000028		
+LP_0030092	Class	Themenbereich (SL)		LP_0000349		Französisch Primar
+LP_0030093	Class	Sprachanlass (SL)				Französisch Primar
+LP_0030094	Class	Redemittel (SL)				Französisch Primar
+LP_0030095	Class	Themenfeld (SH)		LP_0000349		Sachunterricht
+LP_0030096	Class	Inhaltsbereich (ST)		LP_0000349		Mathe Sek I
+LP_0030097	Class	Ziel (TH)				
+LP_0030098	Class	Lehrplanbaustein (RP)		LP_0000349		kommt in Physik Sek II vor
+LP_0030099	Class	Hinweis zur unterrichtlichen Umsetzung (RP)				kommt in Physik Sek II vor
+LP_0030100	Class	Inhalt und Zusammenhang (RP)				Kommt in Naturwissenschaften Orientierungsstufe vor
+LP_0030101	Class	Teilkompetenzbereich (RP)		LP_0000431		wird nicht so im LP benannt. Löschen?
+LP_0030102	Class	Teilteilkompetenzbereich (RP)		LP_0030101		wird nicht so im LP benannt. Löschen?
+LP_0030103	Class	Anwendungsfähiges Wissen (RP)				kommt in Fremdsprache (Englisch) Primar vor
+LP_0030104	Class	Teilleitgedanke (RP)		LP_0030034		wird nicht so im LP benannt. Löschen? Kommt in Fremdsprache (Englisch) Primar vor.
+LP_0030105	Class	Teillernbereich (RP)		LP_0030035		wird nicht so im LP benannt. Löschen? Kommt in Englisch Sek II vor.
+LP_0030106	Class	Teilteillernbereich (RP)		LP_0030105		wird nicht so im LP benannt. Löschen? Kommt in Englisch Sek II vor.
+LP_0030107	Class	Teilerfahrungsberich (RP)		LP_0030027		wird nicht so im LP benannt. Löschen? Kommt in Sachunterricht Primar vor.
+LP_0030108	Class	Fachbegriff (RP)				kommt in Physik Sek I vor
+LP_0030109	Class	Entwicklung des Konzepts (RP)				Was machen wir mit den Basiskonzepten in den Naturwissenschaften? Gleichsetzen mit Kompetenzbereich, Themenfeld oder Lerninhalt? Kommen aus den Bistas.
+LP_0030110	Class	Kontext (RP)				Kommt vor in Naturwissenschaften Orientierungsstufe.
+LP_0030111	Class	Beitrag zur Entwicklung der Basiskonzepte (RP)				Was machen wir mit den Basiskonzepten in den Naturwissenschaften? Gleichsetzen mit Kompetenzbereich, Themenfeld oder Lerninhalt? Kommen aus den Bistas.
+LP_0030112	Class	Erschließung des Themenfeldes durch Kontextorientierung (RP)				Kommt vor in Physik Sek I.
+LP_0030113	Class	Differenzierungsmöglichkeit (RP)				Kommt vor in Physik Sek I.
+LP_0030114	Class	Experiment (BW)		LP_0000349		Kommt vor in Sachunterrricht Primar.
+LP_0030115	Class	Anforderung (HH)				
+LP_0030116	Class	Möglicher Kontext (BE)				Kommt in Physik Sek I und Sek II vor. "weiterer Kontext" in NaWi 7-10
+LP_0030117	Class	Fachbegriff (BE)				Kommt in den Naturwissenschaften / Physik Sek I vor.
+LP_0030118	Class	Beispiel für Differenzierungsmöglichkeiten (BE)				Kommt in Physik Sek I vor.
+LP_0030119	Class	Experiment/Untersuchung (BE)				Kommt in den Naturwissenschaften vor.
+LP_0030120	Class	Technik (BE)				NaWi 5/6
+LP_0030121	Class	Verbindliche Form des Schreibens (SL)				Deutsch Gemeinschaftsschule
+LP_0030122	Class	Fachmethode (BE)				NaWi 5/6
+LP_0030123	Class	Basiskonzept (BE)		LP_0000349		Kommt in den Naturwissenschaften vor.
+LP_0030124	Class	Beispiel für Unterrichtseinheiten (BE)				NaWi 7-10
+LP_0030125	Class	Inhaltsbezogene Kompetenz (SL)				mathematik
+LP_0030126	Class	Verfügung über sprachliche Mittel (SL)		LP_0000349		Englisch Sek I Gemeinschaftsschule
+LP_0030127	Class	Inhalt und Thema (SL)				Englisch Sek I Gymnasium "verbindlicher Inhalt" in Sachunterricht Primar, Deutsch Gymnasiale Oberstufe Hauptphase Verbindlicher Inhalt (SL)
+LP_0030128	Class	Beispiel (SL)				Englisch Sek I und II Gymnasium
+LP_0030129	Class	Methodenkompetenz/Lern- und Kommunikationsstrategie (SL)				Englisch Sek I Gymnasium
+LP_0030130	Class	Orientierungswissen (SL)				Englisch Sek I und II Gymnasium
+LP_0030131	Class	Begegnungssituaton (SL)				Englisch Sek I und II Gymnasium
+LP_0030132	Class	Einstellung (SL)				Englisch Sek I und II Gymnasium
+LP_0030133	Class	Relevantes Genre (SL)				Englisch Sek I Gymnasium
+LP_0030134	Class	Wortschatz (SL)				Englisch
+LP_0030135	Class	Geeignete Methode / Anlass für das exemplarische Arbeiten (SL)				Englisch Sek I und II Gymnasium
+LP_0030136	Class	Hinweis für die Konzeption von Lernaufgaben mit IK-Schwerpunkt  (SL)				Englisch Sek I und II Gymnasium
+LP_0030137	Class	Mögliche Sprecharrangements und Genres (SL)				Nur in Englisch Sek II Gymnaisum
+LP_0030138	Class	Literatur und Film im Unterricht der Hauptphase (SL)				Englisch Sek II
+LP_0030139	Class	Themenkomplex (SL)		LP_0000349		Sachunterricht Primar
+LP_0030140	Class	Verbindliche Textsorte (SL)				Deutsch Gemeinschaftsschule
+LP_0030141	Class	Vorgabe zum Erwerb von Methodenkompetenz (SL)				Sachunterricht Primar
+LP_0030142	Class	Basiskonzept (SL)		LP_0000349		Naturwissenschaften und Physik -> kommt aus den Bistas
+LP_0030143	Class	Standard für den Kompetenzbereich Fachwissen (SL)				Naturwissenschaften und Physik Gemeinschaftsschule
+LP_0030144	Class	Themenbereich (HH)		LP_0000349		Themenfeld (HH)
+LP_0030145	Class	Verwendung von Lehrwerken (SL)				Naturwissenschaft und Physik Gemeinschaftschule
+LP_0030146	Class	Möglicher Einstieg / Motivation / Kontext (SL)				Naturwissenschaft/Physik Gemeinschaftsschule und Gymnasium Sek I und II
+LP_0030147	Class	Zusammenarbeit mit anderen Fächern (SL)				Naturwissenschaften und Physik Gemeinschaftsschule
+LP_0030148	Class	Außerschulischer Lernort und außerunterrichtliche Veranstaltung (SL)				Naturwissenschaften und Physik Gemeinschaftsschule und Gymnasium Sek I und II
+LP_0030149	Class	Berufsorientierender Aspekt (SL)				Naturwissenschaften/Physik Gemeinschaftsschule und Gymnasium Sek II
+LP_0030150	Class	Unterstützungsangebot (SL)				Naturwissenschaften und Physik Gemeinschaftsschule
+LP_0030151	Class	Prozessbezogene Kompetenz (SL)				Physik Gymnasium Sek I
+LP_0030152	Class	Hinweis zum sprachsensiblen Fachunterricht (SL)				Physik und Mathe Gymnasium Sek I
+LP_0030153	Class	Orientierungsrahmen (HB)		LP_0030325		
+LP_0030154	Class	Fachübergreifender und fächerverbindender Bezug (SL)				Physik Gymnasium Sek I und II. Und Mathematik
+LP_0030155	Class	Geeignetes (Schüler-)Experiment (SL)				Physik Gymnasium Sek I und II
+LP_0030156	Class	Projekt (SL)				
+LP_0030157	Class	Sach-, Erkenntnisgewinnungs-, Kommunikations- und Bewertungskompetenz (SL)				Physik Gymnasium Sek II
+LP_0030158	Class	Bildung für nachhaltige Entwicklung (SL)				Physik Gymnasium Sek II
+LP_0030159	Class	Medienbildung (SL)				Physik Gymnasium Sek II
+LP_0030160	Class	Hinweis zur Unterrichtsgestaltung (SL)				Deutsch
+LP_0030161	Class	Hinweis zu Methoden und Arbeitstechniken (SL)				Deutsch
+LP_0030162	Class	Methodik und Fachdidaktik (SL)				Mathematik Methodik und Fachdidaktik - Gymnasium Sek I Methodischer Hinweis - Gemeinschaftsschule Methodische und fachdidaktische Erläuterungen - Oberstufe
+LP_0030163	Class	Einsatz digitaler Mathematikwerkzeuge (SL)				Mathematik
+LP_0030164	Class	Anregung zur selbstständigen Schülerarbeit (SL)				Mathe Oberstufe
+LP_0030165	Class	Leitgedanke (HH)				Oder eher Beschreibung von dem Themengebiet/Themenfeld/etc.?
+LP_0030166	Class	Beitrag zur Leitperspektive (HH)				Ist auch CE-Verweis?
+LP_0030167	Class	Verweis auf Leitperspektiven (HH)		LP_0000426		Unter "Übergreifend"
+LP_0030168	Class	Verweis auf Kompetenzen (HH)		LP_0030065		Unter "Fachbezogen"
+LP_0030169	Class	Redemittel und grammatische Grundlagen (HH)		LP_0000349		kommt nur in Englisch Primar vor
+LP_0030170	Class	Basisgrammatik (HH)		LP_0000349		kommt nur in Englisch Sek I vor
+LP_0030171	Class	Fachperspektive (HH)		LP_0000349		nur in Sachunterricht Primar
+LP_0030172	Class	Bildungsstandard (HH)				Sachunterricht Primar
+LP_0030173	Class	Basiskonzept (HH)		LP_0000349		nur in den NaWis
+LP_0030174	Class	Kompetenzbereich (BW)		LP_0000349		
+LP_0030175	Class	Verweis auf die prozessbezogenen Kompetenzen (BW)		LP_0030065		
+LP_0030176	Class	Verweis auf andere Standards für inhaltsbezogene Kompetenzen desselben Fachs (BW)		LP_0030065		
+LP_0030177	Class	Verweis auf Leitperspektiven (BW)		LP_0002051		
+LP_0030178	Class	Verweis auf andere Fächer (BW)		LP_0030065		
+LP_0030179	Class	Umsetzungshilfen (BW)		LP_0030065		Verlinkungen zu Dokumenten, Webseiten oder zur Sesam Mediathek
+LP_0030180	Class	Verweis auf DaZ (BY)		LP_0000434		Verweis zum Lehrplan Deutsch als Zweitsprache -> also auf Lernbereiche eines anderen Lehrplans
+LP_0030181	Class	Verweis auf übergreifende Ziele (BY)		LP_0000434		Verweis zu den Übergreifenden Zielen ("Schulart- und fächerübergreifende Bildungs- und Erziehungsziele sowie Alltagskompetenz und Lebensökonomie") -> also auf Prosatextteil?
+LP_0030182	Class	Verweis auf Querverweise (BY)		LP_0000434		Verweis auf die Fachlehrpläne anderer Fächer -> also auf Lernbereiche eines anderen Lehrplans
+LP_0030183	Class	Verweis auf Servicematerialien (BY)		LP_0030065		Verlinkung zu Dokumenten (Unterrichtsmaterial). Hierzu gibt manchmal noch "Erläuterungen" -> Frage, ob man diese als CE-Hinweis interpreteierne kann.
+LP_0030184	Class	Interkulturelle Kompetenz (ST)				Englisch Primar. Hinweis: Die Überschrift “Interkulturelle Kompetenz” selbst ist ein Kompetenzbereich (= CE-Bereich).
+LP_0030185	Class	Sprachlernkompetenz (ST)				Englisch Primar. Hinweis: Die Überschrift “Sprachlernkompetenz” selbst ist ein Kompetenzbereich (= CE-Bereich).
+LP_0030186	Class	Text- und Medienkompetenz (ST)				Englisch Primar. Hinweis: Die Überschrift “Text- und Medienkompetenz” selbst ist ein Kompetenzbereich (= CE-Bereich).
+LP_0030187	Class	Verweis auf Kompetenzerwartung (NW)		LP_0030065		in Mathematik und den Naturwissenschaften. Diese treten in Form von Kürzeln in Klammern am Ende einer Kompetenzerwartung auf und verweisen auf (Prozessbezogene/Übergeordnete) Kompetenzerwartungen.
+LP_0030188	Class	Verweis auf Lernbereich des gleichen Faches der gleichen Klassenstufe (SN)		LP_0030065		
+LP_0030189	Class	Verweis auf Lernbereich des gleichen Faches einer anderen Klassenstufe (SN)		LP_0030065		
+LP_0030190	Class	Verweis auf Klassenstufe, Lernbereich eines anderen Faches (SN)		LP_0030065		
+LP_0030191	Class	Verweis auf ein überfachliches Bildungs- und Erziehungsziel (SN)		LP_0002089		
+LP_0030192	Class	Verweis auf Bezüge zu Kompetenzbereichen / Standards (HE)		LP_0030065		
+LP_0030193	Class	Verweis auf Aufgabengebiete (HH)		LP_0000426		Unter "Übergreifend"
+LP_0030194	Class	Verweis auf Sprachbildung (HH)		LP_0030065		Unter "Übergreifend"
+LP_0030195	Class	Verweis auf fachübergreifende Bezüge (HH)		LP_0030065		Unter "Übergreifend"
+LP_0030196	Class	Verweis auf Fachbegriffe (HH)		LP_0030065		Unter "Fachbezogen"
+LP_0030197	Class	Verweis auf fachinterne Bezüge (HH)		LP_0030065		Unter "Fachbezogen"
+LP_0030198	Class	Verweis auf allgemeine mathematische Kompetenzen (ST)		LP_0030065		Kommt nur im Fach Mathematik vor
+LP_0030199	Class	Verweis auf Kompetenzbereich (MV)		LP_0002080		
+LP_0030200	Class	Textsorte (ST)				Englisch Sekundarschule unter dem Kompetenzbereich “Funktional-kommunikative Kompetenzen” (und im Gymnasium unter dem Kompetenzbereich “Text- und Medienkompetenz” aufgeteilt in “Textsorten nur rezeptiv” und “Textsorten produktiv (rezeptive Beherrschung ist eingeschlossen)” als zwei von mehreren Unterbereichen.)
+LP_0030201	Class	Kommunikative Teilkompetenz (NI)		LP_0000349		Englisch
+LP_0030202	Class	Sprachliches Mittel (NI)		LP_0000349		Englisch
+LP_0030203	Class	Leitidee (NI)		LP_0000349		Mathematik
+LP_0030204	Class	Methodenkompetenz (NI)				Englisch
+LP_0030205	Class	Lernstrategie und Arbeitstechnik (NI)				Englisch "Lernstrategie und Arbeitstechnik" - Gesamtschule und Gymnasium. "Kompetenzspezifische Strategie und Arbeitstechnik" - Oberstufe. Kompetenzspezifische Strategie und Arbeitstechnik (NI)
+LP_0030206	Class	Standard (HB)				
+LP_0030207	Class	Themenfeld (NI)		LP_0000349		Englisch Sek II
+LP_0030208	Class	Teilaspekt (NI)		LP_0000349		Englisch Sek II
+LP_0030209	Class	Fachliche Perspektive (NI)		LP_0000349		Sachunterricht Primar
+LP_0030210	Class	Fachbegriff (BB)				Kommt in den Naturwissenschaften vor.
+LP_0030211	Class	Themenbereich (NI)		LP_0000349		Sachunterricht Primar Naturwissenschaften Sek I
+LP_0030212	Class	Verweis auf Vernetzungsmöglichkeiten (NI)		LP_0030065		= Verweis auf Perspektive Aus dem Lehrplan: “Der Sachunterricht ist vielperspektivisch angelegt. Für die Planung des Unterrichts ist es daher grundlegend, die fünf Perspektiven mit ihren erwarteten Kompetenzen und die fachübergreifenden Bildungsbereiche zu vernetzen. Beispiele für Vernetzungsmöglichkeiten werden durch Pfeile in den Tabellen aufgezeigt.”
+LP_0030213	Class	Prozessbezogene Kompetenz (NI)				Naturwissenschaften
+LP_0030214	Class	Beispiel für Unterrichtseinheiten (BB)				NaWi 7-10
+LP_0030215	Class	Inhaltsbezogene Kompetenz (NI)				mathe, Naturwissenschaften. In Deutsch "domänenspezifische Kompetenz"
+LP_0030216	Class	Verweis auf Fachbezug (NI)				Naturwissenschaften Sek I
+LP_0030217	Class	Inhaltsbereich (NI)		LP_0000349		Physik Sek II
+LP_0030218	Class	Verbindlicher Unterrichtsinhalt (NI)				Deustch Sek II
+LP_0030219	Class	Autor und Textgruppe (NI)				Deutsch Sek II
+LP_0030220	Class	Empfohlene Schreibform und Übung (NI)				Deutsch Sek II
+LP_0030221	Class	Rahmenthema (NI)		LP_0000349		Deutsch Sek II
+LP_0030222	Class	Pflichtmodul (NI)		LP_0000349		Deutsch Sek II
+LP_0030223	Class	Wahlpflichtmodul (NI)		LP_0000349		Deutsch Sek II
+LP_0030224	Class	Verbindlicher Unterrichtsaspekt (NI)				Deutsch Sek II
+LP_0030225	Class	Möglicher Unterrichtsaspekt (NI)				Deutsch Sek II
+LP_0030226	Class	Sprachbildung (NI)				
+LP_0030227	Class	Weiterführende Anforderung (NI)				Mathematik Oberschule, Hauptschule, Realschule
+LP_0030228	Class	Hinweis zum Einsatz digitaler Medien und Werkzeuge (NI)				Mathematik Oberschule, Hauptschule, Realschule
+LP_0030229	Class	Unterrichtsidee zur Handlungsorientierung online (NI)				Mathematik Integrierte Gesamtschule
+LP_0030230	Class	Fakultative Erweiterung (NI)				Mathematik Gymnasium, Oberstufe
+LP_0030231	Class	Hinweis zum Einsatz digitaler Mathematikwerkzeuge (NI)				Mathematik Gymnasium, Oberstufe
+LP_0030232	Class	Online-Material (NI)				Mathematik Oberstufe
+LP_0030233	Class	Verweis auf Inhaltsbezogene Kompetenzbereiche (NI)		LP_0002101		Mathematik Oberschule, Hauptschule, Realschule, Gymnasium, Oberstufe
+LP_0030234	Class	Verweis auf Prozessbezogene Kompetenzbereiche (NI)		LP_0002101		Mathematik Oberschule, Hauptschule, Realschule
+LP_0030235	Class	Prozessbezogene Anforderung (HB)				"Prozessbezogene Anforderung" in Sachunterricht Primar "Prozessbezogene Kompetenz" in Nawis Sek I und Mathe
+LP_0030236	Class	Inhaltsbezogene Anforderung (HB)				"Inhaltsbezogene Anforderung" in Sachunterricht Primar "Inhaltsbezogene Kompetenz" in Nawis Sek I und Mathe
+LP_0030237	Class	Fakultativer Inhalt (SL)				Mathe Gymnasium Sek I und Sek II
+LP_0030238	Class	Rahmenthema (HB)		LP_0000349		Naturwissenschaften Sek I
+LP_0030239	Class	Basiskonzept (HB)		LP_0000349		Naturwissenschaften Sek I
+LP_0030240	Class	Grammatik (SL)				Englisch
+LP_0030241	Class	Aussprache und Prosodie (SL)				Englisch
+LP_0030242	Class	Inhaltsbereich (HB)		LP_0000349		Physik Sek II
+LP_0030243	Class	Erweiterungsbaustein (Zugangswege/Anwendungsbereiche/Vertiefungen) (HB)				Physik Sek II
+LP_0030244	Class	Verstehen und Handeln (SL)				Englisch
+LP_0030245	Class	Hinweis zu Bezüge zu Kompetenzbereichen / Standards (HE)				Dient als Ergänzung zum CE-Verweis auf die Kompetenzbereiche. Bezeichnung “Hinweis” wird nicht im Lehrplan verwendet!
+LP_0030246	Class	Beispiel für Differenzierungsmöglichkeiten (BB)				Physik Sek I
+LP_0030247	Class	Standard (BW)				
+LP_0030248	Class	Kompetenzerwerb im Themenfeld (BE)				
+LP_0030249	Class	Sachgebiet (SH)		LP_0000349		Pyhsik Sek I Mathe Sek II
+LP_0030250	Class	Fachmethode (BB)				NaWi 5/6
+LP_0030251	Class	Technik (BB)				NaWi 5/6
+LP_0030252	Class	Thema (SH)		LP_0000349		Englisch Prim und Sek I: CE-Lerninhalt; Physik Sek II: Themen = CE-Lerninhalt; mögliche Vertiefungsthemen = CE-Hinweis
+LP_0030253	Class	Möglicher Kontext (BB)				Kommt in Physik Sek I und Sek II vor. "weiterer Kontext" in NaWi 7-10
+LP_0030254	Class	Thema und Inhalt (SH)				Mathe Deutsch Sek I
+LP_0030255	Class	Verweis auf Materialien (BB)		LP_0030065		Verlinkung zu Materialsammlung (=Dokumente)
+LP_0030256	Class	Kompetenz (SH)				
+LP_0030257	Class	Verweis auf vernetzte Kompetenzen (BB)		LP_0030065		Verlinkung zu Kompetenzen anderer Fächer (meist zu "Medienbildung")
+LP_0030258	Class	Leitidee (SH)		LP_0000349		Mathe Sek I
+LP_0030259	Class	Verweis auf standardillustrierende Aufgaben (BB)		LP_0030065		Verlinkung zu Dokument
+LP_0030260	Class	Vorgabe und Hinweis (SH)				Mathe, Physik
+LP_0030261	Class	Dialogisches Sprechen – mündliche Interaktion (SL)				Englisch
+LP_0030262	Class	Zusammenhängendes monologisches Sprechen – mündliche Produktion (SL)				Englisch
+LP_0030263	Class	Kompetenzbereich (Bistas)		LP_0000349		Kommt vor in den Bildungsstandards für die Fächer Deutsch, Mathematik, die erste Fremdsprache (Englisch/Französisch), Biologie, Chemie und Physik.
+LP_0030264	Class	Domänenspezifischer Kompetenzbereich (Bistas)				Kommt vor in den Bildungsstandards für das Fach Deutsch
+LP_0030265	Class	Prozessbezogener Kompetenzbereich (Bistas)				Kommt vor in den Bildungsstandards für die Fächer Deutsch und Mathematik
+LP_0030266	Class	Standard (Bistas)				
+LP_0030268	Class	Basiskonzept (Bistas)		LP_0000349		Kommt vor in den Bildungsstandards für die Fächer Biologie, Chemie und Physik. Noch zu klären, ob CE-Bereich oder CE-Lerninhalt!
+LP_0030269	Class	Verbindlicher inhaltlicher Aspekt (Bistas)		LP_0000349		Kommt vor in den Bildungsstandards für die Fächer Biologie, Chemie und Physik. Noch zu klären, ob CE-Bereich oder CE-Lerninhalt!
+LP_0030270	Class	Basiskonzept (SH)		LP_0000349		NaWis
+LP_0030271	Class	Inhaltsbezogene Kompetenz (SH)				NaWis und Mathe
+LP_0030272	Class	Verbindlicher Inhalt (SH)				"Verbindlicher Fachinhalt" Naturwissenschaften Sek I "Verbindlicher Inhalt" Physik Sek I & II
+LP_0030273	Class	Bereich (SH)		LP_0000349		Physik Sek II
+LP_0030274	Class	Verweis auf Basiskonzept (SH)		LP_0002103		NaWi
+LP_0030275	Class	Aspekt (SH)				Physik
+LP_0030276	Class	Beispielinhalt (SH)				Physik
+LP_0030277	Class	Methodenkompetenz (TH)				
+LP_0030278	Class	Prozessbezogene Kompetenz (SH)				
+LP_0030279	Class	Verbindliches Thema und Inhalt (SH)				Mathe
+LP_0030280	Class	Mögliches Thema und Inhalt (SH)				Sachunterricht
+LP_0030281	Class	Mögliches Thema (SH)				Englisch Sek II
+LP_0030282	Class	Inhalt (SH)				Englisch Sek I: CE-Hinweis; Naturwissenschaften: CE-Lerninhalt; Mathe Sek I & II: CE-Lerninhalt
+LP_0030283	Class	Selbst- und Sozialkompetenz (TH)				
+LP_0030284	Class	Möglicher inhaltlicher Aspekt (TH)				Englisch / Fremdsprache Primar
+LP_0030285	Class	Thema und Kommunikationsbereich (TH)		LP_0000349		Englisch / Fremdsprache Primar
+LP_0030286	Class	Einblick in andere Kulturen (TH)		LP_0000349		Englisch / Fremdsprache
+LP_0030287	Class	Sprachfunktion/Redeabsicht (TH)				Englisch / Fremdsprache Primar
+LP_0030288	Class	Mögliches sprachliche Mittel zur Realisierung der Redeabsichten (TH)				Englisch / Fremdsprache Primar
+LP_0030289	Class	Thema und Situation (TH)		LP_0000349		Englisch / Fremdsprache Sek I und II
+LP_0030290	Class	Wesentlicher inhaltlicher Schwerpunkt (TH)				Englisch Sek I
+LP_0030291	Class	Wesentlicher inhaltlicher Aspekt (TH)				Englisch / Fremdsprache Sek I und II
+LP_0030292	Class	Sprachliches Mittel (TH)		LP_0000349		Englisch / Fremdsprache Sek I & II
+LP_0030293	Class	Structure (TH)		LP_0000349		Englisch / Fremdsprache Sek I & II kommt nur unter dem Punkt "Grammatik" vor
+LP_0030294	Class	Themenkomplex (TH)		LP_0000349		Englisch / Fremdsprache Sek II Qualifikationsphase
+LP_0030295	Class	Schülerexperiment (TH)				Physik
+LP_0030296	Class	Projektvorschlag (TH)				Physik
+LP_0030297	Class	Themenbereich (TH)		LP_0000349		Physik Sek I & II
+LP_0030298	Class	Inhaltsbereich (TH)		LP_0000349		Physik Sek II
+LP_0030299	Class	Verweis auf Aufgabe (BY)		LP_0030183		z.B. PDF-Dokument zum Downloaden (Arbeitsblätter o.ä.)
+LP_0030300	Class	Verweis auf Material (BY)		LP_0030183		z.B. Verlinkung auf Mundo zu einem spzifischen Material da
+LP_0030301	Class	Verweis auf mebis (BY)		LP_0030183		Verlinkung zu mebis -> Einloggen über ByCS
+LP_0030302	Class	Verweis auf Erläuterung (BY)		LP_0030183		Verweist auf Erläuterungen -> Erläuterungen selbst sind CE-Hinweise
+LP_0030303	Class	Erläuterung (BY)				
+LP_0030304	Class	Bildungs- und Erziehungsauftrag (BY)		LP_0002044		für jede Schulart einheitlich einen Bildungs- und Erziehungsauftrag
+LP_0030305	Class	Übergreifende Bildungs- und Erziehungsziele (BY)		LP_0002044		
+LP_0030306	Class	Fachprofil (BY)		LP_0002044		für jede Schulart und jedes Fach ein Fachprofil
+LP_0030307	Class	Grundlegende Kompetenzen (Jahrgangsstufenprofil) (BY)		LP_0002044		für jede Schulart, jede JS ein Profil (alle Kompetenzen aufgelistet)
+LP_0030308	Class	Bayerische Leitlinie für die Bildung und Erziehung von Kindern bis zum Ender der Grundschulzeit (BY)		LP_0030304		nur für Grundschule und Förderschule
+LP_0030309	Class	Kompetenzbereich (BY)		LP_0000349		Begriff kommt nicht in den Fachlehrplänen vor! (da gibt es nur Lernbereiche) Sondern in den Kompetenzstrukturmodellen der jeweiligen Fächer (z.B. deutsch und Moderne Fremdsprache) (an die Bistas angelehnt)
+LP_0030310	Class	Prozessbezogene Kompetenz (BY)		LP_0000349		Begriff kommt nicht in den Fachlehrplänen vor! (da gibt es nur Lernbereiche) Sondern in den Kompetenzstrukturmodellen der jeweiligen Fächer (Mathematik udn Nawis) (an die Bistas angelehnt)
+LP_0030311	Class	Gegenstandsbereich (BY)		LP_0000349		Begriff kommt nicht in den Fachlehrplänen vor! (da gibt es nur Lernbereiche) Sondern in den Kompetenzstrukturmodellen der jeweiligen Fächer (Mathematik udn Nawis) (an die Bistas angelehnt)
+LP_0030312	Individual	C1 Fachkundige Sprachkenntnisse				
+LP_0030313	Individual	C2 Annähernd muttersprachliche Kenntnisse				
+LP_0030314	Individual	B2 Selbständige Sprachverwendung				
+LP_0030315	Individual	B1 Fortgeschrittene Sprachverwendung				
+LP_0030316	Individual	A2 Grundlegende Kenntnisse				
+LP_0030317	Individual	A1 Anfänger				
+LP_0030318	Class	Schlüsselkompetenz (ST)		LP_0030325		in Grundsatzband Gymnasium enthalten
+LP_0030325	Class	CE-Leitperspektive	guiding perspective	LP_0000261		Oder: - (Fach)übergreifendes Thema - (Fach)Übergreifendes Ziel - Bildungs- und Erziehungsziel - Querschnittsthema - Weiteres Thema
+LP_0030326	Individual	Leitperspektivenbeschreibungsfunktion				
+LP_0030327	Class	Leitperspektive (HH)		LP_0030325		
+LP_0030328	Class	Querschnittsthema (MV)		LP_0030325		
+LP_0030329	Class	Bildungs- und Erziehungsziel (SN)		LP_0030325		
+LP_0030330	Class	Fachübergreifendes Thema (ST)		LP_0030325		in Grundsatzband Grundschule enthalten
+LP_0030331	Class	Übergreifendes Bildungs- und Erziehungsziel (BY)		LP_0030325		
+LP_0030332	Class	Fachübergreifendes Thema (BE)		LP_0030325		
+LP_0030333	Class	Fachübergreifendes Thema (BB)		LP_0030325		
+LP_0030334	Class	Leitperspektive (BW)		LP_0030325		
+LP_0030335	Class	Weiteres Thema (Bistas)		LP_0030325		
+LP_0030336	Class	Aufgabengebiet (HH)		LP_0030325		
+LP_0030345	Individual	Gymnasialniveau Sek II (BW)				
+LP_0030346	Individual	Gymnasialniveau Sek II (BY)				
+LP_0030347	Individual	Oberstufenniveau (HB)				
+LP_0030348	Individual	Oberstufenniveau (HE)				
+LP_0030349	Individual	Studienstufenniveau (HH)				
+LP_0030350	Individual	Gymnasialniveau Sek II (MV)				
+LP_0030351	Individual	Gymnasialniveau Sek II (NW)				
+LP_0030352	Individual	Oberstufenniveau (NI)				
+LP_0030353	Individual	Niveau Sekundarstufe II (RP)				
+LP_0030354	Individual	Anforderungen für die Allgemeine Hochschulreife Sek II (SH)				
+LP_0030355	Individual	Oberstufenniveau (SL)				
+LP_0030356	Individual	Gymnasialniveau Sek II (SN)				
+LP_0030357	Individual	Gymnasialniveau Sek II (ST)				
+LP_0030358	Individual	Gymnasialniveau Sek II (TH)				
+LP_0030359	Individual	Gymnasialniveau Sek I (TH)				
+LP_0030360	Individual	Oberstufenniveau (BW)				an Gemeinschaftsschulen
+LP_0030361	Class	Grundschulniveau		LP_0000028		
+LP_0030362	Individual	Grundschulniveau (BW)				
+LP_0030363	Individual	Grundschulniveau (BY)				
+LP_0030364	Individual	Grundschulniveau (HB)				
+LP_0030365	Individual	Grundschulniveau (HE)				
+LP_0030366	Class	Bildungsgangniveau (BB)		LP_0000028		
+LP_0030367	Individual	Grundschulniveau (HH)				
+LP_0030368	Individual	Grundschulniveau (MV)				
+LP_0030369	Individual	Grundschulniveau (NI)				
+LP_0030370	Individual	Grundschulniveau (NW)				
+LP_0030371	Individual	Grundschulniveau (RP)				
+LP_0030372	Individual	Grundschulniveau (SH)				
+LP_0030373	Individual	Grundschulniveau (SL)				
+LP_0030374	Individual	Grundschulniveau (SN)				
+LP_0030375	Individual	Grundschulniveau (ST)				
+LP_0030376	Individual	Grundschulniveau (TH)				
+LP_0030377	Individual	Oberstufenniveau (BE)				
+LP_0030378	Class	EBR Niveau		LP_0000834		
+LP_0030379	Class	FOR Niveau		LP_0000832		
+LP_0030380	Class	FOR-Q Niveau		LP_0000069		
+LP_0030381	Individual	FOR-Q A				
+LP_0030382	Individual	FOR-Q B				
+LP_0030383	Individual	FOR-Q C				
+LP_0030384	Individual	FOR-Q D				
+LP_0030385	Individual	FOR-Q E				
+LP_0030386	Individual	FOR-Q F				
+LP_0030387	Individual	FOR-Q G				
+LP_0030388	Individual	FOR-Q H				
+LP_0030389	Individual	FOR A				
+LP_0030390	Individual	FOR B				
+LP_0030391	Individual	FOR C				
+LP_0030392	Individual	FOR D				
+LP_0030393	Individual	FOR E				
+LP_0030394	Individual	FOR F				
+LP_0030395	Individual	FOR G				
+LP_0030396	Individual	EBR A				
+LP_0030397	Individual	EBR B				
+LP_0030398	Individual	EBR C				
+LP_0030399	Individual	EBR D				
+LP_0030400	Individual	EBR E				
+LP_0030401	Individual	EBR F				
+LP_0030402	Individual	EBR G				
+LP_0030403	Individual	Oberstufenniveau (BB)				
+LP_2000001	Individual	Jahrgangsstufe 1	class level 1			
+LP_2000002	Individual	Jahrgangsstufe 2	class level 2			
+LP_2000003	Individual	Jahrgangsstufe 3	class level 3			
+LP_2000004	Individual	Jahrgangsstufe 4	class level 4			
+LP_2000005	Individual	Jahrgangsstufe 5	class level 5			
+LP_2000006	Individual	Jahrgangsstufe 6	class level 6			
+LP_2000007	Individual	Jahrgangsstufe 7	class level 7			
+LP_2000008	Individual	Jahrgangsstufe 8	class level 8			
+LP_2000009	Individual	Jahrgangsstufe 9	class level 9			
+LP_2000010	Individual	Jahrgangsstufe 10	class level 10			
+LP_2000011	Individual	Jahrgangsstufe 11	class level 11			
+LP_2000012	Individual	Jahrgangsstufe 12	class level 12			
+LP_2000013	Individual	Jahrgangsstufe 13	class level 13			
+LP_3000031	Individual	Thüringen				
+LP_3000043	Individual	Niedersachsen				
+LP_3000044	Individual	Nordrhein-Westfalen				
+LP_3000045	Individual	Hamburg				
+LP_3000046	Individual	Rheinland-Pfalz				
+LP_3000047	Individual	Sachsen				
+LP_3000048	Individual	Berlin				
+LP_3000049	Individual	Baden-Württemberg				
+LP_3000050	Individual	Hessen				
+LP_3000051	Individual	Bayern				
+LP_3000052	Individual	Mecklenburg-Vorpommern				
+LP_3000053	Individual	Sachsen-Anhalt				
+LP_3000054	Individual	Schleswig-Holstein				
+LP_3000055	Individual	Saarland				
+LP_3000056	Individual	Bremen				
+LP_3000057	Individual	Brandenburg				

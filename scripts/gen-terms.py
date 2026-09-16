@@ -68,13 +68,21 @@ def parse(path, prefix):
             "label_de": (de or untagged or [""])[0], "label_en": (en or [""])[0],
             "parent": ",".join(dict.fromkeys(parents)),
             "comment_de": " ".join(literals(body, "rdfs:comment", "de"))[:400],
+            # skos:editorialNote steht in dieser Ontologie fast immer ohne Sprachtag
+            # (368 von 376 Vorkommen, Stand rc4) - anders als rdfs:label/-comment, die
+            # de/en-Paare bilden. @de-getaggte Notizen zuerst, sonst die untagged
+            # Mehrheit; beides ist deutscher Text (kein @en-Vorkommen in der Quelle).
+            "note": " ".join(literals(body, "skos:editorialNote", "de")
+                              or literals(body, "skos:editorialNote"))[:400],
         })
     return rows
 
 def main():
     vendor, out = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
     out.mkdir(parents=True, exist_ok=True)
-    cols = ["id", "type", "label_de", "label_en", "parent", "comment_de"]
+    # note steht hinten an: lookup.sh/klasse.sh adressieren Spalten 1-5 per
+    # Feldnummer, die muessen stabil bleiben.
+    cols = ["id", "type", "label_de", "label_en", "parent", "comment_de", "note"]
     for name, rel, prefix in SOURCES:
         rows = sorted(parse(vendor / rel, prefix), key=lambda r: r["id"])
         with open(out / name, "w", encoding="utf-8") as f:

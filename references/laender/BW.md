@@ -11,53 +11,53 @@ Achtung: Schulfach- und Schulart-IDs kollidieren im lokalen Namen (`BW_0000003` 
 
 ### unter Lehrplan (Wurzel) (LP_0000438)
 
-| ID | Klasse |
-|---|---|
-| LP_0000806 | Bildungsplan (BW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000806 | Bildungsplan (BW) |  |
 
 ### unter CE-Fragment (LP_0001015)
 
-| ID | Klasse |
-|---|---|
-| LP_0002052 | Lehrplanfragment (BW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002052 | Lehrplanfragment (BW) |  |
 
 ### unter CE-Bereich (LP_0000349)
 
-| ID | Klasse |
-|---|---|
-| LP_0002057 | Prozessbezogene Kompetenz (BW) |
-| LP_0002059 | Inhaltsbezogene Kompetenz (BW) |
-| LP_0002063 | Leitidee (BW) |
-| LP_0030049 | Themenfeld (BW) |
-| LP_0030069 | Thema (BW) |
-| LP_0030114 | Experiment (BW) |
-| LP_0030174 | Kompetenzbereich (BW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002057 | Prozessbezogene Kompetenz (BW) | Kompetenzberschreibungselement |
+| LP_0002059 | Inhaltsbezogene Kompetenz (BW) |  |
+| LP_0002063 | Leitidee (BW) |  |
+| LP_0030049 | Themenfeld (BW) |  |
+| LP_0030069 | Thema (BW) |  |
+| LP_0030114 | Experiment (BW) | Kommt vor in Sachunterrricht Primar. |
+| LP_0030174 | Kompetenzbereich (BW) |  |
 
 ### unter Curriculares Element (direkt) (LP_0000261)
 
-| ID | Klasse |
-|---|---|
-| LP_0002051 | Element (BW) |
-| LP_0030175 | Verweis auf die prozessbezogenen Kompetenzen (BW) |
-| LP_0030176 | Verweis auf andere Standards für inhaltsbezogene Kompetenzen desselben Fachs (BW) |
-| LP_0030177 | Verweis auf Leitperspektiven (BW) |
-| LP_0030178 | Verweis auf andere Fächer (BW) |
-| LP_0030179 | Umsetzungshilfen (BW) |
-| LP_0030334 | Leitperspektive (BW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002051 | Element (BW) |  |
+| LP_0030175 | Verweis auf die prozessbezogenen Kompetenzen (BW) |  |
+| LP_0030176 | Verweis auf andere Standards für inhaltsbezogene Kompetenzen desselben Fachs (BW) |  |
+| LP_0030177 | Verweis auf Leitperspektiven (BW) |  |
+| LP_0030178 | Verweis auf andere Fächer (BW) |  |
+| LP_0030179 | Umsetzungshilfen (BW) | Verlinkungen zu Dokumenten, Webseiten oder zur Sesam Mediathek |
+| LP_0030334 | Leitperspektive (BW) |  |
 
 ### Oberklasse ist ein anonymer OWL-Ausdruck
 
 Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie enthalten dürfen und wo sie hängen, zeigt `scripts/klasse.sh <ID>`. Für SHACL sind sie unsichtbar (`rdfs:subClassOf*` endet im Blank Node); die Explorer-Regeln greifen trotzdem.
 
-| ID | Klasse |
-|---|---|
-| LP_0000144 | Erster Abschluss (BW) |
-| LP_0000145 | Mittlerer Abschluss (BW) |
-| LP_0000146 | Allgemeine Hochschulreife (BW) |
-| LP_0002060 | Denkanstoß (BW) |
-| LP_0002061 | Teilkompetenz (BW) |
-| LP_0002064 | Fachniveau Sek II (BW) |
-| LP_0030247 | Standard (BW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000144 | Erster Abschluss (BW) |  |
+| LP_0000145 | Mittlerer Abschluss (BW) |  |
+| LP_0000146 | Allgemeine Hochschulreife (BW) |  |
+| LP_0002060 | Denkanstoß (BW) |  |
+| LP_0002061 | Teilkompetenz (BW) |  |
+| LP_0002064 | Fachniveau Sek II (BW) |  |
+| LP_0030247 | Standard (BW) |  |
 
 ### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
 

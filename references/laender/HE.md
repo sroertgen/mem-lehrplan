@@ -11,46 +11,46 @@ Achtung: Schulfach- und Schulart-IDs kollidieren im lokalen Namen (`HE_0000003` 
 
 ### unter Lehrplan (Wurzel) (LP_0000438)
 
-| ID | Klasse |
-|---|---|
-| LP_0002184 | Kerncurriculum (HE) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002184 | Kerncurriculum (HE) |  |
 
 ### unter CE-Fragment (LP_0001015)
 
-| ID | Klasse |
-|---|---|
-| LP_0001001 | Lehrplanfragment (HE) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0001001 | Lehrplanfragment (HE) |  |
 
 ### unter CE-Bereich (LP_0000349)
 
-| ID | Klasse |
-|---|---|
-| LP_0001002 | Inhaltsfeld (HE) |
-| LP_0001005 | Kompetenzbereich (HE) |
-| LP_0030038 | Themenfeld (HE) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0001002 | Inhaltsfeld (HE) |  |
+| LP_0001005 | Kompetenzbereich (HE) |  |
+| LP_0030038 | Themenfeld (HE) |  |
 
 ### unter Curriculares Element (direkt) (LP_0000261)
 
-| ID | Klasse |
-|---|---|
-| LP_0002076 | Element (HE) |
-| LP_0030192 | Verweis auf Bezüge zu Kompetenzbereichen / Standards (HE) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002076 | Element (HE) |  |
+| LP_0030192 | Verweis auf Bezüge zu Kompetenzbereichen / Standards (HE) |  |
 
 ### Oberklasse ist ein anonymer OWL-Ausdruck
 
 Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie enthalten dürfen und wo sie hängen, zeigt `scripts/klasse.sh <ID>`. Für SHACL sind sie unsichtbar (`rdfs:subClassOf*` endet im Blank Node); die Explorer-Regeln greifen trotzdem.
 
-| ID | Klasse |
-|---|---|
-| LP_0000168 | Allgemeine Hochschulreife (HE) |
-| LP_0000182 | Erster Abschluss (HE) |
-| LP_0000206 | Mittlerer Abschluss (HE) |
-| LP_0002077 | Fachniveau Sek II (HE) |
-| LP_0002169 | Bildungsstandard (HE) |
-| LP_0002228 | Lernzeitbezogene Kompetenzerwartung (HE) |
-| LP_0030037 | Schwerpunktsetzung (HE) |
-| LP_0030076 | Inhalt zu einem Inhaltsfeld (HE) |
-| LP_0030245 | Hinweis zu Bezüge zu Kompetenzbereichen / Standards (HE) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000168 | Allgemeine Hochschulreife (HE) |  |
+| LP_0000182 | Erster Abschluss (HE) |  |
+| LP_0000206 | Mittlerer Abschluss (HE) |  |
+| LP_0002077 | Fachniveau Sek II (HE) |  |
+| LP_0002169 | Bildungsstandard (HE) | sollen erreicht werden bis zum Ende einer Schulstufe |
+| LP_0002228 | Lernzeitbezogene Kompetenzerwartung (HE) | Sollen erreicht werden bis zum Ende einer Jahrgangsstufe (Zwischenstufe hinzum Abschlussprofil) |
+| LP_0030037 | Schwerpunktsetzung (HE) | Schwerpunktsetzung kommt z.B. vor in Mathematik Sek I. "Inhaltlicher Schwerpunkt" z.B. in Physik Sek I. |
+| LP_0030076 | Inhalt zu einem Inhaltsfeld (HE) | Hiermit sind die Fließtexte gemeint, die in der Tabelle zu den Inhaltsfeldern stehen. Bezeichnung “Inhalt” wird nicht im Lehrplan verwendet! |
+| LP_0030245 | Hinweis zu Bezüge zu Kompetenzbereichen / Standards (HE) | Dient als Ergänzung zum CE-Verweis auf die Kompetenzbereiche. Bezeichnung “Hinweis” wird nicht im Lehrplan verwendet! |
 
 ### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
 

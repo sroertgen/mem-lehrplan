@@ -11,50 +11,50 @@ Achtung: Schulfach- und Schulart-IDs kollidieren im lokalen Namen (`NW_0000003` 
 
 ### unter Lehrplan (Wurzel) (LP_0000438)
 
-| ID | Klasse |
-|---|---|
-| LP_0001000 | Kernlehrplan (NW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0001000 | Kernlehrplan (NW) |  |
 
 ### unter CE-Fragment (LP_0001015)
 
-| ID | Klasse |
-|---|---|
-| LP_0002186 | Lehrplanfragment (NW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002186 | Lehrplanfragment (NW) |  |
 
 ### unter CE-Bereich (LP_0000349)
 
-| ID | Klasse |
-|---|---|
-| LP_0002187 | Kompetenzbereich (NW) |
-| LP_0002190 | Teilkompetenzbereich (NW) |
-| LP_0002191 | Inhaltsfeld (NW) |
-| LP_0030073 | Bereich (NW) |
-| LP_0030077 | Basiskonzept (NW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002187 | Kompetenzbereich (NW) | Aus dem Kernlehrplan: “Kompetenzbereiche repräsentieren die Grunddimensionen des fachlichen Handelns. Sie dienen dazu, die einzelnen Teiloperationen entlang der fachlichen Kerne zu strukturieren und den Zugriff für die am Lehr-Lernprozess Beteiligten zu verdeutlichen.” |
+| LP_0002190 | Teilkompetenzbereich (NW) | Fach Moderne Fremdsprachen - Englisch und Französisch |
+| LP_0002191 | Inhaltsfeld (NW) | Aus dem Kernlehrplan: “Inhaltsfelder systematisieren mit ihren jeweiligen inhaltlichen Schwerpunkten die im Unterricht der Realschule verbindlichen und unverzichtbaren Gegenstände und liefern Hinweise für die inhaltliche Ausrichtung des Lehrens und Lernens.” |
+| LP_0030073 | Bereich (NW) | Fach Englisch, Primar |
+| LP_0030077 | Basiskonzept (NW) | Fach Naturwissenschaften (Biologie, Chemie, Physik) -> noch offen, wie wir es definieren! |
 
 ### unter Curriculares Element (direkt) (LP_0000261)
 
-| ID | Klasse |
-|---|---|
-| LP_0002085 | Element (NW) |
-| LP_0030009 | Verweis auf Basiskonzept (NW) |
-| LP_0030187 | Verweis auf Kompetenzerwartung (NW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002085 | Element (NW) |  |
+| LP_0030009 | Verweis auf Basiskonzept (NW) |  |
+| LP_0030187 | Verweis auf Kompetenzerwartung (NW) | in Mathematik und den Naturwissenschaften. Diese treten in Form von Kürzeln in Klammern am Ende einer Kompetenzerwartung auf und verweisen auf (Prozessbezogene/Übergeordnete) Kompetenzerwartungen. |
 
 ### Oberklasse ist ein anonymer OWL-Ausdruck
 
 Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie enthalten dürfen und wo sie hängen, zeigt `scripts/klasse.sh <ID>`. Für SHACL sind sie unsichtbar (`rdfs:subClassOf*` endet im Blank Node); die Explorer-Regeln greifen trotzdem.
 
-| ID | Klasse |
-|---|---|
-| LP_0000162 | Allgemeine Hochschulreife (NW) |
-| LP_0000178 | Erster Abschluss (NW) |
-| LP_0000202 | Mittlerer Abschluss (NW) |
-| LP_0002086 | Fachniveau Sek II (NW) |
-| LP_0002188 | Kompetenzerwartung (NW) |
-| LP_0002192 | Inhaltlicher Schwerpunkt (NW) |
-| LP_0030005 | Ergänzung zu einem Basiskonzept (NW) |
-| LP_0030006 | Möglicher Kontext (NW) |
-| LP_0030074 | Fachliche Konkretisierung (NW) |
-| LP_0030075 | Inhalt (NW) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000162 | Allgemeine Hochschulreife (NW) |  |
+| LP_0000178 | Erster Abschluss (NW) |  |
+| LP_0000202 | Mittlerer Abschluss (NW) |  |
+| LP_0002086 | Fachniveau Sek II (NW) |  |
+| LP_0002188 | Kompetenzerwartung (NW) | Aus dem Kernlehrplan: “Kompetenzerwartungen führen Prozesse und Gegenstände zusammen und beschreiben die fachlichen Anforderungen und intendierten Lernergebnisse..“ |
+| LP_0002192 | Inhaltlicher Schwerpunkt (NW) |  |
+| LP_0030005 | Ergänzung zu einem Basiskonzept (NW) | Der Begriff kommt so nicht im Lehrplan vor. Kommt nur in den Naturwissenschaften vor. Ist eine Ergänzung zu den Bezügen zu den Basiskonzepten und ergänzt gleichzeitig die davor genannten inhaltlichen Schwerpunkte. |
+| LP_0030006 | Möglicher Kontext (NW) |  |
+| LP_0030074 | Fachliche Konkretisierung (NW) | Fach Englisch |
+| LP_0030075 | Inhalt (NW) | Fach Sachunterricht Primar. Inhalte stehen in Klammern hinter den Kompetenzerwartungen. |
 
 ### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
 

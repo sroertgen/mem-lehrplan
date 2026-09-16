@@ -11,52 +11,52 @@ Achtung: Schulfach- und Schulart-IDs kollidieren im lokalen Namen (`MV_0000003` 
 
 ### unter Lehrplan (Wurzel) (LP_0000438)
 
-| ID | Klasse |
-|---|---|
-| LP_0002164 | Rahmenplan (MV) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002164 | Rahmenplan (MV) |  |
 
 ### unter CE-Fragment (LP_0001015)
 
-| ID | Klasse |
-|---|---|
-| LP_0002136 | Lehrplanfragment (MV) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002136 | Lehrplanfragment (MV) |  |
 
 ### unter CE-Bereich (LP_0000349)
 
-| ID | Klasse |
-|---|---|
-| LP_0002139 | Kompetenzbereich (MV) |
-| LP_0002143 | Themenbereich (MV) |
-| LP_0002147 | Thema (MV) |
-| LP_0030002 | Grundfertigkeit (MV) |
-| LP_0030054 | Leitidee (MV) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002139 | Kompetenzbereich (MV) |  |
+| LP_0002143 | Themenbereich (MV) | Arbeitsbereich in Deustch "Gegenstandsfeld" in Kunst "Lebens- und Lernbereich" in Fremdsprache Primar Aus dem Lehrplan Deutsch Gesamtschule (2024) zu “Arbeitsbereich”: “Im Rahmenplan werden Arbeitsbereiche ausgewiesen, denen inhaltlich verbundene Themen zugeordnet werden. Die Fortführung der Arbeitsbereiche in den aufsteigenden Klassen ermöglicht Anknüpfungspunkte für die Lernenden im Sinne eine |
+| LP_0002147 | Thema (MV) | Aus dem Lehrplan Deutsch Gesamtschule (2024) zu “Themen”: “Für den Unterricht werden in Abschnitt 2.3 verbindliche und/oder wahlobligatorische Themen benannt und im Tabellenkopf hervorgehoben. Die Reihenfolge der Themen hat keinen normativen, sondern empfehlenden Charakter.” Kommen u.a. im Fach Mathematik, Biologie und Englisch vor. |
+| LP_0030002 | Grundfertigkeit (MV) | Englisch |
+| LP_0030054 | Leitidee (MV) | Mathe Primar |
 
 ### unter Curriculares Element (direkt) (LP_0000261)
 
-| ID | Klasse |
-|---|---|
-| LP_0002080 | Element (MV) |
-| LP_0002149 | Verweis auf Möglichkeiten der Verknüpfung (MV) |
-| LP_0030199 | Verweis auf Kompetenzbereich (MV) |
-| LP_0030328 | Querschnittsthema (MV) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002080 | Element (MV) |  |
+| LP_0002149 | Verweis auf Möglichkeiten der Verknüpfung (MV) | verweist auf andere Arbeitsbereiche und Querschnittsthemen |
+| LP_0030199 | Verweis auf Kompetenzbereich (MV) |  |
+| LP_0030328 | Querschnittsthema (MV) |  |
 
 ### Oberklasse ist ein anonymer OWL-Ausdruck
 
 Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie enthalten dürfen und wo sie hängen, zeigt `scripts/klasse.sh <ID>`. Für SHACL sind sie unsichtbar (`rdfs:subClassOf*` endet im Blank Node); die Explorer-Regeln greifen trotzdem.
 
-| ID | Klasse |
-|---|---|
-| LP_0000170 | Allgemeine Hochschulreife (MV) |
-| LP_0000184 | Erster Abschluss (MV) |
-| LP_0000208 | Mittlerer Abschluss (MV) |
-| LP_0002081 | Fachniveau Sek II (MV) |
-| LP_0002140 | Kompetenz (MV) |
-| LP_0002144 | Verbindlicher Inhalt (MV) |
-| LP_0002145 | Hinweis und Anregung (MV) |
-| LP_0002151 | Konkretisierung (MV) |
-| LP_0002153 | Standard (MV) |
-| LP_0002163 | Beispiel Verknüpfung von Inhalt und Kompetenzbereich (MV) |
-| LP_0030048 | Verbindliches Ziel (MV) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000170 | Allgemeine Hochschulreife (MV) |  |
+| LP_0000184 | Erster Abschluss (MV) |  |
+| LP_0000208 | Mittlerer Abschluss (MV) |  |
+| LP_0002081 | Fachniveau Sek II (MV) |  |
+| LP_0002140 | Kompetenz (MV) | Fachspezifische Kompetenz in Mathe Primar |
+| LP_0002144 | Verbindlicher Inhalt (MV) | Aus dem Lehrplan Deutsch Gesamtschule (2024) zu “verbindliche Inhalte”: “Die Konkretisierung der Themen erfolgt in Form der Ausweisung verbindlicher Inhalte in Abschnitt 2.3.” |
+| LP_0002145 | Hinweis und Anregung (MV) | Aus dem Lehrplan Deutsch Gesamtschule (2024) “Hinweise und Anregungen”: “Neben Anregungen für die Umsetzung im Unterricht werden sowohl didaktische und methodische Hinweise zur Auseinandersetzung mit den verbindlichen Inhalten gegeben als auch exemplarisch Möglichkeiten für die fachübergreifende und fächerverbindende Arbeit sowie fachinterne Verknüpfungen aufgezeigt.” Sie sind einem verbindlichen  |
+| LP_0002151 | Konkretisierung (MV) |  |
+| LP_0002153 | Standard (MV) | KMK-Bildungsstandard bisher nur in Fach Deutsch, Schulstufe Sek II gefunden. Ist gleichzusetzen mit Kompetenzen. Aus dem Lehrplan Deutsch Gesamtschule (2024) zu "Kompetenzen": “Im Zentrum des Fachunterrichts steht der Kompetenzerwerb. Die Kompetenzen werden in der Auseinandersetzung mit den verbindlichen Themen entwickelt. In Abschnitt 2.2 werden die zu erreichenden Kompetenzen benannt. “ |
+| LP_0002163 | Beispiel Verknüpfung von Inhalt und Kompetenzbereich (MV) | Ist einem Themenbereich (o.ä.) untergeordnet (bzw. einem verbindlichen Inhalt oder einem Hinweis zugeordnet) und zusätzlich einem Kompetenzbereich zugeordnet. |
+| LP_0030048 | Verbindliches Ziel (MV) |  |
 
 ### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
 

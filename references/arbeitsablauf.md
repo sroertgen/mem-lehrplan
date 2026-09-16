@@ -53,7 +53,11 @@ Danach die Übersetzung von Layout in Struktur:
 - **Tabellenspalten trennen Klassen.** Eine Spalte „Kompetenzen“ wird zu Knoten der
   Kompetenzspezifikations-Klasse des Landes; eine Spalte „Mögliche Inhalte“ oder
   „Konkretionen“ zu Knoten der Lerninhalt-Klasse des Landes. Welche Klasse das im
-  jeweiligen Land ist, steht in `references/laender/<XX>.md`.
+  jeweiligen Land ist, steht in `references/laender/<XX>.md`. Strukturgleiche
+  Schwesterklassen eines Landes unterscheidet nur die editorialNote (das Fach, für das sie
+  angelegt wurde); passt keine Note zum Fach, alle Kandidaten mit Note nennen, eine
+  wählen, die Wahl im Kommentar begründen und im ganzen Lehrplan einheitlich bleiben —
+  siehe `references/muster.md` und `references/fallstricke.md`.
 - **Ein Knoten je Aufzählungspunkt** der Vorlage, kein Knoten je Satz und keiner, der
   mehrere Punkte zusammenfasst — sonst geht die Position (Schritt 3, `hat Position`)
   durcheinander und der Text ist nicht mehr wörtlich einem Punkt zuzuordnen.

@@ -1,10 +1,12 @@
 # Fallstricke
 
-Acht Regeln, jede mit ihrer Begründung. Wo die Ausgangsläufe ohne Skill
+Neun Regeln, jede mit ihrer Begründung. Wo die Ausgangsläufe ohne Skill
 (`docs/testing/baseline.md`, RED) den Fehler tatsächlich gezeigt haben, steht das dabei —
 das ist die Rechtfertigung, warum die Regel überhaupt in dieser Skill steht (Skill-TDD).
 Zwei Regeln beantworten stattdessen eine Nachschlage-Aufgabe, für die es in der Baseline
-keinen eigenen Fehlerfall gab; das ist ebenfalls zulässig und so vermerkt.
+keinen eigenen Fehlerfall gab; das ist ebenfalls zulässig und so vermerkt. Die neunte Regel
+stammt aus der ersten GREEN-Runde (`docs/testing/green.md`), nicht aus der Baseline —
+Szenario 3 bestand dort nicht.
 
 | Regel | Warum |
 |---|---|
@@ -16,6 +18,7 @@ keinen eigenen Fehlerfall gab; das ist ebenfalls zulässig und so vermerkt.
 | `hat Funktionsspezifikation` nicht von Hand schreiben | Ist OWL-Restriktion der Klasse, kein Datentripel (structure.md). (Referenz-Retrieval; kein Baseline-Fall) |
 | Die Gegenrichtung `ist Teil von` nicht schreiben | Ein Reasoner leitet sie ab; SHACL-Meldungen dazu sind Reasoner-Artefakte. Beobachtet: in beiden Szenario-2-Läufen wurde keine `ist Teil von`- oder `hat Funktion`-Kante ergänzt; beide Läufe halten ausdrücklich fest, dass kein Reasoner-Artefakt „repariert“ wurde (Szenario 2, Lauf 1 und Lauf 2). |
 | Der „blinde Fleck“ LP_0030278/LP_0030280 (keine benannte Oberklasse) ist seit mem-explorer 0.4.0 geschlossen | Die Hierarchie enthält jetzt die aus `owl:intersectionOf` abgeleiteten Kanten; SHACL sieht beide Klassen. Eine gegenteilige Notiz in einem anderen Projekt ist veraltet, nicht die Ontologie. Beobachtet: beide Szenario-3-Läufe stützten ihre Antwort ausdrücklich auf genau diesen inzwischen überholten Hinweis aus `mem-explorer/CLAUDE.md` (Szenario 3, Lauf 1 und Lauf 2). |
+| Strukturgleiche Schwesterklassen eines Landes per `editorialNote` unterscheiden, nie den Namen raten | Strukturgleiche Schwesterklassen eines Landes unterscheidet nur die editorialNote (das Fach, für das sie angelegt wurde). Passt keine Note zum Fach: alle Kandidaten mit Note nennen, eine wählen, die Wahl im Kommentar begründen und im ganzen Lehrplan einheitlich bleiben. Die Datenkonvention eines vorhandenen Lehrplans desselben Landes und Fachs darf die Wahl entscheiden — sie ist kein Muster, nur die Auflösung einer Gleichheit. Beobachtet: GREEN Szenario 3 traf zwei verschiedene Antworten auf dieselbe Frage — Lauf 1 wählte LP_0030059 „Möglicher Inhalt (SH)“, deren editorialNote „Englisch Primar“ lautet (GREEN, Szenario 3, Lauf 1); Lauf 2 wählte die richtige Klasse LP_0030280 „Mögliches Thema und Inhalt (SH)“ (editorialNote „Sachunterricht“), aber nur über die lokale SH-Nutzdatendatei, nicht über die Termtabellen — wörtlich: Namenserraten aus `references/laender/SH.md` allein reichte nicht, da mehrere Klassen „Inhalt“ im Namen tragen (GREEN, Szenario 3, Lauf 2). |
 
 ## Rationalisierungstabelle
 
@@ -28,3 +31,4 @@ die Antwort, die diese Skill dagegenhält.
 | „… auf das reale, bereits produktiv erstellte Referenzdokument … dessen Muster ich übernommen habe …“ (Szenario 1, Lauf 2) | „Produktiv“ heißt nicht „richtig“. Ob eine Datei den Mustern folgt, entscheidet `mem-explorer check`, nicht ihr Vorhandensein oder ihr Einsatzstatus. |
 | „… einer der beiden im mem-explorer-CLAUDE.md dokumentierten blinden Flecken (LP_0030278/LP_0030280) …“ (Szenario 3, Lauf 1) | Der Hinweis ist mit mem-explorer 0.4.0 veraltet. Aktuellen Stand mit `scripts/klasse.sh` und `references/laender/SH.md` prüfen, nicht eine fremde `CLAUDE.md` aus einem anderen Projekt zitieren. |
 | „Das deckt sich exakt mit einem der beiden in mem-explorer/CLAUDE.md dokumentierten blinden Flecken (LP_0030278/LP_0030280 ohne benannte Oberklasse).“ (Szenario 3, Lauf 2) | Dieselbe Antwort: Notizen in anderen Projekten haben ein Datum. `klasse.sh` zeigt den aktuellen Stand, nicht den Stand, zu dem die Notiz geschrieben wurde. |
+| „Namenserraten aus `references/laender/SH.md` allein reichte nicht, da mehrere Klassen „Inhalt“ im Namen tragen“ (GREEN, Szenario 3, Lauf 2) | Genau dafür gibt es jetzt die `note`-Spalte: `scripts/lookup.sh` und `references/laender/<XX>.md` zeigen die editorialNote direkt, ohne den Umweg über eine lokale Nutzdatendatei. Lauf 1 hatte diesen Hinweis noch nicht und wählte ohne ihn die strukturgleiche, aber falsche Klasse LP_0030059 „Möglicher Inhalt (SH)“ mit der editorialNote „Englisch Primar“ (GREEN, Szenario 3, Lauf 1) — genau die Verwechslung, die die Note jetzt sichtbar macht. |

@@ -11,62 +11,62 @@ Achtung: Schulfach- und Schulart-IDs kollidieren im lokalen Namen (`TH_0000003` 
 
 ### unter Lehrplan (Wurzel) (LP_0000438)
 
-| ID | Klasse |
-|---|---|
-| LP_0000820 | Lehrplan (TH) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000820 | Lehrplan (TH) |  |
 
 ### unter CE-Fragment (LP_0001015)
 
-| ID | Klasse |
-|---|---|
-| LP_0030028 | Lehrplanfragment (TH) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0030028 | Lehrplanfragment (TH) |  |
 
 ### unter CE-Bereich (LP_0000349)
 
-| ID | Klasse |
-|---|---|
-| LP_0030024 | Lernbereich (TH) |
-| LP_0030025 | Kompetenzbereich (TH) |
-| LP_0030029 | Thema (TH) |
-| LP_0030032 | Schwerpunkt (TH) |
-| LP_0030285 | Thema und Kommunikationsbereich (TH) |
-| LP_0030286 | Einblick in andere Kulturen (TH) |
-| LP_0030289 | Thema und Situation (TH) |
-| LP_0030292 | Sprachliches Mittel (TH) |
-| LP_0030293 | Structure (TH) |
-| LP_0030294 | Themenkomplex (TH) |
-| LP_0030297 | Themenbereich (TH) |
-| LP_0030298 | Inhaltsbereich (TH) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0030024 | Lernbereich (TH) | Mathe Primar Fremdsprach Primar, Englisch Sek I & II Heimat- und Sachkunde Primar, Natur und Technik Sek I |
+| LP_0030025 | Kompetenzbereich (TH) |  |
+| LP_0030029 | Thema (TH) | Deutsch Sek I |
+| LP_0030032 | Schwerpunkt (TH) | Deutsch Gymnasium Sek I? Englisch Sek I und Sek II |
+| LP_0030285 | Thema und Kommunikationsbereich (TH) | Englisch / Fremdsprache Primar |
+| LP_0030286 | Einblick in andere Kulturen (TH) | Englisch / Fremdsprache |
+| LP_0030289 | Thema und Situation (TH) | Englisch / Fremdsprache Sek I und II |
+| LP_0030292 | Sprachliches Mittel (TH) | Englisch / Fremdsprache Sek I & II |
+| LP_0030293 | Structure (TH) | Englisch / Fremdsprache Sek I & II kommt nur unter dem Punkt "Grammatik" vor |
+| LP_0030294 | Themenkomplex (TH) | Englisch / Fremdsprache Sek II Qualifikationsphase |
+| LP_0030297 | Themenbereich (TH) | Physik Sek I & II |
+| LP_0030298 | Inhaltsbereich (TH) | Physik Sek II |
 
 ### unter Curriculares Element (direkt) (LP_0000261)
 
-| ID | Klasse |
-|---|---|
-| LP_0002097 | Element (TH) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0002097 | Element (TH) |  |
 
 ### Oberklasse ist ein anonymer OWL-Ausdruck
 
 Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie enthalten dürfen und wo sie hängen, zeigt `scripts/klasse.sh <ID>`. Für SHACL sind sie unsichtbar (`rdfs:subClassOf*` endet im Blank Node); die Explorer-Regeln greifen trotzdem.
 
-| ID | Klasse |
-|---|---|
-| LP_0000160 | Allgemeine Hochschulreife (TH) |
-| LP_0000176 | Erster Abschluss (TH) |
-| LP_0000200 | Mittlerer Abschluss (TH) |
-| LP_0002098 | Fachniveau Sek II (TH) |
-| LP_0030019 | Sachkompetenz (TH) |
-| LP_0030026 | Kompetenz (TH) |
-| LP_0030031 | Inhalt (TH) |
-| LP_0030097 | Ziel (TH) |
-| LP_0030277 | Methodenkompetenz (TH) |
-| LP_0030283 | Selbst- und Sozialkompetenz (TH) |
-| LP_0030284 | Möglicher inhaltlicher Aspekt (TH) |
-| LP_0030287 | Sprachfunktion/Redeabsicht (TH) |
-| LP_0030288 | Mögliches sprachliche Mittel zur Realisierung der Redeabsichten (TH) |
-| LP_0030290 | Wesentlicher inhaltlicher Schwerpunkt (TH) |
-| LP_0030291 | Wesentlicher inhaltlicher Aspekt (TH) |
-| LP_0030295 | Schülerexperiment (TH) |
-| LP_0030296 | Projektvorschlag (TH) |
+| ID | Klasse | Hinweis (editorialNote) |
+|---|---|---|
+| LP_0000160 | Allgemeine Hochschulreife (TH) |  |
+| LP_0000176 | Erster Abschluss (TH) |  |
+| LP_0000200 | Mittlerer Abschluss (TH) |  |
+| LP_0002098 | Fachniveau Sek II (TH) |  |
+| LP_0030019 | Sachkompetenz (TH) |  |
+| LP_0030026 | Kompetenz (TH) |  |
+| LP_0030031 | Inhalt (TH) |  |
+| LP_0030097 | Ziel (TH) |  |
+| LP_0030277 | Methodenkompetenz (TH) |  |
+| LP_0030283 | Selbst- und Sozialkompetenz (TH) |  |
+| LP_0030284 | Möglicher inhaltlicher Aspekt (TH) | Englisch / Fremdsprache Primar |
+| LP_0030287 | Sprachfunktion/Redeabsicht (TH) | Englisch / Fremdsprache Primar |
+| LP_0030288 | Mögliches sprachliche Mittel zur Realisierung der Redeabsichten (TH) | Englisch / Fremdsprache Primar |
+| LP_0030290 | Wesentlicher inhaltlicher Schwerpunkt (TH) | Englisch Sek I |
+| LP_0030291 | Wesentlicher inhaltlicher Aspekt (TH) | Englisch / Fremdsprache Sek I und II |
+| LP_0030295 | Schülerexperiment (TH) | Physik |
+| LP_0030296 | Projektvorschlag (TH) | Physik |
 
 ### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)
 

@@ -262,4 +262,9 @@ data:kb-gott-inhalt-2 lp:LP_0000460 "3"^^xsd:int .
 ```
 
 Was eine Klasse enthalten darf, steht nicht in den Mustern, sondern in ihrer Definition:
-`scripts/klasse.sh <ID>`.
+`scripts/klasse.sh <ID>`. Strukturgleiche Schwesterklassen eines Landes unterscheidet nur
+die editorialNote (das Fach, für das sie angelegt wurde). Passt keine Note zum Fach: alle
+Kandidaten mit Note nennen, eine wählen, die Wahl im Kommentar begründen und im ganzen
+Lehrplan einheitlich bleiben. Die Datenkonvention eines vorhandenen Lehrplans desselben
+Landes und Fachs darf die Wahl entscheiden — sie ist kein Muster, nur die Auflösung einer
+Gleichheit.

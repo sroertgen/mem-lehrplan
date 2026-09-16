@@ -66,5 +66,6 @@ Ausführlich, mit dem Weg vom PDF zur Struktur: `references/arbeitsablauf.md`.
 - „Der Explorer zeigt den Text, passt also.“ — er zeigt großzügig, meldet streng.
 - „Die Warnungen behebe ich auch.“ — Reasoner-Artefakte sind keine Fehler.
 - „Eine fremde Notiz sagt X.“ — Notizen veralten; selbst mit `scripts/klasse.sh` prüfen.
+- „Zwei Klassen heißen fast gleich.“ — die editorialNote entscheidet, nicht der Name.
 
 Fallstricke mit Begründung: `references/fallstricke.md`.

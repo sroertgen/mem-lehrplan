@@ -76,15 +76,17 @@ def main():
              f"## Klassen des Landes ({len(classes)})", ""]
         for bid, title in BASES:
             if groups[bid]:
-                L += [f"### unter {title} ({bid})", "", "| ID | Klasse |", "|---|---|"]
-                L += [f"| {r['id']} | {r['label_de']} |" for r in groups[bid]] + [""]
+                L += [f"### unter {title} ({bid})", "",
+                      "| ID | Klasse | Hinweis (editorialNote) |", "|---|---|---|"]
+                L += [f"| {r['id']} | {r['label_de']} | {r.get('note', '')} |" for r in groups[bid]] + [""]
         if anon:
             L += ["### Oberklasse ist ein anonymer OWL-Ausdruck", "",
                   "Für diese Klassen steht in der Tabelle keine benannte Oberklasse. Was sie "
                   "enthalten dürfen und wo sie hängen, zeigt `scripts/klasse.sh <ID>`. Für SHACL "
                   "sind sie unsichtbar (`rdfs:subClassOf*` endet im Blank Node); die Explorer-Regeln "
-                  "greifen trotzdem.", "", "| ID | Klasse |", "|---|---|"]
-            L += [f"| {r['id']} | {r['label_de']} |" for r in anon] + [""]
+                  "greifen trotzdem.", "",
+                  "| ID | Klasse | Hinweis (editorialNote) |", "|---|---|---|"]
+            L += [f"| {r['id']} | {r['label_de']} | {r.get('note', '')} |" for r in anon] + [""]
         if other:
             L += ["### Weitere Klassen (Oberklasse außerhalb der Lehrplan-Hierarchie)", "",
                   "| ID | Klasse | Oberklasse |", "|---|---|---|"]
