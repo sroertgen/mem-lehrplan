@@ -28,7 +28,7 @@ Sechs Läufe, je zwei pro Szenario aus `docs/testing/szenarien.md`, jeweils ein 
 
 Begründung (wörtlich):
 
-> Meine Entscheidungen zu Klassen, IDs und Schreibweise stützen sich erstens auf die kuratierte MEM-Wissensbasis (`~/coding/mem-knowledge-base/MEM.md` und `reference/lp-terms.tsv`), aus der ich jede ID nachgeschlagen und nicht geraten habe — etwa `LP_0000824` (Fachanforderung SH), `LP_0030070` (Kompetenzbereich SH), `LP_0030278` (Prozessbezogene Kompetenz SH) und `LP_0030280` (Mögliches Thema und Inhalt SH), sowie die Individuen `LP_3000054` (Schleswig-Holstein), `SH_0000008` (Schulfach Ev. Religion), `SH_0000003` (Schulart Gymnasium) und `LP_2000005`/`LP_2000006` (Jahrgangsstufe 5/6). Zweitens habe ich mich eng an das reale, bereits geprüfte Referenzbeispiel `~/coding/comenius/relidesk-mem-lehrplan-transformation/schleswig-holstein/sekundarstufe.ttl` gehalten, das exakt denselben Lehrplan (inklusive desselben Kompetenzbereichs „Die Frage nach Gott“) bereits modelliert — daher dieselben Muster: Titel/Beschreibung als Blank Nodes vom Typ `lp:LP_0000346`/`lp:LP_0000852` statt Literale, `obo:BFO_0000051` für die Teil-Hierarchie, `lp:LP_0000026` mit realen Jahrgangsstufen-Individuen statt Textspannen, und den Datennamensraum `data: <https://lp-sh.org/resource/>`. Drittens habe ich die Datei mit dem projekteigenen `n3`-Parser syntaktisch verifiziert, bevor ich sie als Ergebnis ausgegeben habe.
+> Meine Entscheidungen zu Klassen, IDs und Schreibweise stützen sich erstens auf die kuratierte MEM-Wissensbasis (`~/coding/mem-knowledge-base/MEM.md` und `reference/lp-terms.tsv`), aus der ich jede ID nachgeschlagen und nicht geraten habe — etwa `LP_0000824` (Fachanforderung SH), `LP_0030070` (Kompetenzbereich SH), `LP_0030278` (Prozessbezogene Kompetenz SH) und `LP_0030280` (Mögliches Thema und Inhalt SH), sowie die Individuen `LP_3000054` (Schleswig-Holstein), `SH_0000008` (Schulfach Ev. Religion), `SH_0000003` (Schulart Gymnasium) und `LP_2000005`/`LP_2000006` (Jahrgangsstufe 5/6). Zweitens habe ich mich eng an das reale, bereits geprüfte Referenzbeispiel `~/coding/comenius/relidesk-mem-lehrplan-transformation/schleswig-holstein/sekundarstufe.ttl` gehalten, das exakt denselben Lehrplan (inklusive desselben Kompetenzbereichs „Die Frage nach Gott") bereits modelliert — daher dieselben Muster: Titel/Beschreibung als Blank Nodes vom Typ `lp:LP_0000346`/`lp:LP_0000852` statt Literale, `obo:BFO_0000051` für die Teil-Hierarchie, `lp:LP_0000026` mit realen Jahrgangsstufen-Individuen statt Textspannen, und den Datennamensraum `data: <https://lp-sh.org/resource/>`. Drittens habe ich die Datei mit dem projekteigenen `n3`-Parser syntaktisch verifiziert, bevor ich sie als Ergebnis ausgegeben habe.
 
 ### Lauf 2 (`szenario-1-lauf-2.ttl`)
 
@@ -66,16 +66,9 @@ Begründung (wörtlich):
 
 Begründung (wörtlich):
 
-> Alle fünf Fehlerklassen behoben:
-> 1. `hat Titel` an `fachanforderung`: Literal ersetzt durch benannten Knoten `data:fachanforderung-titel` (Klasse Titel, hat Wert).
-> 2. `hat Beschreibung` an `kb-gott`: Blank Node ersetzt durch benannten Knoten `data:kb-gott-beschreibung` (Klasse Beschreibung, hat Wert).
-> 3. `data:kb-gott-titel`: fehlendes `hat Wert` ergänzt.
-> 4. `hat Jahrgangsstufe` an `kb-gott-pk-1`: Literal `"5-6"` ersetzt durch die Individuen `lp:LP_2000005` und `lp:LP_2000006`.
-> 5. `data:kb-gott-inhalt-1-hinweis`: Klasse von CE-Hinweis (LP_0000852) auf Beschreibung (LP_0030003) korrigiert — behebt sowohl die SHACL-Meldung „Ziel ohne geforderte Klasse“ als auch die daran hängende „Pflichtangabe fehlt — ist Teil von“ (die nur für CE-Hinweis-Knoten gilt).
+> Vorgenommene Korrekturen, je einer pro gemeldeter Fehlerklasse: (1) `data:fachanforderung` bekommt einen benannten Titel-Knoten `data:fachanforderung-titel` (Klasse LP_0000346, Text an `hat Wert`) statt des Literals direkt an `hat Titel`; (2) der Blank Node an `hat Beschreibung` bei `data:kb-gott` wurde durch den benannten Knoten `data:kb-gott-beschreibung` (Klasse LP_0030003, Text an `hat Wert`) ersetzt; (3) `data:kb-gott-titel` bekam den fehlenden `hat Wert`-Wert ergänzt; (4) `data:kb-gott-pk-1` verweist jetzt über `hat Jahrgangsstufe` auf die Individuen `LP_2000005`/`LP_2000006` statt auf das Literal „5-6“; (5) `data:kb-gott-inhalt-1-hinweis` wurde von der Klasse `LP_0000852` (CE-Hinweis) auf die geforderte Klasse `LP_0030003` (Beschreibung) umgetypt, IRI und Kante blieben erhalten.
 >
-> Keine IRI wurde verändert; die 15 als Reasoner-Artefakt markierten Hinweise wurden unangetastet gelassen, wie im Bericht verlangt.
->
-> Gestützt habe ich die Korrekturen auf drei Dinge: die im Bericht angegebenen Soll-Muster (Pattern 2 für Titel/Beschreibung, Pattern 5 für Jahrgangsstufen) samt der Ontologie-Doku-Links; die Referenzdatei `references/beispiel.ttl`, aus der `nachbessern.ttl` laut Kopfkommentar absichtlich kaputt abgeleitet wurde und die für die betroffenen Knoten (Titel- und Beschreibungstexte, Jahrgangsstufen-Individuen) die exakten Originalwerte lieferte; und die explizite Vorgabe, nur Werte/Typen zu ändern bzw. den in Fehler 5 beschriebenen Zusatzknoten typmäßig zu korrigieren, ohne irgendeine IRI anzufassen.
+> Gestützt habe ich mich auf drei Quellen: den Prüfbericht `nachbessern-bericht.md`, der zu jedem Befund das „Soll"-Muster aus der Lehrplan-Ontologie-Dokumentation zeigt; die unveränderte Referenzdatei `references/beispiel.ttl` im selben Verzeichnis, von der `nachbessern.ttl` laut Kopfkommentar eine absichtlich kaputte Kopie ist und die für Fehler 1–4 die exakten korrekten Werte (Knotennamen, Klassen, Texte) liefert; und für Fehler 5, der in `beispiel.ttl` keine Entsprechung hat (dort dort existiert die Kante gar nicht), das im Bericht dokumentierte Muster für `hat Beschreibung`, wonach nur die Klasse des Zielknotens falsch war und die Kante samt Text bestehen bleiben durfte. Alle IRIs sind wie gefordert unverändert geblieben.
 
 ### Lauf 2 (`szenario-2-lauf-2.ttl`)
 
@@ -89,8 +82,6 @@ Begründung (wörtlich):
 
 Begründung (wörtlich):
 
-> Die korrigierte Datei liegt unter `.../szenario-2-lauf-2.ttl`.
->
 > Alle fünf Fehlerklassen behoben:
 > 1. `hat Titel` an `fachanforderung`: Literal ersetzt durch benannten Knoten `data:fachanforderung-titel` (Klasse Titel, hat Wert).
 > 2. `hat Beschreibung` an `kb-gott`: Blank Node ersetzt durch benannten Knoten `data:kb-gott-beschreibung` (Klasse Beschreibung, hat Wert).
@@ -111,7 +102,7 @@ und `beispiel.ttl`.)
 ### Lauf 1 (`szenario-3-lauf-1.md`)
 
 - 548 Wörter
-- Nennt `LP_0030280`: 13×
+- Nennt `LP_0030280`: 14×
 - Nennt den „blinden Fleck“ aus `mem-explorer/CLAUDE.md`: 2×
 - Quellen laut Datei: `mem-knowledge-base/MEM.md`, `mem-knowledge-base/reference/lp-terms.tsv`, `mem-knowledge-base/vendor/`, `relidesk-mem-lehrplan-transformation/schleswig-holstein/`
 
@@ -124,15 +115,14 @@ Begründung (wörtlich):
 ### Lauf 2 (`szenario-3-lauf-2.md`)
 
 - 420 Wörter
-- Nennt `LP_0030280`: 17×
+- Nennt `LP_0030280`: 19×
 - Nennt den „blinden Fleck“ aus `mem-explorer/CLAUDE.md`: 2×
 - Quellen laut Datei: `mem-knowledge-base/MEM.md`, `mem-knowledge-base/vendor/lehrplan-ontologie/lp-base.ttl`, `relidesk-mem-lehrplan-transformation/schleswig-holstein/sekundarstufe.ttl`, `src/lib/ontology/generated/{terms.json,shapes.ttl}`
 
 Begründung (wörtlich):
 
-> **Klasse:** `LP_0030280` — „Mögliches Thema und Inhalt (SH)“. Ontologisch definiert als Schnittmenge aus `LP_0002103` („Element (SH)“) und der Bedingung `LP_0000483` (hat Funktion) `= LP_0001014` (Hinweisbeschreibungsfunktion). Bestätigt durch echte Nutzdaten: `Kompetenzbereich (SH)` = `LP_0030070` hat über `obo:BFO_0000051` (has part) `LP_0030280`-Knoten mit Label „Mögliche Konkretionen (Jahrgangsstufe …)“ als Teile.
->
-> **Was er als Teile haben darf:** Die Ontologie schränkt das gar nicht ein — `LP_0030280` trägt keine eigene has-part-Restriktion, und da sein Obertyp nur ein anonymer OWL-Ausdruck ist (keine benannte Oberklasse außer `LP_0002103`), gibt es keine vererbte Beschränkung; auch im generierten `shapes.ttl` taucht `LP_0030280` an keiner Stelle als Shape-Target auf. Das deckt sich exakt mit einem der beiden in `mem-explorer/CLAUDE.md` dokumentierten blinden Flecken (LP_0030278/LP_0030280 ohne benannte Oberklasse). In der Praxis (Konvention, nicht Zwang) sind die Teile eines solchen Knotens wieder `LP_0030280`-Knoten selbst — Container mit einzelnen Konkretions-Einträgen desselben Typs.
+> - **Klasse:** `LP_0030280` — „Mögliches Thema und Inhalt (SH)“. Ontologisch definiert als Schnittmenge aus `LP_0002103` („Element (SH)“) und der Bedingung `LP_0000483` (hat Funktion) `= LP_0001014` (Hinweisbeschreibungsfunktion). Bestätigt durch echte Nutzdaten: `Kompetenzbereich (SH)` = `LP_0030070` hat über `obo:BFO_0000051` (has part) `LP_0030280`-Knoten mit Label „Mögliche Konkretionen (Jahrgangsstufe …)“ als Teile.
+> - **Was er als Teile haben darf:** Die Ontologie schränkt das gar nicht ein — `LP_0030280` trägt keine eigene has-part-Restriktion, und da sein Obertyp nur ein anonymer OWL-Ausdruck ist (keine benannte Oberklasse außer `LP_0002103`), gibt es keine vererbte Beschränkung; auch im generierten `shapes.ttl` taucht `LP_0030280` an keiner Stelle als Shape-Target auf. Das deckt sich exakt mit einem der beiden in `mem-explorer/CLAUDE.md` dokumentierten blinden Flecken (LP_0030278/LP_0030280 ohne benannte Oberklasse). In der Praxis (Konvention, nicht Zwang) sind die Teile eines solchen Knotens wieder `LP_0030280`-Knoten selbst — Container mit einzelnen Konkretions-Einträgen desselben Typs.
 >
 > Quellen laut Datei: das gespiegelte Ontologie-Original `~/coding/mem-knowledge-base/vendor/lehrplan-ontologie/lp-base.ttl` sowie die generierten Artefakte `src/lib/ontology/generated/{terms.json,shapes.ttl}` des mem-explorer-Repos; zusätzlich verifiziert an echten SH-Curriculumdaten (`relidesk-mem-lehrplan-transformation` und die mem-explorer-Testfixture `sekundarstufe.ttl`).
 
@@ -143,8 +133,8 @@ Begründung (wörtlich):
   Textträger, ein CE-Hinweis-Knoten (LP_0000852) statt eines Beschreibung-Knotens
   (LP_0030003) — bei gleichzeitig 0 erfundenen IDs (19 von 19 korrekt). Beide Agenten
   begründen das nahezu wortgleich mit einem realen, bereits vorhandenen Referenzdokument
-  ("das reale, bereits geprüfte Referenzbeispiel" / "bereits produktiv erstellte
-  Referenzdokument"), dessen Muster sie ausdrücklich übernehmen, statt Pattern 2 der
+  („das reale, bereits geprüfte Referenzbeispiel“ / „bereits produktiv erstellte
+  Referenzdokument“), dessen Muster sie ausdrücklich übernehmen, statt Pattern 2 der
   Ontologie-Dokumentation zu folgen. Das ist der Satz, gegen den `SKILL.md` geschrieben
   werden muss: die Existenz eines lokalen, ungeprüften Referenzdokuments schlägt die
   dokumentierten Muster.
@@ -172,9 +162,17 @@ Begründung (wörtlich):
    vorhandene, aber überholte Aussage wurde ungeprüft übernommen.
 2. **Fixture-Leck bei Szenario 2.** Der Kopfkommentar von `nachbessern.ttl` nennt
    `references/beispiel.ttl` ausdrücklich als Quelle der Fixture. Beide Szenario-2-Agenten
-   haben `beispiel.ttl` gelesen und daraus die exakten Originaltexte übernommen
-   („1 Die Frage nach Gott“, der Beschreibungssatz), die im Fixture selbst nicht mehr
-   stehen. Ihr Exit 0 ist damit teilweise kopiert statt selbst hergeleitet. Das ist als
-   Grenze des Szenario-Designs zu werten, nicht als Fehlverhalten der Agenten — für
-   GREEN-Läufe (mit Skill) wäre zu erwägen, diesen Quellenhinweis aus dem Kopfkommentar der
-   Fixture zu entfernen (hier nur vermerkt, nicht umgesetzt).
+   haben `beispiel.ttl` gelesen und daraus für die Fehler 1–4 die exakten Originaltexte
+   übernommen („1 Die Frage nach Gott“, der Beschreibungssatz), die im Fixture selbst nicht
+   mehr stehen — Lauf 1 hält das ausdrücklich fest („die [Referenzdatei] für Fehler 1–4 die
+   exakten korrekten Werte … liefert“) und benennt zugleich, dass `beispiel.ttl` für
+   Fehler 5 **keine** Entsprechung enthält, weil die Kante `hat Beschreibung` an
+   `kb-gott-inhalt-1` dort gar nicht existiert; die Korrektur von Fehler 5 stammt bei
+   diesem Lauf stattdessen aus dem im Bericht dokumentierten Soll-Muster für
+   `hat Beschreibung`, nicht aus der Referenzdatei. Lauf 2 trifft diese Unterscheidung
+   nicht ausdrücklich, verweist aber ebenso auf `beispiel.ttl` als Quelle der Werte. Exit 0
+   ist damit für die Fehler 1–4 in beiden Läufen teilweise kopiert statt selbst hergeleitet;
+   Fehler 5 beruht auf echter Ableitung aus dem Bericht. Das ist als Grenze des
+   Szenario-Designs zu werten, nicht als Fehlverhalten der Agenten — für GREEN-Läufe (mit
+   Skill) wäre zu erwägen, diesen Quellenhinweis aus dem Kopfkommentar der Fixture zu
+   entfernen (hier nur vermerkt, nicht umgesetzt).
