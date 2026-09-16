@@ -295,6 +295,7 @@ vollständigen Antwortdatei, nicht aus der hier zitierten Kurz-Selbstauskunft.
 | 3 | editorialNote genannt | – (gab es noch nicht) | – (gab es noch nicht) | 7× / 7× |
 | 3 | Zitiert „blinden Fleck“ | 2× / 2× | 0× / 2× | 0× / 0× |
 | 3 | Lokale Datendatei/Wissensbasis als Quelle | ja / ja | nein / ja | nein / nein |
+| 4 | Erfolgsmaß bestanden (kein Baseline-Lauf) | – (Szenario gab es noch nicht) | 2/2 | – |
 
 Szenario 1 und 2 sind gegenüber der Baseline eindeutig verbessert (Szenario 1 kippt von
 Exit 1 mit Blank Nodes und Nulltreffern bei `hat Wert` auf Exit 0 ohne Blank Nodes;
@@ -436,13 +437,120 @@ Erfolgsmaß hinaus und ordnet die strukturgleichen Schwesterklassen zusätzlich 
 Funktion (Lerninhalts- vs. Hinweisbeschreibungsfunktion), mit zwei weiteren Beispielen zum
 Vergleich (LP_0030282, LP_0030254).
 
+## Szenario 4 — Retrieval (nach Task 7)
+
+Neues Szenario, ergänzt nach dem Gegenlesen (Fresh-Eyes-Read) von Task 7 — dafür gibt es
+**keinen Baseline-Lauf**, das Szenario entstand erst danach. Zwei Läufe, Skill-Stand
+`a4618dc` (Task 7, vor der Fix-Runde 1 dieses Dokuments). Gleicher Aufbau wie Szenario 3:
+Prompt aus `docs/testing/szenarien.md`, Zahlen aus dem Abschnitt „Szenario 4 — Retrieval“ von
+`task-6-green-scores.md`, Zitate aus den Abschnitten `szenario-4-lauf-1`/`-2` von
+`task-6-green-agent-returns.md`; Rohausgaben unter `docs/testing/green/szenario-4-lauf-1.md`
+und `-2.md`.
+
+### Lauf 1 (`szenario-4-lauf-1.md`)
+
+- 615 Wörter
+- `hat Teil` (`obo:BFO_0000051`) genannt: 5 Zeilen
+- `hat Position` (LP_0000460) genannt: 5
+- `hat Nummer` (LP_0030057) genannt: 3
+- Pattern 7 (`hat Verweis`/`verweist auf`, LP_0030071/72) genannt: 2
+- Ontologie-IDs: 11, davon erfunden: 0
+- Lokale Datendatei/Wissensbasis als Quelle: 0
+- Quellen laut Datei: `references/arbeitsablauf.md`, `references/beispiel.ttl`,
+  `references/fallstricke.md`, `references/laender/`, `references/muster.md`,
+  `scripts/klasse.sh`, `scripts/lookup.sh`
+- benutzte Skripte (Selbstauskunft): `scripts/lookup.sh` (für `hat Position`, `hat Nummer`,
+  `hat Verweis`, `verweist auf`, die Basisklassen)
+
+Begründung (wörtlich, ohne die Pfadangabe zur Antwortdatei):
+
+> **Kernaussage:** Für „diese Kompetenz gehört zu diesen Inhalten“ gibt es in MEM keine
+> eigene Verknüpfungs-Property — Kompetenz- und Inhalts-Zeilen werden stattdessen als
+> gleichrangige Geschwister desselben Kompetenzbereichs an `hat Teil` (`obo:BFO_0000051`)
+> gehängt, wobei die Spalte „Kompetenzen“ zur Kompetenzspezifikations-Klasse des Landes
+> (Basisklasse LP_0000263, z. B. SH-Unterklasse LP_0030278) und „Mögliche Inhalte“ zur
+> Lerninhalt-Klasse des Landes (Basisklasse LP_0000332, z. B. LP_0030280) wird; die
+> Zeilenzugehörigkeit bleibt implizit über `hat Position` (LP_0000460) bzw. gleiche
+> `hat Nummer` (LP_0030057) lesbar, ein ausdrücklicher Querverweis liefe über Pattern 7 mit
+> `hat Verweis` (LP_0030071) und `verweist auf` (LP_0030072).
+>
+> Herkunft jeder Angabe: die Tabellen-/Verknüpfungsregel selbst steht wörtlich in
+> `references/arbeitsablauf.md` und wird in `references/fallstricke.md` (Regel
+> „Tabellenspalten trennen Klassen“) begründet; das Turtle-Muster („Hierarchie über
+> hat Teil“, Pattern 6/7) kommt aus `references/muster.md`; das konkrete, bereits geprüfte
+> Vorbild (Kompetenzbereich „Die Frage nach Gott“) aus `references/beispiel.ttl`; die
+> konkreten IDs für `hat Position`, `hat Nummer`, `hat Verweis`, `verweist auf` sowie die
+> Basisklassen wurden mit `scripts/lookup.sh` verifiziert, nicht aus dem Gedächtnis
+> übernommen. Die Warnung zur editorialNote-Disambiguierung strukturgleicher Landesklassen
+> stammt ebenfalls aus `references/fallstricke.md`, belegt mit einem dokumentierten Fehllauf
+> (GREEN Szenario 3, Lauf 1).
+
+Lauf 1 nennt „Mögliche Inhalte“ eine „Lerninhalt-Klasse des Landes (Basisklasse
+LP_0000332)“ — das ist sachlich falsch: `LP_0030280` trägt laut `scripts/klasse.sh` die
+Hinweisbeschreibungsfunktion (LP_0001014), nicht die Lerninhaltsbeschreibungsfunktion
+(LP_0000480) von CE-Lerninhalt (LP_0000332); trotz des ähnlichen Namens sind die beiden
+Klassen funktional verschieden (dieselbe Unterscheidung wie in Szenario 3, Runde 2, Lauf 2).
+Die falsche Zuordnung stammt wörtlich aus der Formulierung „Lerninhalt-Klasse des Landes“ in
+`references/arbeitsablauf.md`, Abschnitt „Vom PDF zur Struktur“ — eine Fehlleitung durch den
+Skill-Text, nicht ein Fehler des Agenten. Mit dieser Fix-Runde (Task 7, Runde 1) ist die
+Formulierung korrigiert: die Spalte wird zur Inhaltsklasse des Landes, die nicht zwingend ein
+CE-Lerninhalt ist; `scripts/klasse.sh` zeigt die tatsächliche Funktion.
+
+### Lauf 2 (`szenario-4-lauf-2.md`)
+
+- 725 Wörter
+- `hat Teil` (`obo:BFO_0000051`) genannt: 4 Zeilen
+- `hat Position` (LP_0000460) genannt: 6
+- `hat Nummer` (LP_0030057) genannt: 2
+- Pattern 7 (`hat Verweis`/`verweist auf`, LP_0030071/72) genannt: 1
+- Ontologie-IDs: 12, davon erfunden: 0
+- Lokale Datendatei/Wissensbasis als Quelle: 0
+- Quellen laut Datei: `references/arbeitsablauf.md`, `references/beispiel.ttl`,
+  `references/fallstricke.md`, `references/laender/`, `references/muster.md`,
+  `scripts/klasse.sh`, `scripts/lookup.sh`
+- benutzte Skripte (Selbstauskunft): `scripts/lookup.sh` (für `hat Position`, `hat Nummer`),
+  `scripts/klasse.sh LP_0000263`/`LP_0000332`
+
+Begründung (wörtlich, ohne die Pfadangabe zur Antwortdatei):
+
+> **Kernaussage:** MEM hat keine Property, die Kompetenz und Inhalt einer Tabellenzeile als
+> Paar verknüpft — beide werden als Geschwister unter demselben Kompetenzbereich an
+> `hat Teil` (`obo:BFO_0000051`) gehängt, und die Zeilenzugehörigkeit bleibt nur implizit
+> über gleiche `hat Position` (`LP_0000460`) bzw. gleiche `hat Nummer` (`LP_0030057`) lesbar;
+> ein expliziter Querverweis liefe über `hat Verweis`/`verweist auf` (`LP_0030071`/
+> `LP_0030072`), ist hier aber nicht der Regelfall.
+>
+> Woher die Angaben stammen: Der Kern kommt wörtlich aus `references/arbeitsablauf.md`
+> (Abschnitt „Vom PDF zur Struktur“), das konkrete Beispiel aus `references/beispiel.ttl`
+> (geprüfter SH-Lehrplan, `mem-explorer check` Exit 0), die Property-IDs habe ich mit
+> `scripts/lookup.sh` bestätigt (`hat Position`, `hat Nummer`; `hat Teil`/`obo:BFO_0000051`
+> liefert dort erwartungsgemäß keinen Treffer, da kein `lp:`-Term — bestätigt stattdessen
+> durch `references/muster.md` Pattern 6 und den Kommentar in `beispiel.ttl`), und die
+> Klassendefinitionen von CE-Kompetenzspezifikation (`LP_0000263`) und CE-Lerninhalt
+> (`LP_0000332`) mit `scripts/klasse.sh`, die zeigen, dass beide nur „Teil eines CE-Bereichs“
+> sein dürfen und keine Kante zueinander vorsehen. Die Warnung zu mehrdeutigen Länderklassen
+> stammt aus `references/fallstricke.md` (Fallbeispiel GREEN Szenario 3).
+
+Lauf 2 macht denselben Fehler nicht: Er nennt keine „Lerninhalt-Klasse“ für die
+Inhalte-Spalte und prüft stattdessen mit `scripts/klasse.sh`, was CE-Kompetenzspezifikation
+und CE-Lerninhalt an Teilen zulassen.
+
+Beide Läufe erfüllen das Erfolgsmaß aus `docs/testing/szenarien.md` (2/2 in dieser ersten
+Runde): Geschwister über `hat Teil`, Ordnung über `hat Position`/`hat Nummer`, Pattern 7 nur
+als Möglichkeit bei ausdrücklichem Querverweis, Quellen genannt, keine erfundene Property.
+Lauf 1 zeigt zugleich eine reale Lücke im damaligen Skill-Text (`references/arbeitsablauf.md`
+nannte die Inhalte-Spalte unbedingt eine „Lerninhalt-Klasse“) — der Anlass für die Fix-Runde
+1 dieses Commits; Lauf 2 belegt, dass derselbe Fehler nicht zwingend auftritt, auch ohne die
+Korrektur.
+
 ## Ergebnis
 
-Alle drei Szenarien bestehen jetzt zwei aufeinanderfolgende Läufe: Szenario 1 und 2 bereits
+Alle vier Szenarien bestehen jetzt zwei aufeinanderfolgende Läufe: Szenario 1 und 2 bereits
 in Runde 1 (Skill-Stand `ae11dcb`, siehe „Runde 1: Befund“), Szenario 3 erst in Runde 2, nach
-dem REFACTOR. Damit ist die im Plan festgelegte Abbruchbedingung erfüllt: „Abbruch, wenn zwei
-aufeinanderfolgende Läufe je Szenario bestehen“
-(`docs/superpowers/plans/2026-09-14-mem-lehrplan-skill.md`, Task 6, Step 8).
+dem REFACTOR, Szenario 4 — erst nach Task 7 ergänzt, kein Baseline-Lauf — direkt in seiner
+ersten Runde (2/2, Skill-Stand `a4618dc`). Damit ist die im Plan festgelegte
+Abbruchbedingung erfüllt: „Abbruch, wenn zwei aufeinanderfolgende Läufe je Szenario
+bestehen“ (`docs/superpowers/plans/2026-09-14-mem-lehrplan-skill.md`, Task 6, Step 8).
 
 Was zwischen Runde 1 und Runde 2 für Szenario 3 geändert wurde, steht in zwei Commits:
 

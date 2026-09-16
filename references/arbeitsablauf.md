@@ -52,12 +52,16 @@ Danach die Übersetzung von Layout in Struktur:
   Nummer-Knoten (`hat Nummer`, LP_0030057), nicht im Titeltext.
 - **Tabellenspalten trennen Klassen.** Eine Spalte „Kompetenzen“ wird zu Knoten der
   Kompetenzspezifikations-Klasse des Landes; eine Spalte „Mögliche Inhalte“ oder
-  „Konkretionen“ zu Knoten der Lerninhalt-Klasse des Landes. Welche Klasse das im
-  jeweiligen Land ist, steht in `references/laender/<XX>.md`. Strukturgleiche
-  Schwesterklassen eines Landes unterscheidet nur die editorialNote (das Fach, für das sie
-  angelegt wurde); passt keine Note zum Fach, alle Kandidaten mit Note nennen, eine
-  wählen, die Wahl im Kommentar begründen und im ganzen Lehrplan einheitlich bleiben —
-  siehe `references/muster.md` und `references/fallstricke.md`.
+  „Konkretionen“ zu Knoten der Inhaltsklasse des Landes — das ist nicht zwingend ein
+  CE-Lerninhalt (LP_0000332) im Sinn der Ontologie: in SH trägt `LP_0030280` „Mögliches
+  Thema und Inhalt (SH)“ die Hinweisbeschreibungsfunktion (LP_0001014), nicht die
+  Lerninhaltsbeschreibungsfunktion (LP_0000480) von CE-Lerninhalt. `scripts/klasse.sh <ID>`
+  zeigt, welche Funktion eine Klasse trägt; welche Klasse im jeweiligen Land infrage kommt,
+  steht in `references/laender/<XX>.md`. Strukturgleiche Schwesterklassen eines Landes
+  unterscheidet nur die editorialNote (das Fach, für das sie angelegt wurde); passt keine
+  Note zum Fach, alle Kandidaten mit Note nennen, eine wählen, die Wahl im Kommentar
+  begründen und im ganzen Lehrplan einheitlich bleiben — siehe `references/muster.md` und
+  `references/fallstricke.md`.
 - **Eine Kompetenz mit „ihren“ möglichen Inhalten aus derselben Tabellenzeile verknüpfen**
   heißt nicht, ein Paar zu modellieren — dafür gibt es keine Property. MEM hängt Kompetenz
   und Mögliche Inhalte als Geschwister desselben Bereichs an `hat Teil` (obo:BFO_0000051):
