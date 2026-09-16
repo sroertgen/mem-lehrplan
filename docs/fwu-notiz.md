@@ -35,8 +35,9 @@ schon bestehenden Konvention reibt.
    der Block `hat_Teil:` tatsächlich verwendet
    (`Sekundarbereich_II: hat_Teil: G8_Einführungsphase:, …`). Alle anderen Patterns (z. B.
    pattern6.ttl) schreiben dafür `@prefix hat_Teil: <http://purl.obolibrary.org/obo/BFO_0000051> .`
-   — die IRI fehlt hier vermutlich nur versehentlich. Wer den Block wörtlich kopiert,
-   bekommt ungültiges Turtle.
+   — die IRI fehlt hier vermutlich nur versehentlich. Wörtlich kopiert bleibt das gültiges
+   Turtle — `hat_Teil:` löst sich dann aber gegen die Basis-IRI des Dokuments auf, nicht
+   gegen `obo:BFO_0000051`.
 
 Über eine Rückmeldung würden wir uns freuen.
 
