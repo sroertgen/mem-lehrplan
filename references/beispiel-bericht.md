@@ -2,7 +2,7 @@
 
 > Erzeugt mit `mem-explorer check references/beispiel.ttl` (Explorer 0.4.0), Exit-Code 0. Die verbleibenden Gruppen sind Reasoner-Artefakte und Warnungen, keine Datenfehler — so sieht eine saubere Datei aus.
 
-Geprüft am 2026-09-16 · Ontologie 1.0.0rc4 · sha256:0a10d35157cbf5b4777bc1812fa12d6183879016f81772f7d4838ffc4bd38638
+Geprüft am 2026-09-16 · Ontologie 1.0.0rc4 · sha256:ee2ba2884696b721e9f365d220ea725a3b666a1c1624d223fa87065929907ece
 
 15 Knoten · 0 geprüft · 0 beanstandet · 15 offen
 
